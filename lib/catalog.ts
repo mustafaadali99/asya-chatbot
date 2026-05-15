@@ -137,25 +137,31 @@ function scoreHome(product: HomeProduct, profile: ScentProfile): number {
   return score
 }
 
+function isAvailable(p: { is_active?: boolean; in_stock?: boolean; stock_status?: string }): boolean {
+  if (p.stock_status === 'outofstock') return false
+  if (p.in_stock === false) return false
+  return true
+}
+
 export function findGoldProduct(profile: ScentProfile): Product | null {
-  const filtered = gold.filter(p => p.is_active && p.stock_status !== 'outofstock')
+  const filtered = gold.filter(isAvailable)
   const scored = filtered.map(p => ({ p, score: scoreProduct(p, profile) }))
   scored.sort((a, b) => b.score - a.score)
-  return scored[0]?.score > 0 ? scored[0].p : null
+  return scored[0]?.p || null
 }
 
 export function findEleganciaProduct(profile: ScentProfile): Product | null {
-  const filtered = elegancia.filter(p => p.is_active && p.stock_status !== 'outofstock')
+  const filtered = elegancia.filter(isAvailable)
   const scored = filtered.map(p => ({ p, score: scoreProduct(p, profile) }))
   scored.sort((a, b) => b.score - a.score)
-  return scored[0]?.score > 0 ? scored[0].p : null
+  return scored[0]?.p || null
 }
 
 export function findHomeProduct(profile: ScentProfile): HomeProduct | null {
-  const filtered = home.filter(p => p.is_active && p.stock_status !== 'outofstock')
+  const filtered = home.filter(isAvailable)
   const scored = filtered.map(p => ({ p, score: scoreHome(p, profile) }))
   scored.sort((a, b) => b.score - a.score)
-  return scored[0]?.score > 0 ? scored[0].p : null
+  return scored[0]?.p || null
 }
 
 export function findByOriginalName(query: string, gender?: string): Product | null {
