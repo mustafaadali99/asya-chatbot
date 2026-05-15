@@ -123,8 +123,8 @@ function ProductCard({product,cardType,coupon,onSave,saved}:{product:Prod;cardTy
       <div style={{padding:16,display:'flex',gap:14}}>
         <div style={{flexShrink:0}}>
           {product.image_url
-            ? <img src={product.image_url} alt={product.name} style={{width:80,height:96,objectFit:'cover',borderRadius:16,boxShadow:'0 4px 16px rgba(0,0,0,.10)'}}/>
-            : <div style={{width:80,height:96,borderRadius:16,background:`linear-gradient(160deg,${hues[cardType]||'#E2D6F1'},#FFF)`,display:'flex',alignItems:'center',justifyContent:'center'}}><BottleGlyph size={36} hue={hues[cardType]||'#E2D6F1'}/></div>
+            ? <img src={product.image_url} alt={product.name} style={{width:90,height:90,objectFit:'cover',borderRadius:16,boxShadow:'0 4px 16px rgba(0,0,0,.10)'}}/>
+            : <div style={{width:90,height:90,borderRadius:16,background:`linear-gradient(160deg,${hues[cardType]||'#E2D6F1'},#FFF)`,display:'flex',alignItems:'center',justifyContent:'center'}}><BottleGlyph size={40} hue={hues[cardType]||'#E2D6F1'}/></div>
           }
         </div>
         <div style={{flex:1,minWidth:0}}>
@@ -508,7 +508,7 @@ function MobileCatalog() {
         <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:14}}>
           {filtered.map((p,i)=>(
             <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:14,borderRadius:20,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'block'}}>
-              <div style={{height:130,borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:10,position:'relative',overflow:'hidden'}}>
+              <div style={{aspectRatio:'1',borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:10,position:'relative',overflow:'hidden'}}>
                 {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={60} hue="#E2D6F1"/>}
               </div>
               <div style={{fontSize:10,letterSpacing:'0.14em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>{p.scent}</div>
@@ -539,7 +539,7 @@ function MobileWardrobe({gardrop}:{gardrop:GItem[]}) {
           <div style={{display:'flex',flexDirection:'column',gap:12}}>
             {gardrop.map((item,i)=>(
               <div key={i} style={{padding:16,borderRadius:20,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'flex',gap:14,alignItems:'center'}}>
-                <div style={{width:56,height:68,borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,overflow:'hidden'}}>
+                <div style={{width:64,height:64,borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,overflow:'hidden'}}>
                   {item.image_url ? <img src={item.image_url} alt={item.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={28} hue="#E2D6F1"/>}
                 </div>
                 <div style={{flex:1,minWidth:0}}>
@@ -722,8 +722,9 @@ function DesktopHome({onGoChat,onGoCatalog}:{onGoChat:()=>void;onGoCatalog:()=>v
             ))}
           </div>
         </div>
-        <div style={{position:'relative',borderRadius:22,background:'linear-gradient(160deg,#EFE6F8 0%,#DCE8F4 100%)',display:'flex',alignItems:'center',justifyContent:'center',overflow:'hidden',boxShadow:'inset 0 1px 0 rgba(255,255,255,.9)'}}>
+        <div style={{position:'relative',borderRadius:22,background:'linear-gradient(160deg,#EFE6F8 0%,#DCE8F4 100%)',display:'flex',alignItems:'center',justifyContent:'center',overflow:'hidden',boxShadow:'inset 0 1px 0 rgba(255,255,255,.9)',minHeight:320}}>
           <div style={{position:'absolute',top:30,left:30,width:80,height:80,borderRadius:'50%',background:'rgba(255,255,255,.5)',filter:'blur(20px)'}}/>
+          <img src="/asya-hero.png" alt="ASYA" style={{width:'100%',height:'100%',objectFit:'cover',position:'absolute',inset:0}} onError={e=>{(e.target as HTMLImageElement).style.display='none'}}/>
           <BottleGlyph size={160} hue="#E2D6F1"/>
           <div style={{position:'absolute',top:20,right:20,padding:'8px 14px',borderRadius:999,background:'rgba(255,255,255,.85)',backdropFilter:'blur(8px)',WebkitBackdropFilter:'blur(8px)',fontSize:11,fontWeight:600,color:T.ink,letterSpacing:'0.12em',textTransform:'uppercase'}}>Yeni Sezon</div>
         </div>
@@ -740,7 +741,7 @@ function DesktopHome({onGoChat,onGoCatalog}:{onGoChat:()=>void;onGoCatalog:()=>v
       <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}}>
         {featured.map((p,i)=>(
           <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'block',transition:'transform .2s'}}>
-            <div style={{height:160,borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
+            <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
               {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={80} hue="#E2D6F1"/>}
             </div>
             <div style={{fontSize:10,letterSpacing:'0.18em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>{p.scent}</div>
@@ -778,7 +779,7 @@ function DesktopCatalog() {
         <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:16}}>
           {filtered.map((p,i)=>(
             <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'block'}}>
-              <div style={{height:180,borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,position:'relative',overflow:'hidden'}}>
+              <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,position:'relative',overflow:'hidden'}}>
                 {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={96} hue="#E2D6F1"/>}
                 <div style={{position:'absolute',top:10,left:10,width:28,height:28,borderRadius:'50%',background:'rgba(255,255,255,.85)',display:'flex',alignItems:'center',justifyContent:'center'}}>
                   <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 13.5s-5-3-5-7a3 3 0 0 1 5-2 3 3 0 0 1 5 2c0 4-5 7-5 7z" stroke={T.soft} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -798,9 +799,9 @@ function DesktopChat({chatLogic,onGoProfile}:{chatLogic:ReturnType<typeof useCha
   const {lead,coupon,gardrop,reset} = chatLogic
   const hasResult = chatLogic.messages.some(m=>m.type==='recommendation')
   return (
-    <div style={{flex:1,display:'grid',gridTemplateColumns:hasResult?'440px 1fr':'440px',overflow:'hidden'}}>
+    <div style={{flex:1,display:'flex',overflow:'hidden'}}>
       {/* Chat panel */}
-      <section style={{display:'flex',flexDirection:'column',borderRight:'1px solid rgba(94,88,140,.08)',background:'rgba(255,255,255,.55)',backdropFilter:'blur(16px)',WebkitBackdropFilter:'blur(16px)'}}>
+      <section style={{display:'flex',flexDirection:'column',width:hasResult?440:'100%',maxWidth:hasResult?440:680,flexShrink:0,borderRight:hasResult?'1px solid rgba(94,88,140,.08)':'none',background:'rgba(255,255,255,.55)',backdropFilter:'blur(16px)',WebkitBackdropFilter:'blur(16px)',margin:hasResult?undefined:'0 auto'}}>
         <div style={{padding:'18px 22px 14px',display:'flex',alignItems:'center',gap:12,borderBottom:'1px solid rgba(94,88,140,.06)',flexShrink:0}}>
           <AsyaAvatar size={38}/>
           <div style={{flex:1}}>
@@ -817,7 +818,7 @@ function DesktopChat({chatLogic,onGoProfile}:{chatLogic:ReturnType<typeof useCha
 
       {/* Profile result panel */}
       {hasResult && (
-        <section style={{overflowY:'auto',padding:'32px 40px 40px'}}>
+        <section style={{flex:1,overflowY:'auto',padding:'32px 40px 40px'}}>
           <div style={{fontSize:11,letterSpacing:'0.28em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>{lead?.name||'Sizin'} Koku Portresi</div>
           <h1 style={{margin:'8px 0 20px',fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:42,color:T.ink,letterSpacing:'-0.015em'}}>Koku <em style={{fontStyle:'italic'}}>Profiliniz</em></h1>
           {coupon && (
@@ -839,7 +840,7 @@ function DesktopChat({chatLogic,onGoProfile}:{chatLogic:ReturnType<typeof useCha
               <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:12}}>
                 {gardrop.slice(0,3).map((g,i)=>(
                   <a key={i} href={g.web_url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:14,borderRadius:18,background:'rgba(255,255,255,.75)',border:`1px solid ${T.glassE}`,boxShadow:'0 6px 14px rgba(94,88,140,.08)',display:'block'}}>
-                    <div style={{height:90,borderRadius:12,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:8,overflow:'hidden'}}>
+                    <div style={{aspectRatio:'1',borderRadius:12,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:8,overflow:'hidden'}}>
                       {g.image_url ? <img src={g.image_url} alt={g.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={44} hue="#E2D6F1"/>}
                     </div>
                     <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:16,color:T.ink,lineHeight:1.15}}>{g.name}</div>
@@ -869,7 +870,7 @@ function DesktopWardrobe({gardrop}:{gardrop:GItem[]}) {
         <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}}>
           {gardrop.map((item,i)=>(
             <a key={i} href={item.web_url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'block'}}>
-              <div style={{height:140,borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
+              <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
                 {item.image_url ? <img src={item.image_url} alt={item.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={60} hue="#E2D6F1"/>}
               </div>
               <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:20,color:T.ink,lineHeight:1.15}}>{item.name}</div>
