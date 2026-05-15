@@ -3,11 +3,11 @@ import eleganciaData from '@/data/elegancia_catalog.json'
 import homeData from '@/data/home_catalog.json'
 
 export interface Product {
-  id: string
+  id?: string
   woo_id?: number
   code: string
   name: string
-  series: 'gold' | 'elegancia'
+  series?: 'gold' | 'elegancia'
   gender: 'erkek' | 'kadın' | 'unisex'
   original_name?: string
   original_brand?: string
@@ -20,16 +20,17 @@ export interface Product {
   occasion: string[]
   season: string[]
   mood_tags: string[]
-  effect: 'temiz_zarif' | 'karizmatik_dikkat_cekici'
+  effect?: 'temiz_zarif' | 'karizmatik_dikkat_cekici'
   volume?: string
   image_url: string
   web_url: string
   stock_status?: string
-  is_active: boolean
+  is_active?: boolean
+  in_stock?: boolean
 }
 
 export interface HomeProduct {
-  id: string
+  id?: string
   woo_id?: number
   name: string
   scent_name?: string
@@ -42,7 +43,8 @@ export interface HomeProduct {
   image_url: string
   web_url: string
   stock_status?: string
-  is_active: boolean
+  is_active?: boolean
+  in_stock?: boolean
 }
 
 export interface ScentProfile {
@@ -55,9 +57,9 @@ export interface ScentProfile {
   performance?: string
 }
 
-const gold = goldData as Product[]
-const elegancia = eleganciaData as Product[]
-const home = homeData as HomeProduct[]
+const gold = goldData as unknown as Product[]
+const elegancia = eleganciaData as unknown as Product[]
+const home = homeData as unknown as HomeProduct[]
 
 function scoreProduct(product: Product, profile: ScentProfile): number {
   let score = 0
@@ -140,6 +142,7 @@ function scoreHome(product: HomeProduct, profile: ScentProfile): number {
 function isAvailable(p: { is_active?: boolean; in_stock?: boolean; stock_status?: string }): boolean {
   if (p.stock_status === 'outofstock') return false
   if (p.in_stock === false) return false
+  if (p.is_active === false) return false
   return true
 }
 
