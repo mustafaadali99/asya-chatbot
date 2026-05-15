@@ -1,29 +1,62 @@
 'use client'
 import { useState, useRef, useEffect, useCallback } from 'react'
 
-/* ─────────────── TYPES ─────────────── */
-interface Message {
-  role: 'assistant' | 'user'
-  content: string
-  product?: ProductData
-  type?: string
-  options?: string[]
-}
-interface ProductData {
-  name: string; image_url: string; web_url: string; woo_id?: number
-  top_notes?: string[]; heart_notes?: string[]; base_notes?: string[]; code?: string
-}
-interface GardropItem {
-  name: string
-  image_url: string
-  web_url: string
-  woo_id?: number
-  code?: string
-  addedAt: string
-}
+/* ═══════════════ TYPES ═══════════════ */
+type Screen = 'welcome' | 'dashboard' | 'chat' | 'wardrobe' | 'profile' | 'faq'
+interface Message { role: 'assistant' | 'user'; content: string; type?: string; product?: ProductData; options?: string[] }
+interface ProductData { name: string; image_url: string; web_url: string; woo_id?: number; code?: string; top_notes?: string[]; heart_notes?: string[]; base_notes?: string[] }
+interface GardropItem { name: string; image_url: string; web_url: string; woo_id?: number; code?: string; category?: string; addedAt: string }
 interface Lead { name: string; email: string; lead_id: string; session_id: string }
 
-/* ─────────────── ASYA PORTRAIT ─────────────── */
+/* ═══════════════ DESIGN TOKENS ═══════════════ */
+const T = {
+  ink: '#2B2640',
+  inkSoft: '#5E5878',
+  inkMuted: '#8A85A1',
+  glass: 'rgba(255,255,255,0.42)',
+  glassStrong: 'rgba(255,255,255,0.62)',
+  glassEdge: 'rgba(255,255,255,0.85)',
+  shadowSoft: '0 12px 30px rgba(94,88,140,0.12)',
+  neoOut: '6px 6px 14px rgba(160,152,195,0.30), -6px -6px 14px rgba(255,255,255,0.95)',
+  neoIn: 'inset 4px 4px 10px rgba(160,152,195,0.22), inset -4px -4px 10px rgba(255,255,255,0.85)',
+  accent: 'linear-gradient(135deg, #B9A5E8, #9FB4E0)',
+  accentSolid: '#B9A5E8',
+}
+
+/* ═══════════════ ICONS ═══════════════ */
+const I = {
+  home:    <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 10l7-6 7 6v6a1 1 0 0 1-1 1h-3v-5h-6v5H4a1 1 0 0 1-1-1z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg>,
+  catalog: <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="6" height="6" rx="1.2" stroke="currentColor" strokeWidth="1.4"/><rect x="11" y="3" width="6" height="6" rx="1.2" stroke="currentColor" strokeWidth="1.4"/><rect x="3" y="11" width="6" height="6" rx="1.2" stroke="currentColor" strokeWidth="1.4"/><rect x="11" y="11" width="6" height="6" rx="1.2" stroke="currentColor" strokeWidth="1.4"/></svg>,
+  chat:    <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 9.5C3 6 6 4 10 4s7 2 7 5.5S14 15 10 15c-.7 0-1.4-.06-2-.18L5 16l.5-2.4A5 5 0 0 1 3 9.5z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg>,
+  wardrobe:<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 7.2a1.7 1.7 0 1 1 1.7-1.7" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/><path d="M10 7.2v1.5L2 14h16L10 8.7" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg>,
+  profile: <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3" stroke="currentColor" strokeWidth="1.4"/><path d="M3 17c.8-3.4 3.7-5 7-5s6.2 1.6 7 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg>,
+  send:    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>,
+  mic:     <svg width="16" height="20" viewBox="0 0 16 20" fill="none"><rect x="5" y="2" width="6" height="10" rx="3" stroke="currentColor" strokeWidth="1.4"/><path d="M2 9a6 6 0 0 0 12 0M8 15v3M5 18h6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg>,
+  back:    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L3 7l6 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  close:   <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+  heart:   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13.5s-5-3-5-7a3 3 0 0 1 5-2 3 3 0 0 1 5 2c0 4-5 7-5 7z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  heartFill:<svg width="16" height="16" viewBox="0 0 16 16" fill="#B9A5E8"><path d="M8 13.5s-5-3-5-7a3 3 0 0 1 5-2 3 3 0 0 1 5 2c0 4-5 7-5 7z"/></svg>,
+  plus:    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/></svg>,
+  trash:   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M9 6V4h6v2"/></svg>,
+  cart:    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>,
+  external:<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>,
+  info:    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.4"/><path d="M8 7v4M8 5.2v.1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg>,
+  menu:    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>,
+}
+
+/* ═══════════════ BOTTLE GLYPH ═══════════════ */
+function BottleGlyph({ size = 44, hue = '#D8CDEE' }: { size?: number; hue?: string }) {
+  return (
+    <svg width={size} height={size * 1.35} viewBox="0 0 44 60" fill="none">
+      <rect x="17" y="3" width="10" height="7" rx="1.2" fill="#FFFFFF" stroke="#A89FC7" strokeOpacity="0.5" strokeWidth="1"/>
+      <rect x="19.5" y="10" width="5" height="4" fill="#FFFFFF" stroke="#A89FC7" strokeOpacity="0.45" strokeWidth="1"/>
+      <path d="M8 22 Q8 14, 18 14 L26 14 Q36 14, 36 22 L36 50 Q36 56, 30 56 L14 56 Q8 56, 8 50 Z" fill={hue} stroke="#A89FC7" strokeOpacity="0.35" strokeWidth="1"/>
+      <rect x="14" y="34" width="16" height="8" rx="1.5" fill="#FFFFFF" opacity="0.5"/>
+    </svg>
+  )
+}
+
+/* ═══════════════ ASYA PORTRAIT ═══════════════ */
 function AsyaPortrait({ size = 80 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 120 120" fill="none">
@@ -43,103 +76,88 @@ function AsyaPortrait({ size = 80 }: { size?: number }) {
       <circle cx="71" cy="50" r="2.5" fill="#2a1a0c"/>
       <circle cx="52" cy="49" r="0.9" fill="white"/>
       <circle cx="72" cy="49" r="0.9" fill="white"/>
-      <path d="M58 57 Q60 62 62 57" stroke="#c4845a" strokeWidth="1.2" strokeLinecap="round" fill="none" opacity="0.6"/>
       <path d="M52 67 Q56 64 60 65 Q64 64 68 67 Q64 72 60 71 Q56 72 52 67Z" fill="#c0604a"/>
-      <path d="M52 67 Q60 65 68 67" stroke="#a04030" strokeWidth="0.8" fill="none"/>
-      <circle cx="40" cy="57" r="2.5" fill="#C6862A"/>
-      <rect x="39.2" y="59" width="1.6" height="6" rx="0.8" fill="#C6862A"/>
-      <circle cx="40" cy="66" r="2" fill="#C6862A"/>
-      <circle cx="80" cy="57" r="2.5" fill="#C6862A"/>
-      <rect x="79.2" y="59" width="1.6" height="6" rx="0.8" fill="#C6862A"/>
-      <circle cx="80" cy="66" r="2" fill="#C6862A"/>
-      <ellipse cx="44" cy="58" rx="6" ry="3" fill="#e89070" opacity="0.2"/>
-      <ellipse cx="76" cy="58" rx="6" ry="3" fill="#e89070" opacity="0.2"/>
     </svg>
   )
 }
 
 function AsyaAvatar({ size = 32 }: { size?: number }) {
   return (
-    <div className="rounded-full overflow-hidden flex-shrink-0" style={{ width: size, height: size, boxShadow: '0 0 12px rgba(198,134,42,0.2)' }}>
+    <div className="rounded-full overflow-hidden flex-shrink-0" style={{ width: size, height: size, boxShadow: '0 0 0 1px rgba(255,255,255,0.85), 0 4px 12px rgba(94,88,140,0.15)' }}>
       <AsyaPortrait size={size} />
     </div>
   )
 }
 
-/* ─────────────── ICONS ─────────────── */
-const I = {
-  send:     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>,
-  menu:     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>,
-  plus:     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M12 5v14M5 12h14"/></svg>,
-  chat:     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,
-  gift:     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>,
-  search:   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>,
-  heart:    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>,
-  heartFill:<svg width="15" height="15" viewBox="0 0 24 24" fill="#C6862A" stroke="#C6862A" strokeWidth="2" strokeLinecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>,
-  spray:    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 3h4v14H3z"/><path d="M7 6h6v11H7"/><path d="M13 8h3l2 9h-5"/><path d="M16 8V6l2-2"/><path d="M18 4h2"/><path d="M19 3v2"/></svg>,
-  note:     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>,
-  external: <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>,
-  trash:    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>,
-  cart:     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>,
-  check:    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="20 6 9 17 4 12"/></svg>,
-  wardrobe: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/><path d="M8 10h1M15 10h1"/></svg>,
+/* ═══════════════ GLASS PILL BUTTON ═══════════════ */
+function GlassPill({ children, onClick, icon }: { children: React.ReactNode; onClick?: () => void; icon?: React.ReactNode }) {
+  return (
+    <button onClick={onClick} className="btn-ghost" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+      {icon}{children}
+    </button>
+  )
 }
 
-/* ─────────────── LEAD FORM ─────────────── */
-function LeadForm({ onSubmit }: { onSubmit: (n: string, e: string) => void }) {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [loading, setLoading] = useState(false)
-  const submit = (ev: React.FormEvent) => {
-    ev.preventDefault()
-    if (!name || !email) return
-    setLoading(true)
-    onSubmit(name, email)
-  }
+/* ═══════════════ TYPING DOTS ═══════════════ */
+function TypingDots() {
   return (
-    <div className="glass-card p-6 max-w-sm fade-up">
-      <p className="font-serif text-[18px] font-light text-[#1a1a1a] mb-1">Küçük bir rica ✨</p>
-      <p className="text-[13px] text-[#6b6560] mb-5 leading-relaxed">
-        Adınız ve e-postanızla size özel koku profilinizi ve <strong>%10 indirim kodunuzu</strong> maille göndereyim.
-      </p>
-      <form onSubmit={submit} className="space-y-3">
-        <input value={name} onChange={e => setName(e.target.value)} placeholder="Adınız Soyadınız" className="chat-input" required />
-        <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="E-posta adresiniz" className="chat-input" required />
-        <button type="submit" disabled={loading || !name || !email} className="btn-luxury btn-gold w-full justify-center py-3 disabled:opacity-40">
-          {loading ? 'Kaydediliyor...' : 'Devam Et →'}
-        </button>
-      </form>
-      <p className="text-center text-[11px] text-[#b5afa8] mt-4">🔒 Bilgileriniz güvende · Spam yok</p>
+    <span className="flex gap-1.5 items-center py-1 px-1">
+      <span className="dot" /><span className="dot" /><span className="dot" />
+    </span>
+  )
+}
+
+/* ═══════════════ CHAT BUBBLE ═══════════════ */
+function ChatBubble({ from, children }: { from: 'asya' | 'user'; children: React.ReactNode }) {
+  const isAsya = from === 'asya'
+  return (
+    <div className="flex msg-in" style={{ justifyContent: isAsya ? 'flex-start' : 'flex-end', marginTop: 8 }}>
+      <div style={{
+        maxWidth: '78%', padding: '12px 16px',
+        borderRadius: isAsya ? '18px 18px 18px 6px' : '18px 18px 6px 18px',
+        background: isAsya ? T.glassStrong : 'linear-gradient(135deg, #C8B8E8, #B8CCE8)',
+        backdropFilter: isAsya ? 'blur(14px)' : undefined,
+        WebkitBackdropFilter: isAsya ? 'blur(14px)' : undefined,
+        border: isAsya ? `1px solid ${T.glassEdge}` : 'none',
+        boxShadow: isAsya
+          ? '0 6px 16px rgba(94,88,140,0.10), inset 0 1px 0 rgba(255,255,255,0.7)'
+          : '0 8px 18px rgba(140,120,200,0.25)',
+        fontSize: 14, lineHeight: 1.5,
+        color: isAsya ? T.ink : '#FFFFFF',
+        fontWeight: isAsya ? 400 : 500,
+      }}>{children}</div>
     </div>
   )
 }
 
-/* ─────────────── PRODUCT CARD ─────────────── */
-function ProductCard({
-  product, type = 'gold', coupon, onSave, saved,
-}: {
+/* ═══════════════ OPTION CHIPS ═══════════════ */
+function OptionChips({ options, onSelect }: { options: string[]; onSelect: (o: string) => void }) {
+  return (
+    <div className="flex flex-wrap gap-2 mt-2" style={{ marginLeft: 2 }}>
+      {options.map(opt => (
+        <button key={opt} onClick={() => onSelect(opt)} className="chip" style={{ fontSize: 13 }}>{opt}</button>
+      ))}
+    </div>
+  )
+}
+
+/* ═══════════════ PRODUCT CARD ═══════════════ */
+function ProductCard({ product, type = 'gold', coupon, onSave, saved }: {
   product: ProductData; type?: string; coupon?: string
   onSave?: (p: ProductData) => void; saved?: boolean
 }) {
-  const labels: Record<string, string> = {
-    gold: 'Sizin İçin Seçildi',
-    elegancia: 'Elegancia Premium',
-    home: 'Oda Kokusu Önerisi',
-    gift: 'Hediye Önerisi',
-  }
+  const labels: Record<string, string> = { gold: 'Sizin İçin Seçildi', elegancia: 'Elegancia Premium', home: 'Oda Kokusu', gift: 'Hediye Önerisi' }
   return (
-    <div className="product-card max-w-sm">
-      <div className="px-4 py-2.5 border-b border-white/40 flex items-center justify-between">
-        <span className="gold-badge">{labels[type] || labels.gold}</span>
+    <div className="product-card max-w-sm msg-in">
+      <div className="px-4 py-2.5 flex items-center justify-between" style={{ borderBottom: '1px solid rgba(255,255,255,0.5)' }}>
+        <span className="asya-badge">{labels[type] || labels.gold}</span>
         {onSave && type !== 'home' && (
-          <button
-            onClick={() => onSave(product)}
-            className="flex items-center gap-1.5 text-[11px] px-2.5 py-1 rounded-full transition-all"
+          <button onClick={() => onSave(product)} className="flex items-center gap-1.5 text-[11px] px-2.5 py-1 rounded-full transition-all"
             style={saved
-              ? { background: 'rgba(198,134,42,0.12)', color: '#C6862A', border: '1px solid rgba(198,134,42,0.3)' }
-              : { background: 'rgba(0,0,0,0.04)', color: '#6b6560', border: '1px solid rgba(0,0,0,0.08)' }}
-          >
-            {saved ? <>{I.check} <span>Gardırobumda</span></> : <>{I.heart} <span>Gardıroba Ekle</span></>}
+              ? { background: 'rgba(185,165,232,0.15)', color: '#5E5878', border: '1px solid rgba(185,165,232,0.3)' }
+              : { background: 'rgba(0,0,0,0.04)', color: '#8A85A1', border: '1px solid rgba(0,0,0,0.08)' }}>
+            {saved ? I.heartFill : I.heart}
+            <span>{saved ? 'Gardırobumda' : 'Kaydet'}</span>
           </button>
         )}
       </div>
@@ -147,28 +165,25 @@ function ProductCard({
         <div className="flex-shrink-0">
           {product.image_url
             ? <img src={product.image_url} alt={product.name} className="w-20 h-24 object-cover rounded-2xl" style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.10)' }} />
-            : <div className="w-20 h-24 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center text-2xl">
-                {type === 'home' ? '🕯️' : '🌸'}
-              </div>
+            : <div className="w-20 h-24 rounded-2xl flex items-center justify-center" style={{ background: 'linear-gradient(160deg, #E2D6F1, #FFFFFF)' }}><BottleGlyph size={36} hue="#E2D6F1" /></div>
           }
         </div>
         <div className="flex-1 min-w-0">
-          <p className="font-serif font-medium text-[#1a1a1a] text-[14px] leading-snug">{product.name}</p>
+          <p className="font-serif font-medium text-[14px] leading-snug" style={{ color: T.ink }}>{product.name}</p>
           {(product.top_notes?.length || product.heart_notes?.length) ? (
             <div className="mt-2 space-y-1">
-              {product.top_notes?.length ? <p className="text-[11px] text-[#6b6560]"><span className="text-[#b5afa8]">Üst · </span>{product.top_notes.slice(0,3).join(', ')}</p> : null}
-              {product.heart_notes?.length ? <p className="text-[11px] text-[#6b6560]"><span className="text-[#b5afa8]">Kalp · </span>{product.heart_notes.slice(0,3).join(', ')}</p> : null}
-              {product.base_notes?.length ? <p className="text-[11px] text-[#6b6560]"><span className="text-[#b5afa8]">Alt · </span>{product.base_notes.slice(0,3).join(', ')}</p> : null}
+              {product.top_notes?.length ? <p className="text-[11px]" style={{ color: T.inkSoft }}><span style={{ color: T.inkMuted }}>Üst · </span>{product.top_notes.slice(0,3).join(', ')}</p> : null}
+              {product.heart_notes?.length ? <p className="text-[11px]" style={{ color: T.inkSoft }}><span style={{ color: T.inkMuted }}>Kalp · </span>{product.heart_notes.slice(0,3).join(', ')}</p> : null}
+              {product.base_notes?.length ? <p className="text-[11px]" style={{ color: T.inkSoft }}><span style={{ color: T.inkMuted }}>Alt · </span>{product.base_notes.slice(0,3).join(', ')}</p> : null}
             </div>
           ) : null}
           {coupon && (
-            <div className="mt-3 px-3 py-2 rounded-xl" style={{ background: 'linear-gradient(135deg, rgba(198,134,42,0.08), rgba(224,160,64,0.08))', border: '1px solid rgba(198,134,42,0.2)' }}>
-              <p className="text-[10px] font-semibold tracking-wider uppercase" style={{ color: '#C6862A' }}>%10 İndirim Kodunuz</p>
-              <p className="font-mono font-bold tracking-widest text-[13px] text-[#1a1a1a] mt-0.5">{coupon}</p>
+            <div className="mt-3 px-3 py-2 rounded-xl" style={{ background: 'linear-gradient(135deg, rgba(185,165,232,0.10), rgba(159,180,224,0.10))', border: '1px solid rgba(185,165,232,0.25)' }}>
+              <p className="text-[10px] font-semibold tracking-wider uppercase" style={{ color: '#5E5878' }}>%10 İndirim Kodunuz</p>
+              <p className="font-mono font-bold tracking-widest text-[13px] mt-0.5" style={{ color: T.ink }}>{coupon}</p>
             </div>
           )}
-          <a href={product.web_url} target="_blank" rel="noopener noreferrer"
-            className="btn-luxury btn-gold mt-3 text-[12px] px-4 py-2 inline-flex items-center gap-1.5">
+          <a href={product.web_url} target="_blank" rel="noopener noreferrer" className="btn-primary mt-3 text-[12px] px-4 py-2 inline-flex items-center gap-1.5" style={{ padding: '8px 16px', fontSize: 12 }}>
             {type === 'home' ? 'İncele' : 'Hemen İncele'} {I.external}
           </a>
         </div>
@@ -177,139 +192,283 @@ function ProductCard({
   )
 }
 
-/* ─────────────── OPTION BUTTONS ─────────────── */
-function OptionButtons({ options, onSelect }: { options: string[]; onSelect: (o: string) => void }) {
+/* ═══════════════════════════════════════════════════════
+   SCREEN 1: WELCOME
+═══════════════════════════════════════════════════════ */
+function ScreenWelcome({ onAdvance }: { onAdvance: () => void }) {
+  const trackRef = useRef<HTMLDivElement>(null)
+  const [dragX, setDragX] = useState(0)
+  const [dragging, setDragging] = useState(false)
+
+  const onDown = (e: React.PointerEvent) => { setDragging(true); (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId) }
+  const onMove = (e: React.PointerEvent) => {
+    if (!dragging || !trackRef.current) return
+    const r = trackRef.current.getBoundingClientRect()
+    const x = Math.max(0, Math.min(r.width - 62, e.clientX - r.left - 31))
+    setDragX(x)
+  }
+  const onUp = () => {
+    if (!trackRef.current) return setDragging(false)
+    const r = trackRef.current.getBoundingClientRect()
+    if (dragX > r.width - 62 - 8) { setDragX(r.width - 62); setTimeout(() => { onAdvance(); setDragX(0) }, 160) }
+    else setDragX(0)
+    setDragging(false)
+  }
+
   return (
-    <div className="flex flex-wrap gap-2 mt-2 pl-[44px]">
-      {options.map(opt => (
-        <button key={opt} onClick={() => onSelect(opt)} className="chip">{opt}</button>
-      ))}
+    <div className="fixed inset-0 asya-bg flex flex-col items-center" style={{ paddingTop: 80 }}>
+      <div className="blob-extra" />
+
+      <p className="fade-up text-[11px] tracking-[0.28em] uppercase font-medium" style={{ color: T.inkMuted, position: 'relative', zIndex: 2 }}>
+        Elegance VIP · Koku Asistanı
+      </p>
+
+      {/* Portrait */}
+      <div className="fade-up relative z-10 mt-8" style={{ width: 280, height: 360, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', animationDelay: '0.1s' }}>
+        <div style={{ position: 'absolute', inset: -32, borderRadius: '50%', background: 'radial-gradient(ellipse at 50% 35%, rgba(244,238,252,0.90), transparent 65%)', filter: 'blur(14px)' }} />
+        <div className="floating relative z-10" style={{ width: 240, height: 320, borderRadius: 28, boxShadow: '0 30px 60px rgba(94,88,140,0.18), 0 0 0 1px rgba(255,255,255,0.6)', overflow: 'hidden', background: 'linear-gradient(160deg, #F0E9F7, #E3ECF5)' }}>
+          <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <AsyaPortrait size={220} />
+          </div>
+          <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 100, background: 'linear-gradient(to bottom, transparent, #FAFAFE 95%)', pointerEvents: 'none' }} />
+        </div>
+      </div>
+
+      <h1 className="fade-up font-serif font-light text-center mt-4" style={{ fontSize: 44, color: T.ink, letterSpacing: '-0.01em', lineHeight: 1.1, animationDelay: '0.15s', position: 'relative', zIndex: 2 }}>
+        ASYA ile Tanışın
+      </h1>
+      <p className="fade-up text-[13px] tracking-[0.18em] uppercase font-medium mt-1" style={{ color: T.inkSoft, animationDelay: '0.2s', position: 'relative', zIndex: 2 }}>
+        Koku Mimarı
+      </p>
+
+      <div className="flex-1" />
+
+      {/* Slide to start */}
+      <div ref={trackRef}
+        className="fade-up relative z-10"
+        style={{
+          width: 300, height: 68, marginBottom: 60, borderRadius: 999,
+          background: T.glassStrong, backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)',
+          border: `1px solid ${T.glassEdge}`, boxShadow: T.shadowSoft,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          userSelect: 'none', touchAction: 'none', animationDelay: '0.25s',
+        }}>
+        <span style={{ fontSize: 14, letterSpacing: '0.20em', color: T.inkSoft, textTransform: 'uppercase', fontWeight: 500, opacity: Math.max(0, 1 - dragX / 110) }}>
+          Başlamak için kaydır
+        </span>
+        <div style={{ position: 'absolute', left: 3, top: 3, height: 62, width: dragX + 62, borderRadius: 999, background: 'linear-gradient(90deg, rgba(185,165,232,0.45), rgba(159,180,224,0.45))', transition: dragging ? 'none' : 'width 0.25s ease', pointerEvents: 'none' }} />
+        <div onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}
+          style={{ position: 'absolute', left: 3 + dragX, top: 3, width: 62, height: 62, borderRadius: '50%', background: 'linear-gradient(145deg, #FFFFFF, #E8E2F0)', boxShadow: T.neoOut, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'grab', transition: dragging ? 'none' : 'left 0.25s ease' }}>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M7 5l6 6-6 6" stroke="#5E5878" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 5l6 6-6 6" stroke="#5E5878" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
     </div>
   )
 }
 
-/* ─────────────── KOKU GARDIROBU VIEW ─────────────── */
-function GardropView({
-  items,
-  onRemove,
-  onStartChat,
-}: {
-  items: GardropItem[]
-  onRemove: (name: string) => void
-  onStartChat: (mode: string) => void
+/* ═══════════════════════════════════════════════════════
+   SCREEN 2: DASHBOARD
+═══════════════════════════════════════════════════════ */
+const dashTiles = [
+  { icon: '✨', title: 'Koku Profilini', titleB: 'Keşfet', desc: '5 soruyla tam koku karakterin', mode: 'koku_testi' },
+  { icon: '🔍', title: 'Muadil', titleB: 'Bul', desc: 'Sauvage, Black Opium muadili', mode: 'muadil' },
+  { icon: '🎁', title: 'Hediye', titleB: 'Sihirbazı', desc: 'Kime, hangi ortam için?', mode: 'hediye' },
+  { icon: '🕯️', title: 'Ev', titleB: 'Kokusu', desc: '130ml Bambu Reed Diffuser', mode: 'ev_kokusu' },
+]
+
+function ScreenDashboard({ lead, onStartChat, onShowWardrobe, onShowFaq }: {
+  lead: Lead | null; onStartChat: (mode?: string) => void; onShowWardrobe: () => void; onShowFaq: () => void
 }) {
   return (
     <div className="flex-1 overflow-y-auto">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+      <div className="max-w-2xl mx-auto px-6 py-10">
 
-        {/* Header */}
-        <div className="flex items-center justify-between mb-8 fade-up">
-          <div>
-            <p className="text-[11px] font-medium tracking-[0.15em] uppercase mb-1" style={{ color: '#C6862A' }}>
-              Koleksiyonunuz
-            </p>
-            <h1 className="font-serif text-[28px] sm:text-[32px] font-light text-[#1a1a1a] leading-none">
-              Koku Gardırobum
-            </h1>
-            <p className="text-[#6b6560] text-[13px] mt-1">
-              {items.length > 0 ? `${items.length} ürün kaydedildi` : 'Henüz ürün eklenmedi'}
-            </p>
+        {/* Top bar */}
+        <div className="flex items-center justify-between mb-10 fade-up">
+          <div className="flex items-center gap-2 px-4 py-2.5 rounded-full" style={{ background: T.glassStrong, backdropFilter: 'blur(14px)', border: `1px solid ${T.glassEdge}`, boxShadow: '0 4px 12px rgba(94,88,140,0.08)', fontSize: 13, fontWeight: 500, color: T.ink }}>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#5E5878" strokeWidth="1.4" strokeLinecap="round"/></svg>
+            Koku Testi
           </div>
-          {items.length > 0 && (
-            <button
-              onClick={() => onStartChat('koku_testi')}
-              className="btn-luxury btn-gold text-[13px]"
-            >
-              ✨ Yeni Öneri Al
+          <div className="flex gap-2">
+            <button onClick={onShowWardrobe} className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: T.glassStrong, backdropFilter: 'blur(14px)', border: `1px solid ${T.glassEdge}`, boxShadow: '0 4px 12px rgba(94,88,140,0.08)', cursor: 'pointer', color: T.inkSoft }}>
+              {I.wardrobe}
             </button>
-          )}
+            <button onClick={onShowFaq} className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: T.glassStrong, backdropFilter: 'blur(14px)', border: `1px solid ${T.glassEdge}`, boxShadow: '0 4px 12px rgba(94,88,140,0.08)', cursor: 'pointer', color: T.inkSoft }}>
+              {I.info}
+            </button>
+          </div>
         </div>
 
-        {/* Empty state */}
-        {items.length === 0 ? (
-          <div className="glass-card p-12 text-center fade-up">
-            <div className="text-5xl mb-4">👜</div>
-            <p className="font-serif text-[20px] font-light text-[#1a1a1a] mb-2">Gardırobunuz boş</p>
-            <p className="text-[13px] text-[#6b6560] mb-6 max-w-xs mx-auto">
-              ASYA ile konuşarak size önerilen parfümleri buraya kaydedebilirsiniz.
-            </p>
-            <button onClick={() => onStartChat('koku_testi')} className="btn-luxury btn-gold">
-              ✨ Koku Keşfine Başla
+        {/* Hero text */}
+        <div className="fade-up mb-8" style={{ animationDelay: '0.05s' }}>
+          <h1 className="font-serif font-light" style={{ fontSize: 38, lineHeight: 1.1, color: T.ink, letterSpacing: '-0.01em', margin: 0 }}>
+            Selam{lead ? `, ${lead.name.split(' ')[0]}` : ''}, Ben{' '}
+            <em className="font-serif" style={{ fontStyle: 'italic' }}>ASYA</em>.<br/>
+            Bugün ruhunuzu<br/>yansıtacak kokuyu<br/>bulalım.
+          </h1>
+          <p className="mt-3 text-[13.5px] leading-relaxed" style={{ color: T.inkSoft }}>
+            Koku dünyanızı keşfetmek için bir seçenek belirleyin:
+          </p>
+        </div>
+
+        {/* Tiles */}
+        <div className="grid grid-cols-2 gap-3 mb-8 fade-up" style={{ animationDelay: '0.1s' }}>
+          {dashTiles.map((t, i) => (
+            <button key={i} onClick={() => onStartChat(t.mode)} className="tile p-4 text-left" style={{ height: 110 }}>
+              <div className="text-xl mb-2">{t.icon}</div>
+              <div className="font-medium text-[14px]" style={{ color: T.ink, lineHeight: 1.2 }}>{t.title}<br/>{t.titleB}</div>
             </button>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <button onClick={() => onStartChat()} className="fade-up w-full flex items-center justify-between px-6 rounded-full" style={{ height: 64, background: T.glassStrong, backdropFilter: 'blur(16px)', border: `1px solid ${T.glassEdge}`, boxShadow: T.shadowSoft, cursor: 'pointer', animationDelay: '0.15s' }}>
+          <span className="font-medium text-[15px]" style={{ color: T.ink }}>ASYA ile sohbete başla</span>
+          <div className="w-11 h-11 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(145deg, #FFFFFF, #E2DAEE)', boxShadow: T.neoOut }}>
+            <span style={{ color: T.inkSoft }}>{I.mic}</span>
           </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {items.map((item, i) => (
-              <div key={i} className="glass-card overflow-hidden fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                {/* Product image */}
-                <div className="relative h-44 bg-gradient-to-br from-amber-50 to-orange-50">
-                  {item.image_url ? (
-                    <img
-                      src={item.image_url}
-                      alt={item.name}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-4xl">🌸</div>
-                  )}
-                  {/* Remove button */}
-                  <button
-                    onClick={() => onRemove(item.name)}
-                    className="absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center transition-all"
-                    style={{ background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(8px)', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
-                    title="Kaldır"
-                  >
-                    <span style={{ color: '#9b8b7a' }}>{I.trash}</span>
-                  </button>
-                  {/* Code badge */}
-                  {item.code && (
-                    <div className="absolute bottom-3 left-3">
-                      <span className="gold-badge">{item.code}</span>
-                    </div>
-                  )}
-                </div>
+        </button>
+      </div>
+    </div>
+  )
+}
 
-                {/* Info */}
-                <div className="p-4">
-                  <p className="font-serif font-medium text-[#1a1a1a] text-[14px] leading-snug mb-1">{item.name}</p>
-                  <p className="text-[11px] text-[#b5afa8] mb-4">
-                    {new Date(item.addedAt).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' })} tarihinde eklendi
-                  </p>
+/* ═══════════════════════════════════════════════════════
+   REGISTER FORM (inside chat)
+═══════════════════════════════════════════════════════ */
+function RegisterForm({ onSubmit }: { onSubmit: (name: string, email: string) => void }) {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [loading, setLoading] = useState(false)
+  const valid = name.trim().length >= 2 && /.+@.+\..+/.test(email)
 
-                  {/* Actions */}
-                  <div className="flex gap-2">
-                    <a
-                      href={item.web_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-luxury btn-gold flex-1 justify-center text-[12px] py-2"
-                    >
-                      {I.cart} Sepete Ekle
-                    </a>
-                    <button
-                      onClick={() => onRemove(item.name)}
-                      className="btn-luxury btn-ghost px-3 py-2 text-[12px]"
-                      title="Kaldır"
-                    >
-                      {I.trash}
-                    </button>
-                  </div>
-                </div>
+  const submit = (e: React.FormEvent) => { e.preventDefault(); if (!valid) return; setLoading(true); onSubmit(name, email) }
+
+  return (
+    <div className="flex-1 flex flex-col items-center justify-center p-6 fade-up">
+      <div className="w-full max-w-sm">
+        <div className="text-center mb-6">
+          <div className="asya-avatar-glow inline-flex mb-4 floating">
+            <div className="rounded-full overflow-hidden" style={{ width: 72, height: 72 }}><AsyaPortrait size={72} /></div>
+          </div>
+          <h2 className="font-serif font-light text-[30px]" style={{ color: T.ink }}>
+            Önce <em style={{ fontStyle: 'italic' }}>kısaca tanışalım</em>
+          </h2>
+          <p className="text-[13px] mt-2 leading-relaxed" style={{ color: T.inkSoft }}>
+            Size özel koku önerileri ve Koku Gardırobu için adınızı ve e-postanızı paylaşır mısınız?
+          </p>
+        </div>
+
+        <form onSubmit={submit}>
+          <div className="p-6 rounded-3xl space-y-3" style={{ background: T.glassStrong, backdropFilter: 'blur(18px)', border: `1px solid ${T.glassEdge}`, boxShadow: '0 14px 36px rgba(94,88,140,0.14), inset 0 1px 0 rgba(255,255,255,0.85)' }}>
+            <div>
+              <label className="block text-[10px] tracking-[0.22em] font-semibold mb-1.5" style={{ color: T.inkMuted }}>İSİM</label>
+              <input value={name} onChange={e => setName(e.target.value)} placeholder="örn. Selin Yıldız" className="asya-input" style={{ borderRadius: 14, padding: '13px 16px' }} />
+            </div>
+            <div>
+              <label className="block text-[10px] tracking-[0.22em] font-semibold mb-1.5" style={{ color: T.inkMuted }}>E-POSTA</label>
+              <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="selin@örnek.com" className="asya-input" style={{ borderRadius: 14, padding: '13px 16px' }} />
+            </div>
+            <p className="text-[11px] leading-relaxed" style={{ color: T.inkMuted }}>
+              🔒 Bilgileriniz yalnızca koku önerileri için kullanılır.
+            </p>
+          </div>
+
+          <button type="submit" disabled={!valid || loading}
+            className="btn-primary w-full mt-4"
+            style={!valid ? { background: T.glassStrong, color: T.inkSoft, boxShadow: 'none', opacity: 0.7 } : {}}>
+            {loading ? 'Kaydediliyor...' : 'Sohbete Başla →'}
+          </button>
+        </form>
+      </div>
+    </div>
+  )
+}
+
+/* ═══════════════════════════════════════════════════════
+   SCREEN 4: KOKU GARDIROBUM
+═══════════════════════════════════════════════════════ */
+function ScreenWardrobe({ items, onRemove, onStartChat, lead }: {
+  items: GardropItem[]; onRemove: (name: string) => void; onStartChat: () => void; lead: Lead | null
+}) {
+  const userName = lead?.name.split(' ')[0] || 'Koleksiyonunuz'
+  return (
+    <div className="flex-1 overflow-y-auto">
+      <div className="max-w-2xl mx-auto px-6 py-8">
+        <div className="flex items-center justify-between mb-6 fade-up">
+          <div>
+            <p className="text-[11px] tracking-[0.28em] uppercase font-medium mb-1" style={{ color: T.inkMuted }}>{userName}'in Koleksiyonu</p>
+            <h1 className="font-serif font-light" style={{ fontSize: 36, color: T.ink, lineHeight: 1.05 }}>
+              Koku <em style={{ fontStyle: 'italic' }}>Gardırobum</em>
+            </h1>
+            <p className="text-[13px] mt-1" style={{ color: T.inkSoft }}>
+              {items.length > 0 ? `${items.length} koku kaydedildi` : 'Beğendiğin kokuları buraya kaydet — her zaman ulaşabilirsin.'}
+            </p>
+          </div>
+          {items.length > 0 && <button onClick={onStartChat} className="btn-primary" style={{ fontSize: 13, padding: '10px 20px' }}>Yeni Öneri Al</button>}
+        </div>
+
+        {/* Stats */}
+        {items.length > 0 && (
+          <div className="grid grid-cols-3 gap-3 mb-6 fade-up" style={{ animationDelay: '0.05s' }}>
+            {[{ v: items.length, l: 'koku' }, { v: new Set(items.map(i => i.category?.split(' · ')[0] || '?')).size, l: 'aile' }, { v: 3, l: 'mevsim' }].map((s, i) => (
+              <div key={i} className="glass-card-sm p-3 text-center">
+                <div className="font-serif text-[28px] font-light" style={{ color: T.ink, lineHeight: 1 }}>{s.v}</div>
+                <div className="text-[11px] tracking-[0.08em] uppercase mt-1" style={{ color: T.inkMuted }}>{s.l}</div>
               </div>
             ))}
           </div>
         )}
 
-        {/* Bottom CTA */}
-        {items.length > 0 && (
-          <div className="mt-8 glass-card p-5 flex items-center justify-between fade-up">
-            <div>
-              <p className="font-serif text-[16px] text-[#1a1a1a]">Daha fazla keşfetmek ister misiniz?</p>
-              <p className="text-[12px] text-[#6b6560] mt-0.5">ASYA yeni profil soruları sorarak başka öneriler de bulabilir.</p>
+        {/* Empty */}
+        {items.length === 0 && (
+          <div className="glass-card p-12 text-center fade-up">
+            <div className="mb-4"><BottleGlyph size={48} hue="#E2D6F1" /></div>
+            <p className="font-serif text-[22px] font-light mb-2" style={{ color: T.ink }}>Gardırobunuz boş</p>
+            <p className="text-[13px] mb-6 leading-relaxed" style={{ color: T.inkSoft }}>ASYA ile konuşarak size önerilen parfümleri buraya kaydedebilirsiniz.</p>
+            <button onClick={onStartChat} className="btn-primary">✨ Koku Keşfine Başla</button>
+          </div>
+        )}
+
+        {/* Items */}
+        <div className="space-y-3">
+          {items.map((item, i) => (
+            <div key={i} className="glass-card p-4 flex items-center gap-4 fade-up" style={{ animationDelay: `${i * 0.04}s` }}>
+              <div className="flex-shrink-0 w-14 h-16 rounded-2xl flex items-center justify-center" style={{ background: 'linear-gradient(160deg, #E2D6F1, #FFFFFF)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.9)' }}>
+                {item.image_url
+                  ? <img src={item.image_url} alt={item.name} className="w-full h-full object-cover rounded-2xl" />
+                  : <BottleGlyph size={32} hue="#FFFFFF" />
+                }
+              </div>
+              <div className="flex-1 min-w-0">
+                {item.category && <p className="text-[10px] tracking-[0.22em] font-semibold uppercase mb-0.5" style={{ color: T.inkMuted }}>{item.category}</p>}
+                <p className="font-serif font-medium text-[18px] leading-snug" style={{ color: T.ink }}>{item.name}</p>
+                <p className="text-[11px] mt-0.5" style={{ color: T.inkMuted }}>
+                  {new Date(item.addedAt).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' })} eklendi
+                </p>
+              </div>
+              <div className="flex gap-2 flex-shrink-0">
+                <a href={item.web_url} target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center gap-1.5" style={{ padding: '9px 14px', fontSize: 12 }}>
+                  {I.cart} Sepete Ekle
+                </a>
+                <button onClick={() => onRemove(item.name)} className="w-9 h-9 rounded-full flex items-center justify-center btn-ghost" style={{ padding: 0, color: T.inkMuted }}>
+                  {I.trash}
+                </button>
+              </div>
             </div>
-            <button onClick={() => onStartChat('koku_testi')} className="btn-luxury btn-gold flex-shrink-0 ml-4">
-              ✨ Devam Et
-            </button>
+          ))}
+        </div>
+
+        {items.length > 0 && (
+          <div className="glass-card p-5 flex items-center justify-between mt-6 fade-up">
+            <div>
+              <p className="font-serif text-[16px]" style={{ color: T.ink }}>Daha fazla keşfetmek ister misiniz?</p>
+              <p className="text-[12px] mt-0.5" style={{ color: T.inkSoft }}>ASYA yeni öneriler bulabilir.</p>
+            </div>
+            <button onClick={onStartChat} className="btn-primary flex-shrink-0 ml-4" style={{ fontSize: 13, padding: '10px 20px' }}>Devam Et →</button>
           </div>
         )}
       </div>
@@ -318,162 +477,116 @@ function GardropView({
 }
 
 /* ═══════════════════════════════════════════════════════
-   HOME BENTO
+   SCREEN 5: KOKU PROFİLİ
 ═══════════════════════════════════════════════════════ */
-function HomeScreen({
-  lead,
-  gardrop,
-  onStartMode,
-  onShowLead,
-  onShowGardrop,
-}: {
-  lead: Lead | null
-  gardrop: GardropItem[]
-  onStartMode: (mode: string) => void
-  onShowLead: () => void
-  onShowGardrop: () => void
-}) {
-  function go(mode: string) {
-    if (!lead) { onShowLead(); return }
-    onStartMode(mode)
-  }
-
+function ScreenProfile({ lead, onBack, coupon }: { lead: Lead | null; onBack: () => void; coupon?: string | null }) {
+  const name = lead?.name.split(' ')[0] || 'Siz'
+  const families = [
+    { label: 'Çiçeksi', pct: 38, color: '#C8B8E8' },
+    { label: 'Oryantal', pct: 24, color: '#B8CCE8' },
+    { label: 'Odunsu', pct: 20, color: '#C8D8E8' },
+    { label: 'Aromatik', pct: 12, color: '#D8C8E8' },
+    { label: 'Citrus', pct: 6, color: '#E8D8C8' },
+  ]
   return (
     <div className="flex-1 overflow-y-auto">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
-
-        {/* ASYA Hero */}
-        <div className="flex items-center gap-5 mb-8 fade-up">
-          <div className="asya-avatar-glow floating">
-            <div className="w-16 h-16 rounded-full overflow-hidden" style={{ boxShadow: '0 8px 32px rgba(198,134,42,0.20)' }}>
-              <AsyaPortrait size={64} />
-            </div>
-          </div>
+      <div className="max-w-2xl mx-auto px-6 py-8">
+        <div className="flex items-center gap-4 mb-8 fade-up">
+          <GlassPill onClick={onBack} icon={I.back}>Geri</GlassPill>
           <div>
-            <p className="text-[11px] font-medium tracking-[0.15em] uppercase mb-1" style={{ color: '#C6862A' }}>
-              Elegance VIP Perfume
-            </p>
-            <h1 className="font-serif text-[28px] sm:text-[34px] font-light text-[#1a1a1a] leading-none">
-              Merhaba{lead ? `, ${lead.name.split(' ')[0]}` : ''}! ✨
+            <p className="text-[11px] tracking-[0.22em] uppercase font-medium" style={{ color: T.inkMuted }}>Koku Portreniz</p>
+            <h1 className="font-serif font-light text-[30px]" style={{ color: T.ink }}>
+              {name}'in <em style={{ fontStyle: 'italic' }}>Koku Profili</em>
             </h1>
-            <p className="text-[#6b6560] text-[14px] mt-1">Bugün size nasıl bir koku eşliği yapabilirim?</p>
           </div>
         </div>
 
-        {/* Quick chips */}
-        <div className="flex flex-wrap gap-2 mb-7 fade-up" style={{ animationDelay: '0.1s' }}>
-          {[
-            { label: '🌸 Günlük & hafif', mode: 'koku_testi' },
-            { label: '🌙 Akşam & gece', mode: 'koku_testi' },
-            { label: '💼 İş & ofis', mode: 'koku_testi' },
-            { label: '🎁 Hediye seç', mode: 'hediye' },
-            { label: '🔍 Muadil sorgula', mode: 'muadil' },
-            { label: '🕯️ Ev kokusu', mode: 'ev_kokusu' },
-          ].map(c => (
-            <button key={c.label} className="chip" onClick={() => go(c.mode)}>{c.label}</button>
+        {/* Olfaktif aile grafiği */}
+        <div className="glass-card p-6 mb-5 fade-up" style={{ animationDelay: '0.05s' }}>
+          <p className="text-[11px] tracking-[0.22em] uppercase font-semibold mb-4" style={{ color: T.inkMuted }}>Olfaktif Ailelerin</p>
+          <div className="space-y-3">
+            {families.map((f, i) => (
+              <div key={i} className="flex items-center gap-3">
+                <div className="text-[13px] font-medium w-20 flex-shrink-0" style={{ color: T.inkSoft }}>{f.label}</div>
+                <div className="flex-1 h-2.5 rounded-full" style={{ background: 'rgba(0,0,0,0.05)', overflow: 'hidden' }}>
+                  <div className="h-full rounded-full transition-all" style={{ width: `${f.pct}%`, background: `linear-gradient(90deg, ${f.color}, ${f.color}bb)` }} />
+                </div>
+                <div className="text-[12px] font-medium w-8 text-right" style={{ color: T.ink }}>{f.pct}%</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Kupon */}
+        {coupon && (
+          <div className="fade-up mb-5 p-5 rounded-3xl relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #4a3870, #2e4a70)', animationDelay: '0.1s' }}>
+            <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 0% 0%, rgba(255,255,255,0.15), transparent 60%)', pointerEvents: 'none' }} />
+            <p className="text-[11px] tracking-[0.22em] uppercase font-semibold mb-1" style={{ color: 'rgba(255,255,255,0.7)' }}>ASYA'ya Özel Hediye</p>
+            <p className="font-serif text-[20px] font-light text-white mb-2">İlk Kokunuzda %10 İndirim</p>
+            <div className="flex items-center gap-4">
+              <div className="px-4 py-2 rounded-xl border border-dashed border-white/30 font-mono font-bold text-[16px] tracking-widest text-white">{coupon}</div>
+              <button onClick={() => navigator.clipboard.writeText(coupon)} className="text-[12px] font-medium text-white/80 hover:text-white transition">Kopyala</button>
+            </div>
+            <p className="text-[11px] mt-2" style={{ color: 'rgba(255,255,255,0.5)' }}>3 gün geçerli · Tek kullanım</p>
+          </div>
+        )}
+
+        {/* Oda kokusu cross-sell */}
+        <div className="glass-card p-5 fade-up" style={{ animationDelay: '0.15s' }}>
+          <p className="text-[11px] tracking-[0.22em] uppercase font-semibold mb-3" style={{ color: T.inkMuted }}>Profilinizi Tamamlayın · Ev Koleksiyonu</p>
+          <div className="flex items-center gap-4">
+            <div className="flex-shrink-0 w-14 h-16 rounded-2xl flex items-center justify-center" style={{ background: 'linear-gradient(160deg, #E2D6F1, #FFFFFF)' }}>
+              <span className="text-2xl">🕯️</span>
+            </div>
+            <div className="flex-1">
+              <div className="asya-badge mb-1">%92 Uyum</div>
+              <p className="font-serif text-[17px]" style={{ color: T.ink }}>Ev Kokusu Önerisi</p>
+              <p className="text-[12px] mt-1" style={{ color: T.inkSoft }}>Profilinize uygun bambu reed diffuser</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/* ═══════════════════════════════════════════════════════
+   SCREEN 6: SSS / HAKKIMIZDA
+═══════════════════════════════════════════════════════ */
+const faqChips = ['Kargo ne kadar sürer?', 'İade koşulları?', 'EDP ile EDT farkı?', 'Numune isteyebilir miyim?', 'Hediye paketi yapıyor musunuz?', 'Kalıcılık nasıl artırılır?', 'VIP üyelik nedir?']
+
+function ScreenFaq({ onBack, onStartChat }: { onBack: () => void; onStartChat: () => void }) {
+  return (
+    <div className="flex-1 overflow-y-auto">
+      <div className="max-w-2xl mx-auto px-6 py-8">
+        <div className="flex items-center gap-4 mb-8 fade-up">
+          <GlassPill onClick={onBack} icon={I.back}>Geri</GlassPill>
+          <div>
+            <p className="text-[11px] tracking-[0.22em] uppercase font-medium" style={{ color: T.inkMuted }}>Hakkımızda · SSS</p>
+            <h1 className="font-serif font-light text-[30px]" style={{ color: T.ink }}>Bize <em style={{ fontStyle: 'italic' }}>sorun</em>.</h1>
+          </div>
+        </div>
+        <p className="text-[13.5px] leading-relaxed mb-8 fade-up" style={{ color: T.inkSoft, animationDelay: '0.05s' }}>
+          Elegance VIP, kargo, üyelik, numune veya niş parfümler hakkında aklınızdaki her soruyu ASYA yanıtlasın.
+        </p>
+        <p className="text-[11px] tracking-[0.22em] uppercase font-semibold mb-4 fade-up" style={{ color: T.inkMuted, animationDelay: '0.1s' }}>Popüler Sorular</p>
+        <div className="flex flex-wrap gap-2 mb-8 fade-up" style={{ animationDelay: '0.12s' }}>
+          {faqChips.map((q, i) => (
+            <button key={i} onClick={onStartChat} className="chip" style={{ fontSize: 13 }}>{q}</button>
           ))}
         </div>
-
-        {/* BENTO GRID */}
-        <div className="bento-grid fade-up" style={{ animationDelay: '0.2s' }}>
-
-          {/* Featured: Koku Profili */}
-          <div className="bento-featured glass-card p-6 cursor-pointer"
-            onClick={() => go('koku_testi')}
-            style={{ background: 'linear-gradient(135deg, rgba(255,249,245,0.9) 0%, rgba(255,248,240,0.85) 100%)' }}>
-            <div className="flex items-start justify-between mb-4">
-              <div className="w-11 h-11 rounded-2xl flex items-center justify-center text-xl"
-                style={{ background: 'linear-gradient(135deg, rgba(198,134,42,0.12), rgba(224,160,64,0.08))' }}>
-                ✨
-              </div>
-              <span className="text-[11px] text-[#b5afa8] font-medium">5 Soru · 2 dk</span>
-            </div>
-            <p className="font-serif text-[22px] font-light text-[#1a1a1a] leading-snug mb-2">
-              Koku Profilini<br/>Keşfet
-            </p>
-            <p className="text-[13px] text-[#6b6560] leading-relaxed mb-5">
-              5 kısa soruyla tam koku karakterini bulalım. Odunsu & Maskülen mi, Çiçeksi & Modern mi — seninle konuşarak anlıyorum.
-            </p>
-            <div className="flex gap-2 flex-wrap mb-5">
-              {['Fresh', 'Odunsu', 'Çiçeksi', 'Oriental', 'Gourmand'].map(t => (
-                <span key={t} className="px-3 py-1 rounded-full text-[11px] border"
-                  style={{ borderColor: 'rgba(198,134,42,0.2)', color: '#C6862A', background: 'rgba(198,134,42,0.05)' }}>
-                  {t}
-                </span>
-              ))}
-            </div>
-            <button className="btn-luxury btn-gold" onClick={e => { e.stopPropagation(); go('koku_testi') }}>
-              Teste Başla →
-            </button>
-          </div>
-
-          {/* Muadil */}
-          <div className="bento-side glass-card p-6 cursor-pointer" onClick={() => go('muadil')}
-            style={{ background: 'rgba(248,250,255,0.85)' }}>
-            <div className="w-11 h-11 rounded-2xl flex items-center justify-center text-xl mb-4"
-              style={{ background: 'rgba(99,102,241,0.08)' }}>
-              🔍
-            </div>
-            <p className="font-serif text-[20px] font-light text-[#1a1a1a] mb-2">Muadil Sorgula</p>
-            <p className="text-[13px] text-[#6b6560] leading-relaxed mb-4">
-              Sauvage mı, Black Opium mu? Sevdiğin lüks parfümün en yakın karşılığını anında buluyorum.
-            </p>
-            <div className="flex items-center gap-2 px-3 py-2 rounded-xl text-[12px] text-[#b5afa8]"
-              style={{ background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(0,0,0,0.06)' }}>
-              {I.search} <span>Parfüm adı yaz...</span>
-            </div>
-          </div>
-
-          {/* Hediye */}
-          <div className="bento-third glass-card p-5 cursor-pointer" onClick={() => go('hediye')}
-            style={{ background: 'linear-gradient(135deg, rgba(255,245,250,0.90), rgba(255,240,248,0.85))' }}>
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center text-lg mb-3"
-              style={{ background: 'rgba(236,72,153,0.06)' }}>
-              🎁
-            </div>
-            <p className="font-serif text-[17px] font-light text-[#1a1a1a] mb-1">Hediye Sihirbazı</p>
-            <p className="text-[12px] text-[#6b6560] mb-3">Kime, hangi durum? Nokta atışı öneri.</p>
-            <button className="btn-luxury btn-ghost text-[12px] px-3 py-2">Başla →</button>
-          </div>
-
-          {/* Ev Kokusu */}
-          <div className="bento-third glass-card p-5 cursor-pointer" onClick={() => go('ev_kokusu')}
-            style={{ background: 'linear-gradient(135deg, rgba(255,252,240,0.90), rgba(255,249,230,0.85))' }}>
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center text-lg mb-3"
-              style={{ background: 'rgba(234,179,8,0.08)' }}>
-              🕯️
-            </div>
-            <p className="font-serif text-[17px] font-light text-[#1a1a1a] mb-1">Ev Kokusu Bul</p>
-            <p className="text-[12px] text-[#6b6560] mb-3">130ml Bambu Reed Diffuser — evinize ruh katın.</p>
-            <button className="btn-luxury btn-ghost text-[12px] px-3 py-2">Keşfet →</button>
-          </div>
-
-          {/* Gardrop */}
-          <div className="bento-third glass-card p-5 cursor-pointer" onClick={onShowGardrop}
-            style={{ background: 'rgba(248,255,252,0.85)' }}>
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center text-lg mb-3"
-              style={{ background: 'rgba(34,197,94,0.07)' }}>
-              👜
-            </div>
-            <p className="font-serif text-[17px] font-light text-[#1a1a1a] mb-1">Koku Gardırobum</p>
-            {gardrop.length > 0 ? (
-              <div className="space-y-1.5">
-                {gardrop.slice(0, 3).map((g, i) => (
-                  <div key={i} className="flex items-center gap-2 text-[12px] text-[#6b6560]">
-                    <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#C6862A' }} />
-                    <span className="truncate">{g.name}</span>
-                  </div>
-                ))}
-                {gardrop.length > 3 && (
-                  <p className="text-[11px] text-[#b5afa8]">+{gardrop.length - 3} ürün daha</p>
-                )}
-                <button className="btn-luxury btn-ghost text-[12px] px-3 py-1.5 mt-1">Tümünü Gör →</button>
-              </div>
-            ) : (
-              <p className="text-[12px] text-[#b5afa8]">Beğendiğin kokuları buraya kaydet</p>
-            )}
-          </div>
-
+        <div className="glass-card p-6 fade-up" style={{ animationDelay: '0.15s' }}>
+          <ChatBubble from="user">Elegance VIP üyeliğinin avantajları nedir?</ChatBubble>
+          <ChatBubble from="asya">Elegance VIP üyeleri her siparişte %10 koleksiyon indirimi, ücretsiz koku danışmanlığı ve her sezon 2 ücretsiz numune kazanır. 💜</ChatBubble>
+          <ChatBubble from="asya">✨ Ayrıca yıllık özel bir parfüm seansına davet edilirsiniz — ister mağazada, ister online.</ChatBubble>
+        </div>
+        <button onClick={onStartChat} className="btn-primary w-full mt-6 fade-up" style={{ animationDelay: '0.2s' }}>
+          ASYA'ya Sor →
+        </button>
+        <div className="text-center mt-6 fade-up" style={{ animationDelay: '0.22s' }}>
+          <a href="https://www.elegancevipperfume.com" target="_blank" rel="noopener noreferrer" className="text-[12px] hover:opacity-70 transition" style={{ color: T.inkMuted }}>
+            www.elegancevipperfume.com
+          </a>
         </div>
       </div>
     </div>
@@ -484,39 +597,30 @@ function HomeScreen({
    MAIN COMPONENT
 ═══════════════════════════════════════════════════════ */
 export default function ChatPage() {
+  const [screen, setScreen] = useState<Screen>('welcome')
+  const [chatPhase, setChatPhase] = useState<'register' | 'chat'>('register')
+  const [chatMode, setChatMode] = useState<string>('koku_testi')
   const [lead, setLead] = useState<Lead | null>(null)
-  const [phase, setPhase] = useState<'home' | 'lead' | 'chat' | 'gardrop'>('home')
-  const [activeNav, setActiveNav] = useState('asistan')
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [coupon, setCoupon] = useState<string | null>(null)
-  const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [pendingMode, setPendingMode] = useState<string | null>(null)
-  const [gardrop, setGardrop] = useState<GardropItem[]>([])
   const [emailSent, setEmailSent] = useState(false)
+  const [gardrop, setGardrop] = useState<GardropItem[]>([])
+  const [sidebarOpen, setSidebarOpen] = useState(false)
   const bottomRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLTextAreaElement>(null)
 
-  // Load gardrop from localStorage on mount (avoid SSR mismatch)
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem('asya_gardrop')
-      if (saved) setGardrop(JSON.parse(saved))
-    } catch {}
+    try { const s = localStorage.getItem('asya_gardrop'); if (s) setGardrop(JSON.parse(s)) } catch {}
   }, [])
 
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }, [messages, loading])
+  useEffect(() => { bottomRef.current?.scrollIntoView({ behavior: 'smooth' }) }, [messages, loading])
 
   const saveToGardrop = useCallback((product: ProductData) => {
     setGardrop(prev => {
       if (prev.some(g => g.name === product.name)) return prev
-      const updated: GardropItem[] = [
-        { name: product.name, image_url: product.image_url, web_url: product.web_url, woo_id: product.woo_id, code: product.code, addedAt: new Date().toISOString() },
-        ...prev,
-      ]
+      const updated: GardropItem[] = [{ name: product.name, image_url: product.image_url, web_url: product.web_url, woo_id: product.woo_id, code: product.code, addedAt: new Date().toISOString() }, ...prev]
       try { localStorage.setItem('asya_gardrop', JSON.stringify(updated)) } catch {}
       return updated
     })
@@ -532,192 +636,104 @@ export default function ChatPage() {
 
   const isInGardrop = useCallback((name: string) => gardrop.some(g => g.name === name), [gardrop])
 
-  async function handleLead(name: string, email: string) {
+  async function handleRegister(name: string, email: string) {
     try {
-      const res = await fetch('/api/save-lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email }),
-      })
+      const res = await fetch('/api/save-lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name, email }) })
       const data = await res.json()
-      const newLead: Lead = { name, email, lead_id: data.lead_id, session_id: data.session_id }
-      setLead(newLead)
-      if (pendingMode) { startMode(pendingMode, newLead); setPendingMode(null) }
-      else setPhase('home')
+      setLead({ name, email, lead_id: data.lead_id || '', session_id: data.session_id || '' })
     } catch {
-      // fallback — still proceed
-      const newLead: Lead = { name, email, lead_id: '', session_id: '' }
-      setLead(newLead)
-      if (pendingMode) { startMode(pendingMode, newLead); setPendingMode(null) }
-      else setPhase('home')
+      setLead({ name, email, lead_id: '', session_id: '' })
     }
+    startChatMessages(chatMode, name)
+    setChatPhase('chat')
   }
 
-  function startMode(mode: string, resolvedLead?: Lead) {
-    const activeLead = resolvedLead || lead
-    if (!activeLead) { setPendingMode(mode); setPhase('lead'); return }
-    setPhase('chat')
-    setSidebarOpen(false)
-    setEmailSent(false)
-    setActiveNav(mode === 'hediye' ? 'hediye' : mode === 'muadil' ? 'muadil' : mode === 'gardrop' ? 'gardrop' : 'asistan')
-
+  function startChatMessages(mode: string, userName?: string) {
+    const n = userName || lead?.name.split(' ')[0] || ''
     const intros: Record<string, { text: string; options?: string[] }> = {
-      koku_testi: {
-        text: `Harika, seninle birlikte mükemmel kokuyu bulacağız! ✨\n\nHemen başlayalım — bu parfüm kim için?`,
-        options: ['Kendim için (Kadın)', 'Kendim için (Erkek)', 'Partnerim için (Kadın)', 'Partnerim için (Erkek)'],
-      },
-      muadil: {
-        text: 'Hangi parfümün muadilini arıyorsun? 🔍 Marka ve ismi yaz, katalogumuzdan en yakın alternatifi saniyeler içinde bulayım.',
-      },
-      soru: {
-        text: 'Parfümler hakkında ne merak ediyorsun? EDP/EDT farkı, kalıcılık, mevsim seçimi — her şeyi sorabilirsin! 😊',
-      },
-      hediye: {
-        text: 'Ne güzel bir düşünce! 🎁 Çok doğru kişiye geldik — birlikte mükemmel hediyeyi bulacağız.\n\nKime hediye alıyorsunuz?',
-        options: ['Kadın için', 'Erkek için', 'Çift hediyesi', 'Sürpriz — fark etmez'],
-      },
-      ev_kokusu: {
-        text: 'Evinize kişilik katacak bir koku arıyoruz 🕯️ Harika!\n\nEvinizde hangi ambiyansı yaratmak istersiniz?',
-        options: ['Ferah & Temiz', 'Çiçeksi & Romantic', 'Odunsu & Cozy', 'Egzotik & Güçlü'],
-      },
+      koku_testi: { text: `Tanıştığımıza memnun oldum${n ? `, ${n}` : ''} 💜 Birlikte mükemmel kokuyu bulacağız!\n\nHemen başlayalım — bu parfüm kim için?`, options: ['Kendim için (Kadın)', 'Kendim için (Erkek)', 'Partnerim için (Kadın)', 'Partnerim için (Erkek)'] },
+      muadil: { text: `Merhaba${n ? ` ${n}` : ''}! 🔍 Hangi parfümün muadilini arıyorsunuz? Marka ve ismi yazın, hemen bulayım.` },
+      hediye: { text: `Çok güzel bir düşünce! 🎁 Birlikte en güzel hediyeyi bulacağız.\n\nKime hediye alıyorsunuz?`, options: ['Kadın için', 'Erkek için', 'Çift hediyesi', 'Sürpriz'] },
+      ev_kokusu: { text: `Evinize ruh katacak bir koku arıyoruz 🕯️\n\nHangi ambiyansı yaratmak istersiniz?`, options: ['Ferah & Temiz', 'Çiçeksi & Romantik', 'Odunsu & Cozy', 'Egzotik & Güçlü'] },
     }
     const intro = intros[mode] || { text: 'Nasıl yardımcı olabilirim? 😊' }
     setMessages([{ role: 'assistant', content: intro.text, options: intro.options }])
+  }
+
+  function goToChat(mode = 'koku_testi') {
+    setChatMode(mode)
+    setEmailSent(false)
+    if (!lead) { setChatPhase('register'); setScreen('chat'); return }
+    setChatPhase('chat')
+    startChatMessages(mode)
+    setScreen('chat')
   }
 
   async function send(text: string) {
     if (!text.trim() || loading) return
     const userMsg: Message = { role: 'user', content: text }
     const updated = [...messages.map(m => ({ ...m, options: undefined })), userMsg]
-    setMessages(updated)
-    setInput('')
-    setLoading(true)
-
+    setMessages(updated); setInput(''); setLoading(true)
     try {
-      const res = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: updated.map(m => ({ role: m.role, content: m.content })) }),
-      })
+      const res = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: updated.map(m => ({ role: m.role, content: m.content })) }) })
       const data = await res.json()
+      const newMsg: Message = { role: 'assistant', content: data.output || '...', type: data.type, options: data.options }
+      if (data.product) newMsg.product = data.product
 
-      const newMsg: Message = {
-        role: 'assistant',
-        content: data.output || '...',
-        type: data.type,
-        options: data.options,
-      }
-
-      if (data.product && (data.type === 'recommendation' || data.type === 'elegancia' || data.type === 'home')) {
-        newMsg.product = data.product
-      }
-
-      // Trigger email on first Gold recommendation
       if (data.type === 'recommendation' && data.product && lead && !emailSent) {
         setEmailSent(true)
-        fetch('/api/send-email', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name: lead.name,
-            email: lead.email,
-            lead_id: lead.lead_id,
-            session_id: lead.session_id,
-            gold_name: data.product.name,
-            gold_url: data.product.web_url,
-            gold_woo_id: data.product.woo_id,
-            gold_image: data.product.image_url,
-            gold_code: data.product.code,
-            scent_profile: data.scent_profile || {},
-            scent_story: data.output,
-          }),
-        })
-          .then(r => r.json())
-          .then(d => { if (d.coupon_code) setCoupon(d.coupon_code) })
-          .catch(() => {})
+        fetch('/api/send-email', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: lead.name, email: lead.email, lead_id: lead.lead_id, session_id: lead.session_id, gold_name: data.product.name, gold_url: data.product.web_url, gold_woo_id: data.product.woo_id, gold_image: data.product.image_url, gold_code: data.product.code, scent_profile: data.scent_profile || {}, scent_story: data.output }) })
+          .then(r => r.json()).then(d => { if (d.coupon_code) setCoupon(d.coupon_code) }).catch(() => {})
       }
-
       setMessages(prev => [...prev, newMsg])
-    } catch {
-      setMessages(prev => [...prev, { role: 'assistant', content: 'Bir sorun oluştu, tekrar deneyin 😊' }])
-    } finally {
-      setLoading(false)
-      inputRef.current?.focus()
-    }
+    } catch { setMessages(prev => [...prev, { role: 'assistant', content: 'Bir sorun oluştu, tekrar deneyin 😊' }]) }
+    finally { setLoading(false); inputRef.current?.focus() }
   }
 
-  function handleKey(e: React.KeyboardEvent<HTMLTextAreaElement>) {
-    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(input) }
-  }
-
-  function newChat() {
-    setMessages([])
-    setPhase('home')
-    setInput('')
-    setCoupon(null)
-    setEmailSent(false)
-    setActiveNav('asistan')
-    setSidebarOpen(false)
-  }
+  function handleKey(e: React.KeyboardEvent<HTMLTextAreaElement>) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(input) } }
 
   const navItems = [
-    { id: 'asistan', label: 'Asistan', icon: I.chat, action: () => { setActiveNav('asistan'); newChat() } },
-    { id: 'hediye', label: 'Hediye Sihirbazı', icon: I.gift, action: () => startMode('hediye') },
-    { id: 'muadil', label: 'Muadil Bul', icon: I.search, action: () => startMode('muadil') },
-    { id: 'ev_kokusu', label: 'Ev Kokusu', icon: I.note, action: () => startMode('ev_kokusu') },
-    {
-      id: 'gardrop',
-      label: `Gardırobum${gardrop.length > 0 ? ` (${gardrop.length})` : ''}`,
-      icon: I.wardrobe,
-      action: () => { setActiveNav('gardrop'); setPhase('gardrop'); setSidebarOpen(false) },
-    },
-    { id: 'katalog', label: 'Ürünlerimiz', icon: I.spray, action: () => window.open('https://www.elegancevipperfume.com', '_blank') },
+    { id: 'dashboard' as Screen, label: 'Ana Sayfa', icon: I.home },
+    { id: 'chat' as Screen, label: 'Sohbet', icon: I.chat, action: () => goToChat() },
+    { id: 'wardrobe' as Screen, label: `Gardırobum${gardrop.length > 0 ? ` (${gardrop.length})` : ''}`, icon: I.wardrobe },
+    { id: 'profile' as Screen, label: 'Koku Profili', icon: I.profile },
+    { id: 'faq' as Screen, label: 'Yardım', icon: I.info },
   ]
 
   /* ── RENDER ── */
+  if (screen === 'welcome') {
+    return <ScreenWelcome onAdvance={() => setScreen('dashboard')} />
+  }
+
   return (
-    <div className="fixed inset-0 flex flex-col luxury-bg">
+    <div className="fixed inset-0 flex flex-col asya-bg">
+      <div className="blob-extra" />
 
       {/* TOP NAV */}
-      <nav className="flex-shrink-0 z-30 flex items-center gap-3 px-4 sm:px-6 py-3"
-        style={{ background: 'rgba(255,255,255,0.55)', backdropFilter: 'blur(20px)', borderBottom: '1px solid rgba(255,255,255,0.5)' }}>
-
-        <button className="lg:hidden p-1.5 rounded-xl text-[#6b6560] transition hover:bg-white/60" onClick={() => setSidebarOpen(!sidebarOpen)}>
-          {I.menu}
-        </button>
-
+      <nav className="flex-shrink-0 z-30 flex items-center gap-3 px-4 sm:px-6 py-3" style={{ background: 'rgba(255,255,255,0.55)', backdropFilter: 'blur(20px)', borderBottom: '1px solid rgba(255,255,255,0.5)' }}>
+        <button className="lg:hidden p-1.5 rounded-xl transition" style={{ color: T.inkSoft }} onClick={() => setSidebarOpen(!sidebarOpen)}>{I.menu}</button>
         <div className="flex items-center gap-2.5 flex-shrink-0">
-          <div className="w-8 h-8 rounded-full overflow-hidden" style={{ boxShadow: '0 0 12px rgba(198,134,42,0.2)' }}>
-            <AsyaPortrait size={32} />
-          </div>
+          <div className="rounded-full overflow-hidden" style={{ width: 32, height: 32 }}><AsyaPortrait size={32} /></div>
           <div className="hidden sm:block">
-            <p className="font-serif text-[15px] font-medium text-[#1a1a1a] leading-none">ASYA</p>
-            <p className="text-[10px] tracking-wider text-[#b5afa8] mt-0.5">Koku Mimarı</p>
+            <p className="font-serif font-medium leading-none" style={{ fontSize: 15, color: T.ink }}>ASYA</p>
+            <p className="text-[10px] tracking-wider mt-0.5" style={{ color: T.inkMuted }}>Koku Mimarı</p>
           </div>
         </div>
-
-        <div className="hidden lg:flex items-center gap-0.5 mx-auto">
-          {[
-            { l: 'Ana Sayfa', fn: newChat },
-            { l: 'Muadil Bul', fn: () => startMode('muadil') },
-            { l: 'Hediye Seç', fn: () => startMode('hediye') },
-            { l: 'Koku Testi', fn: () => startMode('koku_testi') },
-            { l: `Gardırobum${gardrop.length > 0 ? ` (${gardrop.length})` : ''}`, fn: () => { setActiveNav('gardrop'); setPhase('gardrop') } },
-          ].map(item => (
-            <button key={item.l} onClick={item.fn}
-              className="px-4 py-2 rounded-xl text-[13px] text-[#6b6560] font-medium transition-all hover:bg-white/60 hover:text-[#C6862A]">
-              {item.l}
+        <div className="hidden lg:flex items-center gap-1 mx-auto">
+          {navItems.map(item => (
+            <button key={item.id} onClick={item.action ? item.action : () => setScreen(item.id)}
+              className="px-4 py-2 rounded-xl text-[13px] font-medium transition-all"
+              style={{ color: screen === item.id ? '#5E5878' : T.inkMuted, background: screen === item.id ? 'rgba(185,165,232,0.12)' : 'transparent', fontFamily: 'var(--font-inter), sans-serif' }}>
+              {item.label}
             </button>
           ))}
         </div>
-
         <div className="ml-auto flex items-center gap-2">
-          <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium"
-            style={{ background: 'rgba(198,134,42,0.08)', border: '1px solid rgba(198,134,42,0.15)', color: '#C6862A' }}>
+          <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium" style={{ background: 'rgba(185,165,232,0.10)', border: '1px solid rgba(185,165,232,0.20)', color: '#5E5878' }}>
             <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" /> Çevrimiçi
           </div>
-          {phase === 'chat' && (
-            <button onClick={newChat} className="btn-luxury btn-ghost text-[12px] px-3 py-1.5 gap-1.5">
+          {screen === 'chat' && (
+            <button onClick={() => { setMessages([]); setChatPhase('register'); setScreen('dashboard') }} className="btn-ghost text-[12px]" style={{ padding: '8px 14px' }}>
               {I.plus} Yeni
             </button>
           )}
@@ -726,51 +742,42 @@ export default function ChatPage() {
 
       {/* BODY */}
       <div className="flex flex-1 min-h-0">
-
-        {/* Mobile overlay */}
-        {sidebarOpen && (
-          <div className="fixed inset-0 bg-black/20 z-20 lg:hidden backdrop-blur-sm" onClick={() => setSidebarOpen(false)} />
-        )}
+        {sidebarOpen && <div className="fixed inset-0 bg-black/15 z-20 lg:hidden backdrop-blur-sm" onClick={() => setSidebarOpen(false)} />}
 
         {/* SIDEBAR */}
         <aside className={`fixed lg:static inset-y-0 left-0 z-30 flex flex-col w-56 flex-shrink-0 transition-transform duration-250 lg:translate-x-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
           style={{ background: 'rgba(255,255,255,0.65)', backdropFilter: 'blur(24px)', borderRight: '1px solid rgba(255,255,255,0.5)' }}>
-
           <div className="p-5" style={{ borderBottom: '1px solid rgba(255,255,255,0.5)' }}>
             <div className="flex flex-col items-center text-center gap-3">
-              <div className="asya-avatar-glow">
-                <div className="w-16 h-16 rounded-full overflow-hidden"><AsyaPortrait size={64} /></div>
+              <div className="asya-avatar-glow floating">
+                <div className="rounded-full overflow-hidden" style={{ width: 64, height: 64 }}><AsyaPortrait size={64} /></div>
               </div>
               <div>
-                <p className="font-serif text-[16px] font-medium text-[#1a1a1a]">ASYA</p>
-                <p className="text-[11px] text-[#b5afa8] mt-0.5">Koku Mimarı</p>
-                <p className="text-[10px] text-[#b5afa8]">Elegance VIP Perfume</p>
+                <p className="font-serif font-medium" style={{ fontSize: 16, color: T.ink }}>ASYA</p>
+                <p className="text-[11px] mt-0.5" style={{ color: T.inkMuted }}>Koku Mimarı</p>
               </div>
             </div>
           </div>
-
           <nav className="flex-1 p-3 space-y-0.5 overflow-y-auto">
             {navItems.map(item => (
-              <button key={item.id} onClick={item.action} className="nav-item w-full"
-                style={activeNav === item.id ? { color: '#C6862A', background: 'rgba(198,134,42,0.08)' } : {}}>
+              <button key={item.id} onClick={() => { item.action ? item.action() : setScreen(item.id); setSidebarOpen(false) }}
+                className={`nav-item ${screen === item.id ? 'active' : ''}`}>
                 {item.icon}<span>{item.label}</span>
               </button>
             ))}
           </nav>
-
           <div className="p-3" style={{ borderTop: '1px solid rgba(255,255,255,0.5)' }}>
-            <button onClick={newChat} className="btn-luxury btn-gold w-full justify-center py-2.5 text-[13px]">
+            <button onClick={() => goToChat()} className="btn-primary w-full" style={{ fontSize: 13, padding: '10px 16px' }}>
               {I.plus} Yeni Konuşma
             </button>
             {lead && (
               <div className="flex items-center gap-2.5 px-2 py-2.5 mt-2">
-                <div className="w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-semibold text-white flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg, #C6862A, #e0a040)' }}>
+                <div className="w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-semibold text-white flex-shrink-0" style={{ background: T.accent }}>
                   {lead.name.charAt(0).toUpperCase()}
                 </div>
                 <div className="min-w-0">
-                  <p className="text-[12px] font-medium text-[#1a1a1a] truncate">{lead.name}</p>
-                  <p className="text-[10px] text-[#b5afa8] truncate">{lead.email}</p>
+                  <p className="text-[12px] font-medium truncate" style={{ color: T.ink }}>{lead.name}</p>
+                  <p className="text-[10px] truncate" style={{ color: T.inkMuted }}>{lead.email}</p>
                 </div>
               </div>
             )}
@@ -778,130 +785,93 @@ export default function ChatPage() {
         </aside>
 
         {/* MAIN */}
-        <div className="flex-1 flex flex-col min-w-0 min-h-0">
+        <div className="flex-1 flex flex-col min-w-0 min-h-0 relative z-10">
 
-          {/* HOME */}
-          {phase === 'home' && (
-            <HomeScreen
-              lead={lead}
-              gardrop={gardrop}
-              onStartMode={startMode}
-              onShowLead={() => setPhase('lead')}
-              onShowGardrop={() => { setActiveNav('gardrop'); setPhase('gardrop') }}
-            />
+          {screen === 'dashboard' && (
+            <ScreenDashboard lead={lead} onStartChat={goToChat} onShowWardrobe={() => setScreen('wardrobe')} onShowFaq={() => setScreen('faq')} />
           )}
 
-          {/* GARDROP */}
-          {phase === 'gardrop' && (
-            <GardropView
-              items={gardrop}
-              onRemove={removeFromGardrop}
-              onStartChat={mode => { setActiveNav('asistan'); startMode(mode) }}
-            />
+          {screen === 'wardrobe' && (
+            <ScreenWardrobe items={gardrop} onRemove={removeFromGardrop} onStartChat={() => goToChat()} lead={lead} />
           )}
 
-          {/* LEAD FORM */}
-          {phase === 'lead' && (
-            <div className="flex-1 flex items-center justify-center p-6">
-              <div className="w-full max-w-sm">
-                <div className="text-center mb-6">
-                  <div className="asya-avatar-glow inline-block mb-4">
-                    <div className="w-20 h-20 rounded-full overflow-hidden mx-auto"><AsyaPortrait size={80} /></div>
-                  </div>
-                  <p className="font-serif text-[24px] font-light text-[#1a1a1a]">Merhaba!</p>
-                  <p className="text-[13px] text-[#6b6560] mt-1">Sizi tanıyalım 🌸</p>
-                </div>
-                <LeadForm onSubmit={handleLead} />
-                <button onClick={() => setPhase('home')} className="mt-4 w-full text-center text-[12px] text-[#b5afa8] hover:text-[#6b6560] transition">
-                  ← Geri dön
-                </button>
-              </div>
-            </div>
+          {screen === 'profile' && (
+            <ScreenProfile lead={lead} onBack={() => setScreen('dashboard')} coupon={coupon} />
           )}
 
-          {/* CHAT */}
-          {phase === 'chat' && (
+          {screen === 'faq' && (
+            <ScreenFaq onBack={() => setScreen('dashboard')} onStartChat={() => goToChat('soru')} />
+          )}
+
+          {screen === 'chat' && (
             <>
-              <div className="flex-1 chat-scroll py-6 px-4">
-                <div className="max-w-2xl mx-auto space-y-5">
-                  {messages.map((msg, i) => (
-                    <div key={i} className="msg-in">
-                      {msg.role === 'assistant' ? (
-                        <div className="space-y-2">
-                          <div className="flex gap-3 items-end">
-                            <AsyaAvatar size={32} />
-                            <div className="glass-card px-4 py-3.5 max-w-sm xl:max-w-md"
-                              style={{ borderRadius: '20px 20px 20px 6px', boxShadow: '0 2px 16px rgba(0,0,0,0.06)' }}>
-                              <p className="text-[#1a1a1a] text-[14px] leading-relaxed whitespace-pre-line">{msg.content}</p>
+              {chatPhase === 'register' ? (
+                <RegisterForm onSubmit={handleRegister} />
+              ) : (
+                <>
+                  <div className="flex-1 chat-scroll py-6 px-4">
+                    <div className="max-w-xl mx-auto space-y-1">
+                      {messages.map((msg, i) => (
+                        <div key={i}>
+                          {msg.role === 'assistant' ? (
+                            <div className="space-y-2">
+                              <div className="flex gap-3 items-end">
+                                <AsyaAvatar size={30} />
+                                <ChatBubble from="asya">{msg.content}</ChatBubble>
+                              </div>
+                              {msg.options && !msg.product && (
+                                <div className="pl-10">
+                                  <OptionChips options={msg.options} onSelect={opt => send(opt)} />
+                                </div>
+                              )}
+                              {msg.product && (
+                                <div className="pl-10">
+                                  <ProductCard product={msg.product} type={msg.type === 'elegancia' ? 'elegancia' : msg.type === 'home' ? 'home' : 'gold'} coupon={msg.type === 'recommendation' ? coupon || undefined : undefined} onSave={msg.type !== 'home' ? saveToGardrop : undefined} saved={isInGardrop(msg.product.name)} />
+                                  {msg.type === 'recommendation' && coupon && (
+                                    <button onClick={() => setScreen('profile')} className="profile-cta mt-3 w-full max-w-sm flex items-center gap-4 p-4 msg-in" style={{ border: 'none', textAlign: 'left' }}>
+                                      <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(255,255,255,0.22)', border: '1px solid rgba(255,255,255,0.35)', backdropFilter: 'blur(8px)' }}>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="6" stroke="#FFFFFF" strokeWidth="1.6"/><circle cx="11" cy="11" r="9.2" stroke="#FFFFFF" strokeOpacity="0.5" strokeWidth="1.6"/><circle cx="11" cy="11" r="1.6" fill="#FFFFFF"/></svg>
+                                      </div>
+                                      <div className="flex-1 relative z-10">
+                                        <div className="text-[10px] tracking-[0.22em] uppercase font-semibold" style={{ color: 'rgba(255,255,255,0.85)' }}>Koku Portreniz Hazır</div>
+                                        <div className="font-serif font-light text-[18px] text-white mt-0.5">Koku Profilinizi Görün →</div>
+                                      </div>
+                                    </button>
+                                  )}
+                                </div>
+                              )}
                             </div>
-                          </div>
-                          {msg.options && !msg.product && (
-                            <OptionButtons options={msg.options} onSelect={opt => send(opt)} />
-                          )}
-                          {msg.product && (
-                            <div className="pl-[44px]">
-                              <ProductCard
-                                product={msg.product}
-                                type={msg.type === 'elegancia' ? 'elegancia' : msg.type === 'home' ? 'home' : 'gold'}
-                                coupon={msg.type === 'recommendation' ? coupon || undefined : undefined}
-                                onSave={msg.type !== 'home' ? saveToGardrop : undefined}
-                                saved={isInGardrop(msg.product.name)}
-                              />
-                            </div>
+                          ) : (
+                            <ChatBubble from="user">{msg.content}</ChatBubble>
                           )}
                         </div>
-                      ) : (
-                        <div className="flex justify-end">
-                          <div className="px-4 py-3.5 rounded-[20px] rounded-br-[6px] max-w-sm xl:max-w-md"
-                            style={{ background: 'linear-gradient(135deg, #C6862A, #d4922e)', boxShadow: '0 4px 16px rgba(198,134,42,0.25)' }}>
-                            <p className="text-white text-[14px] leading-relaxed">{msg.content}</p>
+                      ))}
+                      {loading && (
+                        <div className="flex gap-3 items-end msg-in">
+                          <AsyaAvatar size={30} />
+                          <div style={{ padding: '12px 16px', background: T.glassStrong, backdropFilter: 'blur(14px)', border: `1px solid ${T.glassEdge}`, borderRadius: '18px 18px 18px 6px', boxShadow: '0 6px 16px rgba(94,88,140,0.10)' }}>
+                            <TypingDots />
                           </div>
                         </div>
                       )}
+                      <div ref={bottomRef} className="h-1" />
                     </div>
-                  ))}
+                  </div>
 
-                  {loading && (
-                    <div className="flex gap-3 items-end msg-in">
-                      <AsyaAvatar size={32} />
-                      <div className="glass-card px-4 py-3" style={{ borderRadius: '20px 20px 20px 6px' }}>
-                        <div className="flex gap-1 items-center h-4">
-                          <span className="dot" /><span className="dot" /><span className="dot" />
-                        </div>
-                      </div>
+                  <div className="flex-shrink-0 px-4 py-3" style={{ background: 'rgba(255,255,255,0.55)', backdropFilter: 'blur(20px)', borderTop: '1px solid rgba(255,255,255,0.5)' }}>
+                    <div className="flex gap-3 items-end max-w-xl mx-auto">
+                      <textarea ref={inputRef} value={input} onChange={e => setInput(e.target.value)} onKeyDown={handleKey}
+                        placeholder="ASYA'ya bir mesaj yazın…" disabled={loading} rows={1} className="chat-input flex-1"
+                        style={{ minHeight: 48, maxHeight: 120 }} />
+                      <button onClick={() => send(input)} disabled={loading || !input.trim()} className="send-btn">{I.send}</button>
                     </div>
-                  )}
-                  <div ref={bottomRef} className="h-1" />
-                </div>
-              </div>
-
-              {/* INPUT */}
-              <div className="flex-shrink-0 px-4 py-3"
-                style={{ background: 'rgba(255,255,255,0.55)', backdropFilter: 'blur(20px)', borderTop: '1px solid rgba(255,255,255,0.5)' }}>
-                <div className="flex gap-2 items-end max-w-2xl mx-auto">
-                  <textarea
-                    ref={inputRef}
-                    value={input}
-                    onChange={e => setInput(e.target.value)}
-                    onKeyDown={handleKey}
-                    placeholder="Bir koku veya ruh hali tarif edin..."
-                    disabled={loading}
-                    rows={1}
-                    className="chat-input flex-1"
-                    style={{ minHeight: 44, maxHeight: 120 }}
-                  />
-                  <button onClick={() => send(input)} disabled={loading || !input.trim()} className="send-btn">
-                    {I.send}
-                  </button>
-                </div>
-                <p className="text-center text-[11px] text-[#b5afa8] mt-2 hidden lg:block">
-                  Elegance VIP Perfume · ASYA AI ·{' '}
-                  <a href="https://www.elegancevipperfume.com" target="_blank" rel="noopener noreferrer"
-                    className="hover:opacity-70 transition" style={{ color: '#C6862A' }}>
-                    elegancevipperfume.com
-                  </a>
-                </p>
-              </div>
+                    <p className="text-center text-[11px] mt-2 hidden lg:block" style={{ color: T.inkMuted }}>
+                      Elegance VIP Perfume · ASYA AI ·{' '}
+                      <a href="https://www.elegancevipperfume.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition" style={{ color: T.inkSoft }}>elegancevipperfume.com</a>
+                    </p>
+                  </div>
+                </>
+              )}
             </>
           )}
         </div>
