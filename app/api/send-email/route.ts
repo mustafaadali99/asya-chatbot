@@ -1,55 +1,79 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { sendEmail, buildRecommendationEmail } from '@/lib/email'
-import { createCoupon } from '@/lib/woocommerce'
-import { saveRecommendation } from '@/lib/supabase'
+import { saveRecommendation, logEmail } from '@/lib/supabase'
+
+interface Top3Product {
+  code?: string
+  name: string
+  series?: string
+  image_url?: string
+  web_url?: string
+  woo_id?: number
+  story?: string
+  notes?: string
+  top_notes?: string[]
+}
 
 export async function POST(req: NextRequest) {
   try {
     const {
       name, email, lead_id, session_id,
-      gold_code, gold_name, gold_url, gold_woo_id, gold_image,
-      elegancia_code, elegancia_name, elegancia_url,
-      home_code, home_name, home_url,
-      scent_profile, language = 'tr',
-      scent_story,
+      top3 = [],
+      scent_profile,
+      coupon,
+      referral_url,
+      language = 'tr',
     } = await req.json()
 
-    // WooCommerce kupon oluştur
-    let couponCode: string | undefined
-    if (gold_woo_id && email) {
-      const coupon = await createCoupon(email, gold_woo_id, 10)
-      couponCode = coupon || undefined
-    }
+    const products = top3 as Top3Product[]
+    const elegancia = products.find(p => p.series === 'elegancia')
+    const golds = products.filter(p => p.series !== 'elegancia')
 
-    // Supabase'e kaydet
-    await saveRecommendation({
-      lead_id, session_id,
-      gold_code, gold_name, gold_url,
-      elegancia_code, elegancia_name, elegancia_url,
-      home_code, home_name, home_url,
+    // Save recommendation to Supabase
+    saveRecommendation({
+      lead_id,
+      session_id,
+      gold_code: golds[0]?.code,
+      gold_name: golds[0]?.name,
+      gold_url: golds[0]?.web_url,
+      elegancia_code: elegancia?.code,
+      elegancia_name: elegancia?.name,
+      elegancia_url: elegancia?.web_url,
       scent_profile: scent_profile || {},
       language,
-    })
+    }).catch(err => console.error('saveRecommendation error:', err))
 
-    // Email gönder
+    const subject = `${name}, ASYA koku profilinizi hazırladı ✨`
+
     const html = buildRecommendationEmail({
       name,
-      productName: gold_name || elegancia_name || '',
-      productUrl: gold_url || elegancia_url || '',
-      productImage: gold_image || '',
-      couponCode,
+      top3: products,
+      couponCode: coupon || undefined,
       couponDiscount: 10,
-      scentStory: scent_story || `ASYA size en uygun kokuyu buldu!`,
+      scentStory: scent_profile?.subtitle || 'ASYA size en uygun kokuları seçti!',
+      scentProfile: scent_profile,
+      referralUrl: referral_url,
     })
 
-    await sendEmail({
-      to: email,
-      toName: name,
-      subject: `${name}, ASYA sizin için seçti 🌸`,
-      html,
-    })
+    const ok = await sendEmail({ to: email, toName: name, subject, html })
 
-    return NextResponse.json({ success: true, coupon_code: couponCode })
+    // Log to Supabase (body kaydediliyor → panelde önizleme çalışsın)
+    logEmail({
+      lead_id: lead_id || undefined,
+      email_to: email,
+      email_name: name,
+      email_type: 'profile_ready',
+      subject,
+      status: ok ? 'sent' : 'failed',
+      body: html,
+      metadata: {
+        products: products.map(p => p.name),
+        coupon: coupon || null,
+        has_referral: !!referral_url,
+      },
+    }).catch(e => console.error('logEmail error:', e))
+
+    return NextResponse.json({ success: ok })
   } catch (err) {
     console.error('Send email error:', err)
     return NextResponse.json({ error: 'Email gönderilemedi' }, { status: 500 })
