@@ -179,7 +179,7 @@ function useChatLogic() {
 
   const handleRegister = async (name:string, email:string) => {
     try {
-      const res = await fetch('/api/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,mode:'koku_testi'})})
+      const res = await fetch('/koku-asistani/api/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,mode:'koku_testi'})})
       const data = await res.json()
       const newLead:Lead = {name,email,lead_id:data.lead_id,session_id:data.session_id}
       setLead(newLead)
@@ -200,7 +200,7 @@ function useChatLogic() {
     setLoading(true)
     setInput('')
     try {
-      const res = await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:newMsgs,session_id:l?.session_id})})
+      const res = await fetch('/koku-asistani/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:newMsgs,session_id:l?.session_id})})
       const data = await res.json()
       const parsed = JSON.parse(data.response)
       const assistantMsg:Msg = {role:'assistant',content:parsed.output,type:parsed.type,product:parsed.product,options:parsed.options}
@@ -210,11 +210,11 @@ function useChatLogic() {
         emailSentRef.current = true
         let cpn:string|null = null
         try {
-          const cr = await fetch('/api/coupon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead_id:l.lead_id})})
+          const cr = await fetch('/koku-asistani/api/coupon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead_id:l.lead_id})})
           const cd = await cr.json(); cpn = cd.coupon||null
         } catch {}
         setCoupon(cpn)
-        fetch('/api/send-email',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead_id:l.lead_id,name:l.name,email:l.email,product:parsed.product,coupon:cpn,session_id:l.session_id})}).catch(()=>{})
+        fetch('/koku-asistani/api/send-email',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead_id:l.lead_id,name:l.name,email:l.email,product:parsed.product,coupon:cpn,session_id:l.session_id})}).catch(()=>{})
       }
     } catch (e) {
       setMessages(m=>[...m,{role:'assistant',content:'Bir sorun oluştu, tekrar dener misin?'}])
@@ -380,7 +380,7 @@ function MobileWelcome({onAdvance}:{onAdvance:()=>void}) {
       <div style={{position:'relative',zIndex:2,marginTop:32,width:260,height:340,display:'flex',alignItems:'flex-end',justifyContent:'center'}}>
         <div style={{position:'absolute',inset:-24,borderRadius:'50%',background:'radial-gradient(ellipse at 50% 35%,rgba(244,238,252,.95),transparent 65%)',filter:'blur(10px)'}}/>
         <div style={{position:'relative',zIndex:1,width:224,height:300,borderRadius:22,boxShadow:'0 30px 60px rgba(94,88,140,.18),0 0 0 1px rgba(255,255,255,.6)',overflow:'hidden',background:'linear-gradient(160deg,#F0E9F7,#E3ECF5)'}}>
-          <img src="/asya-portrait.png" alt="ASYA" style={{width:'100%',height:'100%',objectFit:'cover'}} onError={e=>{(e.target as HTMLImageElement).style.display='none'}}/>
+          <img src="/koku-asistani/asya-portrait.png" alt="ASYA" style={{width:'100%',height:'100%',objectFit:'cover'}} onError={e=>{(e.target as HTMLImageElement).style.display='none'}}/>
           <div style={{position:'absolute',left:0,right:0,bottom:0,height:100,background:'linear-gradient(to bottom,transparent,#FAFAFE 95%)',pointerEvents:'none'}}/>
         </div>
       </div>
@@ -724,7 +724,7 @@ function DesktopHome({onGoChat,onGoCatalog}:{onGoChat:()=>void;onGoCatalog:()=>v
         </div>
         <div style={{position:'relative',borderRadius:22,background:'linear-gradient(160deg,#EFE6F8 0%,#DCE8F4 100%)',display:'flex',alignItems:'center',justifyContent:'center',overflow:'hidden',boxShadow:'inset 0 1px 0 rgba(255,255,255,.9)',minHeight:320}}>
           <div style={{position:'absolute',top:30,left:30,width:80,height:80,borderRadius:'50%',background:'rgba(255,255,255,.5)',filter:'blur(20px)'}}/>
-          <img src="/asya-hero.png" alt="ASYA" style={{width:'100%',height:'100%',objectFit:'cover',position:'absolute',inset:0}} onError={e=>{(e.target as HTMLImageElement).style.display='none'}}/>
+          <img src="/koku-asistani/asya-hero.png" alt="ASYA" style={{width:'100%',height:'100%',objectFit:'cover',position:'absolute',inset:0}} onError={e=>{(e.target as HTMLImageElement).style.display='none'}}/>
           <BottleGlyph size={160} hue="#E2D6F1"/>
           <div style={{position:'absolute',top:20,right:20,padding:'8px 14px',borderRadius:999,background:'rgba(255,255,255,.85)',backdropFilter:'blur(8px)',WebkitBackdropFilter:'blur(8px)',fontSize:11,fontWeight:600,color:T.ink,letterSpacing:'0.12em',textTransform:'uppercase'}}>Yeni Sezon</div>
         </div>
