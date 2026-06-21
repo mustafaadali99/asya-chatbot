@@ -1483,7 +1483,7 @@ function useChatLogic(mode: ChatMode = 'profil') {
   const handleRegister = async (rawName:string, email:string) => {
     const name = capitalize(rawName)
     try {
-      const res = await fetch('/api/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,mode:'koku_testi'})})
+      const res = await fetch('/koku-asistani/api/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,mode:'koku_testi'})})
       const data = await res.json()
       const newLead:Lead = {name:data.name ? capitalize(data.name) : name,email,lead_id:data.lead_id,session_id:data.session_id}
       setLead(newLead)
@@ -1536,7 +1536,7 @@ function useChatLogic(mode: ChatMode = 'profil') {
         emailSentRef.current = true
         let cpn:string|null = null
         try {
-          const cr = await fetch('/api/coupon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead_id:l.lead_id})})
+          const cr = await fetch('/koku-asistani/api/coupon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead_id:l.lead_id})})
           const cd = await cr.json(); cpn = cd.coupon||null
         } catch {}
         setCoupon(cpn)
