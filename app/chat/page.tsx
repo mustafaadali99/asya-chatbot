@@ -2830,7 +2830,7 @@ function DesktopSidebar({active,onChange,lead,onFaq}:{active:Screen;onChange:(s:
         {dNavItems.map(it=>{
           const isA=it.id===active
           return (
-            <button key={it.id} onClick={()=>onChange(it.id)} style={{padding:'10px 12px',borderRadius:12,border:'none',background:isA?'rgba(192,138,126,.18)':'transparent',display:'flex',alignItems:'center',gap:12,fontSize:13.5,fontWeight:isA?600:500,color:isA?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit',textAlign:'left',transition:'background .15s',width:'100%'}}>
+            <button key={it.id} onClick={()=>onChange(it.id)} style={{padding:'10px 12px',borderRadius:12,border:'none',background:isA?'rgba(192,138,126,.18)':'transparent',display:'flex',alignItems:'center',gap:12,fontSize:13.5,fontWeight:isA?600:500,color:'#000',cursor:'pointer',fontFamily:'inherit',textAlign:'left',transition:'background .15s',width:'100%'}}>
               {it.g(isA)}
               {it.label}
               {isA && <div style={{marginLeft:'auto',width:4,height:4,borderRadius:'50%',background:'#C08A7E'}}/>}
@@ -2840,9 +2840,9 @@ function DesktopSidebar({active,onChange,lead,onFaq}:{active:Screen;onChange:(s:
       </div>
       <div style={{marginTop:24,padding:'12px 4px',borderTop:'1px solid rgba(90,70,55,.08)'}}>
         <div style={{fontSize:9,letterSpacing:'0.22em',color:T.muted,fontWeight:600,textTransform:'uppercase',padding:'0 8px 10px'}}>Daha Fazlası</div>
-        <button onClick={()=>onChange('muadil')} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='muadil'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='muadil'?600:500,color:active==='muadil'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Muadil Bul</button>
-        <button onClick={()=>onChange('gift')} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='gift'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='gift'?600:500,color:active==='gift'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Hediye Sihirbazı</button>
-        <button onClick={onFaq} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='faq'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='faq'?600:500,color:active==='faq'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Hakkımızda · SSS</button>
+        <button onClick={()=>onChange('muadil')} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='muadil'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='muadil'?600:500,color:'#000',cursor:'pointer',fontFamily:'inherit'}}>Muadil Bul</button>
+        <button onClick={()=>onChange('gift')} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='gift'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='gift'?600:500,color:'#000',cursor:'pointer',fontFamily:'inherit'}}>Hediye Sihirbazı</button>
+        <button onClick={onFaq} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='faq'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='faq'?600:500,color:'#000',cursor:'pointer',fontFamily:'inherit'}}>Hakkımızda · SSS</button>
       </div>
       <div style={{flex:1}}/>
       <div style={{display:'flex',alignItems:'center',gap:10,padding:10,borderRadius:14,background:'rgba(255,255,255,.65)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(90,70,55,.08)'}}>
