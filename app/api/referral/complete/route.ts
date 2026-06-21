@@ -1,7 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createReferralCoupon } from '@/lib/woocommerce'
 import { getSupabaseAdmin, logEmail } from '@/lib/supabase'
-import { sendEmail, buildReferrerCouponEmail } from '@/lib/email'
+import { sendEmail, buildReferrerCouponEmail, MAIN_API } from '@/lib/email'
+
+// Referral kuponları da ANA SİTEDE oluşturulur (WordPress YOK)
+async function mkSiteCoupon(email: string, discount: number): Promise<string | null> {
+  try {
+    const r = await fetch(`${MAIN_API}/api/asya/coupon`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', ...(process.env.ASYA_BRIDGE_SECRET ? { 'x-asya-secret': process.env.ASYA_BRIDGE_SECRET } : {}) },
+      body: JSON.stringify({ email, discount, days: 30, source: 'asya_referral' }),
+    })
+    const j = await r.json().catch(() => ({})); return j.coupon || null
+  } catch { return null }
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -27,8 +37,8 @@ export async function POST(req: NextRequest) {
     }
 
     const [inviteeCoupon, referrerCoupon] = await Promise.all([
-      createReferralCoupon(invitee_email, invitee_name, 'invitee'),
-      createReferralCoupon(referral.referrer_email, referral.referrer_name, 'referrer'),
+      mkSiteCoupon(invitee_email, 10),
+      mkSiteCoupon(referral.referrer_email, 15),
     ])
 
     await getSupabaseAdmin()

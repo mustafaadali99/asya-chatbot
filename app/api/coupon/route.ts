@@ -1,6 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createCoupon } from '@/lib/woocommerce'
 import { getSupabaseAdmin } from '@/lib/supabase'
+import { MAIN_API } from '@/lib/email'
+
+// Kupon artık ANA SİTENİN coupons tablosunda oluşturulur (WordPress YOK) → yeni sitede geçerli/kullanılabilir.
+async function createSiteCoupon(email: string, discount = 10): Promise<string | null> {
+  try {
+    const r = await fetch(`${MAIN_API}/api/asya/coupon`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', ...(process.env.ASYA_BRIDGE_SECRET ? { 'x-asya-secret': process.env.ASYA_BRIDGE_SECRET } : {}) },
+      body: JSON.stringify({ email, discount, days: 30, source: 'asya' }),
+    })
+    const j = await r.json().catch(() => ({}))
+    return j.coupon || null
+  } catch { return null }
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -28,8 +40,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ coupon: existingCoupon })
     }
 
-    // Yeni kupon oluştur
-    const code = await createCoupon(lead.email, undefined, 10)
+    // Yeni kupon oluştur (ana sitede)
+    const code = await createSiteCoupon(lead.email, 10)
     if (!code) return NextResponse.json({ coupon: null })
 
     // Kuponu lead metadata'sına kaydet (idempotent)

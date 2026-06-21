@@ -2,7 +2,9 @@ const BREVO_KEY = process.env.BREVO_API_KEY!
 const SENDER_EMAIL = process.env.BREVO_SENDER_EMAIL || 'info@elegancevipperfume.com'
 const SENDER_NAME = process.env.BREVO_SENDER_NAME || 'ASYA | Elegance PARFUM'
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://asya.elegancevipperfume.com'
-const SHOP_URL = 'https://www.elegancevipperfume.com'
+const SHOP_URL = 'https://elegancevipperfume.com'
+// Ana site API tabanı — kupon + mail log buraya yazılır (WordPress YOK, admin Mail Merkezi'nde görünür)
+export const MAIN_API = process.env.SITE_API_BASE || 'https://elegance-vip.vercel.app'
 
 interface SendEmailParams {
   to: string
@@ -29,6 +31,13 @@ export async function sendEmail({ to, toName, subject, html }: SendEmailParams) 
     const errBody = await res.text().catch(() => '(unreadable)')
     console.error(`[sendEmail] Brevo error ${res.status}: ${errBody}`)
   }
+  // Ana site Mail Merkezi'ne kaydet (admin'de "ASYA" mailleri görünsün) — fire-and-forget
+  try {
+    fetch(`${MAIN_API}/api/asya/email-log`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', ...(process.env.ASYA_BRIDGE_SECRET ? { 'x-asya-secret': process.env.ASYA_BRIDGE_SECRET } : {}) },
+      body: JSON.stringify({ to_email: to, to_name: toName, subject, status: res.ok ? 'sent' : 'failed' }),
+    }).catch(() => {})
+  } catch {}
   return res.ok
 }
 
