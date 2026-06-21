@@ -118,18 +118,8 @@ const scentFamilies = goldScentFamilies
 
 /* ═══ SHARED COMPONENTS ═══ */
 function Bg({ variant = 'a' }: { variant?: string }) {
-  const sets: Record<string, Array<{top?:number;left?:number;right?:number;bottom?:number;w:number;h:number;c:string;o:number}>> = {
-    a: [{top:-60,left:-80,w:320,h:320,c:'#F3E9E3',o:.35},{top:280,right:-100,w:280,h:280,c:'#EFE7E1',o:.30},{bottom:-120,left:-40,w:360,h:360,c:'#F4ECE6',o:.40}],
-    b: [{top:-100,right:-60,w:340,h:340,c:'#F3EAE4',o:.35},{top:360,left:-120,w:320,h:320,c:'#EFE7E1',o:.30},{bottom:-80,right:-80,w:300,h:300,c:'#F4ECE6',o:.36}],
-    c: [{top:120,left:-60,w:380,h:380,c:'#F3EAE4',o:.38},{top:280,right:-120,w:360,h:360,c:'#EFE7E1',o:.30}],
-  }
-  return (
-    <div style={{position:'absolute',inset:0,overflow:'hidden',background:T.bg}}>
-      {(sets[variant]||sets.a).map((b,i)=>(
-        <div key={i} style={{position:'absolute',top:b.top,left:b.left,right:b.right,bottom:b.bottom,width:b.w,height:b.h,borderRadius:'50%',background:b.c,opacity:b.o,filter:'blur(60px)'}}/>
-      ))}
-    </div>
-  )
+  void variant
+  return <div style={{position:'absolute',inset:0,background:'#FFFFFF'}}/>
 }
 
 function BottleGlyph({size=44,hue='#E8DAD2'}:{size?:number;hue?:string}) {
@@ -1452,16 +1442,29 @@ function useChatLogic(mode: ChatMode = 'profil') {
       localStorage.setItem('asya_gardrop',JSON.stringify(next))
       return next
     })
+    // Ana site favorilerine de ekle (iframe köprüsü — gardırop = site favorileri)
+    try { if (typeof window!=='undefined' && window.parent!==window) { const slug=(p.web_url||'').match(/\/urun\/([^/]+)/)?.[1]; if(slug) window.parent.postMessage({source:'asya',type:'fav:add',slug,name:p.name,image:p.image_url,url:p.web_url},'*') } } catch {}
   },[])
 
   const isInGardrop = useCallback((name:string) => gardrop.some(g=>g.name===name),[gardrop])
 
   const removeFromGardrop = useCallback((name:string) => {
     setGardrop(prev => {
+      const target = prev.find(g=>g.name===name)
       const next = prev.filter(g=>g.name!==name)
       localStorage.setItem('asya_gardrop',JSON.stringify(next))
+      try { if (typeof window!=='undefined' && window.parent!==window && target) { const slug=(target.web_url||'').match(/\/urun\/([^/]+)/)?.[1]; if(slug) window.parent.postMessage({source:'asya',type:'fav:remove',slug},'*') } } catch {}
       return next
     })
+  },[])
+
+  // Gömülüyse (iframe) gardırobu ana site favori listesiyle eşitle
+  useEffect(()=>{
+    if (typeof window==='undefined' || window.parent===window) return
+    const onMsg=(e:MessageEvent)=>{ const d=e.data; if(d&&d.type==='site:fav:list'&&Array.isArray(d.items)){ const mapped:GItem[]=d.items.map((it:{slug?:string;name:string;image?:string;url?:string})=>({name:it.name,image_url:it.image||'',web_url:it.url||(it.slug?('https://elegancevipperfume.com/urun/'+it.slug):''),addedAt:new Date().toISOString()})); setGardrop(mapped); try{localStorage.setItem('asya_gardrop',JSON.stringify(mapped))}catch{} } }
+    window.addEventListener('message',onMsg)
+    window.parent.postMessage({source:'asya',type:'fav:list'},'*')
+    return ()=>window.removeEventListener('message',onMsg)
   },[])
 
   // Auto-save gardrop to Supabase when it changes (debounced)
