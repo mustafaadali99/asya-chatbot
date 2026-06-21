@@ -766,7 +766,7 @@ function GiftWizard({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?:(
   return (
     <div style={{position:'absolute',inset:0,overflowY:'auto',paddingBottom:'calc(108px + env(safe-area-inset-bottom, 0px))',fontFamily:'Inter,sans-serif'}}>
       <Bg variant="b"/>
-      <div style={{position:'relative',zIndex:2,padding:'60px 22px 0'}}>
+      <div style={{position:'relative',zIndex:2,padding:'18px 22px 0'}}>
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:24}}>
           <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -925,7 +925,7 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
   return (
     <div style={{position:'absolute',inset:0,overflowY:'auto',paddingBottom:'calc(108px + env(safe-area-inset-bottom, 0px))',fontFamily:'Inter,sans-serif'}}>
       <Bg variant="c"/>
-      <div style={{position:'relative',zIndex:2,padding:'60px 22px 0'}}>
+      <div style={{position:'relative',zIndex:2,padding:'18px 22px 0'}}>
         {/* Header */}
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:24}}>
           <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
@@ -2223,7 +2223,7 @@ function MobileHome({lead,onGoChat,onGoUnboxing,onGoFaq}:{lead:Lead|null;onGoCha
   return (
     <div style={{position:'absolute',inset:0,overflowY:'auto',paddingBottom:'calc(108px + env(safe-area-inset-bottom, 0px))'}}>
       <Bg variant="b"/>
-      <div style={{position:'relative',zIndex:2,padding:'70px 28px 0'}}>
+      <div style={{position:'relative',zIndex:2,padding:'18px 28px 0'}}>
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:40}}>
           <div style={{padding:'10px 18px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(90,70,55,.08)',fontSize:13,fontWeight:500,color:T.ink,display:'flex',alignItems:'center',gap:8}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke={T.soft} strokeWidth="1.4" strokeLinecap="round"/></svg>
@@ -2278,7 +2278,7 @@ function MobileChat({chatLogic,onGoProfile,onGoScentProfile,chatMode,onGoMuadil,
   return (
     <div style={{position:'absolute',inset:0,display:'flex',flexDirection:'column',zIndex:5}}>
       <Bg variant="c"/>
-      <div style={{position:'relative',zIndex:3,padding:'60px 20px 12px',display:'flex',alignItems:'center',justifyContent:'space-between',gap:12}}>
+      <div style={{position:'relative',zIndex:3,padding:'14px 20px 12px',display:'flex',alignItems:'center',justifyContent:'space-between',gap:12}}>
         <div style={{display:'flex',alignItems:'center',gap:10,padding:'6px 14px 6px 6px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(90,70,55,.08)'}}>
           <AsyaAvatar size={30}/>
           <div>
@@ -2337,7 +2337,7 @@ function MobileCatalog() {
   return (
     <div style={{position:'absolute',inset:0,overflowY:'auto',paddingBottom:'calc(108px + env(safe-area-inset-bottom, 0px))'}}>
       <Bg variant="b"/>
-      <div style={{position:'relative',zIndex:2,padding:'70px 20px 0'}}>
+      <div style={{position:'relative',zIndex:2,padding:'18px 20px 0'}}>
         <div style={{fontSize:11,letterSpacing:'0.28em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:4}}>Elegance VIP</div>
         <h1 style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:34,color:T.ink,letterSpacing:'-0.01em',margin:'0 0 16px'}}>Koku <em style={{fontStyle:'italic'}}>Koleksiyonu</em></h1>
 
@@ -2385,7 +2385,7 @@ function MobileWardrobe({gardrop,onRemove,onGoChat}:{gardrop:GItem[];onRemove:(n
   return (
     <div style={{position:'absolute',inset:0,overflowY:'auto',paddingBottom:'calc(108px + env(safe-area-inset-bottom, 0px))'}}>
       <Bg variant="c"/>
-      <div style={{position:'relative',zIndex:2,padding:'70px 20px 0'}}>
+      <div style={{position:'relative',zIndex:2,padding:'18px 20px 0'}}>
         <div style={{fontSize:11,letterSpacing:'0.28em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:4}}>Koleksiyonunuz</div>
         <h1 style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:34,color:T.ink,letterSpacing:'-0.01em',margin:'0 0 16px'}}>Koku <em style={{fontStyle:'italic'}}>Gardırobum</em></h1>
         <WeatherGreeting gardrop={gardrop}/>
@@ -2450,7 +2450,7 @@ function MobileProfile({lead,coupon,onGoChat}:{lead:Lead|null;coupon:string|null
   return (
     <div style={{position:'absolute',inset:0,overflowY:'auto',paddingBottom:'calc(108px + env(safe-area-inset-bottom, 0px))'}}>
       <Bg variant="a"/>
-      <div style={{position:'relative',zIndex:2,padding:'70px 28px 0'}}>
+      <div style={{position:'relative',zIndex:2,padding:'18px 28px 0'}}>
         {!lead ? (
           <div style={{background:'rgba(255,255,255,.55)',backdropFilter:'blur(14px)',borderRadius:22,border:`1px solid ${T.glassE}`,overflow:'hidden'}}>
             <div style={{position:'relative',height:240}}>
@@ -2530,7 +2530,7 @@ function VisionScreen({onBack,onGoChat,onSaveToGardrop,onGoMuadil}:{onBack:()=>v
   return (
     <div style={{position:'absolute',inset:0,overflowY:'auto',paddingBottom:'calc(108px + env(safe-area-inset-bottom, 0px))',fontFamily:'Inter,sans-serif'}}>
       <Bg variant="a"/>
-      <div style={{position:'relative',zIndex:2,padding:'60px 22px 0'}}>
+      <div style={{position:'relative',zIndex:2,padding:'18px 22px 0'}}>
         {/* header */}
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:24}}>
           <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 4px 10px rgba(90,70,55,.07)'}}>
@@ -2668,7 +2668,7 @@ function IlhamScreen({onBack,onGoChat}:{onBack:()=>void;onGoChat:(mode:ChatMode)
   return (
     <div style={{position:'absolute',inset:0,overflowY:'auto',paddingBottom:'calc(108px + env(safe-area-inset-bottom, 0px))',fontFamily:'Inter,sans-serif'}}>
       <Bg variant="a"/>
-      <div style={{position:'relative',zIndex:2,padding:'60px 22px 0'}}>
+      <div style={{position:'relative',zIndex:2,padding:'18px 22px 0'}}>
         {/* header */}
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:24}}>
           <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 4px 10px rgba(90,70,55,.07)'}}>
@@ -2793,7 +2793,7 @@ function MobileApp({initialUnboxing}:{initialUnboxing?:boolean}) {
         {activeTab==='chat' && <MobileChat chatLogic={chatLogic} onGoProfile={()=>setActiveTab('profile')} onGoScentProfile={goScentProfile} chatMode={chatMode} onGoMuadil={()=>{setHomeOverlay('muadil');setActiveTab('home')}} onGoGift={()=>{setHomeOverlay('giftwiz');setActiveTab('home')}} onGoVision={()=>{setHomeOverlay('vision');setActiveTab('home')}} onGoCatalog={()=>setActiveTab('catalog')}/>}
         {activeTab==='wardrobe' && <MobileWardrobe gardrop={gardrop} onRemove={chatLogic.removeFromGardrop} onGoChat={()=>setActiveTab('chat')}/>}
         {activeTab==='unboxing' && (
-          <div style={{position:'absolute',inset:0,overflowY:'auto',paddingTop:60}}>
+          <div style={{position:'absolute',inset:0,overflowY:'auto',paddingTop:14}}>
             <Bg variant="a"/>
             <div style={{position:'relative',zIndex:2,display:'flex',flexDirection:'column',minHeight:'100%'}}>
               <UnboxingScreen onGoChat={()=>{goChat('profil')}}/>
