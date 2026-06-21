@@ -2257,12 +2257,6 @@ function MobileHome({lead,onGoChat,onGoUnboxing,onGoFaq}:{lead:Lead|null;onGoCha
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10.5 4.5L15 9l-4.5 4.5" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </div>
         </button>
-        <button onClick={onGoUnboxing} style={{width:'100%',height:60,borderRadius:999,padding:'0 10px 0 24px',background:'linear-gradient(135deg,rgba(110,80,56,.12),rgba(192,138,126,.10))',border:'1px solid rgba(110,80,56,.20)',display:'flex',alignItems:'center',justifyContent:'space-between',cursor:'pointer',fontFamily:'inherit',marginBottom:12}}>
-          <span style={{fontSize:15,color:T.ink,fontWeight:500}}>📦 Kutumu Yeni Açtım</span>
-          <div style={{width:44,height:44,borderRadius:'50%',background:'linear-gradient(145deg,#FFF,#EFE6DF)',boxShadow:T.neoO,display:'flex',alignItems:'center',justifyContent:'center'}}>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2l6 3v8L9 16 3 13V5z" stroke={T.soft} strokeWidth="1.4" strokeLinejoin="round"/><path d="M9 7l6-2M9 7l-6-2M9 7v9" stroke={T.soft} strokeWidth="1.4" strokeLinecap="round"/></svg>
-          </div>
-        </button>
         <button onClick={onGoFaq} style={{width:'100%',height:52,borderRadius:999,padding:'0 10px 0 24px',background:'rgba(255,255,255,.55)',backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,display:'flex',alignItems:'center',justifyContent:'space-between',cursor:'pointer',fontFamily:'inherit',marginBottom:20}}>
           <span style={{fontSize:14,color:T.soft,fontWeight:500}}>💬 Hakkımızda & Sık Sorulanlar</span>
           <div style={{width:36,height:36,borderRadius:'50%',background:'rgba(90,70,55,.06)',display:'flex',alignItems:'center',justifyContent:'center'}}>
@@ -2906,12 +2900,6 @@ function DesktopHome({onGoChat,onGoCatalog,onGoUnboxing}:{onGoChat:(mode?:ChatMo
           <div style={{display:'flex',gap:12,marginBottom:24,flexWrap:'wrap'}}>
             <button onClick={()=>onGoChat('profil')} style={{padding:'0 26px',height:52,borderRadius:999,border:'none',background:T.accent,boxShadow:'0 14px 28px rgba(154,91,80,.30)',display:'flex',alignItems:'center',gap:10,fontSize:14.5,fontWeight:500,color:'#FFF',cursor:'pointer',fontFamily:'inherit'}}>
               İmza Kokumu Keşfet →
-            </button>
-            <button onClick={onGoUnboxing} style={{padding:'0 22px',height:52,borderRadius:999,border:'1px solid rgba(110,80,56,.22)',background:'linear-gradient(135deg,rgba(110,80,56,.08),rgba(192,138,126,.08))',display:'flex',alignItems:'center',gap:8,fontSize:14.5,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit'}}>
-              📦 Kutumu Yeni Açtım
-            </button>
-            <button onClick={onGoCatalog} style={{padding:'0 22px',height:52,borderRadius:999,border:'1px solid rgba(90,70,55,.12)',background:'rgba(255,255,255,.85)',display:'flex',alignItems:'center',gap:10,fontSize:14.5,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit'}}>
-              Koleksiyonu İncele
             </button>
           </div>
           <div style={{display:'grid',gridTemplateColumns:'repeat(5,1fr)',gap:10,marginBottom:28}}>
