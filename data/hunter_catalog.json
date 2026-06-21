@@ -1,22 +1,400 @@
 [
-  {"code":"HT-001","name":"Hunter Parfüm","gender":"unisex","scent_family":"Oryantal","series":"hunter","in_stock":false,"image_url":"","web_url":"https://elegancevipperfume.com/urun/hunter-parfum/","top_notes":[],"heart_notes":["Oryantal","Taze"],"base_notes":["Odunsu"]},
-  {"code":"HT-002","name":"Aphrodisiac","gender":"unisex","scent_family":"Taze","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/aphrodisiac-eau-de-parfum/","top_notes":[],"heart_notes":["Taze"],"base_notes":[]},
-  {"code":"HT-003","name":"Magic","gender":"erkek","scent_family":"Odunsu","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/magic-eau-de-parfum/","top_notes":["Bergamot","Hindistan Cevizi","Violet Yaprak"],"heart_notes":["Patchouli"],"base_notes":["Sandal Ağacı","Amber"]},
-  {"code":"HT-004","name":"Darkness","gender":"erkek","scent_family":"Oryantal","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/darkness-eau-de-parfume/","top_notes":["Greyfurt","Bergamot","Elma"],"heart_notes":["Amber"],"base_notes":["Misk","Meşe Yosunu","Vanilya"]},
-  {"code":"HT-005","name":"Lost","gender":"unisex","scent_family":"Oryantal","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/lost-eau-de-parfume/","top_notes":["Ananas","Sümbül"],"heart_notes":["Yasemin","Iris"],"base_notes":["Amber","Misk"]},
-  {"code":"HT-006","name":"Artemis","gender":"unisex","scent_family":"Meyvemsi","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/artemis-eau-de-parfume/","top_notes":[],"heart_notes":[],"base_notes":[]},
-  {"code":"HT-007","name":"Classic","gender":"erkek","scent_family":"Oryantal","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/classic-eau-de-parfum/","top_notes":["Mandalina","Bergamot","Karabiber"],"heart_notes":["Sedir","Kakule","Violet"],"base_notes":["Amber","Patchouli","Vetiver"]},
-  {"code":"HT-008","name":"Infinity","gender":"unisex","scent_family":"Oryantal","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/infinity-eau-de-parfume/","top_notes":["Lavanta","Bergamot"],"heart_notes":["Limon","Fesleğen"],"base_notes":["Vanilya","Misk"]},
-  {"code":"HT-009","name":"Love","gender":"kadin","scent_family":"Çiçeksi","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/love-eau-de-parfum/","top_notes":["Mandalina","Portakal Çiçeği"],"heart_notes":["Yasemin","Lavanta"],"base_notes":["Amber"]},
-  {"code":"HT-010","name":"Invicta","gender":"erkek","scent_family":"Odunsu","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/invicta-eau-de-parfum/","top_notes":["Taze Nane","Mandalina","Greyfurt"],"heart_notes":["Gül","Sedir","Baharat"],"base_notes":["Vetiver","Patchouli","Deri"]},
-  {"code":"HT-011","name":"Fantasy","gender":"kadin","scent_family":"Meyvemsi","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/fantasy-eau-de-parfum/","top_notes":["Ahududu","Kara Kiraz","Erik"],"heart_notes":["Gece Orkidesi","Frezya","Iris"],"base_notes":["Amber","Misk","Vanilya"]},
-  {"code":"HT-012","name":"Freya","gender":"unisex","scent_family":"Oryantal","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/freya-eau-de-parfume/","top_notes":["Yasemin","Safran"],"heart_notes":["Badem"],"base_notes":["Sedir","Misk","Amber"]},
-  {"code":"HT-013","name":"Mystique","gender":"kadin","scent_family":"Çiçeksi","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/mystique-eau-de-parfum/","top_notes":["Yasemin","May Gülü"],"heart_notes":["Sümbül","Nergis"],"base_notes":[]},
-  {"code":"HT-014","name":"Aqua Di Gio","gender":"erkek","scent_family":"Taze","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/aqua-di-gio-eau-de-parfum/","top_notes":["Limon","Bergamot","Yeşil Mandalina"],"heart_notes":["Deniz Notaları","Yasemin","Zeytin Çiçeği"],"base_notes":["Sedir","Amber","Misk"]},
-  {"code":"HT-015","name":"Weekend","gender":"kadin","scent_family":"Çiçeksi","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/weekend-eau-de-parfume/","top_notes":[],"heart_notes":[],"base_notes":[]},
-  {"code":"HT-016","name":"New Moon","gender":"kadin","scent_family":"Oryantal","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/new-moon-eau-de-parfume/","top_notes":["Greyfurt","Ananas"],"heart_notes":["Yasemin","Sümbül"],"base_notes":["Beyaz Misk","Amber"]},
-  {"code":"HT-017","name":"Secret Night","gender":"kadin","scent_family":"Çiçeksi","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/secret-night-eau-de-parfume/","top_notes":["Kan Portakalı","Greyfurt"],"heart_notes":["Patchouli","Gardenia"],"base_notes":[]},
-  {"code":"HT-018","name":"Bouquet","gender":"kadin","scent_family":"Çiçeksi","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/bouquet-eau-de-parfume/","top_notes":["Gül","Portakal Çiçeği","Ahududu"],"heart_notes":[],"base_notes":["Sandal Ağacı"]},
-  {"code":"HT-019","name":"Sanctum","gender":"unisex","scent_family":"Oryantal","series":"hunter","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/sanctum-eau-de-parfume/","top_notes":[],"heart_notes":[],"base_notes":[]},
-  {"code":"TIK-001","name":"Cam Şişe Limon Kolonyası 190ml","gender":"unisex","scent_family":"Taze","series":"kolonya","in_stock":true,"image_url":"","web_url":"https://elegancevipperfume.com/urun/cam-sise-limon-kolonyasi/","top_notes":["Limon"],"heart_notes":[],"base_notes":[]}
+  {
+    "code": "HT-001",
+    "name": "Hunter Parfüm",
+    "gender": "unisex",
+    "scent_family": "Oryantal",
+    "series": "hunter",
+    "in_stock": false,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780613116/elegance-vip/products/rmz9ffg62at1smkzk8zs.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/hunter-parfum/",
+    "top_notes": [],
+    "heart_notes": [
+      "Oryantal",
+      "Taze"
+    ],
+    "base_notes": [
+      "Odunsu"
+    ]
+  },
+  {
+    "code": "HT-002",
+    "name": "Aphrodisiac",
+    "gender": "unisex",
+    "scent_family": "Taze",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612677/elegance-vip/products/wvnzl5y6pq32bnoxf1hh.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/aphrodisiac-eau-de-parfum/",
+    "top_notes": [],
+    "heart_notes": [
+      "Taze"
+    ],
+    "base_notes": []
+  },
+  {
+    "code": "HT-003",
+    "name": "Magic",
+    "gender": "erkek",
+    "scent_family": "Odunsu",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612705/elegance-vip/products/inmbqk0un6qaliubotds.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/magic-eau-de-parfum/",
+    "top_notes": [
+      "Bergamot",
+      "Hindistan Cevizi",
+      "Violet Yaprak"
+    ],
+    "heart_notes": [
+      "Patchouli"
+    ],
+    "base_notes": [
+      "Sandal Ağacı",
+      "Amber"
+    ]
+  },
+  {
+    "code": "HT-004",
+    "name": "Darkness",
+    "gender": "erkek",
+    "scent_family": "Oryantal",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612596/elegance-vip/products/u6ejqplmnojitg30qoyp.png",
+    "web_url": "https://elegancevipperfume.com/urun/darkness-eau-de-parfume/",
+    "top_notes": [
+      "Greyfurt",
+      "Bergamot",
+      "Elma"
+    ],
+    "heart_notes": [
+      "Amber"
+    ],
+    "base_notes": [
+      "Misk",
+      "Meşe Yosunu",
+      "Vanilya"
+    ]
+  },
+  {
+    "code": "HT-005",
+    "name": "Lost",
+    "gender": "unisex",
+    "scent_family": "Oryantal",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612571/elegance-vip/products/astawjulkbqb6v4nfvej.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/lost-eau-de-parfume/",
+    "top_notes": [
+      "Ananas",
+      "Sümbül"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Iris"
+    ],
+    "base_notes": [
+      "Amber",
+      "Misk"
+    ]
+  },
+  {
+    "code": "HT-006",
+    "name": "Artemis",
+    "gender": "unisex",
+    "scent_family": "Meyvemsi",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612611/elegance-vip/products/ik8ywlxr8xfjbokgsvq1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/artemis-eau-de-parfume/",
+    "top_notes": [],
+    "heart_notes": [],
+    "base_notes": []
+  },
+  {
+    "code": "HT-007",
+    "name": "Classic",
+    "gender": "erkek",
+    "scent_family": "Oryantal",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612687/elegance-vip/products/yow5whw8ulmv9mrgmlty.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/classic-eau-de-parfum/",
+    "top_notes": [
+      "Mandalina",
+      "Bergamot",
+      "Karabiber"
+    ],
+    "heart_notes": [
+      "Sedir",
+      "Kakule",
+      "Violet"
+    ],
+    "base_notes": [
+      "Amber",
+      "Patchouli",
+      "Vetiver"
+    ]
+  },
+  {
+    "code": "HT-008",
+    "name": "Infinity",
+    "gender": "unisex",
+    "scent_family": "Oryantal",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612558/elegance-vip/products/f0zluyqql4ponwvlywwe.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/infinity-eau-de-parfume/",
+    "top_notes": [
+      "Lavanta",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Limon",
+      "Fesleğen"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Misk"
+    ]
+  },
+  {
+    "code": "HT-009",
+    "name": "Love",
+    "gender": "kadin",
+    "scent_family": "Çiçeksi",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612666/elegance-vip/products/rte0rd1c628mnmlqmvtj.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/love-eau-de-parfum/",
+    "top_notes": [
+      "Mandalina",
+      "Portakal Çiçeği"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Lavanta"
+    ],
+    "base_notes": [
+      "Amber"
+    ]
+  },
+  {
+    "code": "HT-010",
+    "name": "Invicta",
+    "gender": "erkek",
+    "scent_family": "Odunsu",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612692/elegance-vip/products/bl5gnk6z3rk82cugbemu.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/invicta-eau-de-parfum/",
+    "top_notes": [
+      "Taze Nane",
+      "Mandalina",
+      "Greyfurt"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Sedir",
+      "Baharat"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Patchouli",
+      "Deri"
+    ]
+  },
+  {
+    "code": "HT-011",
+    "name": "Fantasy",
+    "gender": "kadin",
+    "scent_family": "Meyvemsi",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612716/elegance-vip/products/zgzeqeroakmsrrpa4fn8.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/fantasy-eau-de-parfum/",
+    "top_notes": [
+      "Ahududu",
+      "Kara Kiraz",
+      "Erik"
+    ],
+    "heart_notes": [
+      "Gece Orkidesi",
+      "Frezya",
+      "Iris"
+    ],
+    "base_notes": [
+      "Amber",
+      "Misk",
+      "Vanilya"
+    ]
+  },
+  {
+    "code": "HT-012",
+    "name": "Freya",
+    "gender": "unisex",
+    "scent_family": "Oryantal",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612535/elegance-vip/products/lex4w6spuynphhpkeleo.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/freya-eau-de-parfume/",
+    "top_notes": [
+      "Yasemin",
+      "Safran"
+    ],
+    "heart_notes": [
+      "Badem"
+    ],
+    "base_notes": [
+      "Sedir",
+      "Misk",
+      "Amber"
+    ]
+  },
+  {
+    "code": "HT-013",
+    "name": "Mystique",
+    "gender": "kadin",
+    "scent_family": "Çiçeksi",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612651/elegance-vip/products/t59qbv3jqoat670ugnnt.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/mystique-eau-de-parfum/",
+    "top_notes": [
+      "Yasemin",
+      "May Gülü"
+    ],
+    "heart_notes": [
+      "Sümbül",
+      "Nergis"
+    ],
+    "base_notes": []
+  },
+  {
+    "code": "HT-014",
+    "name": "Aqua Di Gio",
+    "gender": "erkek",
+    "scent_family": "Taze",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612682/elegance-vip/products/fw2rjeoi5vvc5x84t3bm.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/aqua-di-gio-eau-de-parfum/",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Yeşil Mandalina"
+    ],
+    "heart_notes": [
+      "Deniz Notaları",
+      "Yasemin",
+      "Zeytin Çiçeği"
+    ],
+    "base_notes": [
+      "Sedir",
+      "Amber",
+      "Misk"
+    ]
+  },
+  {
+    "code": "HT-015",
+    "name": "Weekend",
+    "gender": "kadin",
+    "scent_family": "Çiçeksi",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "",
+    "web_url": "https://elegancevipperfume.com/urun/weekend-eau-de-parfume/",
+    "top_notes": [],
+    "heart_notes": [],
+    "base_notes": []
+  },
+  {
+    "code": "HT-016",
+    "name": "New Moon",
+    "gender": "kadin",
+    "scent_family": "Oryantal",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612624/elegance-vip/products/frkf016milpdtn0pk4uy.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/new-moon-eau-de-parfume/",
+    "top_notes": [
+      "Greyfurt",
+      "Ananas"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Sümbül"
+    ],
+    "base_notes": [
+      "Beyaz Misk",
+      "Amber"
+    ]
+  },
+  {
+    "code": "HT-017",
+    "name": "Secret Night",
+    "gender": "kadin",
+    "scent_family": "Çiçeksi",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612639/elegance-vip/products/fymh4o8vv5nyrosfoaqg.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/secret-night-eau-de-parfume/",
+    "top_notes": [
+      "Kan Portakalı",
+      "Greyfurt"
+    ],
+    "heart_notes": [
+      "Patchouli",
+      "Gardenia"
+    ],
+    "base_notes": []
+  },
+  {
+    "code": "HT-018",
+    "name": "Bouquet",
+    "gender": "kadin",
+    "scent_family": "Çiçeksi",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612582/elegance-vip/products/sztswdkvfqnstoatxvi0.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/bouquet-eau-de-parfume/",
+    "top_notes": [
+      "Gül",
+      "Portakal Çiçeği",
+      "Ahududu"
+    ],
+    "heart_notes": [],
+    "base_notes": [
+      "Sandal Ağacı"
+    ]
+  },
+  {
+    "code": "HT-019",
+    "name": "Sanctum",
+    "gender": "unisex",
+    "scent_family": "Oryantal",
+    "series": "hunter",
+    "in_stock": true,
+    "image_url": "https://res.cloudinary.com/diqrddkdk/image/upload/v1780612549/elegance-vip/products/f7qzd8a5t1nhtazf5d4j.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/sanctum-eau-de-parfume/",
+    "top_notes": [],
+    "heart_notes": [],
+    "base_notes": []
+  },
+  {
+    "code": "TIK-001",
+    "name": "Cam Şişe Limon Kolonyası 190ml",
+    "gender": "unisex",
+    "scent_family": "Taze",
+    "series": "kolonya",
+    "in_stock": true,
+    "image_url": "",
+    "web_url": "https://elegancevipperfume.com/urun/cam-sise-limon-kolonyasi/",
+    "top_notes": [
+      "Limon"
+    ],
+    "heart_notes": [],
+    "base_notes": []
+  }
 ]

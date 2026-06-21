@@ -41,13 +41,13 @@ type RawProduct = { code?: string; name: string; gender?: string; scent_family?:
 
 /* ═══ TOKENS ═══ */
 const T = {
-  ink: '#2B2640', soft: '#5E5878', muted: '#8A85A1',
-  bg: 'linear-gradient(155deg,#FFFFFF 0%,#FDFCFE 50%,#FAFAFE 100%)',
-  glass: 'rgba(255,255,255,0.42)', glassS: 'rgba(255,255,255,0.62)', glassE: 'rgba(255,255,255,0.85)',
-  shadow: '0 12px 30px rgba(94,88,140,0.12)',
-  neoO: '6px 6px 14px rgba(160,152,195,0.30),-6px -6px 14px rgba(255,255,255,0.95)',
-  neoI: 'inset 4px 4px 10px rgba(160,152,195,0.22),inset -4px -4px 10px rgba(255,255,255,0.85)',
-  accent: 'linear-gradient(135deg,#B9A5E8,#9FB4E0)',
+  ink: '#2B2521', soft: '#6E5038', muted: '#9A8C7A',
+  bg: 'linear-gradient(155deg,#FFFFFF 0%,#FBF8F4 50%,#F5F1EC 100%)',
+  glass: 'rgba(255,255,255,0.46)', glassS: 'rgba(255,255,255,0.66)', glassE: 'rgba(255,255,255,0.88)',
+  shadow: '0 12px 30px rgba(90,70,55,0.12)',
+  neoO: '6px 6px 14px rgba(180,160,148,0.30),-6px -6px 14px rgba(255,255,255,0.95)',
+  neoI: 'inset 4px 4px 10px rgba(180,160,148,0.22),inset -4px -4px 10px rgba(255,255,255,0.85)',
+  accent: 'linear-gradient(135deg,#C08A7E,#9A5B50)',
 }
 
 /* ═══ CATALOG DATA ═══ */
@@ -90,14 +90,14 @@ const eleganciaProducts: CatProduct[] = (eleganciaData as RawProduct[])
 interface PerfumeDB { code:string; name:string; keywords:string[]; image_url:string; web_url:string; top_notes:string[]; heart_notes:string[]; base_notes:string[]; story:string; series:'gold'|'elegancia' }
 
 const PERFUME_DATABASE: PerfumeDB[] = [
-  { code:'EL-001',series:'elegancia',name:'Elegancia Charm Serenity',keywords:['charm','serenity','charm serenity'],image_url:'https://elegancevipperfume.com/wp-content/uploads/2026/03/3-1.jpg',web_url:'https://elegancevipperfume.com/urun/elegancia-charm-serenity-edp-100-ml/',top_notes:['Tutku Meyvesi','Şeftali','Narenciye'],heart_notes:['Yasemin','Amberwood','Baharatlı Akorlar'],base_notes:['Amber','Misk','Sandal Ağacı'],story:'Charm Serenity ile ilk temaşanda şeftali ve narenciye ferahlığı burnuna doluyor — işte bu, kokunun en saf ilk izlenimi.' },
-  { code:'EL-002',series:'elegancia',name:'Velvet Cardinal',keywords:['velvet','cardinal','velvet cardinal'],image_url:'https://elegancevipperfume.com/wp-content/uploads/2025/12/velvet-cardinal7.jpg',web_url:'https://elegancevipperfume.com/urun/velvet-cardinal-extrait-de-parfum/',top_notes:['Vanilya Özütü','Lavanta'],heart_notes:['Vanilya Tanesi','Yasemin'],base_notes:['Vanilya Absolüsü','Sandal Ağacı','Misk'],story:'Velvet Cardinal, Dubai\'nin sıcaklığını taşıyan kadifemsi bir dokunuş — vanilya ve lavantanın sıcaklığı şu an teninle buluşuyor.' },
-  { code:'EL-003',series:'elegancia',name:'Elegancia Sapphire Noir',keywords:['sapphire','noir','sapphire noir'],image_url:'https://elegancevipperfume.com/wp-content/uploads/2025/10/2-2.png',web_url:'https://elegancevipperfume.com/urun/elegancia-sapphire-noir-extrait-de-parfum-100-ml/',top_notes:['Bergamot','Mandalina','Pembe Biber'],heart_notes:['Paçuli','Gül','Yasemin','Sedir'],base_notes:['Amber','Misk','Vanilya'],story:'Sapphire Noir, karanlıkta parlayan bir mücevher gibi — bergamot ve mandalinanın berraklığı ilk izlenimin olacak.' },
-  { code:'EL-004',series:'elegancia',name:'Elegancia Reflection',keywords:['reflection','yansıma'],image_url:'https://elegancevipperfume.com/wp-content/uploads/2025/10/6-1.png',web_url:'https://elegancevipperfume.com/urun/elegancia-reflection-extrait-de-parfum-100-ml/',top_notes:['Bergamot','Limon'],heart_notes:['Denizci Akoru','Çiçeksi Yasemin','Deniz Yosunu'],base_notes:['Misk','Ambroxan','Sedir'],story:'Reflection, saf bir ayna gibi berrak — bergamot ve limonun taze ışığı şu an burnuna ulaşıyor. Bu berraklık kokunun ruhudur.' },
-  { code:'EL-005',series:'elegancia',name:'Elegancia NARCOTIC',keywords:['narcotic','narcotik','narkotik'],image_url:'https://elegancevipperfume.com/wp-content/uploads/2025/10/5-4.png',web_url:'https://elegancevipperfume.com/urun/elegancia-narcotic-extrait-de-parfum-100-ml/',top_notes:['Bergamot','Zencefil','Pembe Biber'],heart_notes:['Sümbül','Yasemin','Portakal Çiçeği'],base_notes:['Sandal Ağacı','Kehribar','Paçuli'],story:'NARCOTIC adından güç alıyor — bergamot ve zencefilin keskin enerjisi şu an teninle buluştu. Bu güçlü açılış, kokunun büyüleyici imzası.' },
-  { code:'EL-006',series:'elegancia',name:'Elegancia Majestic Oud',keywords:['majestic','oud','majestic oud','ud'],image_url:'https://elegancevipperfume.com/wp-content/uploads/2025/10/5-7.png',web_url:'https://elegancevipperfume.com/urun/elegancia-majestic-oud-extrait-de-parfum-100-ml/',top_notes:['Çarkıfelek Meyvesi','Safran'],heart_notes:['Öd Ağacı','Paçuli','Lavanta'],base_notes:['Deri','Kehribar'],story:'Majestic Oud, Doğu\'nun ruhunu taşıyan bir efsane — safran ve çarkıfelek meyvesiyle açılıp oud\'un derinliğiyle zamanı durduruyor.' },
+  { code:'EL-001',series:'elegancia',name:'Elegancia Charm Serenity',keywords:['charm','serenity','charm serenity'],image_url:'https://res.cloudinary.com/diqrddkdk/image/upload/v1780594473/elegance-vip/products/xpzq6godvuweto4s6xm4.jpg',web_url:'https://elegancevipperfume.com/urun/elegancia-charm-serenity-edp-100-ml/',top_notes:['Tutku Meyvesi','Şeftali','Narenciye'],heart_notes:['Yasemin','Amberwood','Baharatlı Akorlar'],base_notes:['Amber','Misk','Sandal Ağacı'],story:'Charm Serenity ile ilk temaşanda şeftali ve narenciye ferahlığı burnuna doluyor — işte bu, kokunun en saf ilk izlenimi.' },
+  { code:'EL-002',series:'elegancia',name:'Velvet Cardinal',keywords:['velvet','cardinal','velvet cardinal'],image_url:'https://res.cloudinary.com/diqrddkdk/image/upload/v1780595192/elegance-vip/products/dhzx5eipzp2cgegvgw6i.jpg',web_url:'https://elegancevipperfume.com/urun/velvet-cardinal-extrait-de-parfum/',top_notes:['Vanilya Özütü','Lavanta'],heart_notes:['Vanilya Tanesi','Yasemin'],base_notes:['Vanilya Absolüsü','Sandal Ağacı','Misk'],story:'Velvet Cardinal, Dubai\'nin sıcaklığını taşıyan kadifemsi bir dokunuş — vanilya ve lavantanın sıcaklığı şu an teninle buluşuyor.' },
+  { code:'EL-003',series:'elegancia',name:'Elegancia Sapphire Noir',keywords:['sapphire','noir','sapphire noir'],image_url:'https://res.cloudinary.com/diqrddkdk/image/upload/v1780597644/elegance-vip/products/vkt2ylj3bmw2f3nmipch.jpg',web_url:'https://elegancevipperfume.com/urun/elegancia-sapphire-noir-extrait-de-parfum-100-ml/',top_notes:['Bergamot','Mandalina','Pembe Biber'],heart_notes:['Paçuli','Gül','Yasemin','Sedir'],base_notes:['Amber','Misk','Vanilya'],story:'Sapphire Noir, karanlıkta parlayan bir mücevher gibi — bergamot ve mandalinanın berraklığı ilk izlenimin olacak.' },
+  { code:'EL-004',series:'elegancia',name:'Elegancia Reflection',keywords:['reflection','yansıma'],image_url:'https://res.cloudinary.com/diqrddkdk/image/upload/v1780597810/elegance-vip/products/h5eainx9ofrchnm9f2gg.jpg',web_url:'https://elegancevipperfume.com/urun/elegancia-reflection-extrait-de-parfum-100-ml/',top_notes:['Bergamot','Limon'],heart_notes:['Denizci Akoru','Çiçeksi Yasemin','Deniz Yosunu'],base_notes:['Misk','Ambroxan','Sedir'],story:'Reflection, saf bir ayna gibi berrak — bergamot ve limonun taze ışığı şu an burnuna ulaşıyor. Bu berraklık kokunun ruhudur.' },
+  { code:'EL-005',series:'elegancia',name:'Elegancia NARCOTIC',keywords:['narcotic','narcotik','narkotik'],image_url:'https://res.cloudinary.com/diqrddkdk/image/upload/v1780597896/elegance-vip/products/nkjngv0eg22s4ihpm6bt.jpg',web_url:'https://elegancevipperfume.com/urun/elegancia-narcotic-extrait-de-parfum-100-ml/',top_notes:['Bergamot','Zencefil','Pembe Biber'],heart_notes:['Sümbül','Yasemin','Portakal Çiçeği'],base_notes:['Sandal Ağacı','Kehribar','Paçuli'],story:'NARCOTIC adından güç alıyor — bergamot ve zencefilin keskin enerjisi şu an teninle buluştu. Bu güçlü açılış, kokunun büyüleyici imzası.' },
+  { code:'EL-006',series:'elegancia',name:'Elegancia Majestic Oud',keywords:['majestic','oud','majestic oud','ud'],image_url:'https://res.cloudinary.com/diqrddkdk/image/upload/v1780597978/elegance-vip/products/rhhxm5rt6ljufwgwc2fq.jpg',web_url:'https://elegancevipperfume.com/urun/elegancia-majestic-oud-extrait-de-parfum-100-ml/',top_notes:['Çarkıfelek Meyvesi','Safran'],heart_notes:['Öd Ağacı','Paçuli','Lavanta'],base_notes:['Deri','Kehribar'],story:'Majestic Oud, Doğu\'nun ruhunu taşıyan bir efsane — safran ve çarkıfelek meyvesiyle açılıp oud\'un derinliğiyle zamanı durduruyor.' },
   { code:'EL-007',series:'elegancia',name:'Elegancia Majestic Aura',keywords:['majestic aura','aura'],image_url:'https://elegancevipperfume.com/wp-content/uploads/2025/10/5-7.png',web_url:'https://elegancevipperfume.com/urun/elegancia-majestic-aura-extrait-de-parfum-100-ml/',top_notes:['Bergamot','Portakal'],heart_notes:['Amber','Misk'],base_notes:['Vanilya','Sedir','Deri'],story:'Majestic Aura, kraliyet saraylarında süzülen bir rüya — bergamot ve portakalın aydınlığı şu an burnundan süzülüyor.' },
-  { code:'SPECIAL-LG',series:'gold',name:'Lira Gourmand',keywords:['lira','lira gourmand','gourmand'],image_url:'https://elegancevipperfume.com/wp-content/uploads/2026/05/lira1.jpg',web_url:'https://elegancevipperfume.com/urun/lira-gourmand-parfum/',top_notes:['Portakal','Bergamot','Limon'],heart_notes:['Karamel','Çikolata'],base_notes:['Vanilya','Misk','Odunsu Notalar'],story:'Lira, tatlı bir melodinin kokusu — portakal ve bergamotun ferah açılışı şu an burnuna ulaşıyor. İşte bu, Lira\'nın ilk şarkısı.' },
+  { code:'SPECIAL-LG',series:'gold',name:'Lira Gourmand',keywords:['lira','lira gourmand','gourmand'],image_url:'https://res.cloudinary.com/diqrddkdk/image/upload/v1780594309/elegance-vip/products/zoczrvvmaeldia13mrfa.jpg',web_url:'https://elegancevipperfume.com/urun/lira-gourmand-parfum/',top_notes:['Portakal','Bergamot','Limon'],heart_notes:['Karamel','Çikolata'],base_notes:['Vanilya','Misk','Odunsu Notalar'],story:'Lira, tatlı bir melodinin kokusu — portakal ve bergamotun ferah açılışı şu an burnuna ulaşıyor. İşte bu, Lira\'nın ilk şarkısı.' },
 ]
 
 const FEATURED_CODES = ['EL-002','SPECIAL-LG','EL-005','EL-004']
@@ -119,9 +119,9 @@ const scentFamilies = goldScentFamilies
 /* ═══ SHARED COMPONENTS ═══ */
 function Bg({ variant = 'a' }: { variant?: string }) {
   const sets: Record<string, Array<{top?:number;left?:number;right?:number;bottom?:number;w:number;h:number;c:string;o:number}>> = {
-    a: [{top:-60,left:-80,w:320,h:320,c:'#EFE8F6',o:.35},{top:280,right:-100,w:280,h:280,c:'#E8EEF6',o:.30},{bottom:-120,left:-40,w:360,h:360,c:'#F2EDF7',o:.40}],
-    b: [{top:-100,right:-60,w:340,h:340,c:'#F0E9F7',o:.35},{top:360,left:-120,w:320,h:320,c:'#E9EFF7',o:.30},{bottom:-80,right:-80,w:300,h:300,c:'#F3EEF8',o:.36}],
-    c: [{top:120,left:-60,w:380,h:380,c:'#F0E9F7',o:.38},{top:280,right:-120,w:360,h:360,c:'#E9EFF7',o:.30}],
+    a: [{top:-60,left:-80,w:320,h:320,c:'#F3E9E3',o:.35},{top:280,right:-100,w:280,h:280,c:'#EFE7E1',o:.30},{bottom:-120,left:-40,w:360,h:360,c:'#F4ECE6',o:.40}],
+    b: [{top:-100,right:-60,w:340,h:340,c:'#F3EAE4',o:.35},{top:360,left:-120,w:320,h:320,c:'#EFE7E1',o:.30},{bottom:-80,right:-80,w:300,h:300,c:'#F4ECE6',o:.36}],
+    c: [{top:120,left:-60,w:380,h:380,c:'#F3EAE4',o:.38},{top:280,right:-120,w:360,h:360,c:'#EFE7E1',o:.30}],
   }
   return (
     <div style={{position:'absolute',inset:0,overflow:'hidden',background:T.bg}}>
@@ -132,7 +132,7 @@ function Bg({ variant = 'a' }: { variant?: string }) {
   )
 }
 
-function BottleGlyph({size=44,hue='#D8CDEE'}:{size?:number;hue?:string}) {
+function BottleGlyph({size=44,hue='#E8DAD2'}:{size?:number;hue?:string}) {
   return (
     <svg width={size} height={size*1.35} viewBox="0 0 44 60" fill="none">
       <rect x="17" y="3" width="10" height="7" rx="1.2" fill="#FFF" stroke="#A89FC7" strokeOpacity=".5" strokeWidth="1"/>
@@ -145,7 +145,7 @@ function BottleGlyph({size=44,hue='#D8CDEE'}:{size?:number;hue?:string}) {
 
 function AsyaAvatar({size=32}:{size?:number}) {
   return (
-    <div style={{width:size,height:size,borderRadius:'50%',overflow:'hidden',flexShrink:0,boxShadow:'0 0 0 1.5px rgba(185,165,232,0.60),0 4px 12px rgba(94,88,140,0.18)'}}>
+    <div style={{width:size,height:size,borderRadius:'50%',overflow:'hidden',flexShrink:0,boxShadow:'0 0 0 1.5px rgba(192,138,126,0.60),0 4px 12px rgba(90,70,55,0.18)'}}>
       <img src="/asyapp.png" alt="ASYA" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center top'}}/>
     </div>
   )
@@ -155,7 +155,7 @@ function ChatBubble({from,children}:{from:'asya'|'user';children:React.ReactNode
   const isA = from==='asya'
   return (
     <div style={{display:'flex',justifyContent:isA?'flex-start':'flex-end',marginTop:8}}>
-      <div style={{maxWidth:'78%',padding:'12px 16px',borderRadius:isA?'18px 18px 18px 6px':'18px 18px 6px 18px',background:isA?T.glassS:'linear-gradient(135deg,#C8B8E8,#B8CCE8)',backdropFilter:isA?'blur(14px)':undefined,WebkitBackdropFilter:isA?'blur(14px)':undefined,border:isA?`1px solid ${T.glassE}`:'none',boxShadow:isA?'0 6px 16px rgba(94,88,140,.10),inset 0 1px 0 rgba(255,255,255,.7)':'0 8px 18px rgba(140,120,200,.25)',fontSize:14.5,lineHeight:1.45,color:isA?T.ink:'#FFF',fontWeight:isA?400:500}}>
+      <div style={{maxWidth:'78%',padding:'12px 16px',borderRadius:isA?'18px 18px 18px 6px':'18px 18px 6px 18px',background:isA?T.glassS:'linear-gradient(135deg,#D8B3A8,#C79E92)',backdropFilter:isA?'blur(14px)':undefined,WebkitBackdropFilter:isA?'blur(14px)':undefined,border:isA?`1px solid ${T.glassE}`:'none',boxShadow:isA?'0 6px 16px rgba(90,70,55,.10),inset 0 1px 0 rgba(255,255,255,.7)':'0 8px 18px rgba(154,91,80,.25)',fontSize:14.5,lineHeight:1.45,color:isA?T.ink:'#FFF',fontWeight:isA?400:500}}>
         {children}
       </div>
     </div>
@@ -176,7 +176,7 @@ function OptionChips({options,onSelect}:{options:string[];onSelect:(o:string)=>v
   return (
     <div style={{display:'flex',flexWrap:'wrap',gap:8,marginTop:8,marginLeft:2}}>
       {options.map(opt=>(
-        <button key={opt} onClick={()=>onSelect(opt)} style={{padding:'9px 16px',borderRadius:999,background:'rgba(255,255,255,0.55)',backdropFilter:'blur(12px)',WebkitBackdropFilter:'blur(12px)',border:`1px solid ${T.glassE}`,fontSize:13,color:T.ink,fontWeight:500,boxShadow:'0 3px 8px rgba(94,88,140,.08)',cursor:'pointer',fontFamily:'inherit',transition:'all .15s'}}>
+        <button key={opt} onClick={()=>onSelect(opt)} style={{padding:'9px 16px',borderRadius:999,background:'rgba(255,255,255,0.55)',backdropFilter:'blur(12px)',WebkitBackdropFilter:'blur(12px)',border:`1px solid ${T.glassE}`,fontSize:13,color:T.ink,fontWeight:500,boxShadow:'0 3px 8px rgba(90,70,55,.08)',cursor:'pointer',fontFamily:'inherit',transition:'all .15s'}}>
           {opt}
         </button>
       ))}
@@ -186,15 +186,15 @@ function OptionChips({options,onSelect}:{options:string[];onSelect:(o:string)=>v
 
 function ProductCard({product,cardType,coupon,onSave,saved}:{product:Prod;cardType:string;coupon?:string;onSave?:(p:Prod)=>void;saved?:boolean}) {
   const labels:Record<string,string> = {recommendation:'Sizin İçin Seçildi',elegancia:'Elegancia Premium',home:'Oda Kokusu'}
-  const hues:Record<string,string> = {recommendation:'#E2D6F1',elegancia:'#D6E2F1',home:'#E2F1E2'}
+  const hues:Record<string,string> = {recommendation:'#EADFD8',elegancia:'#D6E2F1',home:'#E2F1E2'}
   return (
-    <div style={{background:'rgba(255,255,255,0.70)',backdropFilter:'blur(20px)',WebkitBackdropFilter:'blur(20px)',border:`1px solid ${T.glassE}`,borderRadius:22,overflow:'hidden',boxShadow:'0 12px 30px rgba(94,88,140,.10),inset 0 1px 0 rgba(255,255,255,.9)',maxWidth:340,marginTop:8}}>
+    <div style={{background:'rgba(255,255,255,0.70)',backdropFilter:'blur(20px)',WebkitBackdropFilter:'blur(20px)',border:`1px solid ${T.glassE}`,borderRadius:22,overflow:'hidden',boxShadow:'0 12px 30px rgba(90,70,55,.10),inset 0 1px 0 rgba(255,255,255,.9)',maxWidth:340,marginTop:8}}>
       <div style={{padding:'10px 14px',display:'flex',alignItems:'center',justifyContent:'space-between',borderBottom:'1px solid rgba(255,255,255,0.5)'}}>
-        <span style={{display:'inline-flex',alignItems:'center',gap:4,padding:'4px 10px',borderRadius:999,fontSize:10,fontWeight:600,letterSpacing:'0.10em',textTransform:'uppercase',background:'linear-gradient(135deg,rgba(185,165,232,.15),rgba(159,180,224,.15))',border:'1px solid rgba(185,165,232,.30)',color:T.soft}}>
+        <span style={{display:'inline-flex',alignItems:'center',gap:4,padding:'4px 10px',borderRadius:999,fontSize:10,fontWeight:600,letterSpacing:'0.10em',textTransform:'uppercase',background:'linear-gradient(135deg,rgba(192,138,126,.15),rgba(154,91,80,.15))',border:'1px solid rgba(192,138,126,.30)',color:T.soft}}>
           {labels[cardType]||labels.recommendation}
         </span>
         {onSave && cardType!=='home' && (
-          <button onClick={()=>onSave(product)} style={{display:'flex',alignItems:'center',gap:4,fontSize:11,padding:'4px 10px',borderRadius:999,cursor:'pointer',fontFamily:'inherit',background:saved?'rgba(185,165,232,.15)':'rgba(0,0,0,.04)',color:saved?T.soft:T.muted,border:saved?'1px solid rgba(185,165,232,.3)':'1px solid rgba(0,0,0,.08)',transition:'all .2s'}}>
+          <button onClick={()=>onSave(product)} style={{display:'flex',alignItems:'center',gap:4,fontSize:11,padding:'4px 10px',borderRadius:999,cursor:'pointer',fontFamily:'inherit',background:saved?'rgba(192,138,126,.15)':'rgba(0,0,0,.04)',color:saved?T.soft:T.muted,border:saved?'1px solid rgba(192,138,126,.3)':'1px solid rgba(0,0,0,.08)',transition:'all .2s'}}>
             {saved?'♥ Kayıtlı':'♡ Kaydet'}
           </button>
         )}
@@ -203,19 +203,19 @@ function ProductCard({product,cardType,coupon,onSave,saved}:{product:Prod;cardTy
         <div style={{flexShrink:0}}>
           {product.image_url
             ? <img src={product.image_url} alt={product.name} style={{width:90,height:90,objectFit:'cover',borderRadius:16,boxShadow:'0 4px 16px rgba(0,0,0,.10)'}}/>
-            : <div style={{width:90,height:90,borderRadius:16,background:`linear-gradient(160deg,${hues[cardType]||'#E2D6F1'},#FFF)`,display:'flex',alignItems:'center',justifyContent:'center'}}><BottleGlyph size={40} hue={hues[cardType]||'#E2D6F1'}/></div>
+            : <div style={{width:90,height:90,borderRadius:16,background:`linear-gradient(160deg,${hues[cardType]||'#EADFD8'},#FFF)`,display:'flex',alignItems:'center',justifyContent:'center'}}><BottleGlyph size={40} hue={hues[cardType]||'#EADFD8'}/></div>
           }
         </div>
         <div style={{flex:1,minWidth:0}}>
           <p style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:16,color:T.ink,margin:'0 0 6px',lineHeight:1.2}}>{product.name}</p>
           {coupon && (
-            <div style={{padding:'8px 10px',borderRadius:12,background:'linear-gradient(135deg,rgba(185,165,232,.10),rgba(159,180,224,.10))',border:'1px solid rgba(185,165,232,.25)',marginBottom:8}}>
+            <div style={{padding:'8px 10px',borderRadius:12,background:'linear-gradient(135deg,rgba(192,138,126,.10),rgba(154,91,80,.10))',border:'1px solid rgba(192,138,126,.25)',marginBottom:8}}>
               <p style={{fontSize:10,fontWeight:600,letterSpacing:'0.1em',textTransform:'uppercase',color:T.soft,margin:0}}>%10 İndirim</p>
               <p style={{fontFamily:'monospace',fontWeight:700,fontSize:13,letterSpacing:'0.15em',color:T.ink,margin:'2px 0 0'}}>{coupon}</p>
             </div>
           )}
           {cardType==='recommendation' && !coupon && (
-            <div style={{padding:'6px 10px',borderRadius:10,background:'linear-gradient(135deg,rgba(185,165,232,.12),rgba(159,180,224,.10))',border:'1px solid rgba(185,165,232,.22)',marginBottom:6,display:'flex',alignItems:'center',gap:8}}>
+            <div style={{padding:'6px 10px',borderRadius:10,background:'linear-gradient(135deg,rgba(192,138,126,.12),rgba(154,91,80,.10))',border:'1px solid rgba(192,138,126,.22)',marginBottom:6,display:'flex',alignItems:'center',gap:8}}>
               <div>
                 <div style={{fontSize:9,fontWeight:700,letterSpacing:'0.1em',textTransform:'uppercase',color:T.soft}}>%10 İndirim</div>
                 <div style={{fontFamily:'monospace',fontWeight:700,fontSize:12,letterSpacing:'0.15em',color:T.ink}}>ASYA10</div>
@@ -444,9 +444,9 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
           <button
             onClick={()=>imgInputRef.current?.click()}
             disabled={photoLoading}
-            style={{width:'100%',padding:'14px 18px',borderRadius:18,border:'2px dashed rgba(185,165,232,.45)',background:'rgba(255,255,255,.65)',display:'flex',alignItems:'center',gap:14,cursor:'pointer',fontFamily:'inherit',marginBottom:14,boxShadow:'0 4px 14px rgba(94,88,140,.07)',transition:'all .18s'}}
+            style={{width:'100%',padding:'14px 18px',borderRadius:18,border:'2px dashed rgba(192,138,126,.45)',background:'rgba(255,255,255,.65)',display:'flex',alignItems:'center',gap:14,cursor:'pointer',fontFamily:'inherit',marginBottom:14,boxShadow:'0 4px 14px rgba(90,70,55,.07)',transition:'all .18s'}}
           >
-            <div style={{width:44,height:44,borderRadius:14,background:'linear-gradient(145deg,rgba(185,165,232,.25),rgba(140,120,200,.12))',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
+            <div style={{width:44,height:44,borderRadius:14,background:'linear-gradient(145deg,rgba(192,138,126,.25),rgba(154,91,80,.12))',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
               {photoLoading
                 ? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={T.accent} strokeWidth="2"><circle cx="12" cy="12" r="10" strokeOpacity=".3"/><path d="M12 2a10 10 0 0 1 10 10" strokeLinecap="round"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur=".8s" repeatCount="indefinite"/></path></svg>
                 : <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={T.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
@@ -466,9 +466,9 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
 
           {/* Text divider */}
           <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:12}}>
-            <div style={{flex:1,height:1,background:'rgba(185,165,232,.25)'}}/>
+            <div style={{flex:1,height:1,background:'rgba(192,138,126,.25)'}}/>
             <span style={{fontSize:11,color:T.muted,fontWeight:500}}>ya da ismini yaz</span>
-            <div style={{flex:1,height:1,background:'rgba(185,165,232,.25)'}}/>
+            <div style={{flex:1,height:1,background:'rgba(192,138,126,.25)'}}/>
           </div>
 
           <div style={{display:'flex',gap:8,marginTop:4}}>
@@ -477,15 +477,15 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
               onChange={e=>setInputVal(e.target.value)}
               onKeyDown={e=>e.key==='Enter'&&doSearch()}
               placeholder="örn. Elegancia Charm Serenity, Narcotic, Lira…"
-              style={{flex:1,height:48,borderRadius:16,border:'1.5px solid rgba(185,165,232,.40)',background:'rgba(255,255,255,.85)',padding:'0 16px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}
+              style={{flex:1,height:48,borderRadius:16,border:'1.5px solid rgba(192,138,126,.40)',background:'rgba(255,255,255,.85)',padding:'0 16px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}
             />
-            <button onClick={doSearch} style={{height:48,padding:'0 20px',borderRadius:16,border:'none',background:'linear-gradient(135deg,#B9A5E8,#9FB4E0)',color:'#FFF',fontSize:14,fontWeight:600,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',boxShadow:'0 8px 18px rgba(140,120,200,.28)'}}>
+            <button onClick={doSearch} style={{height:48,padding:'0 20px',borderRadius:16,border:'none',background:'linear-gradient(135deg,#C08A7E,#9A5B50)',color:'#FFF',fontSize:14,fontWeight:600,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',boxShadow:'0 8px 18px rgba(154,91,80,.28)'}}>
               Bul →
             </button>
           </div>
           <div style={{display:'flex',flexWrap:'wrap',gap:6,marginTop:12}}>
             {['Charm Serenity','Reflection','NARCOTIC','Lira','Velvet Cardinal','Majestic Oud'].map(s=>(
-              <button key={s} onClick={()=>{setInputVal(s);}} style={{padding:'6px 14px',borderRadius:999,background:'rgba(255,255,255,.65)',border:'1px solid rgba(185,165,232,.25)',fontSize:12,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
+              <button key={s} onClick={()=>{setInputVal(s);}} style={{padding:'6px 14px',borderRadius:999,background:'rgba(255,255,255,.65)',border:'1px solid rgba(192,138,126,.25)',fontSize:12,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
                 {s}
               </button>
             ))}
@@ -506,7 +506,7 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
           </div>
           <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:4}}>
             {([['k','Kadın 👩','k-'+pendingNum],['e','Erkek 👨','e-'+pendingNum],['u','Unisex ✨','u-'+pendingNum]] as const).map(([prefix,label,code])=>(
-              <button key={prefix} onClick={()=>selectGender(prefix as 'k'|'e'|'u')} style={{padding:'12px 22px',borderRadius:999,border:'1.5px solid rgba(185,165,232,.35)',background:'rgba(255,255,255,.80)',backdropFilter:'blur(12px)',WebkitBackdropFilter:'blur(12px)',fontSize:14,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit',display:'flex',flexDirection:'column',alignItems:'center',gap:2,minWidth:90}}>
+              <button key={prefix} onClick={()=>selectGender(prefix as 'k'|'e'|'u')} style={{padding:'12px 22px',borderRadius:999,border:'1.5px solid rgba(192,138,126,.35)',background:'rgba(255,255,255,.80)',backdropFilter:'blur(12px)',WebkitBackdropFilter:'blur(12px)',fontSize:14,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit',display:'flex',flexDirection:'column',alignItems:'center',gap:2,minWidth:90}}>
                 <span>{label}</span>
                 <span style={{fontSize:10,color:T.muted,letterSpacing:'0.10em'}}>{code}</span>
               </button>
@@ -519,7 +519,7 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
       {/* Step: Not Found */}
       {step==='notfound' && (
         <div style={{marginLeft:42}}>
-          <div style={{padding:'16px 18px',borderRadius:16,background:'rgba(255,255,255,.65)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 16px rgba(94,88,140,.08)',marginBottom:12}}>
+          <div style={{padding:'16px 18px',borderRadius:16,background:'rgba(255,255,255,.65)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 16px rgba(90,70,55,.08)',marginBottom:12}}>
             <div style={{fontSize:14,color:T.ink,marginBottom:8}}>🤔 Bu parfümü şu an veritabanımda bulamadım. Elegancia veya Gold serimizden mi?</div>
             <button onClick={reset} style={{padding:'8px 16px',borderRadius:999,border:'none',background:T.accent,color:'#FFF',fontSize:13,fontWeight:600,cursor:'pointer',fontFamily:'inherit'}}>Tekrar Dene</button>
           </div>
@@ -531,21 +531,21 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
       {(step==='found'||step==='notes') && matched && (
         <div style={{marginLeft:isDesktop?42:0}}>
           {/* Product Card */}
-          <div style={{borderRadius:24,background:matched.series==='elegancia'?'linear-gradient(135deg,rgba(91,74,130,.06),rgba(185,165,232,.08))':'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',border:matched.series==='elegancia'?'1px solid rgba(91,74,130,.20)':`1px solid ${T.glassE}`,boxShadow:'0 12px 30px rgba(94,88,140,.10)',overflow:'hidden',marginBottom:16}}>
+          <div style={{borderRadius:24,background:matched.series==='elegancia'?'linear-gradient(135deg,rgba(110,80,56,.06),rgba(192,138,126,.08))':'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',border:matched.series==='elegancia'?'1px solid rgba(110,80,56,.20)':`1px solid ${T.glassE}`,boxShadow:'0 12px 30px rgba(90,70,55,.10)',overflow:'hidden',marginBottom:16}}>
             {matched.series==='elegancia'&&(
-              <div style={{padding:'8px 18px',borderBottom:'1px solid rgba(91,74,130,.10)',background:'rgba(91,74,130,.06)'}}>
-                <span style={{fontSize:9,letterSpacing:'0.22em',fontWeight:700,color:'rgba(91,74,130,.85)',textTransform:'uppercase'}}>✦ Elegancia Premium · 100ml Extrait</span>
+              <div style={{padding:'8px 18px',borderBottom:'1px solid rgba(110,80,56,.10)',background:'rgba(110,80,56,.06)'}}>
+                <span style={{fontSize:9,letterSpacing:'0.22em',fontWeight:700,color:'rgba(110,80,56,.85)',textTransform:'uppercase'}}>✦ Elegancia Premium · 100ml Extrait</span>
               </div>
             )}
             <div style={{display:'flex',gap:16,padding:18,alignItems:'flex-start'}}>
-              <div style={{width:100,height:100,borderRadius:16,background:'linear-gradient(160deg,#EFE6F8,#DCE8F4)',flexShrink:0,overflow:'hidden',border:'1px solid rgba(185,165,232,.15)'}}>
+              <div style={{width:100,height:100,borderRadius:16,background:'linear-gradient(160deg,#F0E7E0,#EADFD8)',flexShrink:0,overflow:'hidden',border:'1px solid rgba(192,138,126,.15)'}}>
                 <img src={matched.image_url} alt={matched.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
               </div>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:22,color:T.ink,lineHeight:1.1,marginBottom:8}}>{matched.name}</div>
                 <div style={{display:'flex',flexWrap:'wrap',gap:5,marginBottom:10}}>
                   {matched.top_notes.map((n,i)=>(
-                    <span key={i} style={{padding:'3px 9px',borderRadius:999,background:'rgba(185,165,232,.12)',border:'1px solid rgba(185,165,232,.22)',fontSize:11.5,color:T.soft}}>{n}</span>
+                    <span key={i} style={{padding:'3px 9px',borderRadius:999,background:'rgba(192,138,126,.12)',border:'1px solid rgba(192,138,126,.22)',fontSize:11.5,color:T.soft}}>{n}</span>
                   ))}
                 </div>
                 <a href={matched.web_url} target="_blank" rel="noopener noreferrer" style={{fontSize:12,color:T.soft,textDecoration:'none',display:'inline-flex',alignItems:'center',gap:4}}>Ürünü İncele →</a>
@@ -566,7 +566,7 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
           {/* 15 dk button – only when notes are available */}
           {!showHeart && (
             <div style={{marginLeft:42,marginBottom:16}}>
-              <button onClick={()=>setShowHeart(true)} style={{padding:'12px 22px',borderRadius:16,border:'none',background:'linear-gradient(135deg,rgba(185,165,232,.15),rgba(159,180,224,.15))',fontSize:14,color:T.ink,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:8,fontWeight:500}}>
+              <button onClick={()=>setShowHeart(true)} style={{padding:'12px 22px',borderRadius:16,border:'none',background:'linear-gradient(135deg,rgba(192,138,126,.15),rgba(154,91,80,.15))',fontSize:14,color:T.ink,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:8,fontWeight:500}}>
                 ⏳ 15 Dakika Sonra Ne Olacak?
               </button>
             </div>
@@ -588,14 +588,14 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
 
               {/* Notes pyramid */}
               {matched.heart_notes.length>0 && (
-              <div style={{marginLeft:42,padding:'16px 18px',borderRadius:18,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 18px rgba(94,88,140,.06)',marginBottom:16}}>
+              <div style={{marginLeft:42,padding:'16px 18px',borderRadius:18,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 18px rgba(90,70,55,.06)',marginBottom:16}}>
                 <div style={{fontSize:10,letterSpacing:'0.24em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:12}}>Notalar Piramidi</div>
-                {[{label:'ÜST NOTALAR',notes:matched.top_notes,c:'rgba(185,165,232,.15)'},{label:'KALP NOTALAR',notes:matched.heart_notes,c:'rgba(159,180,224,.15)'},{label:'DİP NOTALAR',notes:matched.base_notes,c:'rgba(185,165,232,.10)'}].map((tier,i)=>(
-                  <div key={i} style={{paddingBottom:i<2?12:0,marginBottom:i<2?12:0,borderBottom:i<2?'1px solid rgba(94,88,140,.06)':'none'}}>
+                {[{label:'ÜST NOTALAR',notes:matched.top_notes,c:'rgba(192,138,126,.15)'},{label:'KALP NOTALAR',notes:matched.heart_notes,c:'rgba(154,91,80,.15)'},{label:'DİP NOTALAR',notes:matched.base_notes,c:'rgba(192,138,126,.10)'}].map((tier,i)=>(
+                  <div key={i} style={{paddingBottom:i<2?12:0,marginBottom:i<2?12:0,borderBottom:i<2?'1px solid rgba(90,70,55,.06)':'none'}}>
                     <div style={{fontSize:9,letterSpacing:'0.20em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:6}}>{tier.label}</div>
                     <div style={{display:'flex',flexWrap:'wrap',gap:6}}>
                       {tier.notes.map((n,j)=>(
-                        <span key={j} style={{padding:'4px 11px',borderRadius:999,background:tier.c,border:'1px solid rgba(185,165,232,.20)',fontSize:12.5,color:T.ink}}>{n}</span>
+                        <span key={j} style={{padding:'4px 11px',borderRadius:999,background:tier.c,border:'1px solid rgba(192,138,126,.20)',fontSize:12.5,color:T.ink}}>{n}</span>
                       ))}
                     </div>
                   </div>
@@ -605,10 +605,10 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
 
               {/* CTA */}
               <div style={{marginLeft:42,display:'flex',gap:10,flexWrap:'wrap',marginBottom:28}}>
-                <a href={matched.web_url} target="_blank" rel="noopener noreferrer" style={{padding:'10px 20px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#B9A5E8,#9FB4E0)',color:'#FFF',fontSize:13,fontWeight:600,textDecoration:'none',display:'flex',alignItems:'center',gap:6}}>
+                <a href={matched.web_url} target="_blank" rel="noopener noreferrer" style={{padding:'10px 20px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#C08A7E,#9A5B50)',color:'#FFF',fontSize:13,fontWeight:600,textDecoration:'none',display:'flex',alignItems:'center',gap:6}}>
                   Ürün Sayfasına Git →
                 </a>
-                <button onClick={onGoChat} style={{padding:'10px 18px',borderRadius:999,border:'1px solid rgba(185,165,232,.25)',background:'rgba(255,255,255,.75)',fontSize:13,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500}}>
+                <button onClick={onGoChat} style={{padding:'10px 18px',borderRadius:999,border:'1px solid rgba(192,138,126,.25)',background:'rgba(255,255,255,.75)',fontSize:13,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500}}>
                   Başka Parfüm Seç →
                 </button>
               </div>
@@ -621,7 +621,7 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
             {uxChat.map((m,i)=>(
               <div key={i} style={{display:'flex',gap:8,alignItems:'flex-start',marginBottom:10,flexDirection:m.role==='user'?'row-reverse':'row'}}>
                 {m.role==='asya' && <AsyaAvatar size={28}/>}
-                <div style={{maxWidth:'78%',padding:'10px 14px',borderRadius:16,background:m.role==='user'?'linear-gradient(135deg,#B9A5E8,#9FB4E0)':'rgba(255,255,255,.80)',color:m.role==='user'?'#FFF':T.ink,fontSize:13.5,lineHeight:1.55,boxShadow:'0 4px 12px rgba(94,88,140,.08)',border:m.role==='asya'?`1px solid ${T.glassE}`:'none'}}>
+                <div style={{maxWidth:'78%',padding:'10px 14px',borderRadius:16,background:m.role==='user'?'linear-gradient(135deg,#C08A7E,#9A5B50)':'rgba(255,255,255,.80)',color:m.role==='user'?'#FFF':T.ink,fontSize:13.5,lineHeight:1.55,boxShadow:'0 4px 12px rgba(90,70,55,.08)',border:m.role==='asya'?`1px solid ${T.glassE}`:'none'}}>
                   {m.text}
                 </div>
               </div>
@@ -640,9 +640,9 @@ function UnboxingScreen({isDesktop,onGoChat}:{isDesktop?:boolean;onGoChat?:()=>v
                 onChange={e=>setUxInput(e.target.value)}
                 onKeyDown={e=>e.key==='Enter'&&sendUxMessage()}
                 placeholder="Bir şey sor ya da düşünceni paylaş…"
-                style={{flex:1,height:46,borderRadius:14,border:'1.5px solid rgba(185,165,232,.35)',background:'rgba(255,255,255,.85)',padding:'0 14px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}
+                style={{flex:1,height:46,borderRadius:14,border:'1.5px solid rgba(192,138,126,.35)',background:'rgba(255,255,255,.85)',padding:'0 14px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}
               />
-              <button onClick={sendUxMessage} disabled={uxLoading} style={{height:46,padding:'0 18px',borderRadius:14,border:'none',background:'linear-gradient(135deg,#B9A5E8,#9FB4E0)',color:'#FFF',fontSize:13,fontWeight:600,cursor:'pointer',fontFamily:'inherit',opacity:uxLoading?.5:1}}>
+              <button onClick={sendUxMessage} disabled={uxLoading} style={{height:46,padding:'0 18px',borderRadius:14,border:'none',background:'linear-gradient(135deg,#C08A7E,#9A5B50)',color:'#FFF',fontSize:13,fontWeight:600,cursor:'pointer',fontFamily:'inherit',opacity:uxLoading?.5:1}}>
                 Gönder
               </button>
             </div>
@@ -682,7 +682,7 @@ function GiftingEngine({leadId,top3}:{leadId:string;top3:TopProduct[]}) {
   }
 
   if (step==='done') return (
-    <div style={{marginTop:12,padding:'14px 18px',borderRadius:16,background:'linear-gradient(135deg,rgba(91,74,130,.08),rgba(185,165,232,.08))',border:'1px solid rgba(185,165,232,.20)',display:'flex',gap:10,alignItems:'center'}}>
+    <div style={{marginTop:12,padding:'14px 18px',borderRadius:16,background:'linear-gradient(135deg,rgba(110,80,56,.08),rgba(192,138,126,.08))',border:'1px solid rgba(192,138,126,.20)',display:'flex',gap:10,alignItems:'center'}}>
       <span style={{fontSize:18}}>✅</span>
       <div>
         <div style={{fontSize:13,fontWeight:600,color:T.ink}}>Hatırlatmalar kaydedildi!</div>
@@ -692,33 +692,33 @@ function GiftingEngine({leadId,top3}:{leadId:string;top3:TopProduct[]}) {
   )
 
   if (step==='prompt') return (
-    <div style={{marginTop:12,padding:'14px 18px',borderRadius:16,background:'rgba(255,255,255,.65)',backdropFilter:'blur(12px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 16px rgba(94,88,140,.08)'}}>
+    <div style={{marginTop:12,padding:'14px 18px',borderRadius:16,background:'rgba(255,255,255,.65)',backdropFilter:'blur(12px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 16px rgba(90,70,55,.08)'}}>
       <div style={{fontSize:13,color:T.ink,lineHeight:1.5,marginBottom:10}}>
         🎁 Bir sevdiğiniz için özel bir tarihi kaydetmemi ister misiniz? Özel günden önce hatırlatırım!
       </div>
       <div style={{display:'flex',gap:8}}>
-        <button onClick={()=>setStep('form')} style={{padding:'8px 16px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#B9A5E8,#9FB4E0)',color:'#FFF',fontSize:13,fontWeight:600,cursor:'pointer',fontFamily:'inherit'}}>Evet, kaydet →</button>
-        <button onClick={()=>setStep('done')} style={{padding:'8px 14px',borderRadius:999,border:'1px solid rgba(94,88,140,.15)',background:'transparent',color:T.muted,fontSize:13,cursor:'pointer',fontFamily:'inherit'}}>Şimdi değil</button>
+        <button onClick={()=>setStep('form')} style={{padding:'8px 16px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#C08A7E,#9A5B50)',color:'#FFF',fontSize:13,fontWeight:600,cursor:'pointer',fontFamily:'inherit'}}>Evet, kaydet →</button>
+        <button onClick={()=>setStep('done')} style={{padding:'8px 14px',borderRadius:999,border:'1px solid rgba(90,70,55,.15)',background:'transparent',color:T.muted,fontSize:13,cursor:'pointer',fontFamily:'inherit'}}>Şimdi değil</button>
       </div>
     </div>
   )
 
   return (
-    <div style={{marginTop:12,padding:'16px 18px',borderRadius:16,background:'rgba(255,255,255,.65)',backdropFilter:'blur(12px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 16px rgba(94,88,140,.08)'}}>
+    <div style={{marginTop:12,padding:'16px 18px',borderRadius:16,background:'rgba(255,255,255,.65)',backdropFilter:'blur(12px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 16px rgba(90,70,55,.08)'}}>
       <div style={{fontSize:12,letterSpacing:'0.16em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:12}}>Özel Tarihler</div>
       {occasions.map((o,i)=>(
         <div key={i} style={{display:'flex',gap:8,marginBottom:10,alignItems:'center'}}>
-          <select value={o.name} onChange={e=>update(i,'name',e.target.value)} style={{flex:1,height:44,borderRadius:12,border:'1.5px solid rgba(185,165,232,.35)',background:'rgba(255,255,255,.8)',padding:'0 12px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}>
+          <select value={o.name} onChange={e=>update(i,'name',e.target.value)} style={{flex:1,height:44,borderRadius:12,border:'1.5px solid rgba(192,138,126,.35)',background:'rgba(255,255,255,.8)',padding:'0 12px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}>
             <option value="">Özel gün seçin…</option>
             {GIFT_OCCASIONS.map(g=><option key={g} value={g}>{g}</option>)}
           </select>
-          <input type="date" value={o.date} onChange={e=>update(i,'date',e.target.value)} style={{flex:1,height:44,borderRadius:12,border:'1.5px solid rgba(185,165,232,.35)',background:'rgba(255,255,255,.8)',padding:'0 12px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}/>
+          <input type="date" value={o.date} onChange={e=>update(i,'date',e.target.value)} style={{flex:1,height:44,borderRadius:12,border:'1.5px solid rgba(192,138,126,.35)',background:'rgba(255,255,255,.8)',padding:'0 12px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}/>
           {occasions.length>1&&<button onClick={()=>remove(i)} style={{width:36,height:36,borderRadius:'50%',border:'none',background:'rgba(220,100,100,.08)',color:'rgba(180,80,80,.7)',cursor:'pointer',fontSize:16,display:'flex',alignItems:'center',justifyContent:'center'}}>×</button>}
         </div>
       ))}
       <div style={{display:'flex',gap:8,marginTop:4}}>
-        <button onClick={addOccasion} style={{padding:'7px 14px',borderRadius:999,border:'1px solid rgba(185,165,232,.30)',background:'transparent',color:T.soft,fontSize:12,cursor:'pointer',fontFamily:'inherit'}}>+ Tarih Ekle</button>
-        <button onClick={save} disabled={saving} style={{padding:'7px 18px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#B9A5E8,#9FB4E0)',color:'#FFF',fontSize:12,fontWeight:600,cursor:saving?'default':'pointer',fontFamily:'inherit',opacity:saving?.7:1}}>
+        <button onClick={addOccasion} style={{padding:'7px 14px',borderRadius:999,border:'1px solid rgba(192,138,126,.30)',background:'transparent',color:T.soft,fontSize:12,cursor:'pointer',fontFamily:'inherit'}}>+ Tarih Ekle</button>
+        <button onClick={save} disabled={saving} style={{padding:'7px 18px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#C08A7E,#9A5B50)',color:'#FFF',fontSize:12,fontWeight:600,cursor:saving?'default':'pointer',fontFamily:'inherit',opacity:saving?.7:1}}>
           {saving?'Kaydediliyor…':'Kaydet ✓'}
         </button>
       </div>
@@ -795,15 +795,15 @@ function GiftWizard({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?:(
             {/* Progress */}
             <div style={{display:'flex',gap:6,marginBottom:28}}>
               {GIFT_QS.map((_,i)=>(
-                <div key={i} style={{flex:1,height:3,borderRadius:99,background:i<=step?T.accent:'rgba(185,165,232,.20)',transition:'background .3s'}}/>
+                <div key={i} style={{flex:1,height:3,borderRadius:99,background:i<=step?T.accent:'rgba(192,138,126,.20)',transition:'background .3s'}}/>
               ))}
             </div>
-            <div style={{padding:'20px 20px',borderRadius:24,background:T.glass,backdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 28px rgba(94,88,140,.10)',marginBottom:20}}>
+            <div style={{padding:'20px 20px',borderRadius:24,background:T.glass,backdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 28px rgba(90,70,55,.10)',marginBottom:20}}>
               <div style={{fontSize:12,letterSpacing:'0.16em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:10}}>Soru {step+1} / {GIFT_QS.length}</div>
               <div style={{fontFamily:'"Cormorant Garamond",serif',fontSize:24,fontWeight:500,color:T.ink,marginBottom:20,lineHeight:1.2}}>{GIFT_QS[step].q}</div>
               <div style={{display:'flex',flexDirection:'column',gap:10}}>
                 {GIFT_QS[step].opts.map(opt=>(
-                  <button key={opt} onClick={()=>handleOpt(opt)} style={{padding:'14px 18px',borderRadius:16,border:`1.5px solid rgba(185,165,232,.30)`,background:'rgba(255,255,255,.75)',fontSize:14,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit',textAlign:'left',transition:'all .15s',boxShadow:'0 3px 10px rgba(94,88,140,.06)'}}>
+                  <button key={opt} onClick={()=>handleOpt(opt)} style={{padding:'14px 18px',borderRadius:16,border:`1.5px solid rgba(192,138,126,.30)`,background:'rgba(255,255,255,.75)',fontSize:14,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit',textAlign:'left',transition:'all .15s',boxShadow:'0 3px 10px rgba(90,70,55,.06)'}}>
                     {opt}
                   </button>
                 ))}
@@ -812,7 +812,7 @@ function GiftWizard({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?:(
             {answers.length>0 && (
               <div style={{display:'flex',gap:6,flexWrap:'wrap',marginBottom:8}}>
                 {answers.map((a,i)=>(
-                  <div key={i} style={{padding:'4px 12px',borderRadius:999,background:'rgba(185,165,232,.18)',fontSize:11,color:T.soft,fontWeight:500}}>{a.split(' ')[0]}</div>
+                  <div key={i} style={{padding:'4px 12px',borderRadius:999,background:'rgba(192,138,126,.18)',fontSize:11,color:T.soft,fontWeight:500}}>{a.split(' ')[0]}</div>
                 ))}
               </div>
             )}
@@ -823,10 +823,10 @@ function GiftWizard({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?:(
           <>
             <div style={{display:'flex',flexDirection:'column',gap:14,marginBottom:20}}>
               {results.map((p,i)=>(
-                <div key={i} style={{borderRadius:22,background:T.glass,backdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.10)',overflow:'hidden'}}>
+                <div key={i} style={{borderRadius:22,background:T.glass,backdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(90,70,55,.10)',overflow:'hidden'}}>
                   <div style={{display:'flex',gap:14,padding:'14px 16px',alignItems:'center'}}>
-                    <div style={{width:72,height:72,borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',flexShrink:0,overflow:'hidden',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                      {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={40} hue="#E2D6F1"/>}
+                    <div style={{width:72,height:72,borderRadius:16,background:'linear-gradient(160deg,#EADFD8,#FFF)',flexShrink:0,overflow:'hidden',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                      {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={40} hue="#EADFD8"/>}
                     </div>
                     <div style={{flex:1,minWidth:0}}>
                       <div style={{fontSize:9,letterSpacing:'0.18em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>
@@ -837,7 +837,7 @@ function GiftWizard({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?:(
                     </div>
                   </div>
                   <div style={{display:'flex',gap:8,padding:'0 16px 14px'}}>
-                    <a href={p.url} target="_blank" rel="noopener noreferrer" style={{flex:1,height:40,borderRadius:999,background:T.accent,color:'#FFF',fontSize:12,fontWeight:500,display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',boxShadow:'0 6px 14px rgba(140,120,200,.25)'}}>
+                    <a href={p.url} target="_blank" rel="noopener noreferrer" style={{flex:1,height:40,borderRadius:999,background:T.accent,color:'#FFF',fontSize:12,fontWeight:500,display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',boxShadow:'0 6px 14px rgba(154,91,80,.25)'}}>
                       Ürünü İncele →
                     </a>
                     {onSaveToGardrop && (
@@ -849,7 +849,7 @@ function GiftWizard({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?:(
                 </div>
               ))}
             </div>
-            <button onClick={reset} style={{width:'100%',padding:'13px',borderRadius:16,border:`1px solid rgba(185,165,232,.30)`,background:'rgba(255,255,255,.6)',fontSize:13,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500}}>
+            <button onClick={reset} style={{width:'100%',padding:'13px',borderRadius:16,border:`1px solid rgba(192,138,126,.30)`,background:'rgba(255,255,255,.6)',fontSize:13,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500}}>
               ↩ Yeniden Sor
             </button>
           </>
@@ -954,7 +954,7 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
         {/* Mode tabs */}
         <div style={{display:'flex',gap:8,marginBottom:20,background:'rgba(255,255,255,.55)',borderRadius:14,padding:4,border:`1px solid ${T.glassE}`}}>
           {([['text','Yazarak Ara',<svg key="t" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M21 21l-4.35-4.35"/><circle cx="11" cy="11" r="7"/></svg>],['photo','Fotoğrafla Ara',<svg key="p" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>]] as [string,string,React.ReactNode][]).map(([m,label,icon])=>(
-            <button key={m} onClick={()=>switchMode(m as 'text'|'photo')} style={{flex:1,padding:'9px 12px',borderRadius:10,border:'none',background:mode===m?T.accent:'transparent',color:mode===m?'#FFF':T.soft,fontSize:12.5,fontWeight:600,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',justifyContent:'center',gap:6,transition:'all .18s',boxShadow:mode===m?'0 4px 12px rgba(140,120,200,.25)':'none'}}>
+            <button key={m} onClick={()=>switchMode(m as 'text'|'photo')} style={{flex:1,padding:'9px 12px',borderRadius:10,border:'none',background:mode===m?T.accent:'transparent',color:mode===m?'#FFF':T.soft,fontSize:12.5,fontWeight:600,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',justifyContent:'center',gap:6,transition:'all .18s',boxShadow:mode===m?'0 4px 12px rgba(154,91,80,.25)':'none'}}>
               {icon}{label}
             </button>
           ))}
@@ -970,12 +970,12 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
                 onChange={e=>setQuery(e.target.value)}
                 onKeyDown={e=>{if(e.key==='Enter')search(query)}}
                 placeholder="Örn: Tom Ford Oud Wood, Dior Sauvage…"
-                style={{flex:1,height:52,borderRadius:16,border:`1.5px solid rgba(185,165,232,.40)`,background:'rgba(255,255,255,.80)',padding:'0 18px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none',boxShadow:'0 4px 12px rgba(94,88,140,.08)'}}
+                style={{flex:1,height:52,borderRadius:16,border:`1.5px solid rgba(192,138,126,.40)`,background:'rgba(255,255,255,.80)',padding:'0 18px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none',boxShadow:'0 4px 12px rgba(90,70,55,.08)'}}
               />
               <button
                 onClick={()=>search(query)}
                 disabled={!query.trim()||status==='loading'}
-                style={{width:52,height:52,borderRadius:16,border:'none',background:query.trim()?T.accent:'rgba(185,165,232,.20)',color:'#FFF',cursor:query.trim()?'pointer':'default',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,transition:'all .15s',boxShadow:query.trim()?'0 8px 18px rgba(140,120,200,.28)':'none'}}
+                style={{width:52,height:52,borderRadius:16,border:'none',background:query.trim()?T.accent:'rgba(192,138,126,.20)',color:'#FFF',cursor:query.trim()?'pointer':'default',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,transition:'all .15s',boxShadow:query.trim()?'0 8px 18px rgba(154,91,80,.28)':'none'}}
               >
                 {status==='loading'
                   ? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="2"><circle cx="12" cy="12" r="10" strokeOpacity=".3"/><path d="M12 2a10 10 0 0 1 10 10" strokeLinecap="round"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur=".8s" repeatCount="indefinite"/></path></svg>
@@ -989,7 +989,7 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
                 <div style={{fontSize:11,letterSpacing:'0.16em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:10}}>Popüler Aramalar</div>
                 <div style={{display:'flex',flexWrap:'wrap',gap:8}}>
                   {POPULAR_BRANDS.map(b=>(
-                    <button key={b} onClick={()=>{setQuery(b);search(b)}} style={{padding:'7px 14px',borderRadius:999,border:`1px solid rgba(185,165,232,.30)`,background:'rgba(255,255,255,.70)',fontSize:12,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500,transition:'all .15s'}}>
+                    <button key={b} onClick={()=>{setQuery(b);search(b)}} style={{padding:'7px 14px',borderRadius:999,border:`1px solid rgba(192,138,126,.30)`,background:'rgba(255,255,255,.70)',fontSize:12,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500,transition:'all .15s'}}>
                       {b}
                     </button>
                   ))}
@@ -1005,9 +1005,9 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
             <input ref={imgInputRef} type="file" accept="image/*" style={{display:'none'}} onChange={handlePhotoChange}/>
             <button
               onClick={()=>imgInputRef.current?.click()}
-              style={{width:'100%',borderRadius:20,border:`2px dashed rgba(185,165,232,.45)`,background:'rgba(255,255,255,.60)',aspectRatio:'1',maxHeight:260,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:12,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 8px 24px rgba(94,88,140,.08)',transition:'all .18s'}}
+              style={{width:'100%',borderRadius:20,border:`2px dashed rgba(192,138,126,.45)`,background:'rgba(255,255,255,.60)',aspectRatio:'1',maxHeight:260,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:12,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 8px 24px rgba(90,70,55,.08)',transition:'all .18s'}}
             >
-              <div style={{width:64,height:64,borderRadius:20,background:'linear-gradient(145deg,rgba(185,165,232,.25),rgba(140,120,200,.10))',display:'flex',alignItems:'center',justifyContent:'center'}}>
+              <div style={{width:64,height:64,borderRadius:20,background:'linear-gradient(145deg,rgba(192,138,126,.25),rgba(154,91,80,.10))',display:'flex',alignItems:'center',justifyContent:'center'}}>
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke={T.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
                   <circle cx="12" cy="13" r="4"/>
@@ -1017,7 +1017,7 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
                 <div style={{fontSize:15,fontWeight:600,color:T.ink,marginBottom:4}}>Şişe Fotoğrafı Yükle</div>
                 <div style={{fontSize:12,color:T.muted}}>Parfüm şişesini çek veya galeriden seç</div>
               </div>
-              <div style={{padding:'8px 20px',borderRadius:999,background:T.accent,color:'#FFF',fontSize:12.5,fontWeight:600,boxShadow:'0 6px 16px rgba(140,120,200,.30)'}}>
+              <div style={{padding:'8px 20px',borderRadius:999,background:T.accent,color:'#FFF',fontSize:12.5,fontWeight:600,boxShadow:'0 6px 16px rgba(154,91,80,.30)'}}>
                 Fotoğraf Seç
               </div>
             </button>
@@ -1028,7 +1028,7 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
         {mode==='photo' && status==='loading' && photoPreview && (
           <div style={{marginBottom:20,borderRadius:20,overflow:'hidden',position:'relative',aspectRatio:'1',maxHeight:260}}>
             <img src={photoPreview} alt="Yüklenen" style={{width:'100%',height:'100%',objectFit:'cover'}}/>
-            <div style={{position:'absolute',inset:0,background:'rgba(91,74,130,.45)',backdropFilter:'blur(4px)',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:10}}>
+            <div style={{position:'absolute',inset:0,background:'rgba(110,80,56,.45)',backdropFilter:'blur(4px)',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:10}}>
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="2"><circle cx="12" cy="12" r="10" strokeOpacity=".3"/><path d="M12 2a10 10 0 0 1 10 10" strokeLinecap="round"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur=".8s" repeatCount="indefinite"/></path></svg>
               <div style={{fontSize:13,fontWeight:500,color:'#FFF'}}>Koku tanımlanıyor…</div>
             </div>
@@ -1044,10 +1044,10 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
 
         {/* Result */}
         {result && (
-          <div style={{borderRadius:24,background:T.glass,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 28px rgba(94,88,140,.10)',overflow:'hidden',marginBottom:16}}>
+          <div style={{borderRadius:24,background:T.glass,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 28px rgba(90,70,55,.10)',overflow:'hidden',marginBottom:16}}>
             {/* Photo preview strip when result came from photo */}
             {mode==='photo' && photoPreview && (
-              <div style={{display:'flex',alignItems:'center',gap:12,padding:'12px 18px',background:'rgba(185,165,232,.08)',borderBottom:`1px solid ${T.glassE}`}}>
+              <div style={{display:'flex',alignItems:'center',gap:12,padding:'12px 18px',background:'rgba(192,138,126,.08)',borderBottom:`1px solid ${T.glassE}`}}>
                 <img src={photoPreview} alt="Yüklenen şişe" style={{width:52,height:52,borderRadius:10,objectFit:'cover',border:`1px solid ${T.glassE}`}}/>
                 <div>
                   <div style={{fontSize:10,letterSpacing:'0.18em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>Yüklenen Fotoğraf</div>
@@ -1056,13 +1056,13 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
               </div>
             )}
             {result.identified && (
-              <div style={{padding:'12px 18px',background:'rgba(185,165,232,.12)',borderBottom:`1px solid ${T.glassE}`,display:'flex',alignItems:'center',gap:10}}>
+              <div style={{padding:'12px 18px',background:'rgba(192,138,126,.12)',borderBottom:`1px solid ${T.glassE}`,display:'flex',alignItems:'center',gap:10}}>
                 <span style={{fontSize:18}}>{mode==='photo'?'📷':'🔍'}</span>
                 <div style={{flex:1}}>
                   <div style={{fontSize:10,letterSpacing:'0.18em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>{mode==='photo'?'Tanımlanan Koku':'Aranan'}</div>
                   <div style={{fontSize:13,fontWeight:600,color:T.ink}}>{result.identified}</div>
                 </div>
-                {result.confidence && <div style={{padding:'3px 10px',borderRadius:999,background:'rgba(91,74,130,.12)',fontSize:11,fontWeight:600,color:T.soft}}>%{result.confidence} eşleşme</div>}
+                {result.confidence && <div style={{padding:'3px 10px',borderRadius:999,background:'rgba(110,80,56,.12)',fontSize:11,fontWeight:600,color:T.soft}}>%{result.confidence} eşleşme</div>}
               </div>
             )}
             <div style={{padding:'14px 18px'}}>
@@ -1070,8 +1070,8 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
               {result.product && (
                 <>
                   <div style={{borderRadius:18,background:'rgba(255,255,255,.75)',border:`1px solid ${T.glassE}`,padding:'14px 16px',display:'flex',gap:14,alignItems:'center',marginBottom:12}}>
-                    <div style={{width:72,height:72,borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#FFF)',flexShrink:0,overflow:'hidden',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                      {result.product.image_url ? <img src={result.product.image_url} alt={result.product.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={38} hue="#E2D6F1"/>}
+                    <div style={{width:72,height:72,borderRadius:14,background:'linear-gradient(160deg,#EADFD8,#FFF)',flexShrink:0,overflow:'hidden',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                      {result.product.image_url ? <img src={result.product.image_url} alt={result.product.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={38} hue="#EADFD8"/>}
                     </div>
                     <div style={{flex:1,minWidth:0}}>
                       <div style={{fontSize:10,letterSpacing:'0.16em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>
@@ -1083,7 +1083,7 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
                   </div>
                   <div style={{display:'flex',gap:10}}>
                     {result.product.web_url && (
-                      <a href={result.product.web_url} target="_blank" rel="noopener noreferrer" style={{flex:1,height:44,borderRadius:999,background:T.accent,color:'#FFF',fontSize:13,fontWeight:500,display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',boxShadow:'0 8px 18px rgba(140,120,200,.28)'}}>
+                      <a href={result.product.web_url} target="_blank" rel="noopener noreferrer" style={{flex:1,height:44,borderRadius:999,background:T.accent,color:'#FFF',fontSize:13,fontWeight:500,display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',boxShadow:'0 8px 18px rgba(154,91,80,.28)'}}>
                         Ürünü İncele →
                       </a>
                     )}
@@ -1101,11 +1101,11 @@ function MuadilScreen({onBack,onSaveToGardrop}:{onBack:()=>void;onSaveToGardrop?
 
         {result && (
           <div style={{display:'flex',gap:8,marginBottom:8}}>
-            <button onClick={reset} style={{flex:1,padding:'13px',borderRadius:16,border:`1px solid rgba(185,165,232,.30)`,background:'rgba(255,255,255,.6)',fontSize:13,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500}}>
+            <button onClick={reset} style={{flex:1,padding:'13px',borderRadius:16,border:`1px solid rgba(192,138,126,.30)`,background:'rgba(255,255,255,.6)',fontSize:13,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500}}>
               {mode==='photo' ? '↩ Başka Fotoğraf Yükle' : '↩ Başka Bir Koku Ara'}
             </button>
             {mode==='photo' && (
-              <button onClick={()=>switchMode('text')} style={{padding:'13px 16px',borderRadius:16,border:`1px solid rgba(185,165,232,.30)`,background:'rgba(255,255,255,.6)',fontSize:12,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500,flexShrink:0}}>
+              <button onClick={()=>switchMode('text')} style={{padding:'13px 16px',borderRadius:16,border:`1px solid rgba(192,138,126,.30)`,background:'rgba(255,255,255,.6)',fontSize:12,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500,flexShrink:0}}>
                 Yazarak Ara
               </button>
             )}
@@ -1258,11 +1258,11 @@ function KokuAurasiModal({profile,lead,onClose}:{profile:ScentProfile;lead:Lead|
     <div onClick={onClose} style={{position:'fixed',inset:0,background:'rgba(20,16,40,.75)',backdropFilter:'blur(10px)',zIndex:200,display:'flex',alignItems:'center',justifyContent:'center',padding:20}}>
       <div onClick={e=>e.stopPropagation()} style={{width:'100%',maxWidth:360,borderRadius:28,overflow:'hidden',boxShadow:'0 40px 80px rgba(0,0,0,.5)'}}>
         {/* Card face */}
-        <div style={{background:'linear-gradient(160deg,#2B2640 0%,#5B4A82 55%,#9B7EC0 100%)',padding:'32px 26px 24px',position:'relative',overflow:'hidden'}}>
+        <div style={{background:'linear-gradient(160deg,#2B2640 0%,#6E5038 55%,#9B7EC0 100%)',padding:'32px 26px 24px',position:'relative',overflow:'hidden'}}>
           <div style={{position:'absolute',top:-40,right:-40,width:160,height:160,borderRadius:'50%',background:'rgba(255,255,255,.06)',pointerEvents:'none'}}/>
-          <div style={{position:'absolute',bottom:-20,left:-30,width:120,height:120,borderRadius:'50%',background:'rgba(185,165,232,.10)',pointerEvents:'none'}}/>
+          <div style={{position:'absolute',bottom:-20,left:-30,width:120,height:120,borderRadius:'50%',background:'rgba(192,138,126,.10)',pointerEvents:'none'}}/>
           <div style={{position:'relative',zIndex:1}}>
-            <div style={{fontSize:9,letterSpacing:'0.38em',color:'rgba(185,165,232,.75)',fontWeight:700,textTransform:'uppercase',marginBottom:8,fontFamily:'Inter,sans-serif'}}>ASYA · Elegance VIP · Koku Aurası</div>
+            <div style={{fontSize:9,letterSpacing:'0.38em',color:'rgba(192,138,126,.75)',fontWeight:700,textTransform:'uppercase',marginBottom:8,fontFamily:'Inter,sans-serif'}}>ASYA · Elegance VIP · Koku Aurası</div>
             <div style={{fontFamily:'"Cormorant Garamond",serif',fontSize:36,color:'#FFF',fontWeight:500,lineHeight:1.05,marginBottom:18,letterSpacing:'-0.01em'}}>
               {profile.title.split(' ').map((w,i)=>i===0?<span key={i}>{w} </span>:<em key={i} style={{fontStyle:'italic'}}>{w}</em>)}
             </div>
@@ -1276,7 +1276,7 @@ function KokuAurasiModal({profile,lead,onClose}:{profile:ScentProfile;lead:Lead|
             </div>
             {profile.top3[0] && (
               <div style={{padding:'10px 13px',borderRadius:12,background:'rgba(255,255,255,.09)',border:'1px solid rgba(255,255,255,.14)'}}>
-                <div style={{fontSize:8,letterSpacing:'0.24em',color:'rgba(185,165,232,.7)',fontWeight:600,textTransform:'uppercase',marginBottom:2,fontFamily:'Inter,sans-serif'}}>İmza Koku</div>
+                <div style={{fontSize:8,letterSpacing:'0.24em',color:'rgba(192,138,126,.7)',fontWeight:600,textTransform:'uppercase',marginBottom:2,fontFamily:'Inter,sans-serif'}}>İmza Koku</div>
                 <div style={{fontFamily:'"Cormorant Garamond",serif',fontSize:17,color:'#FFF',fontWeight:500,lineHeight:1.2}}>{profile.top3[0].name}</div>
               </div>
             )}
@@ -1288,7 +1288,7 @@ function KokuAurasiModal({profile,lead,onClose}:{profile:ScentProfile;lead:Lead|
             <div style={{marginTop:16,padding:'10px 13px',borderRadius:10,background:'rgba(255,255,255,.08)',border:'1px solid rgba(255,255,255,.12)',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
   <div>
     <div style={{fontSize:9,letterSpacing:'0.22em',color:'rgba(255,255,255,.40)',textTransform:'uppercase',fontFamily:'Inter,sans-serif'}}>Koku testini sen de dene</div>
-    <a href="https://asya.elegancevipperfume.com" target="_blank" rel="noopener noreferrer" style={{fontSize:11,color:'rgba(185,165,232,.85)',fontFamily:'Inter,sans-serif',marginTop:1,display:'block',textDecoration:'none'}}>asya.elegancevipperfume.com →</a>
+    <a href="https://asya.elegancevipperfume.com" target="_blank" rel="noopener noreferrer" style={{fontSize:11,color:'rgba(192,138,126,.85)',fontFamily:'Inter,sans-serif',marginTop:1,display:'block',textDecoration:'none'}}>asya.elegancevipperfume.com →</a>
   </div>
   <div style={{fontSize:20}}>✨</div>
 </div>
@@ -1311,7 +1311,7 @@ function KokuAurasiModal({profile,lead,onClose}:{profile:ScentProfile;lead:Lead|
               </div>
             </div>
             {refUrl && (
-              <div style={{background:'rgba(255,255,255,.08)',borderRadius:10,padding:'8px 12px',fontSize:10.5,color:'rgba(185,165,232,.85)',fontFamily:'monospace',marginBottom:10,wordBreak:'break-all',border:'1px solid rgba(255,255,255,.08)'}}>{refUrl}</div>
+              <div style={{background:'rgba(255,255,255,.08)',borderRadius:10,padding:'8px 12px',fontSize:10.5,color:'rgba(192,138,126,.85)',fontFamily:'monospace',marginBottom:10,wordBreak:'break-all',border:'1px solid rgba(255,255,255,.08)'}}>{refUrl}</div>
             )}
             <button
               onClick={handleReferralShare}
@@ -1324,11 +1324,11 @@ function KokuAurasiModal({profile,lead,onClose}:{profile:ScentProfile;lead:Lead|
           </div>
         )}
         <div style={{background:'rgba(255,255,255,.96)',padding:'14px 18px',display:'flex',gap:10}}>
-          <button onClick={handleShare} style={{flex:1,padding:'12px',borderRadius:14,border:'none',background:'linear-gradient(135deg,#5B4A82,#8B6FB5)',color:'#FFF',fontSize:14,fontWeight:600,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',justifyContent:'center',gap:8,transition:'opacity .15s'}}>
+          <button onClick={handleShare} style={{flex:1,padding:'12px',borderRadius:14,border:'none',background:'linear-gradient(135deg,#6E5038,#8B6FB5)',color:'#FFF',fontSize:14,fontWeight:600,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',justifyContent:'center',gap:8,transition:'opacity .15s'}}>
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M14 3l-4-2.5L6 3M10 .5V13M4 11v5h12v-5" stroke="#FFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             {shareState==='loading'?'Hazırlanıyor…':shareState==='done'?'Kaydedildi ✓':'📱 Koku Auramı Paylaş'}
           </button>
-          <button onClick={onClose} style={{padding:'12px 16px',borderRadius:14,border:'1px solid rgba(94,88,140,.18)',background:'transparent',color:T.soft,fontSize:14,cursor:'pointer',fontFamily:'inherit'}}>✕</button>
+          <button onClick={onClose} style={{padding:'12px 16px',borderRadius:14,border:'1px solid rgba(90,70,55,.18)',background:'transparent',color:T.soft,fontSize:14,cursor:'pointer',fontFamily:'inherit'}}>✕</button>
         </div>
       </div>
     </div>
@@ -1345,7 +1345,7 @@ function WeatherGreeting({gardrop}:{gardrop:GItem[]}) {
   const desc = weatherDesc(weather.wcode||0,weather.temp||20)
   const tip = weatherPerfumeTip(weather.wcode||0,weather.temp||20,gardrop)
   return (
-    <div style={{marginBottom:16,padding:'14px 16px',borderRadius:18,background:'linear-gradient(135deg,rgba(185,165,232,.12),rgba(159,180,224,.10))',border:'1px solid rgba(185,165,232,.22)',display:'flex',gap:12,alignItems:'flex-start',position:'relative'}}>
+    <div style={{marginBottom:16,padding:'14px 16px',borderRadius:18,background:'linear-gradient(135deg,rgba(192,138,126,.12),rgba(154,91,80,.10))',border:'1px solid rgba(192,138,126,.22)',display:'flex',gap:12,alignItems:'flex-start',position:'relative'}}>
       <AsyaAvatar size={32}/>
       <div style={{flex:1,minWidth:0}}>
         <div style={{fontSize:13,fontWeight:600,color:T.ink,marginBottom:3,lineHeight:1.3}}>
@@ -1372,8 +1372,8 @@ function WardrobeGapAnalysis({gardrop}:{gardrop:GItem[]}) {
     :null
   if (!missing) return null
   return (
-    <div style={{marginTop:16,padding:'16px 18px',borderRadius:18,background:'linear-gradient(135deg,rgba(91,74,130,.05),rgba(159,180,224,.05))',border:'1px solid rgba(185,165,232,.18)',display:'flex',gap:12,alignItems:'flex-start'}}>
-      <div style={{width:34,height:34,borderRadius:10,background:'linear-gradient(135deg,rgba(185,165,232,.18),rgba(159,180,224,.18))',border:'1px solid rgba(185,165,232,.25)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,fontSize:15}}>🧩</div>
+    <div style={{marginTop:16,padding:'16px 18px',borderRadius:18,background:'linear-gradient(135deg,rgba(110,80,56,.05),rgba(154,91,80,.05))',border:'1px solid rgba(192,138,126,.18)',display:'flex',gap:12,alignItems:'flex-start'}}>
+      <div style={{width:34,height:34,borderRadius:10,background:'linear-gradient(135deg,rgba(192,138,126,.18),rgba(154,91,80,.18))',border:'1px solid rgba(192,138,126,.25)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,fontSize:15}}>🧩</div>
       <div style={{flex:1}}>
         <div style={{fontSize:10,letterSpacing:'0.16em',color:T.soft,fontWeight:700,textTransform:'uppercase',marginBottom:5,fontFamily:'Inter,sans-serif'}}>ASYA Analizi · Eksik Parça: {missing.label}</div>
         <div style={{fontSize:13,color:T.ink,lineHeight:1.55,marginBottom:10}}>{missing.text}</div>
@@ -1630,7 +1630,7 @@ function RegisterForm({onSubmit,isDesktop}:{onSubmit:(name:string,email:string)=
         Size özel koku önerileri için adınızı ve e-postanızı paylaşır mısınız?
       </p>
       {returning && (
-        <div style={{width:'100%',maxWidth:360,marginBottom:10,padding:'8px 14px',borderRadius:14,background:'linear-gradient(135deg,rgba(91,74,130,.12),rgba(159,180,224,.10))',border:'1px solid rgba(91,74,130,.25)',display:'flex',alignItems:'center',gap:10}}>
+        <div style={{width:'100%',maxWidth:360,marginBottom:10,padding:'8px 14px',borderRadius:14,background:'linear-gradient(135deg,rgba(110,80,56,.12),rgba(154,91,80,.10))',border:'1px solid rgba(110,80,56,.25)',display:'flex',alignItems:'center',gap:10}}>
           <span style={{fontSize:16}}>👋</span>
           <div>
             <div style={{fontSize:12.5,fontWeight:600,color:T.ink}}>Tekrar hoş geldiniz, {returning.split(' ')[0]}!</div>
@@ -1639,7 +1639,7 @@ function RegisterForm({onSubmit,isDesktop}:{onSubmit:(name:string,email:string)=
         </div>
       )}
       <form onSubmit={submit} style={{width:'100%',maxWidth:360}}>
-        <div style={{padding:14,borderRadius:20,background:T.glassS,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 14px 36px rgba(94,88,140,.14),inset 0 1px 0 rgba(255,255,255,.85)'}}>
+        <div style={{padding:14,borderRadius:20,background:T.glassS,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 14px 36px rgba(90,70,55,.14),inset 0 1px 0 rgba(255,255,255,.85)'}}>
           <NeoField label="E-POSTA" placeholder="selin@ornek.com" value={email} onChange={setEmail} type="email" onBlur={()=>checkEmail(email)} onFocus={scrollToBtn}/>
           <div style={{height:8}}/>
           <NeoField label="İSİM" placeholder="örn. Selin Yıldız" value={name} onChange={setName} onFocus={scrollToBtn}/>
@@ -1649,9 +1649,9 @@ function RegisterForm({onSubmit,isDesktop}:{onSubmit:(name:string,email:string)=
             Bilgileriniz yalnızca koku önerileri için kullanılır.
           </p>
         </div>
-        <button ref={btnRef} type="submit" disabled={!valid||submitting} style={{width:'100%',marginTop:10,height:50,borderRadius:999,border:'none',background:valid?T.accent:T.glassS,backdropFilter:valid?undefined:'blur(16px)',color:valid?'#FFF':T.soft,fontSize:15,fontWeight:500,cursor:valid?'pointer':'not-allowed',fontFamily:'inherit',boxShadow:valid?'0 14px 30px rgba(140,120,200,.30)':T.shadow,display:'flex',alignItems:'center',justifyContent:'space-between',padding:'0 10px 0 24px',transition:'all .2s',opacity:submitting?.7:1}}>
+        <button ref={btnRef} type="submit" disabled={!valid||submitting} style={{width:'100%',marginTop:10,height:50,borderRadius:999,border:'none',background:valid?T.accent:T.glassS,backdropFilter:valid?undefined:'blur(16px)',color:valid?'#FFF':T.soft,fontSize:15,fontWeight:500,cursor:valid?'pointer':'not-allowed',fontFamily:'inherit',boxShadow:valid?'0 14px 30px rgba(154,91,80,.30)':T.shadow,display:'flex',alignItems:'center',justifyContent:'space-between',padding:'0 10px 0 24px',transition:'all .2s',opacity:submitting?.7:1}}>
           <span>{returning ? 'Profilime Devam Et' : 'Sohbete Başla'}</span>
-          <div style={{width:40,height:40,borderRadius:'50%',background:valid?'rgba(255,255,255,.25)':'linear-gradient(145deg,#FFF,#E2DAEE)',boxShadow:valid?undefined:T.neoO,display:'flex',alignItems:'center',justifyContent:'center'}}>
+          <div style={{width:40,height:40,borderRadius:'50%',background:valid?'rgba(255,255,255,.25)':'linear-gradient(145deg,#FFF,#EFE6DF)',boxShadow:valid?undefined:T.neoO,display:'flex',alignItems:'center',justifyContent:'center'}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke={valid?'#FFF':T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </div>
         </button>
@@ -1665,7 +1665,7 @@ function NeoField({label,placeholder,value,onChange,type='text',onBlur,onFocus}:
   return (
     <label style={{display:'block'}}>
       <div style={{fontSize:10,letterSpacing:'0.22em',fontWeight:600,color:T.muted,marginBottom:6}}>{label}</div>
-      <div style={{height:50,borderRadius:16,background:'#FFF',boxShadow:focused?`inset 0 0 0 1.5px #B9A5E8,${T.neoI}`:T.neoI,display:'flex',alignItems:'center',padding:'0 16px',gap:10,transition:'box-shadow .2s'}}>
+      <div style={{height:50,borderRadius:16,background:'#FFF',boxShadow:focused?`inset 0 0 0 1.5px #C08A7E,${T.neoI}`:T.neoI,display:'flex',alignItems:'center',padding:'0 16px',gap:10,transition:'box-shadow .2s'}}>
         <input type={type} value={value} placeholder={placeholder} onChange={e=>onChange(e.target.value)} onFocus={()=>{setFocused(true);onFocus?.()}} onBlur={()=>{setFocused(false);onBlur?.()}} style={{flex:1,border:'none',outline:'none',background:'transparent',fontSize:16,color:T.ink,fontFamily:'inherit'}}/>
       </div>
     </label>
@@ -1720,7 +1720,7 @@ function ChatPanel({chatLogic,onGoProfile,onGoScentProfile,isDesktop,mode,onGoMu
                     <div style={{display:'flex',flexWrap:'wrap',gap:8}}>
                       {QUICK_STARTS.map(qs=>(
                         <button key={qs.label} onClick={()=>handleQuickStart(qs)}
-                          style={{padding:'9px 14px',borderRadius:999,border:`1.5px solid rgba(185,165,232,.35)`,background:'rgba(255,255,255,.80)',backdropFilter:'blur(10px)',fontSize:12.5,color:T.ink,cursor:'pointer',fontFamily:'inherit',fontWeight:500,display:'flex',alignItems:'center',gap:6,transition:'all .15s',boxShadow:'0 3px 8px rgba(94,88,140,.08)'}}>
+                          style={{padding:'9px 14px',borderRadius:999,border:`1.5px solid rgba(192,138,126,.35)`,background:'rgba(255,255,255,.80)',backdropFilter:'blur(10px)',fontSize:12.5,color:T.ink,cursor:'pointer',fontFamily:'inherit',fontWeight:500,display:'flex',alignItems:'center',gap:6,transition:'all .15s',boxShadow:'0 3px 8px rgba(90,70,55,.08)'}}>
                           <span style={{fontSize:14}}>{qs.emoji}</span>{qs.label}
                         </button>
                       ))}
@@ -1744,7 +1744,7 @@ function ChatPanel({chatLogic,onGoProfile,onGoScentProfile,isDesktop,mode,onGoMu
                 )}
                 {msg.type==='profile_ready' && mode!=='muadil' && onGoScentProfile && (
                   <div style={{paddingLeft:isDesktop?42:38,marginTop:10}}>
-                    <button onClick={onGoScentProfile} style={{padding:'14px 20px',borderRadius:20,border:'none',background:'linear-gradient(135deg,#B9A5E8,#9FB4E0)',boxShadow:'0 14px 28px rgba(140,120,200,.30)',display:'flex',alignItems:'center',gap:14,cursor:'pointer',fontFamily:'inherit',textAlign:'left',position:'relative',overflow:'hidden',maxWidth:340,width:'100%'}}>
+                    <button onClick={onGoScentProfile} style={{padding:'14px 20px',borderRadius:20,border:'none',background:'linear-gradient(135deg,#C08A7E,#9A5B50)',boxShadow:'0 14px 28px rgba(154,91,80,.30)',display:'flex',alignItems:'center',gap:14,cursor:'pointer',fontFamily:'inherit',textAlign:'left',position:'relative',overflow:'hidden',maxWidth:340,width:'100%'}}>
                       <div style={{position:'absolute',inset:0,background:'radial-gradient(ellipse at 0% 0%,rgba(255,255,255,.3),transparent 60%)',pointerEvents:'none'}}/>
                       <div style={{width:44,height:44,borderRadius:14,background:'rgba(255,255,255,.22)',border:'1px solid rgba(255,255,255,.35)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,position:'relative',zIndex:1}}>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7" stroke="#FFF" strokeWidth="1.6"/><circle cx="12" cy="12" r="10.5" stroke="#FFF" strokeOpacity=".5" strokeWidth="1.6"/><circle cx="12" cy="12" r="2" fill="#FFF"/></svg>
@@ -1770,7 +1770,7 @@ function ChatPanel({chatLogic,onGoProfile,onGoScentProfile,isDesktop,mode,onGoMu
         {loading && (
           <div style={{display:'flex',gap:10,alignItems:'flex-end',marginTop:8}}>
             <AsyaAvatar size={isDesktop?32:28}/>
-            <div style={{padding:'12px 16px',background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,borderRadius:'18px 18px 18px 6px',boxShadow:'0 6px 16px rgba(94,88,140,.10)'}}>
+            <div style={{padding:'12px 16px',background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,borderRadius:'18px 18px 18px 6px',boxShadow:'0 6px 16px rgba(90,70,55,.10)'}}>
               <TypingDots/>
             </div>
           </div>
@@ -1781,9 +1781,9 @@ function ChatPanel({chatLogic,onGoProfile,onGoScentProfile,isDesktop,mode,onGoMu
       <div style={{flexShrink:0,paddingTop:isDesktop?10:8,paddingLeft:isDesktop?18:16,paddingRight:isDesktop?18:16,paddingBottom:isDesktop?18:'calc(104px + env(safe-area-inset-bottom, 0px))',display:'flex',gap:10,alignItems:'flex-end',background:'rgba(255,255,255,.55)',backdropFilter:'blur(16px)',WebkitBackdropFilter:'blur(16px)',borderTop:'1px solid rgba(255,255,255,.5)'}}>
         <textarea ref={inputRef} value={input} onChange={e=>setInput(e.target.value)} onKeyDown={handleKey} placeholder="ASYA'ya bir mesaj yazın…" disabled={loading} rows={1}
           onFocus={()=>setTimeout(()=>inputRef.current?.scrollIntoView({behavior:'smooth',block:'nearest'}),320)}
-          style={{flex:1,resize:'none',background:'rgba(255,255,255,.62)',border:`1.5px solid ${loading?'rgba(255,255,255,.85)':'rgba(185,165,232,.4)'}`,borderRadius:16,padding:'12px 16px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none',lineHeight:1.5,minHeight:48,maxHeight:120,transition:'border-color .2s'}}/>
+          style={{flex:1,resize:'none',background:'rgba(255,255,255,.62)',border:`1.5px solid ${loading?'rgba(255,255,255,.85)':'rgba(192,138,126,.4)'}`,borderRadius:16,padding:'12px 16px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none',lineHeight:1.5,minHeight:48,maxHeight:120,transition:'border-color .2s'}}/>
         <button onClick={()=>send(input)} disabled={loading||!input.trim()}
-          style={{width:48,height:48,borderRadius:'50%',border:'none',flexShrink:0,cursor:loading||!input.trim()?'default':'pointer',background:'linear-gradient(145deg,#FFF,#DED4ED)',boxShadow:loading||!input.trim()?'none':T.neoO,display:'flex',alignItems:'center',justifyContent:'center',opacity:loading||!input.trim()?.4:1,transition:'all .15s'}}>
+          style={{width:48,height:48,borderRadius:'50%',border:'none',flexShrink:0,cursor:loading||!input.trim()?'default':'pointer',background:'linear-gradient(145deg,#FFF,#EFE6DF)',boxShadow:loading||!input.trim()?'none':T.neoO,display:'flex',alignItems:'center',justifyContent:'center',opacity:loading||!input.trim()?.4:1,transition:'all .15s'}}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={T.soft} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
       </div>
@@ -1815,11 +1815,11 @@ function ScentProfileScreen({profile,lead,coupon,gardrop,onBack,onProductTap,onS
       <div style={{position:'relative',zIndex:2,padding:isDesktop?'36px 48px 48px':'24px 22px 32px',maxWidth:isDesktop?700:undefined,margin:isDesktop?'0 auto':undefined}}>
         {/* Header */}
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:28}}>
-          <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 16px',borderRadius:999,background:'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 4px 12px rgba(94,88,140,.08)',fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
+          <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 16px',borderRadius:999,background:'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 4px 12px rgba(90,70,55,.08)',fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Geri
           </button>
-          <button onClick={()=>setShowAura(true)} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 16px',borderRadius:999,background:'linear-gradient(135deg,#5B4A82,#8B6FB5)',border:'none',boxShadow:'0 6px 14px rgba(91,74,130,.30)',fontSize:13,fontWeight:600,color:'#FFF',cursor:'pointer',fontFamily:'inherit'}}>
+          <button onClick={()=>setShowAura(true)} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 16px',borderRadius:999,background:'linear-gradient(135deg,#6E5038,#8B6FB5)',border:'none',boxShadow:'0 6px 14px rgba(110,80,56,.30)',fontSize:13,fontWeight:600,color:'#FFF',cursor:'pointer',fontFamily:'inherit'}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="#FFF" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Koku Auramı Paylaş
           </button>
@@ -1834,8 +1834,8 @@ function ScentProfileScreen({profile,lead,coupon,gardrop,onBack,onProductTap,onS
         </h1>
 
         {/* Subtitle card */}
-        <div style={{padding:'16px 18px',borderRadius:18,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'flex',gap:14,alignItems:'flex-start',marginBottom:28}}>
-          <div style={{width:36,height:36,borderRadius:10,background:'linear-gradient(135deg,rgba(185,165,232,.15),rgba(159,180,224,.15))',border:'1px solid rgba(185,165,232,.25)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
+        <div style={{padding:'16px 18px',borderRadius:18,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 8px 22px rgba(90,70,55,.08)',display:'flex',gap:14,alignItems:'flex-start',marginBottom:28}}>
+          <div style={{width:36,height:36,borderRadius:10,background:'linear-gradient(135deg,rgba(192,138,126,.15),rgba(154,91,80,.15))',border:'1px solid rgba(192,138,126,.25)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}>
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M10 17.5s-6.5-4-6.5-9a4.5 4.5 0 0 1 6.5-4 4.5 4.5 0 0 1 6.5 4c0 5-6.5 9-6.5 9z" stroke={T.soft} strokeWidth="1.4" strokeLinejoin="round"/></svg>
           </div>
           <p style={{fontSize:14,lineHeight:1.6,color:T.soft,margin:0}}>{profile.subtitle}</p>
@@ -1843,7 +1843,7 @@ function ScentProfileScreen({profile,lead,coupon,gardrop,onBack,onProductTap,onS
 
         {/* Fal hikayesi */}
         {profile.fal_hikaye && (
-          <div style={{padding:'14px 18px',borderRadius:18,background:'linear-gradient(135deg,rgba(91,74,130,.06),rgba(185,165,232,.08))',border:'1px solid rgba(185,165,232,.18)',marginBottom:24,display:'flex',gap:12,alignItems:'flex-start'}}>
+          <div style={{padding:'14px 18px',borderRadius:18,background:'linear-gradient(135deg,rgba(110,80,56,.06),rgba(192,138,126,.08))',border:'1px solid rgba(192,138,126,.18)',marginBottom:24,display:'flex',gap:12,alignItems:'flex-start'}}>
             <span style={{fontSize:18,flexShrink:0,marginTop:1}}>🔮</span>
             <p style={{fontSize:18,lineHeight:1.6,color:T.ink,margin:0,fontFamily:'"Cormorant Garamond",serif',fontWeight:500}}>{profile.fal_hikaye}</p>
           </div>
@@ -1859,7 +1859,7 @@ function ScentProfileScreen({profile,lead,coupon,gardrop,onBack,onProductTap,onS
                 <span style={{fontSize:13,fontWeight:600,color:T.soft}}>%{sf.pct}</span>
               </div>
               <div style={{height:6,borderRadius:999,background:'rgba(0,0,0,.05)',overflow:'hidden'}}>
-                <div style={{height:'100%',width:`${sf.pct}%`,borderRadius:999,background:SCENT_COLORS[sf.name]||'linear-gradient(90deg,#C8B8E8,#B8CCE8)',transition:'width .6s ease'}}/>
+                <div style={{height:'100%',width:`${sf.pct}%`,borderRadius:999,background:SCENT_COLORS[sf.name]||'linear-gradient(90deg,#D8B3A8,#C79E92)',transition:'width .6s ease'}}/>
               </div>
             </div>
           ))}
@@ -1867,7 +1867,7 @@ function ScentProfileScreen({profile,lead,coupon,gardrop,onBack,onProductTap,onS
 
         {/* Coupon */}
         {coupon && (
-          <div style={{padding:'20px 22px',borderRadius:22,background:'linear-gradient(135deg,#2B2640 0%,#3E3458 60%,#5B4A82 100%)',boxShadow:'0 18px 36px rgba(43,38,64,.28)',marginBottom:28,position:'relative',overflow:'hidden'}}>
+          <div style={{padding:'20px 22px',borderRadius:22,background:'linear-gradient(135deg,#2B2640 0%,#3E3458 60%,#6E5038 100%)',boxShadow:'0 18px 36px rgba(43,38,64,.28)',marginBottom:28,position:'relative',overflow:'hidden'}}>
             <div style={{position:'absolute',inset:0,background:'radial-gradient(ellipse at 110% -20%,rgba(232,222,243,.30),transparent 55%)',pointerEvents:'none'}}/>
             <div style={{position:'relative',zIndex:1}}>
               <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:10}}>
@@ -1900,18 +1900,18 @@ function ScentProfileScreen({profile,lead,coupon,gardrop,onBack,onProductTap,onS
           {profile.top3.map((p,i)=>{
             const saved = gardrop.some(g=>g.name===p.name)
             return (
-              <div key={i} onClick={()=>onProductTap(p)} style={{padding:'14px 16px',borderRadius:20,background:p.series==='elegancia'?'linear-gradient(135deg,rgba(43,38,64,.04),rgba(91,74,130,.06))':'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',border:p.series==='elegancia'?'1px solid rgba(91,74,130,.20)':'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 18px rgba(94,88,140,.08)',display:'flex',alignItems:'center',gap:14,cursor:'pointer',transition:'transform .15s'}}>
-                <div style={{width:52,height:52,borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#F5F0FA)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,overflow:'hidden',border:'1px solid rgba(185,165,232,.15)'}}>
-                  {p.image_url ? <img src={p.image_url} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={26} hue="#D8CDEE"/>}
+              <div key={i} onClick={()=>onProductTap(p)} style={{padding:'14px 16px',borderRadius:20,background:p.series==='elegancia'?'linear-gradient(135deg,rgba(43,38,64,.04),rgba(110,80,56,.06))':'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',border:p.series==='elegancia'?'1px solid rgba(110,80,56,.20)':'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 18px rgba(90,70,55,.08)',display:'flex',alignItems:'center',gap:14,cursor:'pointer',transition:'transform .15s'}}>
+                <div style={{width:52,height:52,borderRadius:14,background:'linear-gradient(160deg,#EADFD8,#F5F0FA)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,overflow:'hidden',border:'1px solid rgba(192,138,126,.15)'}}>
+                  {p.image_url ? <img src={p.image_url} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={26} hue="#E8DAD2"/>}
                 </div>
                 <div style={{flex:1,minWidth:0}}>
-                  {p.series==='elegancia' && <div style={{display:'inline-block',fontSize:9,letterSpacing:'0.18em',fontWeight:700,color:'rgba(91,74,130,.9)',textTransform:'uppercase',marginBottom:3,padding:'2px 7px',borderRadius:999,background:'rgba(91,74,130,.10)',border:'1px solid rgba(91,74,130,.18)'}}>✦ Elegancia Premium</div>}
+                  {p.series==='elegancia' && <div style={{display:'inline-block',fontSize:9,letterSpacing:'0.18em',fontWeight:700,color:'rgba(110,80,56,.9)',textTransform:'uppercase',marginBottom:3,padding:'2px 7px',borderRadius:999,background:'rgba(110,80,56,.10)',border:'1px solid rgba(110,80,56,.18)'}}>✦ Elegancia Premium</div>}
                   <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:18,color:T.ink,lineHeight:1.1,marginBottom:2}}>{p.name}</div>
                   <div style={{fontSize:12,color:T.muted,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>{p.top_notes?.length ? p.top_notes.slice(0,3).join(' · ') : (p.notes && !p.notes.startsWith('Üst Not') ? p.notes : '')}</div>
                 </div>
                 <div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:8,flexShrink:0}}>
-                  <div style={{padding:'4px 10px',borderRadius:999,background:'linear-gradient(135deg,rgba(185,165,232,.20),rgba(159,180,224,.20))',border:'1px solid rgba(185,165,232,.30)',fontSize:12,fontWeight:600,color:T.soft}}>%{p.match_pct}</div>
-                  <button onClick={e=>{e.stopPropagation();onSaveToGardrop(p)}} style={{width:32,height:32,borderRadius:'50%',border:'none',background:saved?'rgba(185,165,232,.15)':'rgba(0,0,0,.04)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',flexShrink:0}}>
+                  <div style={{padding:'4px 10px',borderRadius:999,background:'linear-gradient(135deg,rgba(192,138,126,.20),rgba(154,91,80,.20))',border:'1px solid rgba(192,138,126,.30)',fontSize:12,fontWeight:600,color:T.soft}}>%{p.match_pct}</div>
+                  <button onClick={e=>{e.stopPropagation();onSaveToGardrop(p)}} style={{width:32,height:32,borderRadius:'50%',border:'none',background:saved?'rgba(192,138,126,.15)':'rgba(0,0,0,.04)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer',flexShrink:0}}>
                     <svg width="14" height="14" viewBox="0 0 16 16" fill={saved?T.soft:'none'}><path d="M8 13.5s-5-3-5-7a3 3 0 0 1 5-2 3 3 0 0 1 5 2c0 4-5 7-5 7z" stroke={T.soft} strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </button>
                 </div>
@@ -1979,36 +1979,36 @@ function ProductDetailScreen({product,onBack,onSave,saved,isDesktop}:{
       <div style={{padding:isDesktop?'36px 48px 48px':'24px 22px 32px',maxWidth:isDesktop?620:undefined,margin:isDesktop?'0 auto':undefined}}>
         {/* Header */}
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:28}}>
-          <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 16px',borderRadius:999,background:'rgba(255,255,255,.85)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 4px 12px rgba(94,88,140,.08)',fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
+          <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 16px',borderRadius:999,background:'rgba(255,255,255,.85)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 4px 12px rgba(90,70,55,.08)',fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Geri
           </button>
-          <button onClick={()=>onSave(product)} style={{width:40,height:40,borderRadius:'50%',border:'none',background:saved?'rgba(185,165,232,.15)':'rgba(255,255,255,.85)',boxShadow:'0 4px 12px rgba(94,88,140,.08)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer'}}>
+          <button onClick={()=>onSave(product)} style={{width:40,height:40,borderRadius:'50%',border:'none',background:saved?'rgba(192,138,126,.15)':'rgba(255,255,255,.85)',boxShadow:'0 4px 12px rgba(90,70,55,.08)',display:'flex',alignItems:'center',justifyContent:'center',cursor:'pointer'}}>
             <svg width="16" height="16" viewBox="0 0 18 18" fill={saved?T.soft:'none'}><path d="M9 15s-6-3.5-6-8a4 4 0 0 1 6-3.46A4 4 0 0 1 15 7c0 4.5-6 8-6 8z" stroke={T.soft} strokeWidth="1.4" strokeLinejoin="round"/></svg>
           </button>
         </div>
 
         {/* Product Image */}
-        <div style={{borderRadius:24,overflow:'hidden',background:'linear-gradient(160deg,#EFE6F8,#DCE8F4)',marginBottom:24,aspectRatio:'1',display:'flex',alignItems:'center',justifyContent:'center',position:'relative'}}>
+        <div style={{borderRadius:24,overflow:'hidden',background:'linear-gradient(160deg,#F0E7E0,#EADFD8)',marginBottom:24,aspectRatio:'1',display:'flex',alignItems:'center',justifyContent:'center',position:'relative'}}>
           {product.image_url
             ? <img src={product.image_url} alt={product.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
-            : <BottleGlyph size={120} hue="#E2D6F1"/>
+            : <BottleGlyph size={120} hue="#EADFD8"/>
           }
         </div>
 
         {/* Title */}
-        {product.series==='elegancia' && <div style={{display:'inline-block',fontSize:10,letterSpacing:'0.18em',fontWeight:700,color:'rgba(91,74,130,.85)',textTransform:'uppercase',marginBottom:8,padding:'4px 12px',borderRadius:999,background:'rgba(91,74,130,.08)',border:'1px solid rgba(91,74,130,.18)'}}>✦ Elegancia Premium · 100ml Extrait</div>}
+        {product.series==='elegancia' && <div style={{display:'inline-block',fontSize:10,letterSpacing:'0.18em',fontWeight:700,color:'rgba(110,80,56,.85)',textTransform:'uppercase',marginBottom:8,padding:'4px 12px',borderRadius:999,background:'rgba(110,80,56,.08)',border:'1px solid rgba(110,80,56,.18)'}}>✦ Elegancia Premium · 100ml Extrait</div>}
         <h1 style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:isDesktop?42:36,color:T.ink,letterSpacing:'-0.01em',margin:'0 0 20px',lineHeight:1.1}}>{product.name}</h1>
 
         {/* Notes pyramid */}
         <div style={{fontSize:10,letterSpacing:'0.28em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:12}}>Notalar Piramidi</div>
-        <div style={{display:'flex',flexDirection:'column',gap:8,marginBottom:24,padding:18,borderRadius:20,background:'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 18px rgba(94,88,140,.06)'}}>
+        <div style={{display:'flex',flexDirection:'column',gap:8,marginBottom:24,padding:18,borderRadius:20,background:'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 6px 18px rgba(90,70,55,.06)'}}>
           {[{label:'ÜST NOTALAR',notes:product.top_notes},{label:'KALP',notes:product.heart_notes},{label:'DİP',notes:product.base_notes}].map((tier,i)=>(
-            <div key={i} style={{paddingBottom:i<2?12:0,borderBottom:i<2?'1px solid rgba(94,88,140,.08)':'none'}}>
+            <div key={i} style={{paddingBottom:i<2?12:0,borderBottom:i<2?'1px solid rgba(90,70,55,.08)':'none'}}>
               <div style={{fontSize:9,letterSpacing:'0.22em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:6}}>{tier.label}</div>
               <div style={{display:'flex',flexWrap:'wrap',gap:6}}>
                 {(tier.notes||[]).map((n,j)=>(
-                  <span key={j} style={{padding:'4px 10px',borderRadius:999,background:'rgba(185,165,232,.10)',border:'1px solid rgba(185,165,232,.20)',fontSize:13,color:T.ink}}>{n}</span>
+                  <span key={j} style={{padding:'4px 10px',borderRadius:999,background:'rgba(192,138,126,.10)',border:'1px solid rgba(192,138,126,.20)',fontSize:13,color:T.ink}}>{n}</span>
                 ))}
               </div>
             </div>
@@ -2025,10 +2025,10 @@ function ProductDetailScreen({product,onBack,onSave,saved,isDesktop}:{
 
         {/* CTA buttons */}
         <div style={{display:'flex',gap:12,flexDirection:'column'}}>
-          <a href={product.web_url} target="_blank" rel="noopener noreferrer" style={{display:'flex',alignItems:'center',justifyContent:'center',gap:8,padding:'16px 24px',borderRadius:999,background:'linear-gradient(135deg,#B9A5E8,#9FB4E0)',boxShadow:'0 14px 28px rgba(140,120,200,.28)',fontSize:15,fontWeight:500,color:'#FFF',textDecoration:'none',cursor:'pointer'}}>
+          <a href={product.web_url} target="_blank" rel="noopener noreferrer" style={{display:'flex',alignItems:'center',justifyContent:'center',gap:8,padding:'16px 24px',borderRadius:999,background:'linear-gradient(135deg,#C08A7E,#9A5B50)',boxShadow:'0 14px 28px rgba(154,91,80,.28)',fontSize:15,fontWeight:500,color:'#FFF',textDecoration:'none',cursor:'pointer'}}>
             Ürünü İncele →
           </a>
-          <button onClick={()=>onSave(product)} style={{display:'flex',alignItems:'center',justifyContent:'center',gap:8,padding:'14px 24px',borderRadius:999,border:'1px solid rgba(185,165,232,.3)',background:'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',fontSize:14,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
+          <button onClick={()=>onSave(product)} style={{display:'flex',alignItems:'center',justifyContent:'center',gap:8,padding:'14px 24px',borderRadius:999,border:'1px solid rgba(192,138,126,.3)',background:'rgba(255,255,255,.75)',backdropFilter:'blur(14px)',fontSize:14,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
             <svg width="14" height="14" viewBox="0 0 18 18" fill={saved?T.soft:'none'}><path d="M9 15s-6-3.5-6-8a4 4 0 0 1 6-3.46A4 4 0 0 1 15 7c0 4.5-6 8-6 8z" stroke={T.soft} strokeWidth="1.4" strokeLinejoin="round"/></svg>
             {saved ? 'Gardıroba Eklendi' : 'Gardıroba Ekle'}
           </button>
@@ -2079,16 +2079,16 @@ function FAQScreen({onBack,isDesktop,lead}:{onBack:()=>void;isDesktop?:boolean;l
   return (
     <div style={{position:'absolute',inset:0,display:'flex',flexDirection:'column',background:'#FDFCFE',zIndex:isDesktop?undefined:15}}>
       {/* Header */}
-      <div style={{flexShrink:0,padding:isDesktop?'28px 48px 20px':'20px 22px 14px',borderBottom:'1px solid rgba(94,88,140,.08)',background:'rgba(255,255,255,.75)',backdropFilter:'blur(14px)'}}>
+      <div style={{flexShrink:0,padding:isDesktop?'28px 48px 20px':'20px 22px 14px',borderBottom:'1px solid rgba(90,70,55,.08)',background:'rgba(255,255,255,.75)',backdropFilter:'blur(14px)'}}>
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:isDesktop?12:10}}>
           {!isDesktop && (
-            <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'6px 14px',borderRadius:999,background:'rgba(255,255,255,.85)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 4px 10px rgba(94,88,140,.07)',fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
+            <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'6px 14px',borderRadius:999,background:'rgba(255,255,255,.85)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 4px 10px rgba(90,70,55,.07)',fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit'}}>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
               Geri
             </button>
           )}
           <span style={{fontSize:10,letterSpacing:'0.22em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>Hakkımızda · SSS</span>
-          <span style={{fontSize:11,fontWeight:600,color:T.soft,padding:'4px 10px',borderRadius:999,background:'rgba(185,165,232,.12)',border:'1px solid rgba(185,165,232,.25)'}}>Yardım</span>
+          <span style={{fontSize:11,fontWeight:600,color:T.soft,padding:'4px 10px',borderRadius:999,background:'rgba(192,138,126,.12)',border:'1px solid rgba(192,138,126,.25)'}}>Yardım</span>
         </div>
         <h2 style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:isDesktop?40:32,color:T.ink,margin:'0 0 4px',letterSpacing:'-0.01em'}}>Bize <em style={{fontStyle:'italic'}}>sorun.</em></h2>
         <p style={{fontSize:13,color:T.muted,margin:0,lineHeight:1.5}}>Kargo, üyelik, toptan sipariş veya parfümler hakkında her soruyu yanıtlarım.</p>
@@ -2101,7 +2101,7 @@ function FAQScreen({onBack,isDesktop,lead}:{onBack:()=>void;isDesktop?:boolean;l
             <div style={{fontSize:10,letterSpacing:'0.20em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:10}}>Sık Sorulanlar</div>
             <div style={{display:'flex',flexDirection:'column',gap:8}}>
               {quickReplies.map(q=>(
-                <button key={q} onClick={()=>send(q)} style={{padding:'13px 18px',borderRadius:14,background:'rgba(255,255,255,.75)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 4px 12px rgba(94,88,140,.06)',fontSize:14,color:T.ink,textAlign:'left',cursor:'pointer',fontFamily:'inherit',fontWeight:400}}>
+                <button key={q} onClick={()=>send(q)} style={{padding:'13px 18px',borderRadius:14,background:'rgba(255,255,255,.75)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 4px 12px rgba(90,70,55,.06)',fontSize:14,color:T.ink,textAlign:'left',cursor:'pointer',fontFamily:'inherit',fontWeight:400}}>
                   {q}
                 </button>
               ))}
@@ -2111,7 +2111,7 @@ function FAQScreen({onBack,isDesktop,lead}:{onBack:()=>void;isDesktop?:boolean;l
         {msgs.map((m,i)=>(
           <div key={i} style={{display:'flex',justifyContent:m.role==='user'?'flex-end':'flex-start',marginTop:12}}>
             {m.role==='asya' && <AsyaAvatar size={28}/>}
-            <div style={{maxWidth:'78%',marginLeft:m.role==='asya'?10:0,padding:'11px 14px',borderRadius:m.role==='asya'?'16px 16px 16px 5px':'16px 16px 5px 16px',background:m.role==='asya'?'rgba(255,255,255,.75)':'linear-gradient(135deg,#C8B8E8,#B8CCE8)',border:m.role==='asya'?'1px solid rgba(255,255,255,.9)':'none',boxShadow:m.role==='asya'?'0 4px 12px rgba(94,88,140,.08)':'0 6px 16px rgba(140,120,200,.20)',fontSize:14,lineHeight:1.5,color:m.role==='asya'?T.ink:'#FFF',backdropFilter:m.role==='asya'?'blur(10px)':undefined}}>
+            <div style={{maxWidth:'78%',marginLeft:m.role==='asya'?10:0,padding:'11px 14px',borderRadius:m.role==='asya'?'16px 16px 16px 5px':'16px 16px 5px 16px',background:m.role==='asya'?'rgba(255,255,255,.75)':'linear-gradient(135deg,#D8B3A8,#C79E92)',border:m.role==='asya'?'1px solid rgba(255,255,255,.9)':'none',boxShadow:m.role==='asya'?'0 4px 12px rgba(90,70,55,.08)':'0 6px 16px rgba(154,91,80,.20)',fontSize:14,lineHeight:1.5,color:m.role==='asya'?T.ink:'#FFF',backdropFilter:m.role==='asya'?'blur(10px)':undefined}}>
               {m.text}
             </div>
           </div>
@@ -2119,7 +2119,7 @@ function FAQScreen({onBack,isDesktop,lead}:{onBack:()=>void;isDesktop?:boolean;l
         {loading && (
           <div style={{display:'flex',gap:10,alignItems:'flex-end',marginTop:12}}>
             <AsyaAvatar size={28}/>
-            <div style={{padding:'11px 14px',background:'rgba(255,255,255,.75)',backdropFilter:'blur(10px)',border:'1px solid rgba(255,255,255,.9)',borderRadius:'16px 16px 16px 5px',boxShadow:'0 4px 12px rgba(94,88,140,.08)'}}>
+            <div style={{padding:'11px 14px',background:'rgba(255,255,255,.75)',backdropFilter:'blur(10px)',border:'1px solid rgba(255,255,255,.9)',borderRadius:'16px 16px 16px 5px',boxShadow:'0 4px 12px rgba(90,70,55,.08)'}}>
               <TypingDots/>
             </div>
           </div>
@@ -2127,9 +2127,9 @@ function FAQScreen({onBack,isDesktop,lead}:{onBack:()=>void;isDesktop?:boolean;l
       </div>
 
       {/* Input */}
-      <div style={{flexShrink:0,paddingTop:12,paddingLeft:22,paddingRight:22,paddingBottom:'calc(16px + env(safe-area-inset-bottom, 0px))',display:'flex',gap:10,alignItems:'flex-end',borderTop:'1px solid rgba(94,88,140,.06)',background:'rgba(255,255,255,.6)',backdropFilter:'blur(16px)'}}>
-        <input value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>{if(e.key==='Enter')send(input)}} placeholder="Sorunuzu yazın..." style={{flex:1,height:48,borderRadius:14,border:'1.5px solid rgba(185,165,232,.35)',background:'rgba(255,255,255,.8)',padding:'0 16px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}/>
-        <button onClick={()=>send(input)} disabled={loading||!input.trim()} style={{width:48,height:48,borderRadius:'50%',border:'none',flexShrink:0,cursor:loading||!input.trim()?'default':'pointer',background:'linear-gradient(135deg,#B9A5E8,#9FB4E0)',boxShadow:loading||!input.trim()?'none':'0 8px 20px rgba(140,120,200,.28)',display:'flex',alignItems:'center',justifyContent:'center',opacity:loading||!input.trim()?.4:1,transition:'all .15s'}}>
+      <div style={{flexShrink:0,paddingTop:12,paddingLeft:22,paddingRight:22,paddingBottom:'calc(16px + env(safe-area-inset-bottom, 0px))',display:'flex',gap:10,alignItems:'flex-end',borderTop:'1px solid rgba(90,70,55,.06)',background:'rgba(255,255,255,.6)',backdropFilter:'blur(16px)'}}>
+        <input value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>{if(e.key==='Enter')send(input)}} placeholder="Sorunuzu yazın..." style={{flex:1,height:48,borderRadius:14,border:'1.5px solid rgba(192,138,126,.35)',background:'rgba(255,255,255,.8)',padding:'0 16px',fontSize:16,fontFamily:'inherit',color:T.ink,outline:'none'}}/>
+        <button onClick={()=>send(input)} disabled={loading||!input.trim()} style={{width:48,height:48,borderRadius:'50%',border:'none',flexShrink:0,cursor:loading||!input.trim()?'default':'pointer',background:'linear-gradient(135deg,#C08A7E,#9A5B50)',boxShadow:loading||!input.trim()?'none':'0 8px 20px rgba(154,91,80,.28)',display:'flex',alignItems:'center',justifyContent:'center',opacity:loading||!input.trim()?.4:1,transition:'all .15s'}}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
       </div>
@@ -2162,7 +2162,7 @@ function MobileWelcome({onAdvance}:{onAdvance:()=>void}) {
       <p style={{position:'relative',zIndex:2,fontSize:11,letterSpacing:'0.28em',textTransform:'uppercase',fontWeight:500,color:T.muted}}>Yapay Zeka Destekli Kişisel Koku Asistanı</p>
       <div style={{position:'relative',zIndex:2,marginTop:32,width:260,height:340,display:'flex',alignItems:'flex-end',justifyContent:'center'}}>
         <div style={{position:'absolute',inset:-24,borderRadius:'50%',background:'radial-gradient(ellipse at 50% 35%,rgba(244,238,252,.95),transparent 65%)',filter:'blur(10px)'}}/>
-        <div style={{position:'relative',zIndex:1,width:224,height:300,borderRadius:22,boxShadow:'0 30px 60px rgba(94,88,140,.18),0 0 0 1px rgba(255,255,255,.6)',overflow:'hidden',background:'linear-gradient(160deg,#F0E9F7,#E3ECF5)'}}>
+        <div style={{position:'relative',zIndex:1,width:224,height:300,borderRadius:22,boxShadow:'0 30px 60px rgba(90,70,55,.18),0 0 0 1px rgba(255,255,255,.6)',overflow:'hidden',background:'linear-gradient(160deg,#F3EAE4,#E3ECF5)'}}>
           <img src="/hero-welcome.jpg" alt="ASYA" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center top'}}/>
           <div style={{position:'absolute',left:0,right:0,bottom:0,height:80,background:'linear-gradient(to bottom,transparent,#FAFAFE 95%)',pointerEvents:'none'}}/>
         </div>
@@ -2172,8 +2172,8 @@ function MobileWelcome({onAdvance}:{onAdvance:()=>void}) {
       <div style={{flex:1}}/>
       <div ref={trackRef} style={{position:'relative',zIndex:2,width:280,height:64,marginBottom:56,borderRadius:999,background:T.glassS,backdropFilter:'blur(16px)',WebkitBackdropFilter:'blur(16px)',border:`1px solid ${T.glassE}`,boxShadow:T.shadow,display:'flex',alignItems:'center',justifyContent:'center',userSelect:'none',touchAction:'none'}}>
         <span style={{fontSize:12,letterSpacing:'0.18em',color:T.soft,textTransform:'uppercase',fontWeight:500,opacity:Math.max(0,1-dragX/110),paddingLeft:72}}>Başlamak için kaydır</span>
-        <div style={{position:'absolute',left:3,top:3,height:58,width:dragX+58,borderRadius:999,background:'linear-gradient(90deg,rgba(185,165,232,.45),rgba(159,180,224,.45))',transition:dragging?'none':'width .25s ease',pointerEvents:'none'}}/>
-        <div onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp} style={{position:'absolute',left:3+dragX,top:3,width:58,height:58,borderRadius:'50%',background:'linear-gradient(145deg,#FFF,#E8E2F0)',boxShadow:T.neoO,display:'flex',alignItems:'center',justifyContent:'center',cursor:'grab',transition:dragging?'none':'left .25s ease'}}>
+        <div style={{position:'absolute',left:3,top:3,height:58,width:dragX+58,borderRadius:999,background:'linear-gradient(90deg,rgba(192,138,126,.45),rgba(154,91,80,.45))',transition:dragging?'none':'width .25s ease',pointerEvents:'none'}}/>
+        <div onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp} style={{position:'absolute',left:3+dragX,top:3,width:58,height:58,borderRadius:'50%',background:'linear-gradient(145deg,#FFF,#EFE6DF)',boxShadow:T.neoO,display:'flex',alignItems:'center',justifyContent:'center',cursor:'grab',transition:dragging?'none':'left .25s ease'}}>
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 5l6 6-6 6" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M12 5l6 6-6 6" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" opacity=".5"/></svg>
         </div>
       </div>
@@ -2183,7 +2183,6 @@ function MobileWelcome({onAdvance}:{onAdvance:()=>void}) {
 
 const mTabs = [
   {id:'home',label:'Ana Sayfa',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10l7-6 7 6v6a1 1 0 0 1-1 1h-3v-5h-6v5H4a1 1 0 0 1-1-1z" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
-  {id:'catalog',label:'Koleksiyon',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="6" height="6" rx="1.2" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4"/><rect x="11" y="3" width="6" height="6" rx="1.2" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4"/><rect x="3" y="11" width="6" height="6" rx="1.2" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4"/><rect x="11" y="11" width="6" height="6" rx="1.2" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4"/></svg>},
   {id:'chat',label:'Sohbet',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 9.5C3 6 6 4 10 4s7 2 7 5.5S14 15 10 15c-.7 0-1.4-.06-2-.18L5 16l.5-2.4A5 5 0 0 1 3 9.5z" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
   {id:'wardrobe',label:'Gardırop',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 7.2a1.7 1.7 0 1 1 1.7-1.7" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinecap="round"/><path d="M10 7.2v1.5L2 14h16L10 8.7" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
   {id:'profile',label:'Profil',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4"/><path d="M3 17c.8-3.4 3.7-5 7-5s6.2 1.6 7 5" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinecap="round"/></svg>},
@@ -2191,11 +2190,11 @@ const mTabs = [
 
 function MobileTabBar({active,onChange}:{active:MainTab;onChange:(t:MainTab)=>void}) {
   return (
-    <div style={{position:'absolute',left:14,right:14,bottom:'calc(env(safe-area-inset-bottom, 0px) + 8px)',zIndex:10,paddingTop:8,paddingLeft:6,paddingRight:6,paddingBottom:'calc(8px + env(safe-area-inset-bottom, 0px))',borderRadius:999,background:'rgba(255,255,255,.78)',backdropFilter:'blur(22px) saturate(1.3)',WebkitBackdropFilter:'blur(22px) saturate(1.3)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 18px 40px rgba(94,88,140,.18),inset 0 1px 0 rgba(255,255,255,.9)',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+    <div style={{position:'absolute',left:14,right:14,bottom:'calc(env(safe-area-inset-bottom, 0px) + 8px)',zIndex:10,paddingTop:8,paddingLeft:6,paddingRight:6,paddingBottom:'calc(8px + env(safe-area-inset-bottom, 0px))',borderRadius:999,background:'rgba(255,255,255,.78)',backdropFilter:'blur(22px) saturate(1.3)',WebkitBackdropFilter:'blur(22px) saturate(1.3)',border:'1px solid rgba(255,255,255,.9)',boxShadow:'0 18px 40px rgba(90,70,55,.18),inset 0 1px 0 rgba(255,255,255,.9)',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
       {mTabs.map(t=>{
         const isA = active===t.id
         return (
-          <button key={t.id} onClick={()=>onChange(t.id as MainTab)} style={{flex:1,padding:'8px 4px',borderRadius:999,border:'none',background:isA?T.accent:'transparent',boxShadow:isA?'0 6px 14px rgba(140,120,200,.25)':'none',display:'flex',flexDirection:'column',alignItems:'center',gap:2,cursor:'pointer',fontFamily:'inherit',transition:'all .2s'}}>
+          <button key={t.id} onClick={()=>onChange(t.id as MainTab)} style={{flex:1,padding:'8px 4px',borderRadius:999,border:'none',background:isA?T.accent:'transparent',boxShadow:isA?'0 6px 14px rgba(154,91,80,.25)':'none',display:'flex',flexDirection:'column',alignItems:'center',gap:2,cursor:'pointer',fontFamily:'inherit',transition:'all .2s'}}>
             {t.g(isA)}
             <span style={{fontSize:9.5,fontWeight:isA?600:500,color:isA?'#FFF':T.muted,letterSpacing:'0.04em'}}>{t.label}</span>
           </button>
@@ -2223,7 +2222,7 @@ function MobileHome({lead,onGoChat,onGoUnboxing,onGoFaq}:{lead:Lead|null;onGoCha
       <Bg variant="b"/>
       <div style={{position:'relative',zIndex:2,padding:'70px 28px 0'}}>
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:40}}>
-          <div style={{padding:'10px 18px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(94,88,140,.08)',fontSize:13,fontWeight:500,color:T.ink,display:'flex',alignItems:'center',gap:8}}>
+          <div style={{padding:'10px 18px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(90,70,55,.08)',fontSize:13,fontWeight:500,color:T.ink,display:'flex',alignItems:'center',gap:8}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke={T.soft} strokeWidth="1.4" strokeLinecap="round"/></svg>
             Koku Testi
           </div>
@@ -2232,7 +2231,7 @@ function MobileHome({lead,onGoChat,onGoUnboxing,onGoFaq}:{lead:Lead|null;onGoCha
           Selam{lead?`, ${lead.name.split(' ')[0]}`:''},<br/>Ben <em style={{fontStyle:'italic'}}>ASYA</em>.<br/>Bugün ruhunuzu<br/>yansıtacak kokuyu<br/>bulalım.
         </h1>
         {/* Lifestyle hero banner */}
-        <div style={{position:'relative',borderRadius:22,overflow:'hidden',marginBottom:24,height:220,boxShadow:'0 12px 28px rgba(94,88,140,.16)'}}>
+        <div style={{position:'relative',borderRadius:22,overflow:'hidden',marginBottom:24,height:220,boxShadow:'0 12px 28px rgba(90,70,55,.16)'}}>
           <img src="/hero-mobile.jpg" alt="Elegance VIP" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center 20%'}}/>
           <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(43,38,64,0) 45%,rgba(43,38,64,.62) 100%)'}}/>
           <div style={{position:'absolute',bottom:16,left:18,color:'#FFF'}}>
@@ -2243,7 +2242,7 @@ function MobileHome({lead,onGoChat,onGoUnboxing,onGoFaq}:{lead:Lead|null;onGoCha
         <p style={{fontSize:13.5,color:T.soft,lineHeight:1.55,margin:'0 0 24px'}}>Koku dünyanızı keşfetmek için bir seçenek belirleyin:</p>
         <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:14,marginBottom:20}}>
           {dashTiles.map((t,i)=>(
-            <button key={i} onClick={()=>onGoChat(t.mode)} style={{height:108,padding:'14px 16px',borderRadius:22,background:T.glass,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 24px rgba(94,88,140,.10),inset 0 1px 0 rgba(255,255,255,.8)',display:'flex',flexDirection:'column',justifyContent:'space-between',cursor:'pointer',fontFamily:'inherit',textAlign:'left'}}>
+            <button key={i} onClick={()=>onGoChat(t.mode)} style={{height:108,padding:'14px 16px',borderRadius:22,background:T.glass,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 24px rgba(90,70,55,.10),inset 0 1px 0 rgba(255,255,255,.8)',display:'flex',flexDirection:'column',justifyContent:'space-between',cursor:'pointer',fontFamily:'inherit',textAlign:'left'}}>
               <div>{t.g}</div>
               <div style={{fontSize:14,fontWeight:500,lineHeight:1.2,color:T.ink}}>{t.title}<br/>{t.titleB}</div>
             </button>
@@ -2251,19 +2250,19 @@ function MobileHome({lead,onGoChat,onGoUnboxing,onGoFaq}:{lead:Lead|null;onGoCha
         </div>
         <button onClick={()=>onGoChat('profil')} style={{width:'100%',height:60,borderRadius:999,padding:'0 10px 0 24px',background:T.glassS,backdropFilter:'blur(16px)',WebkitBackdropFilter:'blur(16px)',border:`1px solid ${T.glassE}`,boxShadow:T.shadow,display:'flex',alignItems:'center',justifyContent:'space-between',cursor:'pointer',fontFamily:'inherit',marginBottom:12}}>
           <span style={{fontSize:15,color:T.ink,fontWeight:500}}>ASYA ile sohbete başla</span>
-          <div style={{width:44,height:44,borderRadius:'50%',background:'linear-gradient(145deg,#FFF,#E2DAEE)',boxShadow:T.neoO,display:'flex',alignItems:'center',justifyContent:'center'}}>
+          <div style={{width:44,height:44,borderRadius:'50%',background:'linear-gradient(145deg,#FFF,#EFE6DF)',boxShadow:T.neoO,display:'flex',alignItems:'center',justifyContent:'center'}}>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10.5 4.5L15 9l-4.5 4.5" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </div>
         </button>
-        <button onClick={onGoUnboxing} style={{width:'100%',height:60,borderRadius:999,padding:'0 10px 0 24px',background:'linear-gradient(135deg,rgba(91,74,130,.12),rgba(185,165,232,.10))',border:'1px solid rgba(91,74,130,.20)',display:'flex',alignItems:'center',justifyContent:'space-between',cursor:'pointer',fontFamily:'inherit',marginBottom:12}}>
+        <button onClick={onGoUnboxing} style={{width:'100%',height:60,borderRadius:999,padding:'0 10px 0 24px',background:'linear-gradient(135deg,rgba(110,80,56,.12),rgba(192,138,126,.10))',border:'1px solid rgba(110,80,56,.20)',display:'flex',alignItems:'center',justifyContent:'space-between',cursor:'pointer',fontFamily:'inherit',marginBottom:12}}>
           <span style={{fontSize:15,color:T.ink,fontWeight:500}}>📦 Kutumu Yeni Açtım</span>
-          <div style={{width:44,height:44,borderRadius:'50%',background:'linear-gradient(145deg,#FFF,#E2DAEE)',boxShadow:T.neoO,display:'flex',alignItems:'center',justifyContent:'center'}}>
+          <div style={{width:44,height:44,borderRadius:'50%',background:'linear-gradient(145deg,#FFF,#EFE6DF)',boxShadow:T.neoO,display:'flex',alignItems:'center',justifyContent:'center'}}>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2l6 3v8L9 16 3 13V5z" stroke={T.soft} strokeWidth="1.4" strokeLinejoin="round"/><path d="M9 7l6-2M9 7l-6-2M9 7v9" stroke={T.soft} strokeWidth="1.4" strokeLinecap="round"/></svg>
           </div>
         </button>
         <button onClick={onGoFaq} style={{width:'100%',height:52,borderRadius:999,padding:'0 10px 0 24px',background:'rgba(255,255,255,.55)',backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,display:'flex',alignItems:'center',justifyContent:'space-between',cursor:'pointer',fontFamily:'inherit',marginBottom:20}}>
           <span style={{fontSize:14,color:T.soft,fontWeight:500}}>💬 Hakkımızda & Sık Sorulanlar</span>
-          <div style={{width:36,height:36,borderRadius:'50%',background:'rgba(94,88,140,.06)',display:'flex',alignItems:'center',justifyContent:'center'}}>
+          <div style={{width:36,height:36,borderRadius:'50%',background:'rgba(90,70,55,.06)',display:'flex',alignItems:'center',justifyContent:'center'}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 5.5C5 4 6 3 7 3s2 .9 2 2c0 .9-.5 1.5-1.2 2L7 8" stroke={T.muted} strokeWidth="1.5" strokeLinecap="round"/><circle cx="7" cy="10.5" r=".8" fill={T.muted}/></svg>
           </div>
         </button>
@@ -2277,7 +2276,7 @@ function MobileChat({chatLogic,onGoProfile,onGoScentProfile,chatMode,onGoMuadil,
     <div style={{position:'absolute',inset:0,display:'flex',flexDirection:'column',zIndex:5}}>
       <Bg variant="c"/>
       <div style={{position:'relative',zIndex:3,padding:'60px 20px 12px',display:'flex',alignItems:'center',justifyContent:'space-between',gap:12}}>
-        <div style={{display:'flex',alignItems:'center',gap:10,padding:'6px 14px 6px 6px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(94,88,140,.08)'}}>
+        <div style={{display:'flex',alignItems:'center',gap:10,padding:'6px 14px 6px 6px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(90,70,55,.08)'}}>
           <AsyaAvatar size={30}/>
           <div>
             <div style={{fontSize:13,fontWeight:600,color:T.ink}}>ASYA</div>
@@ -2286,7 +2285,7 @@ function MobileChat({chatLogic,onGoProfile,onGoScentProfile,chatMode,onGoMuadil,
             </div>
           </div>
         </div>
-        <button onClick={chatLogic.reset} style={{padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(94,88,140,.08)',fontSize:12.5,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:6}}>
+        <button onClick={chatLogic.reset} style={{padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(90,70,55,.08)',fontSize:12.5,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:6}}>
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.soft} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>
           Baştan Başla
         </button>
@@ -2302,12 +2301,12 @@ function CatalogGrid({products}:{products:CatProduct[]}) {
   return (
     <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:14}}>
       {products.map((p,i)=>(
-        <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:14,borderRadius:20,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'block',position:'relative'}}>
+        <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:14,borderRadius:20,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(90,70,55,.08)',display:'block',position:'relative'}}>
           {p.series==='elegancia' && (
-            <div style={{position:'absolute',top:10,right:10,padding:'3px 8px',borderRadius:999,background:'rgba(91,74,130,.85)',color:'#FFF',fontSize:9,fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',zIndex:2}}>✦ Niş</div>
+            <div style={{position:'absolute',top:10,right:10,padding:'3px 8px',borderRadius:999,background:'rgba(110,80,56,.85)',color:'#FFF',fontSize:9,fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',zIndex:2}}>✦ Niş</div>
           )}
-          <div style={{aspectRatio:'1',borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:10,overflow:'hidden'}}>
-            {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={60} hue="#E2D6F1"/>}
+          <div style={{aspectRatio:'1',borderRadius:14,background:'linear-gradient(160deg,#EADFD8,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:10,overflow:'hidden'}}>
+            {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={60} hue="#EADFD8"/>}
           </div>
           <div style={{fontSize:10,letterSpacing:'0.14em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>{p.scent}</div>
           <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:17,color:T.ink,lineHeight:1.15,marginTop:2}}>{p.name}</div>
@@ -2342,7 +2341,7 @@ function MobileCatalog() {
         {/* Section tabs */}
         <div style={{display:'flex',gap:8,marginBottom:14}}>
           {([['gold','Gold & Classic'],['elegancia','✦ Niş Parfüm']] as const).map(([s,label])=>(
-            <button key={s} onClick={()=>resetFilters(s)} style={{flex:1,padding:'10px 8px',borderRadius:14,border:'none',background:section===s?s==='elegancia'?'linear-gradient(135deg,#5B4A82,#8B6FB5)':T.accent:'rgba(255,255,255,.7)',color:section===s?'#FFF':T.soft,fontSize:13,fontWeight:section===s?700:500,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',boxShadow:section===s?'0 6px 14px rgba(140,120,200,.25)':undefined}}>
+            <button key={s} onClick={()=>resetFilters(s)} style={{flex:1,padding:'10px 8px',borderRadius:14,border:'none',background:section===s?s==='elegancia'?'linear-gradient(135deg,#6E5038,#8B6FB5)':T.accent:'rgba(255,255,255,.7)',color:section===s?'#FFF':T.soft,fontSize:13,fontWeight:section===s?700:500,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',boxShadow:section===s?'0 6px 14px rgba(154,91,80,.25)':undefined}}>
               {label}
             </button>
           ))}
@@ -2352,7 +2351,7 @@ function MobileCatalog() {
         {!isNis && (
           <div style={{display:'flex',gap:6,overflowX:'auto',paddingBottom:6,marginBottom:10}}>
             {GENDERS.map(g=>(
-              <button key={g} onClick={()=>setGender(g)} style={{padding:'6px 14px',borderRadius:999,border:gender===g?'none':'1px solid rgba(94,88,140,.12)',background:gender===g?'rgba(185,165,232,.25)':'rgba(255,255,255,.7)',color:gender===g?T.ink:T.soft,fontSize:12,fontWeight:gender===g?600:400,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',flexShrink:0}}>
+              <button key={g} onClick={()=>setGender(g)} style={{padding:'6px 14px',borderRadius:999,border:gender===g?'none':'1px solid rgba(90,70,55,.12)',background:gender===g?'rgba(192,138,126,.25)':'rgba(255,255,255,.7)',color:gender===g?T.ink:T.soft,fontSize:12,fontWeight:gender===g?600:400,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',flexShrink:0}}>
                 {g}
               </button>
             ))}
@@ -2362,7 +2361,7 @@ function MobileCatalog() {
         {/* Scent filter */}
         <div style={{display:'flex',gap:8,overflowX:'auto',paddingBottom:12,marginBottom:12}}>
           {scentFams.map(f=>(
-            <button key={f} onClick={()=>setScent(f)} style={{padding:'8px 16px',borderRadius:999,border:'none',background:f===scent?T.accent:'rgba(255,255,255,.7)',color:f===scent?'#FFF':T.soft,fontSize:13,fontWeight:f===scent?600:500,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',boxShadow:f===scent?'0 6px 14px rgba(140,120,200,.25)':undefined,flexShrink:0}}>
+            <button key={f} onClick={()=>setScent(f)} style={{padding:'8px 16px',borderRadius:999,border:'none',background:f===scent?T.accent:'rgba(255,255,255,.7)',color:f===scent?'#FFF':T.soft,fontSize:13,fontWeight:f===scent?600:500,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',boxShadow:f===scent?'0 6px 14px rgba(154,91,80,.25)':undefined,flexShrink:0}}>
               {f}
             </button>
           ))}
@@ -2391,7 +2390,7 @@ function MobileWardrobe({gardrop,onRemove,onGoChat}:{gardrop:GItem[];onRemove:(n
         {gardrop.length>0 && (
           <div style={{display:'flex',gap:6,overflowX:'auto',paddingBottom:8,marginBottom:14}}>
             {categories.map(c=>(
-              <button key={c} onClick={()=>setCatFilter(c)} style={{padding:'6px 13px',borderRadius:999,border:'none',background:c===catFilter?T.accent:'rgba(255,255,255,.75)',color:c===catFilter?'#FFF':T.soft,fontSize:11.5,fontWeight:c===catFilter?600:400,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',flexShrink:0,boxShadow:c===catFilter?'0 4px 10px rgba(140,120,200,.25)':undefined}}>
+              <button key={c} onClick={()=>setCatFilter(c)} style={{padding:'6px 13px',borderRadius:999,border:'none',background:c===catFilter?T.accent:'rgba(255,255,255,.75)',color:c===catFilter?'#FFF':T.soft,fontSize:11.5,fontWeight:c===catFilter?600:400,cursor:'pointer',fontFamily:'inherit',whiteSpace:'nowrap',flexShrink:0,boxShadow:c===catFilter?'0 4px 10px rgba(154,91,80,.25)':undefined}}>
                 {c}
               </button>
             ))}
@@ -2413,7 +2412,7 @@ function MobileWardrobe({gardrop,onRemove,onGoChat}:{gardrop:GItem[];onRemove:(n
             <div style={{textAlign:'center',padding:'24px 20px 28px'}}>
               <p style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:22,color:T.ink,margin:'0 0 8px'}}>Gardırobunuz henüz boş</p>
               <p style={{fontSize:13,color:T.soft,marginBottom:22}}>ASYA ile sohbet ederek imza kokunuzu keşfedin ve gardırobunuzu oluşturun.</p>
-              <button onClick={onGoChat} style={{display:'inline-flex',alignItems:'center',gap:8,background:'linear-gradient(135deg,#5B4A82,#8C78C8)',color:'#FFF',border:'none',borderRadius:999,padding:'12px 24px',fontSize:13.5,fontWeight:600,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 8px 20px rgba(91,74,130,.35)',letterSpacing:'0.01em'}}>
+              <button onClick={onGoChat} style={{display:'inline-flex',alignItems:'center',gap:8,background:'linear-gradient(135deg,#6E5038,#9A5B50)',color:'#FFF',border:'none',borderRadius:999,padding:'12px 24px',fontSize:13.5,fontWeight:600,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 8px 20px rgba(110,80,56,.35)',letterSpacing:'0.01em'}}>
                 <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M3 9.5C3 6 6 4 10 4s7 2 7 5.5S14 15 10 15c-.7 0-1.4-.06-2-.18L5 16l.5-2.4A5 5 0 0 1 3 9.5z" stroke="#FFF" strokeWidth="1.5" strokeLinejoin="round"/></svg>
                 ASYA ile Koku Gardırobumu Oluştur
               </button>
@@ -2422,10 +2421,10 @@ function MobileWardrobe({gardrop,onRemove,onGoChat}:{gardrop:GItem[];onRemove:(n
         ) : (
           <div style={{display:'flex',flexDirection:'column',gap:12}}>
             {filtered.map((item,i)=>(
-              <div key={i} style={{padding:16,borderRadius:20,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'flex',gap:14,alignItems:'center'}}>
-                {item.series==='elegancia' && <div style={{position:'absolute',fontSize:9,padding:'2px 7px',borderRadius:999,background:'rgba(91,74,130,.85)',color:'#FFF',fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',top:10,right:52}}>✦</div>}
-                <div style={{width:64,height:64,borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,overflow:'hidden'}}>
-                  {item.image_url ? <img src={item.image_url} alt={item.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={28} hue="#E2D6F1"/>}
+              <div key={i} style={{padding:16,borderRadius:20,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(90,70,55,.08)',display:'flex',gap:14,alignItems:'center'}}>
+                {item.series==='elegancia' && <div style={{position:'absolute',fontSize:9,padding:'2px 7px',borderRadius:999,background:'rgba(110,80,56,.85)',color:'#FFF',fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',top:10,right:52}}>✦</div>}
+                <div style={{width:64,height:64,borderRadius:14,background:'linear-gradient(160deg,#EADFD8,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0,overflow:'hidden'}}>
+                  {item.image_url ? <img src={item.image_url} alt={item.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={28} hue="#EADFD8"/>}
                 </div>
                 <div style={{flex:1,minWidth:0}}>
                   <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:18,color:T.ink,lineHeight:1.15}}>{item.name}</div>
@@ -2462,7 +2461,7 @@ function MobileProfile({lead,coupon,onGoChat}:{lead:Lead|null;coupon:string|null
             <div style={{textAlign:'center',padding:'24px 20px 28px'}}>
               <p style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:22,color:T.ink,margin:'0 0 8px'}}>Henüz profiliniz oluşturulmadı</p>
               <p style={{fontSize:13,color:T.soft,lineHeight:1.55,marginBottom:22}}>ASYA ile sohbet ettikten sonra kişisel koku profiliniz burada görünür.</p>
-              <button onClick={onGoChat} style={{display:'inline-flex',alignItems:'center',gap:8,background:'linear-gradient(135deg,#5B4A82,#8C78C8)',color:'#FFF',border:'none',borderRadius:999,padding:'12px 24px',fontSize:13.5,fontWeight:600,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 8px 20px rgba(91,74,130,.35)',letterSpacing:'0.01em'}}>
+              <button onClick={onGoChat} style={{display:'inline-flex',alignItems:'center',gap:8,background:'linear-gradient(135deg,#6E5038,#9A5B50)',color:'#FFF',border:'none',borderRadius:999,padding:'12px 24px',fontSize:13.5,fontWeight:600,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 8px 20px rgba(110,80,56,.35)',letterSpacing:'0.01em'}}>
                 <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M3 9.5C3 6 6 4 10 4s7 2 7 5.5S14 15 10 15c-.7 0-1.4-.06-2-.18L5 16l.5-2.4A5 5 0 0 1 3 9.5z" stroke="#FFF" strokeWidth="1.5" strokeLinejoin="round"/></svg>
                 ASYA ile Profil Oluştur
               </button>
@@ -2473,7 +2472,7 @@ function MobileProfile({lead,coupon,onGoChat}:{lead:Lead|null;coupon:string|null
             <div style={{fontSize:11,letterSpacing:'0.28em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:4}}>{lead.name}'in Koku Portresi</div>
             <h1 style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:34,color:T.ink,letterSpacing:'-0.01em',margin:'0 0 24px'}}>Koku <em style={{fontStyle:'italic'}}>Profilim</em></h1>
             {coupon && (
-              <div style={{padding:20,borderRadius:20,background:'linear-gradient(135deg,#2B2640 0%,#3E3458 60%,#5B4A82 100%)',boxShadow:'0 18px 36px rgba(43,38,64,.30)',color:'#FFF',marginBottom:20,position:'relative',overflow:'hidden'}}>
+              <div style={{padding:20,borderRadius:20,background:'linear-gradient(135deg,#2B2640 0%,#3E3458 60%,#6E5038 100%)',boxShadow:'0 18px 36px rgba(43,38,64,.30)',color:'#FFF',marginBottom:20,position:'relative',overflow:'hidden'}}>
                 <div style={{position:'absolute',inset:0,background:'radial-gradient(ellipse at 110% -20%,rgba(232,222,243,.35),transparent 55%)',pointerEvents:'none'}}/>
                 <div style={{position:'relative',zIndex:1}}>
                   <div style={{fontSize:10,letterSpacing:'0.22em',color:'rgba(255,255,255,.7)',fontWeight:600,textTransform:'uppercase',marginBottom:6}}>ASYA'ya Özel Hediye</div>
@@ -2485,7 +2484,7 @@ function MobileProfile({lead,coupon,onGoChat}:{lead:Lead|null;coupon:string|null
                 </div>
               </div>
             )}
-            <div style={{padding:20,borderRadius:20,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)'}}>
+            <div style={{padding:20,borderRadius:20,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(90,70,55,.08)'}}>
               <p style={{fontSize:13.5,color:T.soft,lineHeight:1.6,margin:0}}>Koku profiliniz sohbet geçmişinize göre oluşturulur. ASYA ile konuşmaya devam ederek profilinizi zenginleştirin.</p>
             </div>
           </>
@@ -2531,7 +2530,7 @@ function VisionScreen({onBack,onGoChat,onSaveToGardrop,onGoMuadil}:{onBack:()=>v
       <div style={{position:'relative',zIndex:2,padding:'60px 22px 0'}}>
         {/* header */}
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:24}}>
-          <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 4px 10px rgba(94,88,140,.07)'}}>
+          <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 4px 10px rgba(90,70,55,.07)'}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Geri
           </button>
@@ -2548,7 +2547,7 @@ function VisionScreen({onBack,onGoChat,onSaveToGardrop,onGoMuadil}:{onBack:()=>v
         <div
           onDrop={onDrop} onDragOver={e=>e.preventDefault()}
           onClick={()=>inputRef.current?.click()}
-          style={{borderRadius:24,border:`2px dashed rgba(185,165,232,.45)`,background:'rgba(255,255,255,.60)',backdropFilter:'blur(14px)',textAlign:'center',cursor:'pointer',marginBottom:16,transition:'border-color .2s',width:'100%',maxWidth:320,aspectRatio:'1',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:10,position:'relative',overflow:'hidden',margin:'0 auto 16px',boxShadow:'0 8px 24px rgba(94,88,140,.10)'}}
+          style={{borderRadius:24,border:`2px dashed rgba(192,138,126,.45)`,background:'rgba(255,255,255,.60)',backdropFilter:'blur(14px)',textAlign:'center',cursor:'pointer',marginBottom:16,transition:'border-color .2s',width:'100%',maxWidth:320,aspectRatio:'1',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:10,position:'relative',overflow:'hidden',margin:'0 auto 16px',boxShadow:'0 8px 24px rgba(90,70,55,.10)'}}
         >
           {preview && <img src={preview} alt="" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',opacity:.18}}/>}
           <input ref={inputRef} type="file" accept="image/*" style={{display:'none'}} onChange={e=>{const f=e.target.files?.[0];if(f)handleFile(f)}}/>
@@ -2561,7 +2560,7 @@ function VisionScreen({onBack,onGoChat,onSaveToGardrop,onGoMuadil}:{onBack:()=>v
             {status==='compressing' && <><div style={{fontSize:24}}>⚙️</div><div style={{fontSize:13,color:T.soft}}>Görsel hazırlanıyor…</div></>}
             {status==='loading' && <><div style={{fontSize:24}}>🔍</div><div style={{fontSize:13,color:T.soft,fontWeight:500}}>ASYA inceliyor…</div></>}
             {(status==='done'||status==='error') && preview && <>
-              <img src={preview} alt="" style={{width:72,height:72,objectFit:'cover',borderRadius:12,boxShadow:'0 6px 16px rgba(94,88,140,.2)'}}/>
+              <img src={preview} alt="" style={{width:72,height:72,objectFit:'cover',borderRadius:12,boxShadow:'0 6px 16px rgba(90,70,55,.2)'}}/>
               <div style={{fontSize:11,color:T.soft}}>Başka bir görsel için dokun</div>
             </>}
             {status==='error' && <div style={{fontSize:12,color:'#e05a5a'}}>Bir hata oluştu, tekrar dene.</div>}
@@ -2570,23 +2569,23 @@ function VisionScreen({onBack,onGoChat,onSaveToGardrop,onGoMuadil}:{onBack:()=>v
 
         {/* Result */}
         {result && (
-          <div style={{borderRadius:24,background:T.glass,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 28px rgba(94,88,140,.10)',overflow:'hidden',marginBottom:20}}>
+          <div style={{borderRadius:24,background:T.glass,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 28px rgba(90,70,55,.10)',overflow:'hidden',marginBottom:20}}>
             {result.identified && (
-              <div style={{padding:'12px 18px',background:'rgba(185,165,232,.12)',borderBottom:`1px solid ${T.glassE}`,display:'flex',alignItems:'center',gap:10}}>
+              <div style={{padding:'12px 18px',background:'rgba(192,138,126,.12)',borderBottom:`1px solid ${T.glassE}`,display:'flex',alignItems:'center',gap:10}}>
                 <span style={{fontSize:18}}>🔍</span>
                 <div>
                   <div style={{fontSize:10,letterSpacing:'0.18em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>Tanımlanan</div>
                   <div style={{fontSize:13,fontWeight:600,color:T.ink}}>{result.identified}</div>
                 </div>
-                {result.confidence && <div style={{marginLeft:'auto',padding:'3px 10px',borderRadius:999,background:'rgba(91,74,130,.12)',fontSize:11,fontWeight:600,color:T.soft}}>%{result.confidence} eşleşme</div>}
+                {result.confidence && <div style={{marginLeft:'auto',padding:'3px 10px',borderRadius:999,background:'rgba(110,80,56,.12)',fontSize:11,fontWeight:600,color:T.soft}}>%{result.confidence} eşleşme</div>}
               </div>
             )}
             <div style={{padding:'14px 18px'}}>
               <p style={{fontSize:14,color:T.ink,lineHeight:1.5,margin:'0 0 14px'}}>{result.output}</p>
               {result.product && (
                 <div style={{borderRadius:18,background:'rgba(255,255,255,.7)',border:`1px solid ${T.glassE}`,padding:'14px 16px',display:'flex',gap:14,alignItems:'center'}}>
-                  <div style={{width:64,height:64,borderRadius:14,background:'linear-gradient(160deg,#E2D6F1,#FFF)',flexShrink:0,overflow:'hidden',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                    {result.product.image_url ? <img src={result.product.image_url} alt={result.product.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={36} hue="#E2D6F1"/>}
+                  <div style={{width:64,height:64,borderRadius:14,background:'linear-gradient(160deg,#EADFD8,#FFF)',flexShrink:0,overflow:'hidden',display:'flex',alignItems:'center',justifyContent:'center'}}>
+                    {result.product.image_url ? <img src={result.product.image_url} alt={result.product.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={36} hue="#EADFD8"/>}
                   </div>
                   <div style={{flex:1,minWidth:0}}>
                     <div style={{fontSize:10,letterSpacing:'0.16em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>{({elegancia:'Elegancia Niche',hunter:'Hunter / Creasyon',kolonya:'Tarihi İstanbul Kolonyası',home:'Oda Kokusu'} as Record<string,string>)[result.product.series||'']||'Gold Serisi'}</div>
@@ -2598,7 +2597,7 @@ function VisionScreen({onBack,onGoChat,onSaveToGardrop,onGoMuadil}:{onBack:()=>v
               {result.product && (
                 <div style={{display:'flex',gap:10,marginTop:12}}>
                   {result.product.web_url && (
-                    <a href={result.product.web_url} target="_blank" rel="noopener noreferrer" style={{flex:1,height:44,borderRadius:999,background:T.accent,color:'#FFF',fontSize:13,fontWeight:500,display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',boxShadow:'0 8px 18px rgba(140,120,200,.28)'}}>
+                    <a href={result.product.web_url} target="_blank" rel="noopener noreferrer" style={{flex:1,height:44,borderRadius:999,background:T.accent,color:'#FFF',fontSize:13,fontWeight:500,display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',boxShadow:'0 8px 18px rgba(154,91,80,.28)'}}>
                       Ürünü İncele →
                     </a>
                   )}
@@ -2619,7 +2618,7 @@ function VisionScreen({onBack,onGoChat,onSaveToGardrop,onGoMuadil}:{onBack:()=>v
 
         {/* Muadil link after result */}
         {result && onGoMuadil && (
-          <button onClick={onGoMuadil} style={{width:'100%',padding:'13px',borderRadius:16,border:`1px solid rgba(185,165,232,.30)`,background:'rgba(255,255,255,.6)',fontSize:13,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500,marginBottom:16,display:'flex',alignItems:'center',justifyContent:'center',gap:8}}>
+          <button onClick={onGoMuadil} style={{width:'100%',padding:'13px',borderRadius:16,border:`1px solid rgba(192,138,126,.30)`,background:'rgba(255,255,255,.6)',fontSize:13,color:T.soft,cursor:'pointer',fontFamily:'inherit',fontWeight:500,marginBottom:16,display:'flex',alignItems:'center',justifyContent:'center',gap:8}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke={T.muted} strokeWidth="1.4"/><path d="M9.5 9.5L13 13" stroke={T.muted} strokeWidth="1.4" strokeLinecap="round"/></svg>
             Başka bir kokuyu metin ile ara →
           </button>
@@ -2669,7 +2668,7 @@ function IlhamScreen({onBack,onGoChat}:{onBack:()=>void;onGoChat:(mode:ChatMode)
       <div style={{position:'relative',zIndex:2,padding:'60px 22px 0'}}>
         {/* header */}
         <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:24}}>
-          <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 4px 10px rgba(94,88,140,.07)'}}>
+          <button onClick={onBack} style={{display:'flex',alignItems:'center',gap:6,padding:'8px 14px',borderRadius:999,background:T.glassS,backdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,fontSize:13,fontWeight:500,color:T.soft,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 4px 10px rgba(90,70,55,.07)'}}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke={T.soft} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Geri
           </button>
@@ -2685,9 +2684,9 @@ function IlhamScreen({onBack,onGoChat}:{onBack:()=>void;onGoChat:(mode:ChatMode)
         {/* cards */}
         <div style={{display:'flex',flexDirection:'column',gap:16}}>
           {cards.map(({p,v},i)=>(
-            <div key={i} style={{borderRadius:24,background:T.glass,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 28px rgba(94,88,140,.10),inset 0 1px 0 rgba(255,255,255,.8)',overflow:'hidden'}}>
+            <div key={i} style={{borderRadius:24,background:T.glass,backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 10px 28px rgba(90,70,55,.10),inset 0 1px 0 rgba(255,255,255,.8)',overflow:'hidden'}}>
               {/* top image */}
-              <div style={{height:160,background:'linear-gradient(160deg,#E2D6F1,#FFF)',position:'relative',overflow:'hidden'}}>
+              <div style={{height:160,background:'linear-gradient(160deg,#EADFD8,#FFF)',position:'relative',overflow:'hidden'}}>
                 {p.img && <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/>}
                 <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,transparent 50%,rgba(43,38,64,.45) 100%)'}}/>
                 <div style={{position:'absolute',top:12,left:14,padding:'4px 10px',borderRadius:999,background:'rgba(255,255,255,.85)',backdropFilter:'blur(8px)',fontSize:10,fontWeight:600,color:T.ink,letterSpacing:'0.14em',textTransform:'uppercase'}}>
@@ -2699,7 +2698,7 @@ function IlhamScreen({onBack,onGoChat}:{onBack:()=>void;onGoChat:(mode:ChatMode)
                 <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:22,color:T.ink,marginBottom:6,lineHeight:1.1}}>{p.name}</div>
                 <p style={{fontSize:12.5,color:T.soft,margin:'0 0 14px',lineHeight:1.5}}>{v.desc}</p>
                 <div style={{display:'flex',gap:10}}>
-                  <a href={p.url} target="_blank" rel="noopener noreferrer" style={{flex:1,height:42,borderRadius:999,background:T.accent,color:'#FFF',fontSize:13,fontWeight:500,display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',boxShadow:'0 8px 18px rgba(140,120,200,.28)'}}>
+                  <a href={p.url} target="_blank" rel="noopener noreferrer" style={{flex:1,height:42,borderRadius:999,background:T.accent,color:'#FFF',fontSize:13,fontWeight:500,display:'flex',alignItems:'center',justifyContent:'center',textDecoration:'none',boxShadow:'0 8px 18px rgba(154,91,80,.28)'}}>
                     Satın Al →
                   </a>
                   <button onClick={()=>onGoChat('profil')} style={{height:42,padding:'0 16px',borderRadius:999,border:`1px solid ${T.glassE}`,background:'rgba(255,255,255,.7)',fontSize:13,color:T.ink,cursor:'pointer',fontFamily:'inherit',fontWeight:500}}>
@@ -2711,9 +2710,9 @@ function IlhamScreen({onBack,onGoChat}:{onBack:()=>void;onGoChat:(mode:ChatMode)
           ))}
         </div>
 
-        <div style={{marginTop:20,padding:'14px 18px',borderRadius:18,background:'rgba(185,165,232,.10)',border:'1px solid rgba(185,165,232,.20)',textAlign:'center'}}>
+        <div style={{marginTop:20,padding:'14px 18px',borderRadius:18,background:'rgba(192,138,126,.10)',border:'1px solid rgba(192,138,126,.20)',textAlign:'center'}}>
           <div style={{fontSize:12,color:T.soft,lineHeight:1.5}}>Her gün 3 yeni öneri 🌙<br/>Kendi profiline özel öneriler için ASYA ile konuş.</div>
-          <button onClick={()=>onGoChat('profil')} style={{marginTop:10,padding:'10px 22px',borderRadius:999,border:'none',background:T.accent,color:'#FFF',fontSize:13,fontWeight:500,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 8px 18px rgba(140,120,200,.25)'}}>
+          <button onClick={()=>onGoChat('profil')} style={{marginTop:10,padding:'10px 22px',borderRadius:999,border:'none',background:T.accent,color:'#FFF',fontSize:13,fontWeight:500,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 8px 18px rgba(154,91,80,.25)'}}>
             Koku Profilimi Bul →
           </button>
         </div>
@@ -2741,7 +2740,7 @@ function useReferralParam() {
 function ReferralWelcomeBanner({referrerName,onDismiss}:{referrerName:string;onDismiss:()=>void}) {
   return (
     <div style={{position:'fixed',top:0,left:0,right:0,zIndex:300,padding:'env(safe-area-inset-top, 0px) 16px 0'}}>
-      <div style={{margin:'12px 0',borderRadius:18,background:'linear-gradient(135deg,#2B2640,#5B4A82)',padding:'16px 18px',boxShadow:'0 12px 32px rgba(43,38,64,.45)',border:'1px solid rgba(185,165,232,.25)',display:'flex',gap:14,alignItems:'flex-start'}}>
+      <div style={{margin:'12px 0',borderRadius:18,background:'linear-gradient(135deg,#2B2640,#6E5038)',padding:'16px 18px',boxShadow:'0 12px 32px rgba(43,38,64,.45)',border:'1px solid rgba(192,138,126,.25)',display:'flex',gap:14,alignItems:'flex-start'}}>
         <div style={{width:40,height:40,borderRadius:12,background:'rgba(255,255,255,.12)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:20,flexShrink:0}}>🎁</div>
         <div style={{flex:1,minWidth:0}}>
           <div style={{fontSize:13,fontWeight:700,color:'#FFF',marginBottom:4}}>{referrerName} seni davet etti!</div>
@@ -2818,44 +2817,41 @@ function MobileApp({initialUnboxing}:{initialUnboxing?:boolean}) {
 ════════════════════════════════════════════ */
 const dNavItems = [
   {id:'home' as Screen,label:'Ana Sayfa',g:(a:boolean)=><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 10l7-6 7 6v6a1 1 0 0 1-1 1h-3v-5h-6v5H4a1 1 0 0 1-1-1z" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
-  {id:'catalog' as Screen,label:'Koleksiyon',g:(a:boolean)=><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="6" height="6" rx="1.2" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4"/><rect x="11" y="3" width="6" height="6" rx="1.2" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4"/><rect x="3" y="11" width="6" height="6" rx="1.2" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4"/><rect x="11" y="11" width="6" height="6" rx="1.2" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4"/></svg>},
   {id:'chat' as Screen,label:'ASYA (AI Koku Asistanı)',g:(a:boolean)=><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 9.5C3 6 6 4 10 4s7 2 7 5.5S14 15 10 15c-.7 0-1.4-.06-2-.18L5 16l.5-2.4A5 5 0 0 1 3 9.5z" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
   {id:'wardrobe' as Screen,label:'Koku Gardırobum',g:(a:boolean)=><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 7.2a1.7 1.7 0 1 1 1.7-1.7" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4" strokeLinecap="round"/><path d="M10 7.2v1.5L2 14h16L10 8.7" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
   {id:'profile' as Screen,label:'Koku Profilim',g:(a:boolean)=><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4"/><path d="M3 17c.8-3.4 3.7-5 7-5s6.2 1.6 7 5" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4" strokeLinecap="round"/></svg>},
-  {id:'unboxing' as Screen,label:'Kutumu Açtım ✨',g:(a:boolean)=><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 3l6 3v8L10 17 4 14V6z" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/><path d="M10 8l6-2M10 8L4 6M10 8v9" stroke={a?'#2B2640':'#5E5878'} strokeWidth="1.4" strokeLinecap="round"/></svg>},
 ]
 
 function DesktopSidebar({active,onChange,lead,onFaq}:{active:Screen;onChange:(s:Screen)=>void;lead:Lead|null;onFaq:()=>void}) {
   return (
-    <aside style={{width:240,padding:'32px 18px',boxSizing:'border-box',borderRight:'1px solid rgba(94,88,140,.08)',display:'flex',flexDirection:'column',background:'rgba(255,255,255,.55)',backdropFilter:'blur(20px)',WebkitBackdropFilter:'blur(20px)',position:'relative',zIndex:2,flexShrink:0}}>
-      <div style={{padding:'0 8px 24px',borderBottom:'1px solid rgba(94,88,140,.10)',marginBottom:20}}>
+    <aside style={{width:240,padding:'32px 18px',boxSizing:'border-box',borderRight:'1px solid rgba(90,70,55,.08)',display:'flex',flexDirection:'column',background:'rgba(255,255,255,.55)',backdropFilter:'blur(20px)',WebkitBackdropFilter:'blur(20px)',position:'relative',zIndex:2,flexShrink:0}}>
+      <div style={{padding:'0 8px 24px',borderBottom:'1px solid rgba(90,70,55,.10)',marginBottom:20}}>
         <a href="/" style={{display:'block',textDecoration:'none',cursor:'pointer'}}>
-          <img src="/elegance logo.png" alt="Elegance VIP Perfume" style={{width:172,height:'auto',display:'block',objectFit:'contain',opacity:0.88,marginBottom:10}}/>
-          <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:400,fontSize:26,color:T.ink,lineHeight:1,letterSpacing:'0.01em'}}>Perfume <em style={{fontStyle:'italic'}}>Maison</em></div>
-          <div style={{fontSize:10,letterSpacing:'0.28em',color:'rgba(94,88,140,.50)',fontWeight:600,textTransform:'uppercase',marginTop:6,fontFamily:'Inter,sans-serif'}}>Parfüm Evi</div>
+          <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:400,fontSize:30,color:T.ink,lineHeight:1.05,letterSpacing:'0.01em',marginTop:6}}>Perfume <em style={{fontStyle:'italic'}}>Maison</em></div>
+          <div style={{fontSize:10,letterSpacing:'0.28em',color:'rgba(90,70,55,.50)',fontWeight:600,textTransform:'uppercase',marginTop:6,fontFamily:'Inter,sans-serif'}}>Parfüm Evi</div>
         </a>
       </div>
       <div style={{display:'flex',flexDirection:'column',gap:2}}>
         {dNavItems.map(it=>{
           const isA=it.id===active
           return (
-            <button key={it.id} onClick={()=>onChange(it.id)} style={{padding:'10px 12px',borderRadius:12,border:'none',background:isA?'rgba(185,165,232,.18)':'transparent',display:'flex',alignItems:'center',gap:12,fontSize:13.5,fontWeight:isA?600:500,color:isA?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit',textAlign:'left',transition:'background .15s',width:'100%'}}>
+            <button key={it.id} onClick={()=>onChange(it.id)} style={{padding:'10px 12px',borderRadius:12,border:'none',background:isA?'rgba(192,138,126,.18)':'transparent',display:'flex',alignItems:'center',gap:12,fontSize:13.5,fontWeight:isA?600:500,color:isA?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit',textAlign:'left',transition:'background .15s',width:'100%'}}>
               {it.g(isA)}
               {it.label}
-              {isA && <div style={{marginLeft:'auto',width:4,height:4,borderRadius:'50%',background:'#B9A5E8'}}/>}
+              {isA && <div style={{marginLeft:'auto',width:4,height:4,borderRadius:'50%',background:'#C08A7E'}}/>}
             </button>
           )
         })}
       </div>
-      <div style={{marginTop:24,padding:'12px 4px',borderTop:'1px solid rgba(94,88,140,.08)'}}>
+      <div style={{marginTop:24,padding:'12px 4px',borderTop:'1px solid rgba(90,70,55,.08)'}}>
         <div style={{fontSize:9,letterSpacing:'0.22em',color:T.muted,fontWeight:600,textTransform:'uppercase',padding:'0 8px 10px'}}>Daha Fazlası</div>
-        <button onClick={()=>onChange('muadil')} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='muadil'?'rgba(185,165,232,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='muadil'?600:500,color:active==='muadil'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Muadil Bul</button>
-        <button onClick={()=>onChange('gift')} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='gift'?'rgba(185,165,232,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='gift'?600:500,color:active==='gift'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Hediye Sihirbazı</button>
-        <button onClick={onFaq} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='faq'?'rgba(185,165,232,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='faq'?600:500,color:active==='faq'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Hakkımızda · SSS</button>
+        <button onClick={()=>onChange('muadil')} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='muadil'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='muadil'?600:500,color:active==='muadil'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Muadil Bul</button>
+        <button onClick={()=>onChange('gift')} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='gift'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='gift'?600:500,color:active==='gift'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Hediye Sihirbazı</button>
+        <button onClick={onFaq} style={{width:'100%',padding:'8px 12px',borderRadius:10,border:'none',background:active==='faq'?'rgba(192,138,126,.12)':'transparent',textAlign:'left',fontSize:12.5,fontWeight:active==='faq'?600:500,color:active==='faq'?T.ink:T.soft,cursor:'pointer',fontFamily:'inherit'}}>Hakkımızda · SSS</button>
       </div>
       <div style={{flex:1}}/>
-      <div style={{display:'flex',alignItems:'center',gap:10,padding:10,borderRadius:14,background:'rgba(255,255,255,.65)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(94,88,140,.08)'}}>
-        <div style={{width:36,height:36,borderRadius:'50%',flexShrink:0,background:'linear-gradient(145deg,#FFF,#D8CDEE)',display:'flex',alignItems:'center',justifyContent:'center',font:'italic 600 14px "Cormorant Garamond",serif',color:T.soft}}>
+      <div style={{display:'flex',alignItems:'center',gap:10,padding:10,borderRadius:14,background:'rgba(255,255,255,.65)',border:`1px solid ${T.glassE}`,boxShadow:'0 4px 12px rgba(90,70,55,.08)'}}>
+        <div style={{width:36,height:36,borderRadius:'50%',flexShrink:0,background:'linear-gradient(145deg,#FFF,#E8DAD2)',display:'flex',alignItems:'center',justifyContent:'center',font:'italic 600 14px "Cormorant Garamond",serif',color:T.soft}}>
           {lead ? lead.name.charAt(0).toUpperCase() : 'S'}
         </div>
         <div style={{flex:1,minWidth:0}}>
@@ -2869,20 +2865,22 @@ function DesktopSidebar({active,onChange,lead,onFaq}:{active:Screen;onChange:(s:
 
 function DesktopTopBar({onSearch}:{onSearch?:(q:string)=>void}) {
   const [q,setQ] = useState('')
+  // Arama ana sitede yapılır (üst pencere ana siteye gider)
+  const siteSearch=(s:string)=>{ onSearch?.(s); if(typeof window!=='undefined'&&s.trim()) window.open('https://elegancevipperfume.com/arama?q='+encodeURIComponent(s.trim()),'_top') }
   return (
-    <div style={{height:64,padding:'0 36px',boxSizing:'border-box',display:'flex',alignItems:'center',gap:16,borderBottom:'1px solid rgba(94,88,140,.06)',background:'rgba(255,255,255,.55)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',position:'relative',zIndex:3,flexShrink:0}}>
-      <div style={{flex:1,maxWidth:480,height:38,padding:'0 16px',display:'flex',alignItems:'center',gap:10,borderRadius:999,background:'rgba(255,255,255,.75)',border:'1px solid rgba(94,88,140,.10)',boxShadow:'inset 0 1px 0 rgba(255,255,255,.7)'}}>
+    <div style={{height:64,padding:'0 36px',boxSizing:'border-box',display:'flex',alignItems:'center',gap:16,borderBottom:'1px solid rgba(90,70,55,.06)',background:'rgba(255,255,255,.55)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',position:'relative',zIndex:3,flexShrink:0}}>
+      <div style={{flex:1,maxWidth:480,height:38,padding:'0 16px',display:'flex',alignItems:'center',gap:10,borderRadius:999,background:'rgba(255,255,255,.75)',border:'1px solid rgba(90,70,55,.10)',boxShadow:'inset 0 1px 0 rgba(255,255,255,.7)'}}>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke={T.muted} strokeWidth="1.4"/><path d="M9.5 9.5L13 13" stroke={T.muted} strokeWidth="1.4" strokeLinecap="round"/></svg>
         <input
           value={q} onChange={e=>setQ(e.target.value)}
-          onKeyDown={e=>{if(e.key==='Enter'&&q.trim()&&onSearch){onSearch(q.trim());setQ('')}}}
+          onKeyDown={e=>{if(e.key==='Enter'&&q.trim()){siteSearch(q.trim());setQ('')}}}
           placeholder="Koku, nota ya da koleksiyon ara…"
           style={{flex:1,border:'none',background:'transparent',outline:'none',fontSize:13,color:T.ink,fontFamily:'inherit'}}
         />
-        {q && <button onClick={()=>{if(onSearch)onSearch(q.trim());setQ('')}} style={{border:'none',background:'none',cursor:'pointer',padding:0,display:'flex',color:T.muted}}>→</button>}
+        {q && <button onClick={()=>{siteSearch(q.trim());setQ('')}} style={{border:'none',background:'none',cursor:'pointer',padding:0,display:'flex',color:T.muted}}>→</button>}
       </div>
       <div style={{flex:1}}/>
-      <a href="https://www.elegancevipperfume.com" target="_blank" rel="noopener noreferrer" style={{padding:'8px 16px',borderRadius:999,border:'1px solid rgba(94,88,140,.12)',background:'rgba(255,255,255,.7)',fontSize:12.5,fontWeight:500,color:T.ink,textDecoration:'none',display:'flex',alignItems:'center',gap:6}}>
+      <a href="https://www.elegancevipperfume.com" target="_blank" rel="noopener noreferrer" style={{padding:'8px 16px',borderRadius:999,border:'1px solid rgba(90,70,55,.12)',background:'rgba(255,255,255,.7)',fontSize:12.5,fontWeight:500,color:T.ink,textDecoration:'none',display:'flex',alignItems:'center',gap:6}}>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke={T.soft} strokeWidth="1.3"/><path d="M7 1c0 0-3 2.5-3 6s3 6 3 6" stroke={T.soft} strokeWidth="1.3" strokeLinecap="round"/><path d="M7 1c0 0 3 2.5 3 6s-3 6-3 6" stroke={T.soft} strokeWidth="1.3" strokeLinecap="round"/><path d="M1 7h12" stroke={T.soft} strokeWidth="1.3" strokeLinecap="round"/></svg>
         Web Sitesi
       </a>
@@ -2895,7 +2893,7 @@ function DesktopHome({onGoChat,onGoCatalog,onGoUnboxing}:{onGoChat:(mode?:ChatMo
   return (
     <div style={{flex:1,overflowY:'auto',padding:'36px 48px 48px'}}>
       {/* Hero */}
-      <div style={{display:'grid',gridTemplateColumns:'1fr 360px',gap:40,padding:'28px 36px',borderRadius:28,background:'rgba(255,255,255,.55)',backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 24px 50px rgba(94,88,140,.10),inset 0 1px 0 rgba(255,255,255,.85)',marginBottom:40}}>
+      <div style={{display:'grid',gridTemplateColumns:'1fr 360px',gap:40,padding:'28px 36px',borderRadius:28,background:'rgba(255,255,255,.55)',backdropFilter:'blur(18px)',WebkitBackdropFilter:'blur(18px)',border:`1px solid ${T.glassE}`,boxShadow:'0 24px 50px rgba(90,70,55,.10),inset 0 1px 0 rgba(255,255,255,.85)',marginBottom:40}}>
         <div style={{padding:'16px 0'}}>
           <div style={{fontSize:11,letterSpacing:'0.28em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>Türkiye'nin İlk Akıllı Parfüm Platformu</div>
           <h1 style={{margin:'14px 0',fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:58,lineHeight:1.0,color:T.ink,letterSpacing:'-0.015em'}}>
@@ -2905,25 +2903,25 @@ function DesktopHome({onGoChat,onGoCatalog,onGoUnboxing}:{onGoChat:(mode?:ChatMo
             Kör alışa son verin. ASYA; teninizi, ruh halinizi ve hatta bugünün hava durumunu analiz ederek binlerce nota arasından kusursuz imza kokunuzu tasarlayan yapay zeka destekli kişisel koku asistanınızdır.
           </p>
           <div style={{display:'flex',gap:12,marginBottom:24,flexWrap:'wrap'}}>
-            <button onClick={()=>onGoChat('profil')} style={{padding:'0 26px',height:52,borderRadius:999,border:'none',background:T.accent,boxShadow:'0 14px 28px rgba(140,120,200,.30)',display:'flex',alignItems:'center',gap:10,fontSize:14.5,fontWeight:500,color:'#FFF',cursor:'pointer',fontFamily:'inherit'}}>
+            <button onClick={()=>onGoChat('profil')} style={{padding:'0 26px',height:52,borderRadius:999,border:'none',background:T.accent,boxShadow:'0 14px 28px rgba(154,91,80,.30)',display:'flex',alignItems:'center',gap:10,fontSize:14.5,fontWeight:500,color:'#FFF',cursor:'pointer',fontFamily:'inherit'}}>
               İmza Kokumu Keşfet →
             </button>
-            <button onClick={onGoUnboxing} style={{padding:'0 22px',height:52,borderRadius:999,border:'1px solid rgba(91,74,130,.22)',background:'linear-gradient(135deg,rgba(91,74,130,.08),rgba(185,165,232,.08))',display:'flex',alignItems:'center',gap:8,fontSize:14.5,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit'}}>
+            <button onClick={onGoUnboxing} style={{padding:'0 22px',height:52,borderRadius:999,border:'1px solid rgba(110,80,56,.22)',background:'linear-gradient(135deg,rgba(110,80,56,.08),rgba(192,138,126,.08))',display:'flex',alignItems:'center',gap:8,fontSize:14.5,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit'}}>
               📦 Kutumu Yeni Açtım
             </button>
-            <button onClick={onGoCatalog} style={{padding:'0 22px',height:52,borderRadius:999,border:'1px solid rgba(94,88,140,.12)',background:'rgba(255,255,255,.85)',display:'flex',alignItems:'center',gap:10,fontSize:14.5,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit'}}>
+            <button onClick={onGoCatalog} style={{padding:'0 22px',height:52,borderRadius:999,border:'1px solid rgba(90,70,55,.12)',background:'rgba(255,255,255,.85)',display:'flex',alignItems:'center',gap:10,fontSize:14.5,fontWeight:500,color:T.ink,cursor:'pointer',fontFamily:'inherit'}}>
               Koleksiyonu İncele
             </button>
           </div>
           <div style={{display:'grid',gridTemplateColumns:'repeat(5,1fr)',gap:10,marginBottom:28}}>
             {dashTiles.map(tile=>(
-              <button key={tile.mode} onClick={()=>onGoChat(tile.mode)} style={{padding:'14px 16px',borderRadius:16,border:`1px solid ${T.glassE}`,background:'rgba(255,255,255,.65)',backdropFilter:'blur(12px)',WebkitBackdropFilter:'blur(12px)',boxShadow:'0 4px 14px rgba(94,88,140,.07)',cursor:'pointer',fontFamily:'inherit',textAlign:'left',display:'flex',flexDirection:'column',gap:10,transition:'transform .15s'}}>
-                <div style={{width:36,height:36,borderRadius:10,background:'rgba(94,88,140,.07)',display:'flex',alignItems:'center',justifyContent:'center'}}>{tile.g}</div>
+              <button key={tile.mode} onClick={()=>onGoChat(tile.mode)} style={{padding:'14px 16px',borderRadius:16,border:`1px solid ${T.glassE}`,background:'rgba(255,255,255,.65)',backdropFilter:'blur(12px)',WebkitBackdropFilter:'blur(12px)',boxShadow:'0 4px 14px rgba(90,70,55,.07)',cursor:'pointer',fontFamily:'inherit',textAlign:'left',display:'flex',flexDirection:'column',gap:10,transition:'transform .15s'}}>
+                <div style={{width:36,height:36,borderRadius:10,background:'rgba(90,70,55,.07)',display:'flex',alignItems:'center',justifyContent:'center'}}>{tile.g}</div>
                 <div style={{fontSize:13,fontWeight:500,color:T.ink,lineHeight:1.2}}>{tile.title}<br/>{tile.titleB}</div>
               </button>
             ))}
           </div>
-          <div style={{display:'flex',gap:32,paddingTop:4,borderTop:'1px solid rgba(94,88,140,.07)'}}>
+          <div style={{display:'flex',gap:32,paddingTop:4,borderTop:'1px solid rgba(90,70,55,.07)'}}>
             {[['12.000+','aktif kullanıcı'],['180+','koku formülü'],['%97','müşteri memnuniyeti']].map(([v,l],i)=>(
               <div key={i}>
                 <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:28,color:T.ink,lineHeight:1}}>{v}</div>
@@ -2932,7 +2930,7 @@ function DesktopHome({onGoChat,onGoCatalog,onGoUnboxing}:{onGoChat:(mode?:ChatMo
             ))}
           </div>
         </div>
-        <div style={{position:'relative',borderRadius:22,overflow:'hidden',boxShadow:'0 20px 40px rgba(94,88,140,.18)',minHeight:320}}>
+        <div style={{position:'relative',borderRadius:22,overflow:'hidden',boxShadow:'0 20px 40px rgba(90,70,55,.18)',minHeight:320}}>
           <img src="/hero-desktop.jpg" alt="Elegance VIP" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center top',position:'absolute',inset:0}}/>
           <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(43,38,64,0) 55%,rgba(43,38,64,.55) 100%)'}}/>
           <div style={{position:'absolute',top:20,right:20,padding:'8px 14px',borderRadius:999,background:'rgba(255,255,255,.85)',backdropFilter:'blur(8px)',WebkitBackdropFilter:'blur(8px)',fontSize:11,fontWeight:600,color:T.ink,letterSpacing:'0.12em',textTransform:'uppercase'}}>Elegance VIP</div>
@@ -2949,9 +2947,9 @@ function DesktopHome({onGoChat,onGoCatalog,onGoUnboxing}:{onGoChat:(mode?:ChatMo
       </div>
       <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}}>
         {featured.map((p,i)=>(
-          <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'block',transition:'transform .2s'}}>
-            <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
-              {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={80} hue="#E2D6F1"/>}
+          <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(90,70,55,.08)',display:'block',transition:'transform .2s'}}>
+            <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#EADFD8,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
+              {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={80} hue="#EADFD8"/>}
             </div>
             <div style={{fontSize:10,letterSpacing:'0.18em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>{p.scent}</div>
             <div style={{marginTop:2,fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:20,color:T.ink,lineHeight:1.1}}>{p.name}</div>
@@ -2993,7 +2991,7 @@ function DesktopCatalog({initialSearch}:{initialSearch?:string}) {
 
       {/* Search bar in catalog */}
       {localSearch && (
-        <div style={{display:'flex',alignItems:'center',gap:10,padding:'8px 16px',borderRadius:14,background:'rgba(185,165,232,.12)',border:'1px solid rgba(185,165,232,.25)',marginBottom:16}}>
+        <div style={{display:'flex',alignItems:'center',gap:10,padding:'8px 16px',borderRadius:14,background:'rgba(192,138,126,.12)',border:'1px solid rgba(192,138,126,.25)',marginBottom:16}}>
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke={T.muted} strokeWidth="1.4"/><path d="M9.5 9.5L13 13" stroke={T.muted} strokeWidth="1.4" strokeLinecap="round"/></svg>
           <span style={{flex:1,fontSize:13,color:T.ink}}>"{localSearch}" için sonuçlar</span>
           <button onClick={()=>setLocalSearch('')} style={{border:'none',background:'none',cursor:'pointer',fontSize:13,color:T.muted,fontFamily:'inherit'}}>× Temizle</button>
@@ -3003,7 +3001,7 @@ function DesktopCatalog({initialSearch}:{initialSearch?:string}) {
       {/* Section tabs */}
       <div style={{display:'flex',gap:10,marginBottom:20}}>
         {([['gold','Gold & Classic'],['elegancia','✦ Niş Parfüm']] as const).map(([s,label])=>(
-          <button key={s} onClick={()=>resetFilters(s)} style={{padding:'10px 22px',borderRadius:14,border:'none',background:section===s?s==='elegancia'?'linear-gradient(135deg,#5B4A82,#8B6FB5)':T.accent:'rgba(255,255,255,.7)',color:section===s?'#FFF':T.soft,fontSize:14,fontWeight:section===s?700:500,cursor:'pointer',fontFamily:'inherit',boxShadow:section===s?'0 8px 18px rgba(140,120,200,.25)':undefined}}>
+          <button key={s} onClick={()=>resetFilters(s)} style={{padding:'10px 22px',borderRadius:14,border:'none',background:section===s?s==='elegancia'?'linear-gradient(135deg,#6E5038,#8B6FB5)':T.accent:'rgba(255,255,255,.7)',color:section===s?'#FFF':T.soft,fontSize:14,fontWeight:section===s?700:500,cursor:'pointer',fontFamily:'inherit',boxShadow:section===s?'0 8px 18px rgba(154,91,80,.25)':undefined}}>
             {label}
           </button>
         ))}
@@ -3017,7 +3015,7 @@ function DesktopCatalog({initialSearch}:{initialSearch?:string}) {
               <div style={{fontSize:10,letterSpacing:'0.22em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:8}}>Cinsiyet</div>
               <div style={{display:'flex',flexDirection:'column',gap:2,marginBottom:18}}>
                 {GENDERS.map(g=>(
-                  <button key={g} onClick={()=>setGender(g)} style={{padding:'7px 12px',borderRadius:10,border:'none',background:g===gender?'rgba(185,165,232,.25)':'transparent',color:g===gender?T.ink:T.soft,fontSize:13,fontWeight:g===gender?600:400,cursor:'pointer',fontFamily:'inherit',textAlign:'left',transition:'all .15s'}}>
+                  <button key={g} onClick={()=>setGender(g)} style={{padding:'7px 12px',borderRadius:10,border:'none',background:g===gender?'rgba(192,138,126,.25)':'transparent',color:g===gender?T.ink:T.soft,fontSize:13,fontWeight:g===gender?600:400,cursor:'pointer',fontFamily:'inherit',textAlign:'left',transition:'all .15s'}}>
                     {g}
                   </button>
                 ))}
@@ -3027,7 +3025,7 @@ function DesktopCatalog({initialSearch}:{initialSearch?:string}) {
           <div style={{fontSize:10,letterSpacing:'0.22em',color:T.muted,fontWeight:600,textTransform:'uppercase',marginBottom:8}}>Koku Ailesi</div>
           <div style={{display:'flex',flexDirection:'column',gap:3}}>
             {scentFams.map(f=>(
-              <button key={f} onClick={()=>setScent(f)} style={{padding:'8px 12px',borderRadius:10,border:'none',background:f===scent?T.accent:'transparent',color:f===scent?'#FFF':T.soft,fontSize:13,fontWeight:f===scent?600:500,cursor:'pointer',fontFamily:'inherit',textAlign:'left',boxShadow:f===scent?'0 6px 14px rgba(140,120,200,.25)':'none',transition:'all .15s'}}>
+              <button key={f} onClick={()=>setScent(f)} style={{padding:'8px 12px',borderRadius:10,border:'none',background:f===scent?T.accent:'transparent',color:f===scent?'#FFF':T.soft,fontSize:13,fontWeight:f===scent?600:500,cursor:'pointer',fontFamily:'inherit',textAlign:'left',boxShadow:f===scent?'0 6px 14px rgba(154,91,80,.25)':'none',transition:'all .15s'}}>
                 {f}
               </button>
             ))}
@@ -3035,12 +3033,12 @@ function DesktopCatalog({initialSearch}:{initialSearch?:string}) {
         </aside>
         <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:16}}>
           {filtered.map((p,i)=>(
-            <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'block',position:'relative'}}>
+            <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(90,70,55,.08)',display:'block',position:'relative'}}>
               {p.series==='elegancia' && (
-                <div style={{position:'absolute',top:10,right:10,padding:'4px 10px',borderRadius:999,background:'rgba(91,74,130,.85)',color:'#FFF',fontSize:9,fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',zIndex:2}}>✦ Niş</div>
+                <div style={{position:'absolute',top:10,right:10,padding:'4px 10px',borderRadius:999,background:'rgba(110,80,56,.85)',color:'#FFF',fontSize:9,fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase',zIndex:2}}>✦ Niş</div>
               )}
-              <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
-                {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={96} hue="#E2D6F1"/>}
+              <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#EADFD8,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
+                {p.img ? <img src={p.img} alt={p.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={96} hue="#EADFD8"/>}
               </div>
               <div style={{fontSize:10,letterSpacing:'0.18em',color:T.muted,fontWeight:600,textTransform:'uppercase'}}>{p.scent}</div>
               <div style={{marginTop:2,fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:22,color:T.ink,lineHeight:1.1}}>{p.name}</div>
@@ -3057,7 +3055,7 @@ function DesktopChat({chatLogic,onGoProfile,onGoScentProfile,chatMode,onGoMuadil
   return (
     <div style={{flex:1,display:'flex',overflow:'hidden',justifyContent:'center'}}>
       <section style={{display:'flex',flexDirection:'column',flex:'0 1 680px',minWidth:0,overflow:'hidden',background:'rgba(255,255,255,.55)',backdropFilter:'blur(16px)',WebkitBackdropFilter:'blur(16px)'}}>
-        <div style={{padding:'18px 22px 14px',display:'flex',alignItems:'center',gap:12,borderBottom:'1px solid rgba(94,88,140,.06)',flexShrink:0}}>
+        <div style={{padding:'18px 22px 14px',display:'flex',alignItems:'center',gap:12,borderBottom:'1px solid rgba(90,70,55,.06)',flexShrink:0}}>
           <AsyaAvatar size={38}/>
           <div style={{flex:1}}>
             <div style={{fontSize:14,fontWeight:600,color:T.ink}}>ASYA</div>
@@ -3066,7 +3064,7 @@ function DesktopChat({chatLogic,onGoProfile,onGoScentProfile,chatMode,onGoMuadil
               çevrimiçi · genelde 2 saniyede yanıtlar
             </div>
           </div>
-          <button onClick={reset} style={{padding:'7px 14px',borderRadius:999,border:`1px solid rgba(94,88,140,.12)`,background:'transparent',fontSize:12,color:T.soft,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:6}}>
+          <button onClick={reset} style={{padding:'7px 14px',borderRadius:999,border:`1px solid rgba(90,70,55,.12)`,background:'transparent',fontSize:12,color:T.soft,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:6}}>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke={T.soft} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>
             Baştan Başla
           </button>
@@ -3089,7 +3087,7 @@ function DesktopWardrobe({gardrop,onRemove,onGoChat}:{gardrop:GItem[];onRemove:(
       {gardrop.length>0 && (
         <div style={{display:'flex',gap:8,marginBottom:20,flexWrap:'wrap'}}>
           {categories.map(c=>(
-            <button key={c} onClick={()=>setCatFilter(c)} style={{padding:'7px 16px',borderRadius:999,border:'none',background:c===catFilter?T.accent:'rgba(255,255,255,.75)',color:c===catFilter?'#FFF':T.soft,fontSize:12.5,fontWeight:c===catFilter?600:400,cursor:'pointer',fontFamily:'inherit',boxShadow:c===catFilter?'0 4px 10px rgba(140,120,200,.25)':undefined}}>
+            <button key={c} onClick={()=>setCatFilter(c)} style={{padding:'7px 16px',borderRadius:999,border:'none',background:c===catFilter?T.accent:'rgba(255,255,255,.75)',color:c===catFilter?'#FFF':T.soft,fontSize:12.5,fontWeight:c===catFilter?600:400,cursor:'pointer',fontFamily:'inherit',boxShadow:c===catFilter?'0 4px 10px rgba(154,91,80,.25)':undefined}}>
               {c}
             </button>
           ))}
@@ -3109,7 +3107,7 @@ function DesktopWardrobe({gardrop,onRemove,onGoChat}:{gardrop:GItem[];onRemove:(
           <div style={{textAlign:'center',padding:'32px 40px 40px'}}>
             <p style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:26,color:T.ink,margin:'0 0 8px'}}>Gardırobunuz henüz boş</p>
             <p style={{fontSize:14,color:T.soft,marginBottom:28}}>ASYA ile sohbet ederek teninize ve ruh halinize özel imza kokunuzu keşfedin.</p>
-            <button onClick={onGoChat} style={{display:'inline-flex',alignItems:'center',gap:10,padding:'14px 32px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#5B4A82,#8C78C8)',color:'#FFF',fontSize:15,fontWeight:600,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 14px 28px rgba(91,74,130,.28)'}}>
+            <button onClick={onGoChat} style={{display:'inline-flex',alignItems:'center',gap:10,padding:'14px 32px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#6E5038,#9A5B50)',color:'#FFF',fontSize:15,fontWeight:600,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 14px 28px rgba(110,80,56,.28)'}}>
               <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 9.5C3 6 6 4 10 4s7 2 7 5.5S14 15 10 15c-.7 0-1.4-.06-2-.18L5 16l.5-2.4A5 5 0 0 1 3 9.5z" stroke="#FFF" strokeWidth="1.5" strokeLinejoin="round"/></svg>
               ASYA ile Koku Gardırobumu Oluştur
             </button>
@@ -3118,11 +3116,11 @@ function DesktopWardrobe({gardrop,onRemove,onGoChat}:{gardrop:GItem[];onRemove:(
       ) : (
         <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}}>
           {dFiltered.map((item,i)=>(
-            <div key={i} style={{padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:item.series==='elegancia'?'1px solid rgba(91,74,130,.20)':`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(94,88,140,.08)',display:'flex',flexDirection:'column',position:'relative'}}>
-              {item.series==='elegancia'&&<div style={{position:'absolute',top:8,left:8,padding:'2px 7px',borderRadius:999,background:'rgba(91,74,130,.85)',color:'#FFF',fontSize:8,fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase'}}>✦ Niş</div>}
+            <div key={i} style={{padding:16,borderRadius:22,background:'rgba(255,255,255,.70)',backdropFilter:'blur(14px)',WebkitBackdropFilter:'blur(14px)',border:item.series==='elegancia'?'1px solid rgba(110,80,56,.20)':`1px solid ${T.glassE}`,boxShadow:'0 8px 22px rgba(90,70,55,.08)',display:'flex',flexDirection:'column',position:'relative'}}>
+              {item.series==='elegancia'&&<div style={{position:'absolute',top:8,left:8,padding:'2px 7px',borderRadius:999,background:'rgba(110,80,56,.85)',color:'#FFF',fontSize:8,fontWeight:700,letterSpacing:'0.12em',textTransform:'uppercase'}}>✦ Niş</div>}
               <a href={item.web_url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',display:'block',flex:1}}>
-                <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#E2D6F1,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
-                  {item.image_url ? <img src={item.image_url} alt={item.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={60} hue="#E2D6F1"/>}
+                <div style={{aspectRatio:'1',borderRadius:16,background:'linear-gradient(160deg,#EADFD8,#FFF)',display:'flex',alignItems:'center',justifyContent:'center',marginBottom:12,overflow:'hidden'}}>
+                  {item.image_url ? <img src={item.image_url} alt={item.name} style={{width:'100%',height:'100%',objectFit:'cover'}}/> : <BottleGlyph size={60} hue="#EADFD8"/>}
                 </div>
                 <div style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:20,color:T.ink,lineHeight:1.15}}>{item.name}</div>
                 <div style={{fontSize:12,color:T.soft,marginTop:4}}>İncele →</div>
@@ -3167,7 +3165,7 @@ function DesktopProfile({lead,coupon,scentProfile,gardrop,onProductTap,onSaveToG
         <div style={{textAlign:'center',padding:'32px 40px 40px'}}>
           <p style={{fontFamily:'"Cormorant Garamond",serif',fontWeight:500,fontSize:26,color:T.ink,margin:'0 0 8px'}}>Henüz profiliniz oluşturulmadı</p>
           <p style={{fontSize:14,color:T.soft,marginBottom:28}}>ASYA ile sohbet ederek teninize, ruh halinize ve yaşam stilinize özel koku profilinizi oluşturun.</p>
-          <button onClick={onGoChat} style={{display:'inline-flex',alignItems:'center',gap:10,padding:'14px 32px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#5B4A82,#8C78C8)',color:'#FFF',fontSize:15,fontWeight:600,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 14px 28px rgba(91,74,130,.28)'}}>
+          <button onClick={onGoChat} style={{display:'inline-flex',alignItems:'center',gap:10,padding:'14px 32px',borderRadius:999,border:'none',background:'linear-gradient(135deg,#6E5038,#9A5B50)',color:'#FFF',fontSize:15,fontWeight:600,cursor:'pointer',fontFamily:'inherit',boxShadow:'0 14px 28px rgba(110,80,56,.28)'}}>
             <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 9.5C3 6 6 4 10 4s7 2 7 5.5S14 15 10 15c-.7 0-1.4-.06-2-.18L5 16l.5-2.4A5 5 0 0 1 3 9.5z" stroke="#FFF" strokeWidth="1.5" strokeLinejoin="round"/></svg>
             ASYA ile Profil Oluştur
           </button>
@@ -3196,9 +3194,9 @@ function DesktopApp({initialUnboxing}:{initialUnboxing?:boolean}) {
   return (
     <div style={{position:'fixed',inset:0,display:'flex',fontFamily:'Inter,sans-serif',overflow:'hidden'}}>
       <div style={{position:'absolute',inset:0}}>
-        <div style={{position:'absolute',top:-180,left:-120,width:520,height:520,borderRadius:'50%',background:'#EFE8F6',opacity:.5,filter:'blur(100px)'}}/>
-        <div style={{position:'absolute',top:280,right:-200,width:500,height:500,borderRadius:'50%',background:'#E8EEF6',opacity:.45,filter:'blur(100px)'}}/>
-        <div style={{position:'absolute',bottom:-200,left:280,width:460,height:460,borderRadius:'50%',background:'#F2EDF7',opacity:.35,filter:'blur(110px)'}}/>
+        <div style={{position:'absolute',top:-180,left:-120,width:520,height:520,borderRadius:'50%',background:'#F3E9E3',opacity:.5,filter:'blur(100px)'}}/>
+        <div style={{position:'absolute',top:280,right:-200,width:500,height:500,borderRadius:'50%',background:'#EFE7E1',opacity:.45,filter:'blur(100px)'}}/>
+        <div style={{position:'absolute',bottom:-200,left:280,width:460,height:460,borderRadius:'50%',background:'#F4ECE6',opacity:.35,filter:'blur(110px)'}}/>
         <div style={{position:'absolute',inset:0,background:T.bg}}/>
       </div>
       {refName && showRefBanner && (
