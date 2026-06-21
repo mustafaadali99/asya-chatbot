@@ -42,7 +42,7 @@ type RawProduct = { code?: string; name: string; gender?: string; scent_family?:
 /* ═══ TOKENS ═══ */
 const T = {
   ink: '#2B2521', soft: '#6E5038', muted: '#9A8C7A',
-  bg: 'linear-gradient(155deg,#FFFFFF 0%,#FBF8F4 50%,#F5F1EC 100%)',
+  bg: '#FFFFFF',
   glass: 'rgba(255,255,255,0.46)', glassS: 'rgba(255,255,255,0.66)', glassE: 'rgba(255,255,255,0.88)',
   shadow: '0 12px 30px rgba(90,70,55,0.12)',
   neoO: '6px 6px 14px rgba(180,160,148,0.30),-6px -6px 14px rgba(255,255,255,0.95)',
@@ -2753,10 +2753,8 @@ function ReferralWelcomeBanner({referrerName,onDismiss}:{referrerName:string;onD
 }
 
 function MobileApp({initialUnboxing}:{initialUnboxing?:boolean}) {
-  const [mobileScreen,setMobileScreen] = useState<'welcome'|'app'>(()=>{
-    if (initialUnboxing) return 'app'
-    try { return localStorage.getItem('asya_lead') ? 'app' : 'welcome' } catch { return 'welcome' }
-  })
+  // Karşılama/"kaydır" ekranı kaldırıldı — direkt uygulama açılır
+  const [mobileScreen,setMobileScreen] = useState<'welcome'|'app'>('app')
   const [activeTab,setActiveTab] = useState<MainTab>(initialUnboxing?'unboxing':'home')
   const [homeOverlay,setHomeOverlay] = useState<'none'|'ilham'|'vision'|'faq'|'giftwiz'|'muadil'>('none')
   const [chatMode,setChatMode] = useState<ChatMode>('profil')
