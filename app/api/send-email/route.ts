@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { sendEmail, buildRecommendationEmail } from '@/lib/email'
-import { saveRecommendation, logEmail } from '@/lib/supabase'
+import { saveRecommendation, logEmail, getSupabaseAdmin } from '@/lib/supabase'
 
 interface Top3Product {
   code?: string
@@ -24,6 +24,22 @@ export async function POST(req: NextRequest) {
       referral_url,
       language = 'tr',
     } = await req.json()
+
+    // Idempotency: if profile_ready email sent in last 15 min for this lead → skip
+    if (lead_id) {
+      const oneHourAgo = new Date(Date.now() - 15 * 60 * 1000).toISOString()
+      const { data: recentLog } = await getSupabaseAdmin()
+        .from('asya_email_logs')
+        .select('id')
+        .eq('lead_id', lead_id)
+        .eq('email_type', 'profile_ready')
+        .eq('status', 'sent')
+        .gte('sent_at', oneHourAgo)
+        .maybeSingle()
+      if (recentLog) {
+        return NextResponse.json({ success: true, skipped: true, reason: 'recent_sent' })
+      }
+    }
 
     const products = top3 as Top3Product[]
     const elegancia = products.find(p => p.series === 'elegancia')

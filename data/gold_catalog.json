@@ -1,938 +1,30 @@
 [
   {
-    "woo_id": 26354,
-    "code": "SPECIAL-LG",
-    "name": "Lira Gourmand Parfüm 50 ml – Karamelli, Vanilyalı ve Portakallı Kadın Parfümü",
+    "woo_id": 20537,
+    "code": "E-000",
+    "name": "E-000 Eau De Parfum For Men",
     "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2026/05/lira1.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/lira-gourmand-parfum/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 26239,
-    "code": "SPECIAL-EE",
-    "name": "Elegance Euphoria Kadın Parfümü",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2026/04/Adsiz-tasarim-6.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/elegance-euphoria-kadin-parfumu/",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-ERKEK-TRENDYOL-1200-x-1200-piksel-2.png",
+    "web_url": "https://elegancevipperfume.com/urun/e-000-eau-de-parfum-for-men/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 25477,
-    "code": "SPECIAL-BP",
-    "name": "Baby Powder Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2026/03/5-1.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/baby-powder-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "powdery",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23893,
-    "code": "E-052",
-    "name": "Ombré Leather Edp 50 ml – Deri ve Odunsu Erkek Parfümü (E-052)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/ombre.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/u-052-eau-de-parfum-for-unisex/",
-    "in_stock": true,
-    "scent_family": "woody",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23891,
-    "code": "U-067",
-    "name": "Baccarat Rouge 540 Edp 50 ml – Amber ve Tatlı Unisex Parfümü (U-067)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/bacarat.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/u-067-eau-de-parfum-for-unisex/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23889,
-    "code": "U-182",
-    "name": "Andromeda Edp 50 ml – Çiçeksi ve Pudralı Unisex Parfümü (U-182)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/andromeda.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/u-182-eau-de-parfum-for-unisex/",
-    "in_stock": true,
-    "scent_family": "powdery",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23887,
-    "code": "U-117",
-    "name": "Jazz Club Edp 50 ml – Tütün ve Odunsu Unisex Parfümü (U-117)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/replica.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/u-117-eau-de-parfum-for-unisex-copy-copy-copy-copy/",
-    "in_stock": true,
-    "scent_family": "woody",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23883,
-    "code": "U-043",
-    "name": "Laylati Edp 50 ml – Oryantal ve Baharatlı Unisex Parfümü (U-043)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/laylati.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/u-043-eau-de-parfum-for-unisex/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23881,
-    "code": "U-041",
-    "name": "Erba Pura Edp 50 ml – Meyvemsi ve Tatlı Unisex Parfümü (U-041)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/erbapura.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/u-041-eau-de-parfum-for-unisex/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23879,
-    "code": "U-128",
-    "name": "Black Orchid Edp 50 ml – Oryantal ve Çiçeksi Unisex Parfümü (U-128)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/black-orchid.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/u-128-eau-de-parfum-for-unisex-copy/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23858,
-    "code": "E-106",
-    "name": "Stronger With You Eau De Parfum For Menn E-106",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/GOLD-ERKEK-WEB-SITE-HEPSIBURADA-1200-x-1200-piksel.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-106-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23852,
-    "code": "SPECIAL-SU",
-    "name": "Suadela Eau De Parfum For Unisex",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-UNISEX-TRENDYOL-1200-x-1200-piksel-1.png",
-    "web_url": "https://elegancevipperfume.com/urun/suadela-eau-de-parfum-for-unisex/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23848,
-    "code": "E-008",
-    "name": "Brud Edp 50 ml – Klasik ve Ferah Erkek Parfümü (E-008)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/1.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-008-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23845,
-    "code": "E-045",
-    "name": "Sculpture Edp 50 ml – Ferah ve Akdeniz Esintili Erkek Parfümü (E-045)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/45.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-045-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23843,
-    "code": "E-023",
-    "name": "L’Eau Par Kenz Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-023)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/23.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-023-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23841,
-    "code": "E-035",
-    "name": "DKN Men Edp 50 ml – Ferah ve Modern Erkek Parfümü (E-035)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/35.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-035-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23839,
-    "code": "E-034",
-    "name": "Roma Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-034)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/34.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-034-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23837,
-    "code": "E-032",
-    "name": "Sport Fever Edp 50 ml – Ferah ve Dinamik Erkek Parfümü (E-032)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/32.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-032-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23835,
-    "code": "E-029",
-    "name": "212 Men Edp 50 ml – Ferah ve Baharatlı Erkek Parfümü (E-029)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/29.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-029-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23833,
-    "code": "E-075",
-    "name": "Blue Label Edp 50 ml – Ferah ve Odunsu Erkek Parfümü (E-075)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/75.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-075-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23831,
-    "code": "E-070",
-    "name": "Pour Homme Edp 50 ml – Odunsu ve Ferah Erkek Parfümü (E-070)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/70.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-070-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23829,
-    "code": "E-053",
-    "name": "L. Red Edp 50 ml – Ferah ve Enerjik Erkek Parfümü (E-053)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/53.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-053-eau-de-parfum-for-men-2/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23827,
-    "code": "E-108",
-    "name": "Blue Edp 50 ml – Ferah ve Odunsu Erkek Parfümü (E-108)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/108.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-108-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23825,
-    "code": "E-038",
-    "name": "212 Sexy Men Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-038)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/038.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-038-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23823,
-    "code": "E-028",
-    "name": "Hilfiger Edp 50 ml – Ferah ve Sportif Erkek Parfümü (E-028)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/28.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-028-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23821,
-    "code": "E-101",
-    "name": "Green Edp 50 ml – Ferah ve Spor Erkek Parfümü (E-101)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/101.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-101-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23819,
-    "code": "E-094",
-    "name": "Danlop Edp 50 ml – Ferah ve Klasik Erkek Parfümü (E-094) ✅",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/094.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-094-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23817,
-    "code": "E-142",
-    "name": "Eau Fraiche Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-142)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/142.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-142-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23813,
-    "code": "E-116",
-    "name": "Egoiste Platinum Edp 50 ml – Odunsu ve Aromatik Erkek Parfümü (E-116)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/116.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-116-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "woody",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23811,
-    "code": "E-009",
-    "name": "One Edp 50 ml – Fresh Parfüm (E-009)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/one.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-009-eau-de-parfum-for-men/",
-    "in_stock": false,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23809,
-    "code": "E-022",
-    "name": "Kenz Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-022)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/22.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-022-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23807,
-    "code": "E-095",
-    "name": "Jagy Edp 50 ml – Fresh ve Baharatlı Erkek Parfümü (E-095)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/95.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-095-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23805,
-    "code": "E-033",
-    "name": "Pi Edp 50 ml – Oryantal ve Vanilyalı Erkek Parfümü (E-033)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/33-1.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-033-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23801,
-    "code": "E-091",
-    "name": "Bvlgari Man Edp 50 ml – Odunsu ve Ferah Erkek Parfümü (E-091)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/91.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-091-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23799,
-    "code": "E-027",
-    "name": "Rochas Man Edp 50 ml – Tatlı ve Oryantal Erkek Parfümü (E-027)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/27.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-027-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23791,
-    "code": "E-046",
-    "name": "212 Vip Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-046)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/46.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-046-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23789,
-    "code": "E-031",
-    "name": "Sun Men Edp 50 ml – Ferah ve Enerjik Erkek Parfümü (E-031)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/31.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-031-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23778,
-    "code": "E-048",
-    "name": "Insense Ultramarine Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-048)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/48.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-048-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23776,
-    "code": "E-078",
-    "name": "Aventus Edp 50 ml – Meyvemsi ve Odunsu Erkek Parfümü (E-078)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/78.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-078-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23774,
-    "code": "E-063",
-    "name": "Sauvage Edp 50 ml – Ferah ve Baharatlı Erkek Parfümü (E-063)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/e-063.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-063-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23772,
-    "code": "E-058",
-    "name": "Black XS L’Exces Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-058)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/58-1.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-058-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23770,
-    "code": "E-057",
-    "name": "Boss Edp 50 ml – Ferah ve Odunsu Erkek Parfümü (E-057)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/57-1.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-057-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23768,
-    "code": "E-119",
-    "name": "Terre d’Hermes Edp 50 ml – Odunsu ve Narenciye Erkek Parfümü (E-119)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/119.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-119-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23766,
-    "code": "E-115",
-    "name": "Desire For a Man Edp 50 ml – Odunsu ve Baharatlı Erkek Parfümü (E-115)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/115.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-115-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23764,
-    "code": "E-114",
-    "name": "La Nuit de L’Homme Edp 50 ml – Baharatlı ve Odunsu Erkek Parfümü (E-114)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/114.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-114-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23762,
-    "code": "E-018",
-    "name": "Hugo Edp 50 ml – Ferah ve Aromatik Erkek Parfümü (E-018)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/huggo.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-018-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23750,
-    "code": "E-017",
-    "name": "Gentleman Edp 50 ml – Odunsu ve Baharatlı Erkek Parfümü (E-017)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/gent.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-017-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23749,
-    "code": "E-065",
-    "name": "L’Immensité Edp 50 ml – Ferah ve Baharatlı Erkek Parfümü (E-065)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/lim.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-065-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23747,
-    "code": "E-062",
-    "name": "Imagination Edp 50 ml – Fresh ve Narenciye Erkek Parfümü (E-062)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/imag.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-062-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23745,
-    "code": "E-016",
-    "name": "Fahrenheit Edp 50 ml – Odunsu ve Baharatlı Erkek Parfümü (E-016)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/fah.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-016-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23741,
-    "code": "E-014",
-    "name": "Emporio He Edp 50 ml – Ferah ve Odunsu Erkek Parfümü (E-014)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/he.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-014-eau-de-parfum-for-men/",
-    "in_stock": false,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23739,
-    "code": "E-012",
-    "name": "Cool Water Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-012)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/cool.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-012-eau-de-parfum-for-men/",
-    "in_stock": false,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23737,
-    "code": "E-007",
-    "name": "Code Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-007)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/code.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-007-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23734,
-    "code": "E-004",
-    "name": "Burbeery Classic Edp 50 ml – Odunsu ve Klasik Erkek Parfümü (E-004)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/burbe.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-004-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "woody",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23732,
-    "code": "E-006",
-    "name": "Eros Man Edp 50 ml – Ferah ve Oryantal Erkek Parfümü (E-006)",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/eros.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/e-006-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance E-000 Erkek Parfümü"
   },
   {
     "woo_id": 23730,
@@ -944,1389 +36,574 @@
     "web_url": "https://elegancevipperfume.com/urun/e-001-eau-de-parfum-for-men-copy/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Deniz notaları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir ağacı",
+      "Amber"
+    ],
+    "muadil": "Acqua di Gio"
   },
   {
-    "woo_id": 23722,
-    "code": "K-184",
-    "name": "Omnia Coral Edp 50 ml – Meyvemsi Ferahlık ve Çiçeksi Feminen Işıltı (K-184)",
+    "woo_id": 23734,
+    "code": "E-004",
+    "name": "Burbeery Classic Edp 50 ml – Odunsu ve Klasik Erkek Parfümü (E-004)",
     "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/77.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-184-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23720,
-    "code": "K-167",
-    "name": "Bloom Edp 50 ml – Çiçek Bahçesinin Feminen Zarafeti ve Doğal Ferahlık (K-167)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/78.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-167-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23718,
-    "code": "K-158",
-    "name": "Sexy Amber Edp 50 ml – Oryantal Sıcaklık ve Çiçeksi Feminen Zarafet (K-158)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/68.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-158-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23716,
-    "code": "K-152",
-    "name": "Pink Bouquet Edp 50 ml – Çiçeksi Tatlılık ve Romantik Feminen Enerji (K-152)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/66.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-152-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23714,
-    "code": "K-148",
-    "name": "Coco Noir Edp 50 ml – Gizemli Oryantal Çekicilik ve Sofistike Zarafet (K-148)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/65.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-148-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23712,
-    "code": "K-145",
-    "name": "Angel Edp 50 ml – Tatlı Meyvemsi ve Çiçeksi Feminen Dokunuş (K-145)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/5-1.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-145-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23710,
-    "code": "K-144",
-    "name": "Pure Seduction Edp 50 ml – Meyvemsi Tatlılık ve Çiçeksi Baştan Çıkarıcılık (K-144)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/63.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-144-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23708,
-    "code": "K-136",
-    "name": "Flower Bomb Edp 50 ml – Çiçek Patlamasıyla Büyüleyici Oryantal Dokunuş (K-136)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/61.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-136-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "floral",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23706,
-    "code": "K-124",
-    "name": "Acqua di Gioia Edp 50 ml – Deniz Esintisiyle Ferah ve Çiçeksi Tazelik (K-124)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/60.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-124-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23704,
-    "code": "K-121",
-    "name": "Guilty Edp 50 ml – Tutkulu Oryantal Dokunuş ve Çiçeksi Feminen Cazibe (K-121)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/59.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-121-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23701,
-    "code": "K-116",
-    "name": "Boss Intense Edp 50 ml – Oryantal ve Baharatlı Kadın Parfümü (K-116)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/58.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-116-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23700,
-    "code": "K-106",
-    "name": "Cristobal Edp 50 ml – Oryantal ve Çiçeksi Kadın Parfümü (K-106)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/57.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-106-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23698,
-    "code": "K-105",
-    "name": "Code Woman Edp 50 ml – Oryantal ve Çiçeksi Kadın Parfümü (K-105)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/56.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-105-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23696,
-    "code": "K-101",
-    "name": "Sexy Graffiti Edp 50 ml – Şehrin Ritimleriyle Meyvemsi Ferahlık ve Çiçeksi Enerji (K-101)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/55.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-101-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23694,
-    "code": "K-096",
-    "name": "Addict Edp 50 ml – Oryantal ve Vanilyalı Kadın Parfümü (K-096)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/53.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-096-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23692,
-    "code": "K-094",
-    "name": "Lolita L. Edp 50 ml – Oryantal ve Narenciyeli Kadın Parfümü (K-094)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/52.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-094-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23690,
-    "code": "K-092",
-    "name": "Black Opium Edp 50 ml – Tatlı, Kahveli ve Oryantal Kadın Parfümü (K-092)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/51.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-092-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23688,
-    "code": "K-091",
-    "name": "Black XS Edp 50 ml – Meyvemsi, Tatlı ve Oryantal Kadın Parfümü (K-091)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/49.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-091-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23686,
-    "code": "K-090",
-    "name": "Coco Mademoiselle Edp 50 ml – Oryantal ve Çiçeksi Kadın Parfümü (K-090)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/54.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-090-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23684,
-    "code": "K-089",
-    "name": "Light Blue Edp 50 ml – Fresh, Meyvemsi ve Çiçeksi Kadın Parfümü (K-089)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/48.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-089-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23682,
-    "code": "K-085",
-    "name": "Absolutely Irres Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-085)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/47.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-085-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23680,
-    "code": "K-084",
-    "name": "Hypnôse Edp 50 ml – Oryantal ve Vanilyalı Kadın Parfümü (K-084)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/46.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-084-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23678,
-    "code": "K-083",
-    "name": "Olympéa Edp 50 ml – Oryantal ve Fresh Kadın Parfümü (K-083)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/45.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-083-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23677,
-    "code": "K-079",
-    "name": "Bonbon Edp 50 ml – Tatlı, Vanilyalı ve Oryantal Kadın Parfümü (K-079)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/43.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-079-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23673,
-    "code": "K-082",
-    "name": "Alien Edp 50 ml – Oryantal ve Odunsu Kadın Parfümü (K-082)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/44.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-082-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23671,
-    "code": "K-076",
-    "name": "Omnia Crystalline Edp 50 ml – Fresh, Çiçeksi ve Odunsu Kadın Parfümü (K-076)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/42.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-076-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23666,
-    "code": "K-075",
-    "name": "Envy Me Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-075)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/41.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-075-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23664,
-    "code": "K-074",
-    "name": "212 Sexy Edp 50 ml – Oryantal ve Baharatlı Kadın Parfümü (K-074)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/40.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-074-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23661,
-    "code": "K-072",
-    "name": "Lady Million Edp 50 ml – Çiçeksi ve Odunsu Kadın Parfümü (K-072)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/39.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-072-eau-de-parfum-for-women/",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/burbe.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-004-eau-de-parfum-for-men/",
     "in_stock": true,
     "scent_family": "woody",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Bergamot",
+      "Lavanta",
+      "Nane"
+    ],
+    "heart_notes": [
+      "Sandal ağacı",
+      "Yasemin",
+      "Sedir"
+    ],
+    "base_notes": [
+      "Misk",
+      "Vanilya",
+      "Amber"
+    ],
+    "muadil": "Burberry Classic"
   },
   {
-    "woo_id": 23659,
-    "code": "K-071",
-    "name": "Lady Million Lucky Edp 50 ml – Meyvemsi, Tatlı ve Çiçeksi Kadın Parfümü (K-071)",
+    "woo_id": 23732,
+    "code": "E-006",
+    "name": "Eros Man Edp 50 ml – Ferah ve Oryantal Erkek Parfümü (E-006)",
     "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/38.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-071-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23657,
-    "code": "K-070",
-    "name": "Boss Femme Edp 50 ml – Çiçeksi ve Meyvemsi Kadın Parfümü (K-070)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/37.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-070-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23655,
-    "code": "K-050",
-    "name": "Hilton Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-050)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/2.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-050-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23652,
-    "code": "K-068",
-    "name": "Rush 2 Edp 50 ml – Çiçeksi ve Fresh Kadın Parfümü (K-068)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/36.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-068-eau-de-parfum-for-women/",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/eros.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-006-eau-de-parfum-for-men/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Nane",
+      "Limon kabuğu",
+      "Yeşil elma"
+    ],
+    "heart_notes": [
+      "Tonka fasulyesi",
+      "Ambroxan",
+      "Sardunya"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Vetiver",
+      "Sedir ağacı"
+    ],
+    "muadil": "Eros"
   },
   {
-    "woo_id": 23650,
-    "code": "K-186",
-    "name": "Libre Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-186)",
+    "woo_id": 23737,
+    "code": "E-007",
+    "name": "Code Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-007)",
     "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/70.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-186-eau-de-parfum-for-women/",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/code.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-007-eau-de-parfum-for-men/",
     "in_stock": true,
     "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Bergamot",
+      "Limon"
+    ],
+    "heart_notes": [
+      "Yıldız anason",
+      "Zeytin çiçeği",
+      "Guaiac ağacı"
+    ],
+    "base_notes": [
+      "Tonka fasulyesi",
+      "Tütün",
+      "Deri"
+    ],
+    "muadil": "Armani Code"
   },
   {
-    "woo_id": 23648,
-    "code": "K-066",
-    "name": "Magnetism Edp 50 ml – Tatlı, Oryantal ve Vanilyalı Kadın Parfümü (K-066)",
+    "woo_id": 23848,
+    "code": "E-008",
+    "name": "Brud Edp 50 ml – Klasik ve Ferah Erkek Parfümü (E-008)",
     "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/35.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-066-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23646,
-    "code": "K-065",
-    "name": "Bright Crystal Edt 50 ml – Fresh, Çiçeksi ve Meyvemsi Kadın Parfümü (K-065)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/34.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-065-eau-de-parfum-for-women/",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-008-eau-de-parfum-for-men/",
     "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Lavanta",
+      "Anason"
+    ],
+    "heart_notes": [
+      "Sardunya",
+      "Yasemin",
+      "Tarçın",
+      "Bazilik"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Paçuli",
+      "Tonka fasulyesi",
+      "Amber",
+      "Misk"
+    ],
+    "muadil": "Brut"
   },
   {
-    "woo_id": 23644,
-    "code": "K-062",
-    "name": "Ralph Edt 50 ml – Fresh, Meyvemsi ve Çiçeksi Kadın Parfümü (K-062)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/33.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-062-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23642,
-    "code": "K-058",
-    "name": "Be Delicious Edp 50 ml – Meyvemsi ve Fresh Kadın Parfümü (K-058) - Yeşil Elma",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/32.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-058-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23640,
-    "code": "K-056",
-    "name": "Lacoste Femme Edp 50 ml – Meyvemsi ve Baharatlı Kadın Parfümü (K-056)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/28.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-056-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23638,
-    "code": "K-055",
-    "name": "No:5 Edp 50 ml – Pudralı ve Çiçeksi Kadın Parfümü (K-055)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/27.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-055-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "powdery",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23636,
-    "code": "K-054",
-    "name": "Miss Cherie Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-054)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/26.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-054-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23634,
-    "code": "K-053",
-    "name": "212 VIP Edp 50 ml – Meyvemsi, Tatlı ve Oryantal Kadın Parfümü (K-053)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/25.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-053-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23632,
-    "code": "K-047",
-    "name": "Poison Girl Edp 50 ml – Tatlı, Vanilyalı ve Oryantal Kadın Parfümü (K-047)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/24.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-047-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23630,
-    "code": "K-046",
-    "name": "Fancy Edp 50 ml – Tatlı, Meyvemsi ve Oryantal Kadın Parfümü (K-046)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/23.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-046-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23628,
-    "code": "K-038",
-    "name": "Goldea Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-038)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/22.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-038-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23626,
-    "code": "K-037",
-    "name": "Boss Orange Edt 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-037)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/21.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-037-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23624,
-    "code": "K-035",
-    "name": "Manifesto Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-035)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/20.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-035-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23622,
-    "code": "K-034",
-    "name": "Amor Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-034)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/19.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-034-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23620,
-    "code": "K-033",
-    "name": "Fabulous Edp 50 ml – Oryantal ve Odunsu Kadın Parfümü (K-033)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/18.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-033-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23618,
-    "code": "K-032",
-    "name": "Noa Edp 50 ml – Pudralı ve Çiçeksi Kadın Parfümü (K-032)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/17.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-032-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "powdery",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23616,
-    "code": "K-027",
-    "name": "Flower Edp 50 ml – Pudralı ve Çiçeksi Kadın Parfümü (K-027)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/15.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-027-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "powdery",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23614,
-    "code": "K-026",
-    "name": "Cloey  Edp 50 ml – Pudralı ve Çiçeksi Kadın Parfümü (K-026)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/14.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-026-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "powdery",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23612,
-    "code": "K-024",
-    "name": "Body Edp 50 ml – Çiçeksi ve Odunsu Kadın Parfümü (K-024)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/1.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-024-eau-de-parfum-for-women/",
-    "in_stock": false,
-    "scent_family": "woody",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23610,
-    "code": "K-022",
-    "name": "Le Classique Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-022)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/12.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-022-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23608,
-    "code": "K-020",
-    "name": "Sí Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-020)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/11.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-020-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23606,
-    "code": "K-019",
-    "name": "Hot Couture Edp 50 ml – Meyvemsi, Baharatlı ve Çiçeksi Kadın Parfümü (K-019)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/10.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-019-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23604,
-    "code": "K-017",
-    "name": "Hypnotic Poison Edp 50 ml – Tatlı, Vanilyalı ve Oryantal Kadın Parfümü (K-017)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/9.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-017-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "gourmand",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23601,
-    "code": "K-015",
-    "name": "Rush Edp 50 ml – Baştan Çıkarıcı Oryantal Çiçeksi Tutku (K-015)",
+    "woo_id": 23811,
+    "code": "E-009",
+    "name": "One Edp 50 ml – Fresh Parfüm (E-009)",
     "series": "gold",
     "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/8.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-015-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23598,
-    "code": "K-013",
-    "name": "She Edp 50 ml – Romantik Çiçeksi Zarafet ve Yumuşak Feminen Dokunuş (K-013)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/6.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-013-eau-de-parfum-for-women-copy-copy/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23596,
-    "code": "K-011",
-    "name": "My Way Edp 50 ml – Zarif Çiçeksi Dokunuş ve Feminen Işıltı (K-011)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/5.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-0011-eau-de-parfum-for-women-copy/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23594,
-    "code": "K-009",
-    "name": "Cool Water Edp 50 ml – Ferah, Su Notalı ve Fresh Kadın Parfümü (K-009)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/GOLD-KADIN-HEPSIBURADA-WEB-SITE1200-x-1200-piksel.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-009-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 23592,
-    "code": "K-008",
-    "name": "La Vie Est Belle Edp 50 ml – Tatlı, Çiçeksi ve Oryantal Kadın Parfümü (K-008)",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/3.jpg",
-    "web_url": "https://elegancevipperfume.com/urun/k-008-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 20594,
-    "code": "E-040",
-    "name": "E-040 Eau De Parfum For Men",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-ERKEK-TRENDYOL-1200-x-1200-piksel-2.png",
-    "web_url": "https://elegancevipperfume.com/urun/e-040-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 20590,
-    "code": "U-000",
-    "name": "U-000 Eau De Parfum For Unisex",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-UNISEX-TRENDYOL-1200-x-1200-piksel-1.png",
-    "web_url": "https://elegancevipperfume.com/urun/u-000-eau-de-parfum-for-unisex/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 20581,
-    "code": "K-000",
-    "name": "K-000 Eau De Parfum For Woman",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-KADIN-TRENDYOL-1200-x-1200-piksel.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-000-eau-de-parfum-for-woman/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 20537,
-    "code": "E-000",
-    "name": "E-000 Eau De Parfum For Men",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-ERKEK-TRENDYOL-1200-x-1200-piksel-2.png",
-    "web_url": "https://elegancevipperfume.com/urun/e-000-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 17838,
-    "code": "E-069",
-    "name": "E-069 Eau De Parfum For Men",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2023/04/ELEGANCE-VIP-PERFUME-E-069.png",
-    "web_url": "https://elegancevipperfume.com/urun/e-069-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 5183,
-    "code": "E-118",
-    "name": "E-118 Eau De Parfum For Men",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2023/04/ELEGANCE-VIP-PERFUME-E-118.png",
-    "web_url": "https://elegancevipperfume.com/urun/e-006-eros-eau-de-parfum-for-men-2/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 4911,
-    "code": "U-077",
-    "name": "U-077 Gold Edition - Meyveli & Egzotik Kalıcı Unisex Parfüm (Premium Etki)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2022/04/elegance_u-077.png",
-    "web_url": "https://elegancevipperfume.com/urun/0-077-eau-de-parfum-unisex/",
-    "in_stock": true,
-    "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3991,
-    "code": "K-149",
-    "name": "K-149 \"Pink Sugar\" Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-k-149-Parfum.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-149-sugar-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3989,
-    "code": "K-147",
-    "name": "K-147\"Bombshell\" Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-k-147-Parfum.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-147bombshell-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3987,
-    "code": "K-118",
-    "name": "K-118 \"GoodGirl\" Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-k-118-Parfum.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-118-goodgirl-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3986,
-    "code": "K-072",
-    "name": "K-072 \"Lady Millıon\" Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-k-072-Parfum.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-072-lady-million-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3982,
-    "code": "K-042",
-    "name": "K-042 Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/11/ELEGANCE-GOLD-K-042.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-042-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3981,
-    "code": "K-031",
-    "name": "K-031 Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/11/ELEGANCE-GOLD-K-031.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-031-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3979,
-    "code": "K-004",
-    "name": "K-004 Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/11/ELEGANCE-GOLD-K-004.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-004-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3978,
-    "code": "K-003",
-    "name": "K-003 Eau De Parfum For Women",
-    "series": "gold",
-    "gender": "kadin",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/11/ELEGANCE-GOLD-K-003.png",
-    "web_url": "https://elegancevipperfume.com/urun/k-003-eau-de-parfum-for-women/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3977,
-    "code": "E-100",
-    "name": "E-100 \" Only The Brave \" Eau De Parfum For Men",
-    "series": "gold",
-    "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-Perfume-E-100-Parfum.png",
-    "web_url": "https://elegancevipperfume.com/urun/e-100-only-the-brave-eau-de-parfum-for-men/",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/one.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-009-eau-de-parfum-for-men/",
     "in_stock": false,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Bergamot",
+      "Mandalina",
+      "Ananas",
+      "Papaya"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Menekşe",
+      "Gül",
+      "Hindistan cevizi çiçeği"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir ağacı",
+      "Amber",
+      "Sandal ağacı"
+    ],
+    "muadil": "CK One"
   },
   {
-    "woo_id": 3976,
-    "code": "E-097",
-    "name": "One Million Edp 50 ml – Erkek Parfümü (E-097)",
+    "woo_id": 23739,
+    "code": "E-012",
+    "name": "Cool Water Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-012)",
     "series": "gold",
     "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/GOLD-ERKEK-TRENDYOL-1200-x-1200-piksel-1.png",
-    "web_url": "https://elegancevipperfume.com/urun/e-097-eau-de-parfum-for-men/",
-    "in_stock": true,
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/cool.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-012-eau-de-parfum-for-men/",
+    "in_stock": false,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Nane",
+      "Lavanta",
+      "Kişniş"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Sardunya",
+      "Sandal ağacı"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Sedir ağacı"
+    ],
+    "muadil": "Cool Water"
   },
   {
-    "woo_id": 3975,
-    "code": "U-080",
-    "name": "U-080 Eau De Parfum (Unisex)",
-    "series": "gold",
-    "gender": "unisex",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-unisex-080.png",
-    "web_url": "https://elegancevipperfume.com/urun/u-080-eau-de-parfum-for-men/",
-    "in_stock": true,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
-  },
-  {
-    "woo_id": 3875,
-    "code": "E-053",
-    "name": "E-053 Eau De Parfum For Men",
+    "woo_id": 23741,
+    "code": "E-014",
+    "name": "Emporio He Edp 50 ml – Ferah ve Odunsu Erkek Parfümü (E-014)",
     "series": "gold",
     "gender": "erkek",
-    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-Perfume-E-053-Parfum.png",
-    "web_url": "https://elegancevipperfume.com/urun/e-053-eau-de-parfum-for-men/",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/he.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-014-eau-de-parfum-for-men/",
+    "in_stock": false,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Yuzu",
+      "Bergamot",
+      "Limon"
+    ],
+    "heart_notes": [
+      "Kişniş",
+      "Adaçayı",
+      "Kakule"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Misk",
+      "Sandal ağacı"
+    ],
+    "muadil": "Emporio He"
+  },
+  {
+    "woo_id": 23745,
+    "code": "E-016",
+    "name": "Fahrenheit Edp 50 ml – Odunsu ve Baharatlı Erkek Parfümü (E-016)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/fah.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-016-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Mandalina",
+      "Lavanta",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Hindistan cevizi çiçeği",
+      "Karanfil",
+      "Sedir",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Deri",
+      "Amber",
+      "Paçuli",
+      "Vetiver"
+    ],
+    "muadil": "Fahrenheit"
+  },
+  {
+    "woo_id": 23750,
+    "code": "E-017",
+    "name": "Gentleman Edp 50 ml – Odunsu ve Baharatlı Erkek Parfümü (E-017)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/gent.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-017-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Karabiber",
+      "Lavanta",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Süsen kökü",
+      "Paçuli",
+      "Tarçın"
+    ],
+    "base_notes": [
+      "Siyah vanilya",
+      "Sedir ağacı",
+      "Tonka fasulyesi"
+    ],
+    "muadil": "Gentleman"
+  },
+  {
+    "woo_id": 23762,
+    "code": "E-018",
+    "name": "Hugo Edp 50 ml – Ferah ve Aromatik Erkek Parfümü (E-018)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/huggo.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-018-eau-de-parfum-for-men/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Yeşil elma",
+      "Greyfurt",
+      "Fesleğen"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Yasemin",
+      "Adaçayı"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Paçuli",
+      "Vetiver"
+    ],
+    "muadil": "Hugo"
+  },
+  {
+    "woo_id": 23809,
+    "code": "E-022",
+    "name": "Kenz Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-022)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/22.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-022-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Yuzu",
+      "Limon",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Nane",
+      "Yeşil biber",
+      "Lotus çiçeği"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Beyaz misk",
+      "Vetiver"
+    ],
+    "muadil": "Kenzo"
+  },
+  {
+    "woo_id": 23843,
+    "code": "E-023",
+    "name": "L’Eau Par Kenz Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-023)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/23.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-023-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Yuzu",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lotus çiçeği",
+      "Yeşil biber",
+      "Nane"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Beyaz misk",
+      "Vetiver"
+    ],
+    "muadil": "L'Eau par Kenzo"
+  },
+  {
+    "woo_id": 23799,
+    "code": "E-027",
+    "name": "Rochas Man Edp 50 ml – Tatlı ve Oryantal Erkek Parfümü (E-027)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/27.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-027-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Lavanta",
+      "Bergamot",
+      "Yeşil yapraklar"
+    ],
+    "heart_notes": [
+      "Kahve",
+      "Ahududu",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Amber",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "Rochas Man"
+  },
+  {
+    "woo_id": 23823,
+    "code": "E-028",
+    "name": "Hilfiger Edp 50 ml – Ferah ve Sportif Erkek Parfümü (E-028)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/28.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-028-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Mandalina",
+      "Greyfurt",
+      "Elma"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Sardunya",
+      "Tarçın"
+    ],
+    "base_notes": [
+      "Amber",
+      "Sandal ağacı",
+      "Sedir"
+    ],
+    "muadil": "Hilfiger"
+  },
+  {
+    "woo_id": 23835,
+    "code": "E-029",
+    "name": "212 Men Edp 50 ml – Ferah ve Baharatlı Erkek Parfümü (E-029)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/29.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-029-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Lavanta",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Yeşil biber",
+      "Zencefil",
+      "Gardenya"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Guaiac ağacı",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "212 Men"
+  },
+  {
+    "woo_id": 23789,
+    "code": "E-031",
+    "name": "Sun Men Edp 50 ml – Ferah ve Enerjik Erkek Parfümü (E-031)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/31.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-031-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Kakule",
+      "Biber",
+      "Musk notaları"
+    ],
+    "base_notes": [
+      "Amber",
+      "Odunsu akorlar",
+      "Misk"
+    ],
+    "muadil": "Sun Men"
+  },
+  {
+    "woo_id": 23837,
+    "code": "E-032",
+    "name": "Sport Fever Edp 50 ml – Ferah ve Dinamik Erkek Parfümü (E-032)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/32.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-032-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Yeşil elma"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Kakule",
+      "Deniz akorları"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Misk",
+      "Amber"
+    ],
+    "muadil": "Sport Fever"
+  },
+  {
+    "woo_id": 23805,
+    "code": "E-033",
+    "name": "Pi Edp 50 ml – Oryantal ve Vanilyalı Erkek Parfümü (E-033)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/33-1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-033-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Mandalina",
+      "Fesleğen",
+      "Tarhun"
+    ],
+    "heart_notes": [
+      "Anason",
+      "Neroli",
+      "Sardunya"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Badem",
+      "Tonka fasulyesi",
+      "Benzoin"
+    ],
+    "muadil": "Pi"
+  },
+  {
+    "woo_id": 23839,
+    "code": "E-034",
+    "name": "Roma Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-034)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/34.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-034-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Greyfurt",
+      "Mandalina",
+      "Fesleğen"
+    ],
+    "heart_notes": [
+      "Sardunya",
+      "Yasemin",
+      "Selvi"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Sedir ağacı",
+      "Amber",
+      "Sandal ağacı"
+    ],
+    "muadil": "Roma"
+  },
+  {
+    "woo_id": 23841,
+    "code": "E-035",
+    "name": "DKN Men Edp 50 ml – Ferah ve Modern Erkek Parfümü (E-035)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/35.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-035-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Greyfurt",
+      "Bergamot",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Biber",
+      "Ardıç",
+      "Adaçayı"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Sedir ağacı",
+      "Vetiver"
+    ],
+    "muadil": "DKNY Men"
   },
   {
     "woo_id": 3874,
@@ -2338,12 +615,484 @@
     "web_url": "https://elegancevipperfume.com/urun/e-037-invictus-eau-de-parfum-for-men/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Greyfurt",
+      "Deniz notaları",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Defne yaprağı",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Guaiac ağacı",
+      "Ambergris",
+      "Meşe yosunu"
+    ],
+    "muadil": "Invictus"
+  },
+  {
+    "woo_id": 23825,
+    "code": "E-038",
+    "name": "212 Sexy Men Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-038)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/038.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-038-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Bergamot",
+      "Mandalina",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Biber",
+      "Çiçeksi akorlar",
+      "Kardamom"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Amber",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "212 Sexy Men"
+  },
+  {
+    "woo_id": 20594,
+    "code": "E-040",
+    "name": "E-040 Eau De Parfum For Men",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-ERKEK-TRENDYOL-1200-x-1200-piksel-2.png",
+    "web_url": "https://elegancevipperfume.com/urun/e-040-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Fuel For Life"
+  },
+  {
+    "woo_id": 23845,
+    "code": "E-045",
+    "name": "Sculpture Edp 50 ml – Ferah ve Akdeniz Esintili Erkek Parfümü (E-045)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/45.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-045-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Zambak"
+    ],
+    "base_notes": [
+      "Tonka fasulyesi",
+      "Amber",
+      "Sedir ağacı"
+    ],
+    "muadil": "Sculpture"
+  },
+  {
+    "woo_id": 23791,
+    "code": "E-046",
+    "name": "212 Vip Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-046)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/46.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-046-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Tutku meyvesi",
+      "Lime",
+      "Karabiber"
+    ],
+    "heart_notes": [
+      "Votka",
+      "Baharat akorları",
+      "Nane yaprakları"
+    ],
+    "base_notes": [
+      "Amber",
+      "Deri",
+      "Odunsu notalar"
+    ],
+    "muadil": "212 VIP Men"
+  },
+  {
+    "woo_id": 23778,
+    "code": "E-048",
+    "name": "Insense Ultramarine Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-048)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/48.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-048-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Siyah frenk üzümü",
+      "Bergamot",
+      "Üzüm",
+      "Erik"
+    ],
+    "heart_notes": [
+      "İris",
+      "Mimoza",
+      "Kaktüs",
+      "Gül",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Vetiver",
+      "Sandal ağacı",
+      "Amber"
+    ],
+    "muadil": "Insense Ultramarine"
+  },
+  {
+    "woo_id": 23893,
+    "code": "E-052",
+    "name": "Ombré Leather Edp 50 ml – Deri ve Odunsu Erkek Parfümü (E-052)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/ombre.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/u-052-eau-de-parfum-for-unisex/",
+    "in_stock": true,
+    "scent_family": "woody",
+    "top_notes": [
+      "Kakule",
+      "Deri"
+    ],
+    "heart_notes": [
+      "Yasemin sambac",
+      "Paçuli"
+    ],
+    "base_notes": [
+      "Amber",
+      "Yosun",
+      "Vetiver"
+    ],
+    "muadil": "Ombré Leather"
+  },
+  {
+    "woo_id": 23829,
+    "code": "E-053",
+    "name": "E-053 Eau De Parfum For Men",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-Perfume-E-053-Parfum.png",
+    "web_url": "https://elegancevipperfume.com/urun/e-053-eau-de-parfum-for-men-2/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Yeşil elma",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Sedir yaprakları"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Misk",
+      "Vetiver"
+    ],
+    "muadil": "Lacoste Red"
+  },
+  {
+    "woo_id": 23770,
+    "code": "E-057",
+    "name": "Boss Edp 50 ml – Ferah ve Odunsu Erkek Parfümü (E-057)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/57-1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-057-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Elma",
+      "Limon",
+      "Erik"
+    ],
+    "heart_notes": [
+      "Tarçın",
+      "Karanfil",
+      "Sardunya"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Sedir",
+      "Vetiver",
+      "Vanilya"
+    ],
+    "muadil": "Boss"
+  },
+  {
+    "woo_id": 23772,
+    "code": "E-058",
+    "name": "Black XS L’Exces Edp 50 ml – Oryantal ve Baharatlı Erkek Parfümü (E-058)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/58-1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-058-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Limon",
+      "Lavanta"
+    ],
+    "heart_notes": [
+      "Ozon notaları",
+      "Deniz akorları",
+      "Ozonik baharatlar"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Amber",
+      "Misk"
+    ],
+    "muadil": "Black XS L'Exces"
+  },
+  {
+    "woo_id": 23747,
+    "code": "E-062",
+    "name": "Imagination Edp 50 ml – Fresh ve Narenciye Erkek Parfümü (E-062)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/imag.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-062-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Greyfurt",
+      "Limon"
+    ],
+    "heart_notes": [
+      "Yeşil çay",
+      "Neroli",
+      "Zencefil"
+    ],
+    "base_notes": [
+      "Ambroxan",
+      "Beyaz misk",
+      "Sedir ağacı"
+    ],
+    "muadil": "Imagination"
+  },
+  {
+    "woo_id": 23774,
+    "code": "E-063",
+    "name": "Sauvage Edp 50 ml – Ferah ve Baharatlı Erkek Parfümü (E-063)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/e-063.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-063-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Sichuan biberi",
+      "Sardunya"
+    ],
+    "base_notes": [
+      "Ambroxan",
+      "Sedir ağacı",
+      "Paçuli"
+    ],
+    "muadil": "Sauvage"
+  },
+  {
+    "woo_id": 23749,
+    "code": "E-065",
+    "name": "L’Immensité Edp 50 ml – Ferah ve Baharatlı Erkek Parfümü (E-065)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/lim.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-065-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Zencefil",
+      "Greyfurt",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Su notaları",
+      "Adaçayı",
+      "Biber"
+    ],
+    "base_notes": [
+      "Ambroxan",
+      "Amber",
+      "Labdanum"
+    ],
+    "muadil": "L'Immensité"
+  },
+  {
+    "woo_id": 17838,
+    "code": "E-069",
+    "name": "E-069 Eau De Parfum For Men",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2023/04/ELEGANCE-VIP-PERFUME-E-069.png",
+    "web_url": "https://elegancevipperfume.com/urun/e-069-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Aphrodiziac Mania"
+  },
+  {
+    "woo_id": 23831,
+    "code": "E-070",
+    "name": "Pour Homme Edp 50 ml – Odunsu ve Ferah Erkek Parfümü (E-070)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/70.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-070-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Greyfurt",
+      "Mandalina",
+      "Kişniş"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Vetiver",
+      "Sardunya"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Labdanum",
+      "Benzoin"
+    ],
+    "muadil": "Givenchy Pour Homme"
+  },
+  {
+    "woo_id": 23833,
+    "code": "E-075",
+    "name": "Blue Label Edp 50 ml – Ferah ve Odunsu Erkek Parfümü (E-075)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/75.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-075-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Greyfurt",
+      "Bergamot",
+      "Limon"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Biber",
+      "Ardıç"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Sedir ağacı",
+      "Tütsü",
+      "Amber"
+    ],
+    "muadil": "Blue Label"
+  },
+  {
+    "woo_id": 23776,
+    "code": "E-078",
+    "name": "Aventus Edp 50 ml – Meyvemsi ve Odunsu Erkek Parfümü (E-078)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/78.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-078-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Ananas",
+      "Bergamot",
+      "Elma",
+      "Frenk üzümü"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Paçuli",
+      "Huş ağacı"
+    ],
+    "base_notes": [
+      "Misk",
+      "Meşe yosunu",
+      "Amber",
+      "Vanilya"
+    ],
+    "muadil": "Aventus"
+  },
+  {
+    "woo_id": 23801,
+    "code": "E-091",
+    "name": "Bvlgari Man Edp 50 ml – Odunsu ve Ferah Erkek Parfümü (E-091)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/91.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-091-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Menekşe yaprakları",
+      "Beyaz armut"
+    ],
+    "heart_notes": [
+      "Vetiver",
+      "Sandal ağacı",
+      "Cypriol"
+    ],
+    "base_notes": [
+      "Amber",
+      "Misk",
+      "Bal"
+    ],
+    "muadil": "Bvlgari Man"
   },
   {
     "woo_id": 3868,
@@ -2355,11 +1104,3334 @@
     "web_url": "https://elegancevipperfume.com/urun/e-092-sexy-chocolate-eau-de-parfum-for-men-2/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Çikolata",
+      "Kakao",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Vanilya",
+      "Baharatlar",
+      "Çiçeksi notalar"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Odunsu notalar"
+    ],
+    "muadil": "Sexy Chocolate"
+  },
+  {
+    "woo_id": 23819,
+    "code": "E-094",
+    "name": "Danlop Edp 50 ml – Ferah ve Klasik Erkek Parfümü (E-094) ✅",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/094.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-094-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Adaçayı",
+      "Baharatlı akorlar"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Misk",
+      "Amber"
+    ],
+    "muadil": "Dunlop"
+  },
+  {
+    "woo_id": 23807,
+    "code": "E-095",
+    "name": "Jagy Edp 50 ml – Fresh ve Baharatlı Erkek Parfümü (E-095)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/95.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-095-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Tarçın",
+      "Karanfil",
+      "Lavanta"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Misk",
+      "Amber"
+    ],
+    "muadil": "Jagler"
+  },
+  {
+    "woo_id": 3976,
+    "code": "E-097",
+    "name": "One Million Edp 50 ml – Erkek Parfümü (E-097)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/GOLD-ERKEK-TRENDYOL-1200-x-1200-piksel-1.png",
+    "web_url": "https://elegancevipperfume.com/urun/e-097-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Greyfurt",
+      "Nane",
+      "Kırmızı mandalina"
+    ],
+    "heart_notes": [
+      "Tarçın",
+      "Gül",
+      "Baharatlar"
+    ],
+    "base_notes": [
+      "Deri",
+      "Amber",
+      "Paçuli"
+    ],
+    "muadil": "One Million"
+  },
+  {
+    "woo_id": 3977,
+    "code": "E-100",
+    "name": "E-100 \" Only The Brave \" Eau De Parfum For Men",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-Perfume-E-100-Parfum.png",
+    "web_url": "https://elegancevipperfume.com/urun/e-100-only-the-brave-eau-de-parfum-for-men/",
+    "in_stock": false,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Menekşe",
+      "Sedir",
+      "Kişniş"
+    ],
+    "base_notes": [
+      "Amber",
+      "Deri",
+      "Styrax"
+    ],
+    "muadil": "Only The Brave"
+  },
+  {
+    "woo_id": 23821,
+    "code": "E-101",
+    "name": "Green Edp 50 ml – Ferah ve Spor Erkek Parfümü (E-101)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/101.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-101-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Yeşil yapraklar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Sardunya",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Misk",
+      "Amber"
+    ],
+    "muadil": "Green"
+  },
+  {
+    "woo_id": 23858,
+    "code": "E-106",
+    "name": "Stronger With You Eau De Parfum For Menn E-106",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/GOLD-ERKEK-WEB-SITE-HEPSIBURADA-1200-x-1200-piksel.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-106-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Kakule",
+      "Pembe biber",
+      "Menekşe yaprağı"
+    ],
+    "heart_notes": [
+      "Adaçayı",
+      "Kavun",
+      "Ananas"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Kestane",
+      "Amberwood"
+    ],
+    "muadil": "Stronger With You"
+  },
+  {
+    "woo_id": 23827,
+    "code": "E-108",
+    "name": "Blue Edp 50 ml – Ferah ve Odunsu Erkek Parfümü (E-108)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/108.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-108-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Nane",
+      "Pembe biber"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Zencefil",
+      "Muskat"
+    ],
+    "base_notes": [
+      "Tütsü",
+      "Vetiver",
+      "Sandal ağacı",
+      "Sedir"
+    ],
+    "muadil": "Bleu de Chanel"
+  },
+  {
+    "woo_id": 23764,
+    "code": "E-114",
+    "name": "La Nuit de L’Homme Edp 50 ml – Baharatlı ve Odunsu Erkek Parfümü (E-114)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/114.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-114-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Bergamot",
+      "Kakule"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Sedir",
+      "Vetiver"
+    ],
+    "base_notes": [
+      "Küçük hindistan cevizi",
+      "Kumarin",
+      "Odunsu notalar"
+    ],
+    "muadil": "La Nuit de L'Homme"
+  },
+  {
+    "woo_id": 23766,
+    "code": "E-115",
+    "name": "Desire For a Man Edp 50 ml – Odunsu ve Baharatlı Erkek Parfümü (E-115)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/115.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-115-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Elma"
+    ],
+    "heart_notes": [
+      "Paçuli",
+      "Gül",
+      "Teak ağacı"
+    ],
+    "base_notes": [
+      "Misk",
+      "Vanilya",
+      "Amber"
+    ],
+    "muadil": "Desire For a Man"
+  },
+  {
+    "woo_id": 23813,
+    "code": "E-116",
+    "name": "Egoiste Platinum Edp 50 ml – Odunsu ve Aromatik Erkek Parfümü (E-116)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/116.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-116-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "woody",
+    "top_notes": [
+      "Lavanta",
+      "Biberiye",
+      "Neroli"
+    ],
+    "heart_notes": [
+      "Sardunya",
+      "Galbanum",
+      "Adaçayı"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Vetiver",
+      "Amber"
+    ],
+    "muadil": "Egoiste Platinum"
+  },
+  {
+    "woo_id": 5183,
+    "code": "E-118",
+    "name": "E-118 Eau De Parfum For Men",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2023/04/ELEGANCE-VIP-PERFUME-E-118.png",
+    "web_url": "https://elegancevipperfume.com/urun/e-006-eros-eau-de-parfum-for-men-2/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance E-118 Erkek Parfümü"
+  },
+  {
+    "woo_id": 23768,
+    "code": "E-119",
+    "name": "Terre d’Hermes Edp 50 ml – Odunsu ve Narenciye Erkek Parfümü (E-119)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/119.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-119-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Portakal",
+      "Greyfurt"
+    ],
+    "heart_notes": [
+      "Karabiber",
+      "Pelin otu",
+      "Çakmaktaşı notaları"
+    ],
+    "base_notes": [
+      "Vetiver",
+      "Sedir ağacı",
+      "Benzoin"
+    ],
+    "muadil": "Terre d'Hermes"
+  },
+  {
+    "woo_id": 23817,
+    "code": "E-142",
+    "name": "Eau Fraiche Edp 50 ml – Ferah ve Akvatik Erkek Parfümü (E-142)",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/142.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/e-142-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Karpuz",
+      "Yıldız anason"
+    ],
+    "heart_notes": [
+      "Adaçayı",
+      "Tarhun",
+      "Karanfil",
+      "Biber"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Sedir ağacı",
+      "Safran"
+    ],
+    "muadil": "Eau Fraiche"
+  },
+  {
+    "woo_id": 20581,
+    "code": "K-000",
+    "name": "K-000 Eau De Parfum For Woman",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-KADIN-TRENDYOL-1200-x-1200-piksel.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-000-eau-de-parfum-for-woman/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance K-000 Kadın Parfümü"
+  },
+  {
+    "woo_id": 3978,
+    "code": "K-003",
+    "name": "K-003 Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/11/ELEGANCE-GOLD-K-003.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-003-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Burberry Weekend"
+  },
+  {
+    "woo_id": 3979,
+    "code": "K-004",
+    "name": "K-004 Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/11/ELEGANCE-GOLD-K-004.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-004-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Lavanta",
+      "Nane"
+    ],
+    "heart_notes": [
+      "Sandal ağacı",
+      "Yasemin",
+      "Sedir"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Vanilya"
+    ],
+    "muadil": "Burberry"
+  },
+  {
+    "woo_id": 23592,
+    "code": "K-008",
+    "name": "La Vie Est Belle Edp 50 ml – Tatlı, Çiçeksi ve Oryantal Kadın Parfümü (K-008)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/3.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-008-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Siyah frenk üzümü",
+      "Armut"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Iris",
+      "Portakal çiçeği"
+    ],
+    "base_notes": [
+      "Pralin",
+      "Vanilya",
+      "Tonka fasulyesi",
+      "Paçuli"
+    ],
+    "muadil": "La Vie Est Belle"
+  },
+  {
+    "woo_id": 23594,
+    "code": "K-009",
+    "name": "Cool Water Edp 50 ml – Ferah, Su Notalı ve Fresh Kadın Parfümü (K-009)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/GOLD-KADIN-HEPSIBURADA-WEB-SITE1200-x-1200-piksel.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-009-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Kavun",
+      "Lotus çiçeği",
+      "Limon",
+      "Ananas"
+    ],
+    "heart_notes": [
+      "Zambak",
+      "Yasemin",
+      "Gül",
+      "Nilüfer"
+    ],
+    "base_notes": [
+      "Misk",
+      "Vanilya",
+      "Şeftali",
+      "Sandal ağacı"
+    ],
+    "muadil": "Cool Water Woman"
+  },
+  {
+    "woo_id": 23596,
+    "code": "K-011",
+    "name": "My Way Edp 50 ml – Zarif Çiçeksi Dokunuş ve Feminen Işıltı (K-011)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/5.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-0011-eau-de-parfum-for-women-copy/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Portakal Çiçeği"
+    ],
+    "heart_notes": [
+      "Tuberoz",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Sedir Ağacı",
+      "Beyaz Misk",
+      "Vanilya"
+    ],
+    "muadil": "My Way"
+  },
+  {
+    "woo_id": 23598,
+    "code": "K-013",
+    "name": "She Edp 50 ml – Romantik Çiçeksi Zarafet ve Yumuşak Feminen Dokunuş (K-013)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/6.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-013-eau-de-parfum-for-women-copy-copy/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Ananas",
+      "Şeftali",
+      "Bergamot",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "İris",
+      "Heliotrop",
+      "Menekşe"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Sedir Ağacı",
+      "Sandal Ağacı",
+      "Misk"
+    ],
+    "muadil": "She"
+  },
+  {
+    "woo_id": 23601,
+    "code": "K-015",
+    "name": "Rush Edp 50 ml – Baştan Çıkarıcı Oryantal Çiçeksi Tutku (K-015)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/8.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-015-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Şeftali",
+      "Gardenya",
+      "Frezya"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Kişniş"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Paçuli",
+      "Vetiver"
+    ],
+    "muadil": "Rush"
+  },
+  {
+    "woo_id": 23604,
+    "code": "K-017",
+    "name": "Hypnotic Poison Edp 50 ml – Tatlı, Vanilyalı ve Oryantal Kadın Parfümü (K-017)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/9.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-017-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Acı badem",
+      "Kayısı",
+      "Hindistan cevizi"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Zambak",
+      "Tütsü"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "Hypnotic Poison"
+  },
+  {
+    "woo_id": 23606,
+    "code": "K-019",
+    "name": "Hot Couture Edp 50 ml – Meyvemsi, Baharatlı ve Çiçeksi Kadın Parfümü (K-019)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/10.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-019-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Ahududu",
+      "Turunçgil dokunuşları"
+    ],
+    "heart_notes": [
+      "Şakayık",
+      "Gül",
+      "Biber"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Amber",
+      "Misk"
+    ],
+    "muadil": "Hot Couture"
+  },
+  {
+    "woo_id": 23608,
+    "code": "K-020",
+    "name": "Sí Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-020)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/11.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-020-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Siyah Frenk Üzümü"
+    ],
+    "heart_notes": [
+      "Frezya",
+      "Gül"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Paçuli",
+      "Amber",
+      "Odunsu Notalar"
+    ],
+    "muadil": "Si"
+  },
+  {
+    "woo_id": 23610,
+    "code": "K-022",
+    "name": "Le Classique Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-022)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/12.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-022-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Portakal çiçeği",
+      "Yıldız anason",
+      "Armut"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Iris",
+      "Orkide",
+      "Zencefil",
+      "Erik"
+    ],
+    "base_notes": [
+      "Amber",
+      "Vanilya",
+      "Misk",
+      "Tarçın"
+    ],
+    "muadil": "Le Classique"
+  },
+  {
+    "woo_id": 23612,
+    "code": "K-024",
+    "name": "Body Edp 50 ml – Çiçeksi ve Odunsu Kadın Parfümü (K-024)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-024-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "woody",
+    "top_notes": [
+      "Şeftali",
+      "Frezya",
+      "Yeşil absint"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Iris",
+      "Sandal ağacı"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Amber",
+      "Misk",
+      "Kaşmir ağacı"
+    ],
+    "muadil": "Body"
+  },
+  {
+    "woo_id": 23614,
+    "code": "K-026",
+    "name": "Cloey  Edp 50 ml – Pudralı ve Çiçeksi Kadın Parfümü (K-026)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/14.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-026-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "powdery",
+    "top_notes": [
+      "Şakayık",
+      "Frezya",
+      "Liçi"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Zambak",
+      "Manolya"
+    ],
+    "base_notes": [
+      "Kehribar",
+      "Sedir ağacı"
+    ],
+    "muadil": "Chloe"
+  },
+  {
+    "woo_id": 23616,
+    "code": "K-027",
+    "name": "Flower Edp 50 ml – Pudralı ve Çiçeksi Kadın Parfümü (K-027)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/15.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-027-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "powdery",
+    "top_notes": [
+      "Bulgar gülü",
+      "Karabiber"
+    ],
+    "heart_notes": [
+      "Menekşe",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Misk",
+      "Beyaz odunsular"
+    ],
+    "muadil": "Flower"
+  },
+  {
+    "woo_id": 3981,
+    "code": "K-031",
+    "name": "K-031 Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/11/ELEGANCE-GOLD-K-031.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-031-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Fantasy Midnight"
+  },
+  {
+    "woo_id": 23618,
+    "code": "K-032",
+    "name": "Noa Edp 50 ml – Pudralı ve Çiçeksi Kadın Parfümü (K-032)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/17.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-032-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "powdery",
+    "top_notes": [
+      "Şeftali",
+      "Şakayık",
+      "Beyaz frezya",
+      "Erik"
+    ],
+    "heart_notes": [
+      "Zambak",
+      "Gül",
+      "Yasemin",
+      "Ylang-ylang"
+    ],
+    "base_notes": [
+      "Kahve",
+      "Tonka fasulyesi",
+      "Vanilya",
+      "Tütsü"
+    ],
+    "muadil": "Noa"
+  },
+  {
+    "woo_id": 23620,
+    "code": "K-033",
+    "name": "Fabulous Edp 50 ml – Oryantal ve Odunsu Kadın Parfümü (K-033)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/18.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-033-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Lavanta",
+      "Adaçayı"
+    ],
+    "heart_notes": [
+      "Acı badem",
+      "Deri dokunuşu",
+      "Vanilya"
+    ],
+    "base_notes": [
+      "Tonka fasulyesi",
+      "Kaşmir ağacı",
+      "Amber"
+    ],
+    "muadil": "Fabulous"
+  },
+  {
+    "woo_id": 23622,
+    "code": "K-034",
+    "name": "Amor Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-034)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/19.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-034-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Mandalina",
+      "Portakal",
+      "Siyah frenk üzümü"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Yasemin",
+      "Kayısı"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Amber",
+      "Tonka fasulyesi",
+      "Misk"
+    ],
+    "muadil": "Amor Amor"
+  },
+  {
+    "woo_id": 23624,
+    "code": "K-035",
+    "name": "Manifesto Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-035)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/20.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-035-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Siyah frenk üzümü",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Zambak"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Tonka fasulyesi",
+      "Sandal ağacı",
+      "Sedir"
+    ],
+    "muadil": "Manifesto"
+  },
+  {
+    "woo_id": 23626,
+    "code": "K-037",
+    "name": "Boss Orange Edt 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-037)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/21.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-037-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Elma",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Beyaz çiçekler",
+      "Portakal çiçeği"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Vanilya",
+      "Zeytin ağacı"
+    ],
+    "muadil": "Boss Orange"
+  },
+  {
+    "woo_id": 23628,
+    "code": "K-038",
+    "name": "Goldea Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-038)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/22.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-038-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Portakal çiçeği",
+      "Bergamot",
+      "Ahududu"
+    ],
+    "heart_notes": [
+      "Ylang-ylang",
+      "Yasemin",
+      "Şakayık"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Paçuli"
+    ],
+    "muadil": "Goldea"
+  },
+  {
+    "woo_id": 3982,
+    "code": "K-042",
+    "name": "K-042 Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/11/ELEGANCE-GOLD-K-042.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-042-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance K-042 Kadın Parfümü"
+  },
+  {
+    "woo_id": 23630,
+    "code": "K-046",
+    "name": "Fancy Edp 50 ml – Tatlı, Meyvemsi ve Oryantal Kadın Parfümü (K-046)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/23.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-046-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Armut",
+      "Kayısı",
+      "Kırmızı meyveler"
+    ],
+    "heart_notes": [
+      "Gardenya",
+      "Yasemin",
+      "Badem"
+    ],
+    "base_notes": [
+      "Karamel",
+      "Vanilya",
+      "Amber",
+      "Sandal ağacı"
+    ],
+    "muadil": "Fancy"
+  },
+  {
+    "woo_id": 23632,
+    "code": "K-047",
+    "name": "Poison Girl Edp 50 ml – Tatlı, Vanilyalı ve Oryantal Kadın Parfümü (K-047)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/24.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-047-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Acı portakal",
+      "Limon"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Damask gülü"
+    ],
+    "base_notes": [
+      "Tonka fasulyesi",
+      "Vanilya",
+      "Badem",
+      "Sandal ağacı"
+    ],
+    "muadil": "Poison Girl"
+  },
+  {
+    "woo_id": 23655,
+    "code": "K-050",
+    "name": "Hilton Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-050)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/2.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-050-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Elma",
+      "Şeftali",
+      "Melon",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Frezya",
+      "Tüberoz",
+      "Lilyum"
+    ],
+    "base_notes": [
+      "Sandal Ağacı",
+      "Misk",
+      "Meşe Yosunu"
+    ],
+    "muadil": "Paris Hilton"
+  },
+  {
+    "woo_id": 23634,
+    "code": "K-053",
+    "name": "212 VIP Edp 50 ml – Meyvemsi, Tatlı ve Oryantal Kadın Parfümü (K-053)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/25.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-053-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Çarkıfelek meyvesi",
+      "Rom kokteyli"
+    ],
+    "heart_notes": [
+      "Gardenya",
+      "Misk"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Tonka fasulyesi"
+    ],
+    "muadil": "212 VIP Women"
+  },
+  {
+    "woo_id": 23636,
+    "code": "K-054",
+    "name": "Miss Cherie Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-054)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/26.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-054-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Çilek",
+      "Mandalina",
+      "Ananas"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Menekşe",
+      "Gül"
+    ],
+    "base_notes": [
+      "Misk",
+      "Paçuli",
+      "Amber",
+      "Karamelli tatlı dokunuş"
+    ],
+    "muadil": "Miss Cherie"
+  },
+  {
+    "woo_id": 23638,
+    "code": "K-055",
+    "name": "No:5 Edp 50 ml – Pudralı ve Çiçeksi Kadın Parfümü (K-055)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/27.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-055-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "powdery",
+    "top_notes": [
+      "Neroli",
+      "Ylang-ylang",
+      "Bergamot",
+      "Limon"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Zambak",
+      "Iris"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Sandal ağacı",
+      "Paçuli",
+      "Misk"
+    ],
+    "muadil": "Chanel No. 5"
+  },
+  {
+    "woo_id": 23640,
+    "code": "K-056",
+    "name": "Lacoste Femme Edp 50 ml – Meyvemsi ve Baharatlı Kadın Parfümü (K-056)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/28.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-056-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Biber",
+      "Elma",
+      "Erik"
+    ],
+    "heart_notes": [
+      "Zambak",
+      "Gül",
+      "Yasemin",
+      "Heliotrop"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Sedir",
+      "Tütsü",
+      "Süet"
+    ],
+    "muadil": "Lacoste Femme"
+  },
+  {
+    "woo_id": 23642,
+    "code": "K-058",
+    "name": "Be Delicious Edp 50 ml – Meyvemsi ve Fresh Kadın Parfümü (K-058) - Yeşil Elma",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/32.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-058-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Yeşil elma",
+      "Salatalık",
+      "Greyfurt"
+    ],
+    "heart_notes": [
+      "Menekşe",
+      "Zambak",
+      "Gül",
+      "Sümbülteber"
+    ],
+    "base_notes": [
+      "Amber",
+      "Sandal ağacı",
+      "Odunsu notalar"
+    ],
+    "muadil": "Be Delicious"
+  },
+  {
+    "woo_id": 23644,
+    "code": "K-062",
+    "name": "Ralph Edt 50 ml – Fresh, Meyvemsi ve Çiçeksi Kadın Parfümü (K-062)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/33.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-062-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Elma yaprağı",
+      "Mandalina",
+      "Sarı frezya"
+    ],
+    "heart_notes": [
+      "Osmanthus",
+      "Magnolia",
+      "Gül"
+    ],
+    "base_notes": [
+      "Misk",
+      "Iris",
+      "Sandal ağacı"
+    ],
+    "muadil": "Ralph"
+  },
+  {
+    "woo_id": 23646,
+    "code": "K-065",
+    "name": "Bright Crystal Edt 50 ml – Fresh, Çiçeksi ve Meyvemsi Kadın Parfümü (K-065)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/34.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-065-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Nar",
+      "Yuzu",
+      "Buz akordu"
+    ],
+    "heart_notes": [
+      "Şakayık",
+      "Lotus",
+      "Manolya"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Maun"
+    ],
+    "muadil": "Bright Crystal"
+  },
+  {
+    "woo_id": 23648,
+    "code": "K-066",
+    "name": "Magnetism Edp 50 ml – Tatlı, Oryantal ve Vanilyalı Kadın Parfümü (K-066)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/35.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-066-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Siyah frenk üzümü",
+      "Ananas",
+      "Kavun",
+      "Kırmızı meyveler"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Frezya",
+      "Iris",
+      "Gül"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Karamel",
+      "Amber",
+      "Sandal ağacı"
+    ],
+    "muadil": "Magnetism"
+  },
+  {
+    "woo_id": 23652,
+    "code": "K-068",
+    "name": "Rush 2 Edp 50 ml – Çiçeksi ve Fresh Kadın Parfümü (K-068)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/36.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-068-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Frezya",
+      "Zambak",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Gardenya",
+      "Yasemin",
+      "Siyah frenk üzümü"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir ağacı",
+      "Meşe yosunu"
+    ],
+    "muadil": "Rush 2"
+  },
+  {
+    "woo_id": 23657,
+    "code": "K-070",
+    "name": "Boss Femme Edp 50 ml – Çiçeksi ve Meyvemsi Kadın Parfümü (K-070)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/37.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-070-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Siyah frenk üzümü",
+      "Mandalina",
+      "Frezya"
+    ],
+    "heart_notes": [
+      "Zambak",
+      "Yasemin",
+      "Bulgar gülü"
+    ],
+    "base_notes": [
+      "Kehribar",
+      "Kayısı",
+      "Misk",
+      "Limon ağacı"
+    ],
+    "muadil": "Boss Femme"
+  },
+  {
+    "woo_id": 23659,
+    "code": "K-071",
+    "name": "Lady Million Lucky Edp 50 ml – Meyvemsi, Tatlı ve Çiçeksi Kadın Parfümü (K-071)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/38.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-071-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Ahududu"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Fındık"
+    ],
+    "base_notes": [
+      "Bal",
+      "Sandal ağacı",
+      "Sedir",
+      "Vanilya"
+    ],
+    "muadil": "Lady Million Lucky"
+  },
+  {
+    "woo_id": 23661,
+    "code": "K-072",
+    "name": "K-072 \"Lady Millıon\" Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-k-072-Parfum.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-072-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "floral",
+    "top_notes": [
+      "Acı Portakal",
+      "Ahududu",
+      "Limon",
+      "Neroli"
+    ],
+    "heart_notes": [
+      "Portakal Çiçeği",
+      "Gardenya",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Bal",
+      "Paçuli",
+      "Amber",
+      "Paçuli"
+    ],
+    "muadil": "Lady Million"
+  },
+  {
+    "woo_id": 23664,
+    "code": "K-074",
+    "name": "212 Sexy Edp 50 ml – Oryantal ve Baharatlı Kadın Parfümü (K-074)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/40.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-074-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Bergamot",
+      "Mandalina",
+      "Pembe biber"
+    ],
+    "heart_notes": [
+      "Gardenya",
+      "Gül",
+      "Pamuk çiçeği"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "212 Sexy Women"
+  },
+  {
+    "woo_id": 23666,
+    "code": "K-075",
+    "name": "Envy Me Edp 50 ml – Meyvemsi ve Çiçeksi Kadın Parfümü (K-075)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/41.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-075-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Nar",
+      "Liçi",
+      "Ananas",
+      "Şakayık"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Beyaz çay",
+      "Frezya"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sandal ağacı",
+      "Tütün",
+      "Odunsu notalar"
+    ],
+    "muadil": "Envy Me"
+  },
+  {
+    "woo_id": 23671,
+    "code": "K-076",
+    "name": "Omnia Crystalline Edp 50 ml – Fresh, Çiçeksi ve Odunsu Kadın Parfümü (K-076)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/42.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-076-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bambu",
+      "Armut"
+    ],
+    "heart_notes": [
+      "Lotus",
+      "Çay",
+      "Zambak"
+    ],
+    "base_notes": [
+      "Misk",
+      "Guaiac ağacı",
+      "Meşe yosunu"
+    ],
+    "muadil": "Omnia Crystalline"
+  },
+  {
+    "woo_id": 23677,
+    "code": "K-079",
+    "name": "Bonbon Edp 50 ml – Tatlı, Vanilyalı ve Oryantal Kadın Parfümü (K-079)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/43.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-079-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Mandalina",
+      "Portakal",
+      "Şeftali"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Portakal çiçeği",
+      "Karamel"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Guaiac ağacı",
+      "Amber",
+      "Misk"
+    ],
+    "muadil": "Bonbon"
+  },
+  {
+    "woo_id": 23673,
+    "code": "K-082",
+    "name": "Alien Edp 50 ml – Oryantal ve Odunsu Kadın Parfümü (K-082)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/44.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-082-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Yasemin"
+    ],
+    "heart_notes": [
+      "Kehribar"
+    ],
+    "base_notes": [
+      "Kaşmir ağacı"
+    ],
+    "muadil": "Alien"
+  },
+  {
+    "woo_id": 23678,
+    "code": "K-083",
+    "name": "Olympéa Edp 50 ml – Oryantal ve Fresh Kadın Parfümü (K-083)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/45.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-083-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Yeşil mandalina",
+      "Su yasemini",
+      "Zencefil çiçeği"
+    ],
+    "heart_notes": [
+      "Vanilya",
+      "Tuzlu akor"
+    ],
+    "base_notes": [
+      "Kaşmir ağacı",
+      "Ambergris",
+      "Sandal ağacı"
+    ],
+    "muadil": "Olympea"
+  },
+  {
+    "woo_id": 23680,
+    "code": "K-084",
+    "name": "Hypnôse Edp 50 ml – Oryantal ve Vanilyalı Kadın Parfümü (K-084)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/46.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-084-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Çarkıfelek meyvesi"
+    ],
+    "heart_notes": [
+      "Gardenya",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Vetiver"
+    ],
+    "muadil": "Hypnose"
+  },
+  {
+    "woo_id": 23682,
+    "code": "K-085",
+    "name": "Absolutely Irres Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-085)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/47.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-085-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Mandalina",
+      "Kırmızı frenk üzümü",
+      "Biber"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Portakal çiçeği"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Sedir ağacı",
+      "Amber"
+    ],
+    "muadil": "Absolutely Irresistible"
+  },
+  {
+    "woo_id": 23684,
+    "code": "K-089",
+    "name": "Light Blue Edp 50 ml – Fresh, Meyvemsi ve Çiçeksi Kadın Parfümü (K-089)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/48.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-089-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Limon",
+      "Yeşil elma",
+      "Sedir",
+      "Çan çiçeği"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Bambu",
+      "Beyaz gül"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Amber",
+      "Misk"
+    ],
+    "muadil": "Light Blue"
+  },
+  {
+    "woo_id": 23686,
+    "code": "K-090",
+    "name": "Coco Mademoiselle Edp 50 ml – Oryantal ve Çiçeksi Kadın Parfümü (K-090)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/54.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-090-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Bergamot",
+      "Portakal",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Yasemin",
+      "Ylang-ylang"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Vanilya",
+      "Misk",
+      "Vetiver"
+    ],
+    "muadil": "Coco Mademoiselle"
+  },
+  {
+    "woo_id": 23688,
+    "code": "K-091",
+    "name": "Black XS Edp 50 ml – Meyvemsi, Tatlı ve Oryantal Kadın Parfümü (K-091)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/49.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-091-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Yaban çileği",
+      "Pembe biber",
+      "Keçiboynuzu çiçeği"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Yasemin",
+      "Kakao çiçeği"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Misk",
+      "Paçuli",
+      "Sandal ağacı"
+    ],
+    "muadil": "Black XS"
+  },
+  {
+    "woo_id": 23690,
+    "code": "K-092",
+    "name": "Black Opium Edp 50 ml – Tatlı, Kahveli ve Oryantal Kadın Parfümü (K-092)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/51.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-092-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Pembe biber",
+      "Armut",
+      "Portakal çiçeği"
+    ],
+    "heart_notes": [
+      "Kahve",
+      "Yasemin",
+      "Acı badem",
+      "Meyankökü"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Paçuli",
+      "Sedir",
+      "Kaşmir ağacı"
+    ],
+    "muadil": "Black Opium"
+  },
+  {
+    "woo_id": 23692,
+    "code": "K-094",
+    "name": "Lolita L. Edp 50 ml – Oryantal ve Narenciyeli Kadın Parfümü (K-094)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/52.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-094-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Acı portakal",
+      "Bergamot",
+      "Mandalina"
+    ],
+    "heart_notes": [
+      "Tarçın",
+      "Güneşte kurutulmuş çiçekler"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Misk",
+      "Tonka fasulyesi",
+      "Amber"
+    ],
+    "muadil": "Lolita L."
+  },
+  {
+    "woo_id": 23694,
+    "code": "K-096",
+    "name": "Addict Edp 50 ml – Oryantal ve Vanilyalı Kadın Parfümü (K-096)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/53.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-096-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "İpek ağacı çiçeği",
+      "Mandalina yaprağı",
+      "Portakal çiçeği"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Yasemin",
+      "Portakal çiçeği",
+      "Kraliçe zambağı"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Sandal ağacı",
+      "Tonka fasulyesi",
+      "Odunsu notalar"
+    ],
+    "muadil": "Addict"
+  },
+  {
+    "woo_id": 23696,
+    "code": "K-101",
+    "name": "Sexy Graffiti Edp 50 ml – Şehrin Ritimleriyle Meyvemsi Ferahlık ve Çiçeksi Enerji (K-101)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/55.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-101-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Ahududu",
+      "Çilek",
+      "Greyfurt",
+      "Nane"
+    ],
+    "heart_notes": [
+      "Şakayık",
+      "Zambak",
+      "Menekşe"
+    ],
+    "base_notes": [
+      "Kaşmir ağacı",
+      "Misk",
+      "Vanilya"
+    ],
+    "muadil": "Sexy Graffiti"
+  },
+  {
+    "woo_id": 23698,
+    "code": "K-105",
+    "name": "Code Woman Edp 50 ml – Oryantal ve Çiçeksi Kadın Parfümü (K-105)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/56.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-105-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Acı portakal",
+      "Zencefil"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Portakal çiçeği"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Bal",
+      "Sandal ağacı"
+    ],
+    "muadil": "Code Woman"
+  },
+  {
+    "woo_id": 23700,
+    "code": "K-106",
+    "name": "Cristobal Edp 50 ml – Oryantal ve Çiçeksi Kadın Parfümü (K-106)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/57.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-106-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Fesleğen",
+      "Bergamot",
+      "Frenk üzümü"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Şakayık",
+      "Ylang-ylang",
+      "Fıstık"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Paçuli",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "Cristobal"
+  },
+  {
+    "woo_id": 23701,
+    "code": "K-116",
+    "name": "Boss Intense Edp 50 ml – Oryantal ve Baharatlı Kadın Parfümü (K-116)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/58.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-116-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Mandalina",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Zambak",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Amber",
+      "Vanilya",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "Boss Intense"
+  },
+  {
+    "woo_id": 3987,
+    "code": "K-118",
+    "name": "K-118 \"GoodGirl\" Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-k-118-Parfum.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-118-goodgirl-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Badem",
+      "Kahve",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Yasemin sambac",
+      "Tuberoz",
+      "Iris"
+    ],
+    "base_notes": [
+      "Tonka",
+      "Kakao",
+      "Vanilya"
+    ],
+    "muadil": "GoodGirl"
+  },
+  {
+    "woo_id": 23704,
+    "code": "K-121",
+    "name": "Guilty Edp 50 ml – Tutkulu Oryantal Dokunuş ve Çiçeksi Feminen Cazibe (K-121)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/59.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-121-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Mandalina",
+      "Bergamot",
+      "Pembe biber"
+    ],
+    "heart_notes": [
+      "Leylak",
+      "Sardunya",
+      "Şeftali"
+    ],
+    "base_notes": [
+      "Amber",
+      "Paçuli",
+      "Misk"
+    ],
+    "muadil": "Guilty"
+  },
+  {
+    "woo_id": 23706,
+    "code": "K-124",
+    "name": "Acqua di Gioia Edp 50 ml – Deniz Esintisiyle Ferah ve Çiçeksi Tazelik (K-124)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/60.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-124-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Nane"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Şakayık",
+      "Pembe biber"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Şeker kamışı",
+      "Misk"
+    ],
+    "muadil": "Acqua di Gioia"
+  },
+  {
+    "woo_id": 23708,
+    "code": "K-136",
+    "name": "Flower Bomb Edp 50 ml – Çiçek Patlamasıyla Büyüleyici Oryantal Dokunuş (K-136)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/61.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-136-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "floral",
+    "top_notes": [
+      "Bergamot",
+      "Yeşil çay"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Gül",
+      "Orkide",
+      "Frezya"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Misk"
+    ],
+    "muadil": "Flowerbomb"
+  },
+  {
+    "woo_id": 23710,
+    "code": "K-144",
+    "name": "Pure Seduction Edp 50 ml – Meyvemsi Tatlılık ve Çiçeksi Baştan Çıkarıcılık (K-144)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/63.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-144-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Kırmızı erik",
+      "Elma"
+    ],
+    "heart_notes": [
+      "Frezya",
+      "Tatlı çiçekler"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sandal ağacı"
+    ],
+    "muadil": "Pure Seduction"
+  },
+  {
+    "woo_id": 23712,
+    "code": "K-145",
+    "name": "Angel Edp 50 ml – Tatlı Meyvemsi ve Çiçeksi Feminen Dokunuş (K-145)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/5-1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-145-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Kavun",
+      "Erik",
+      "Kırmızı meyveler"
+    ],
+    "heart_notes": [
+      "Şakayık",
+      "Frezya",
+      "Menekşe"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Misk",
+      "Amber"
+    ],
+    "muadil": "Angel"
+  },
+  {
+    "woo_id": 3989,
+    "code": "K-147",
+    "name": "K-147\"Bombshell\" Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-k-147-Parfum.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-147bombshell-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Mor Tutku Meyvesi",
+      "Shangri-la Şakayık"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Manolya",
+      "Vanilya Orkide"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sandal Ağacı"
+    ],
+    "muadil": "Bombshell"
+  },
+  {
+    "woo_id": 23714,
+    "code": "K-148",
+    "name": "Coco Noir Edp 50 ml – Gizemli Oryantal Çekicilik ve Sofistike Zarafet (K-148)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/65.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-148-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Greyfurt",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Yasemin",
+      "Nergis"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Tonka fasulyesi",
+      "Vanilya",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "Coco Noir"
+  },
+  {
+    "woo_id": 3991,
+    "code": "K-149",
+    "name": "K-149 \"Pink Sugar\" Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-k-149-Parfum.png",
+    "web_url": "https://elegancevipperfume.com/urun/k-149-sugar-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Portakal",
+      "Incir yaprağı"
+    ],
+    "heart_notes": [
+      "Pamuk şekeri",
+      "Çilek",
+      "Kırmızı meyveler"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Karamel",
+      "Misk"
+    ],
+    "muadil": "Pink Sugar"
+  },
+  {
+    "woo_id": 23716,
+    "code": "K-152",
+    "name": "Pink Bouquet Edp 50 ml – Çiçeksi Tatlılık ve Romantik Feminen Enerji (K-152)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/66.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-152-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Bergamot",
+      "Ananas",
+      "Ahududu"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Şakayık",
+      "Mor menekşe",
+      "Zambak"
+    ],
+    "base_notes": [
+      "Şeftali",
+      "Misk",
+      "Bisküvi notaları"
+    ],
+    "muadil": "Pink Bouquet"
+  },
+  {
+    "woo_id": 23718,
+    "code": "K-158",
+    "name": "Sexy Amber Edp 50 ml – Oryantal Sıcaklık ve Çiçeksi Feminen Zarafet (K-158)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/68.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-158-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Beyaz çiçekler"
+    ],
+    "heart_notes": [
+      "Amber"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "muadil": "Sexy Amber"
+  },
+  {
+    "woo_id": 23720,
+    "code": "K-167",
+    "name": "Bloom Edp 50 ml – Çiçek Bahçesinin Feminen Zarafeti ve Doğal Ferahlık (K-167)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/78.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-167-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Yasemin"
+    ],
+    "heart_notes": [
+      "Sümbülteber",
+      "Hanımeli"
+    ],
+    "base_notes": [
+      "Sandal ağacı",
+      "Odunsu notalar"
+    ],
+    "muadil": "Bloom"
+  },
+  {
+    "woo_id": 23722,
+    "code": "K-184",
+    "name": "Omnia Coral Edp 50 ml – Meyvemsi Ferahlık ve Çiçeksi Feminen Işıltı (K-184)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/77.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-184-eau-de-parfum-for-women/",
+    "in_stock": false,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Bergamot",
+      "Goji berry"
+    ],
+    "heart_notes": [
+      "Zambak",
+      "Hibiskus",
+      "Nar çiçeği"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir ağacı"
+    ],
+    "muadil": "Omnia Coral"
+  },
+  {
+    "woo_id": 23650,
+    "code": "K-186",
+    "name": "Libre Edp 50 ml – Çiçeksi ve Oryantal Kadın Parfümü (K-186)",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/09/70.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/k-186-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Lavanta",
+      "Mandalina",
+      "Siyah Frenk Üzümü"
+    ],
+    "heart_notes": [
+      "Portakal Çiçeği",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Sedir Ağacı",
+      "Ambergris",
+      "Misk"
+    ],
+    "muadil": "Libre"
+  },
+  {
+    "woo_id": 25477,
+    "code": "SPECIAL-BP",
+    "name": "Baby Powder Eau De Parfum For Women",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2026/03/5-1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/baby-powder-eau-de-parfum-for-women/",
+    "in_stock": true,
+    "scent_family": "powdery",
+    "top_notes": [
+      "Bergamot",
+      "Aldehitler",
+      "Yumuşak çiçekler"
+    ],
+    "heart_notes": [
+      "Iris",
+      "Menekşe",
+      "Pudralı akorlar"
+    ],
+    "base_notes": [
+      "Misk",
+      "Vanilya",
+      "Sandal ağacı"
+    ],
+    "muadil": "Baby Powder"
+  },
+  {
+    "woo_id": 26239,
+    "code": "SPECIAL-EE",
+    "name": "Elegance Euphoria Kadın Parfümü",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2026/04/Adsiz-tasarim-6.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/elegance-euphoria-kadin-parfumu/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance Euphoria Kadın Parfümü"
+  },
+  {
+    "woo_id": 26354,
+    "code": "SPECIAL-LG",
+    "name": "Lira Gourmand Parfüm 50 ml – Karamelli, Vanilyalı ve Portakallı Kadın Parfümü",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2026/05/lira1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/lira-gourmand-parfum/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Portakal"
+    ],
+    "heart_notes": [
+      "Karamel"
+    ],
+    "base_notes": [
+      "Vanilya"
+    ],
+    "muadil": "Lira Gourmand Parfüm"
+  },
+  {
+    "woo_id": 23852,
+    "code": "SPECIAL-SU",
+    "name": "Suadela Eau De Parfum For Unisex",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-UNISEX-TRENDYOL-1200-x-1200-piksel-1.png",
+    "web_url": "https://elegancevipperfume.com/urun/suadela-eau-de-parfum-for-unisex/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Suadela"
+  },
+  {
+    "woo_id": 20590,
+    "code": "U-000",
+    "name": "U-000 Eau De Parfum For Unisex",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/02/GOLD-UNISEX-TRENDYOL-1200-x-1200-piksel-1.png",
+    "web_url": "https://elegancevipperfume.com/urun/u-000-eau-de-parfum-for-unisex/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance U-000 Unisex Parfüm"
+  },
+  {
+    "woo_id": 23881,
+    "code": "U-041",
+    "name": "Erba Pura Edp 50 ml – Meyvemsi ve Tatlı Unisex Parfümü (U-041)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/erbapura.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/u-041-eau-de-parfum-for-unisex/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Portakal",
+      "Bergamot",
+      "Limon"
+    ],
+    "heart_notes": [
+      "Tropikal meyveler",
+      "Şeftali",
+      "Çiçeksi akorlar"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Vanilya"
+    ],
+    "muadil": "Erba Pura"
+  },
+  {
+    "woo_id": 23883,
+    "code": "U-043",
+    "name": "Laylati Edp 50 ml – Oryantal ve Baharatlı Unisex Parfümü (U-043)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/laylati.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/u-043-eau-de-parfum-for-unisex/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Tarçın",
+      "Karanfil",
+      "Tütsü"
+    ],
+    "heart_notes": [
+      "Tütün",
+      "Sandal ağacı",
+      "Misk"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Amber",
+      "Vanilya"
+    ],
+    "muadil": "Laylati"
+  },
+  {
+    "woo_id": 23891,
+    "code": "U-067",
+    "name": "Baccarat Rouge 540 Edp 50 ml – Amber ve Tatlı Unisex Parfümü (U-067)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/bacarat.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/u-067-eau-de-parfum-for-unisex/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Safran",
+      "Yasemin"
+    ],
+    "heart_notes": [
+      "Amberwood",
+      "Ambergris"
+    ],
+    "base_notes": [
+      "Sedir ağacı",
+      "Misk"
+    ],
+    "muadil": "Baccarat Rouge 540"
+  },
+  {
+    "woo_id": 4911,
+    "code": "U-077",
+    "name": "U-077 Gold Edition - Meyveli & Egzotik Kalıcı Unisex Parfüm (Premium Etki)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2022/04/elegance_u-077.png",
+    "web_url": "https://elegancevipperfume.com/urun/0-077-eau-de-parfum-unisex/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Baharatlı notalar",
+      "Bergamot",
+      "Pembe biber"
+    ],
+    "heart_notes": [
+      "Amber",
+      "Çiçeksi notalar",
+      "Odunsu akorlar"
+    ],
+    "base_notes": [
+      "Misk",
+      "Vanilya",
+      "Paçuli"
+    ],
+    "muadil": "Ki̇rke"
+  },
+  {
+    "woo_id": 3975,
+    "code": "U-080",
+    "name": "U-080 Eau De Parfum (Unisex)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2021/12/Elegance-vip-perfume-unisex-080.png",
+    "web_url": "https://elegancevipperfume.com/urun/u-080-eau-de-parfum-for-men/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance U-080 Unisex Parfüm"
+  },
+  {
+    "woo_id": 23887,
+    "code": "U-117",
+    "name": "Jazz Club Edp 50 ml – Tütün ve Odunsu Unisex Parfümü (U-117)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/replica.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/u-117-eau-de-parfum-for-unisex-copy-copy-copy-copy/",
+    "in_stock": true,
+    "scent_family": "woody",
+    "top_notes": [
+      "Neroli",
+      "Limon",
+      "Pembe biber"
+    ],
+    "heart_notes": [
+      "Rom",
+      "Tütün yaprağı",
+      "Adaçayı"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Tonka fasulyesi",
+      "Vetiver"
+    ],
+    "muadil": "Jazz Club"
+  },
+  {
+    "woo_id": 23879,
+    "code": "U-128",
+    "name": "Black Orchid Edp 50 ml – Oryantal ve Çiçeksi Unisex Parfümü (U-128)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/black-orchid.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/u-128-eau-de-parfum-for-unisex-copy/",
+    "in_stock": true,
+    "scent_family": "oriental",
+    "top_notes": [
+      "Bergamot",
+      "Siyah frenk üzümü",
+      "Trüf",
+      "Ylang-ylang"
+    ],
+    "heart_notes": [
+      "Siyah orkide",
+      "Yasemin",
+      "Lotus çiçeği"
+    ],
+    "base_notes": [
+      "Paçuli",
+      "Vanilya",
+      "Sandal ağacı",
+      "Tütsü"
+    ],
+    "muadil": "Black Orchid"
+  },
+  {
+    "woo_id": 23889,
+    "code": "U-182",
+    "name": "Andromeda Edp 50 ml – Çiçeksi ve Pudralı Unisex Parfümü (U-182)",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/andromeda.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/u-182-eau-de-parfum-for-unisex/",
+    "in_stock": true,
+    "scent_family": "powdery",
+    "top_notes": [
+      "Bergamot",
+      "Yeşil yapraklar",
+      "Yasemin"
+    ],
+    "heart_notes": [
+      "Şeftali",
+      "Menekşe",
+      "Ylang-ylang"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Vanilya",
+      "Paçuli"
+    ],
+    "muadil": "Andromeda"
+  },
+  {
+    "woo_id": 4619,
+    "code": "WEB-4619",
+    "name": "Hunter Parfüm",
+    "series": "creasyon",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2022/01/23.png",
+    "web_url": "https://elegancevipperfume.com/urun/hunter-parfum/",
+    "in_stock": false,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Hunter Parfüm"
+  },
+  {
+    "woo_id": 4920,
+    "code": "WEB-4920",
+    "name": "Elegance Blue Eau De Parfum Unisex",
+    "series": "gold",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2022/04/elegance-blue.png",
+    "web_url": "https://elegancevipperfume.com/urun/elegance-blue-eau-de-parfum-unisex/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance Blue"
+  },
+  {
+    "woo_id": 4967,
+    "code": "WEB-4967",
+    "name": "Elegance Dark Edp 100ml Unisex Parfüm - Luxury Serıes -",
+    "series": "luxury",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2022/07/1.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/elegance-dark-luxury/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance Dark"
+  },
+  {
+    "woo_id": 5128,
+    "code": "WEB-5128",
+    "name": "ELEGANT WOMEN EDP 100ml KADIN Parfüm - LUXURY SERIES -",
+    "series": "luxury",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2022/07/ELEGANCE-PERFUME-elegant-women-PARFUM-1520x1815.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/elegant-women-luxury/",
+    "in_stock": false,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "ELEGANT WOMEN"
+  },
+  {
+    "woo_id": 19559,
+    "code": "WEB-19559",
+    "name": "Mıllıon Eau De Parfum For Men",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/5-1.png",
+    "web_url": "https://elegancevipperfume.com/urun/million-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Mıllıon"
+  },
+  {
+    "woo_id": 19764,
+    "code": "WEB-19764",
+    "name": "Sexy Chocolate Eau De Parfum For Unisex",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/9-1.png",
+    "web_url": "https://elegancevipperfume.com/urun/sexy-choclate-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Çikolata",
+      "Kakao",
+      "Bergamot"
+    ],
+    "heart_notes": [
+      "Vanilya",
+      "Baharatlar",
+      "Çiçeksi notalar"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Odunsu notalar"
+    ],
+    "muadil": "Sexy Chocolate"
+  },
+  {
+    "woo_id": 22815,
+    "code": "WEB-22815",
+    "name": "Fantasy Eau De Parfum For Women",
+    "series": "creasyon",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/2.png",
+    "web_url": "https://elegancevipperfume.com/urun/fantasy-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Fantasy"
+  },
+  {
+    "woo_id": 22876,
+    "code": "WEB-22876",
+    "name": "Magic Eau De Parfum For Men",
+    "series": "creasyon",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/1.png",
+    "web_url": "https://elegancevipperfume.com/urun/magic-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Magic"
+  },
+  {
+    "woo_id": 22968,
+    "code": "WEB-22968",
+    "name": "Weekend Eau De Parfum For Women",
+    "series": "creasyon",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/3-1.png",
+    "web_url": "https://elegancevipperfume.com/urun/weekend-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Weekend"
+  },
+  {
+    "woo_id": 22973,
+    "code": "WEB-22973",
+    "name": "Invıcta Eau De Parfum For Men",
+    "series": "creasyon",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/6-1.png",
+    "web_url": "https://elegancevipperfume.com/urun/invicta-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Invıcta"
+  },
+  {
+    "woo_id": 23096,
+    "code": "WEB-23096",
+    "name": "Classic Eau De Parfum For Men",
+    "series": "creasyon",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/7.png",
+    "web_url": "https://elegancevipperfume.com/urun/classic-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Lavanta",
+      "Nane"
+    ],
+    "heart_notes": [
+      "Sandal ağacı",
+      "Yasemin",
+      "Sedir"
+    ],
+    "base_notes": [
+      "Misk",
+      "Amber",
+      "Vanilya"
+    ],
+    "muadil": "Classic"
+  },
+  {
+    "woo_id": 23149,
+    "code": "WEB-23149",
+    "name": "Aqua Di Gio Eau De Parfum For Men",
+    "series": "creasyon",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/8-1.png",
+    "web_url": "https://elegancevipperfume.com/urun/aqua-di-gio-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Neroli",
+      "Yeşil mandalina"
+    ],
+    "heart_notes": [
+      "Deniz notaları",
+      "Yasemin",
+      "Biberiye"
+    ],
+    "base_notes": [
+      "Sedir",
+      "Paçuli",
+      "Misk"
+    ],
+    "muadil": "Aqua Di Gio"
+  },
+  {
+    "woo_id": 23195,
+    "code": "WEB-23195",
+    "name": "Aphrodisiac Eau De Parfum For Unisex",
+    "series": "creasyon",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/10.png",
+    "web_url": "https://elegancevipperfume.com/urun/aphrodisiac-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Siyah frenk üzümü yaprağı"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Frezya"
+    ],
+    "base_notes": [
+      "Vanilya",
+      "Paçuli",
+      "Ambroxan"
+    ],
+    "muadil": "Aphrodisiac"
+  },
+  {
+    "woo_id": 23219,
+    "code": "WEB-23219",
+    "name": "Love Eau De Parfum For Women",
+    "series": "creasyon",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/35.png",
+    "web_url": "https://elegancevipperfume.com/urun/love-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Love"
+  },
+  {
+    "woo_id": 23275,
+    "code": "WEB-23275",
+    "name": "Mystique Eau De Parfum For Women",
+    "series": "creasyon",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/32.png",
+    "web_url": "https://elegancevipperfume.com/urun/mystique-eau-de-parfum/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Mystique"
+  },
+  {
+    "woo_id": 23302,
+    "code": "WEB-23302",
+    "name": "Secret Night Eau De Parfum For Women",
+    "series": "creasyon",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/29.png",
+    "web_url": "https://elegancevipperfume.com/urun/secret-night-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Secret Night"
+  },
+  {
+    "woo_id": 23325,
+    "code": "WEB-23325",
+    "name": "New Moon Eau De Parfum For Women",
+    "series": "creasyon",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/26.png",
+    "web_url": "https://elegancevipperfume.com/urun/new-moon-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "New Moon"
+  },
+  {
+    "woo_id": 23330,
+    "code": "WEB-23330",
+    "name": "Artemis Eau De Parfum For Unisex",
+    "series": "creasyon",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/23.png",
+    "web_url": "https://elegancevipperfume.com/urun/artemis-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Artemis"
+  },
+  {
+    "woo_id": 23331,
+    "code": "WEB-23331",
+    "name": "Darkness Eau De Parfum For Men",
+    "series": "creasyon",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/20.png",
+    "web_url": "https://elegancevipperfume.com/urun/darkness-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Darkness"
+  },
+  {
+    "woo_id": 23332,
+    "code": "WEB-23332",
+    "name": "Bouquet Eau De Parfum For Women",
+    "series": "creasyon",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/8.png",
+    "web_url": "https://elegancevipperfume.com/urun/bouquet-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Mandalina",
+      "Portakal",
+      "Şeftali"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Yasemin",
+      "Nilüfer"
+    ],
+    "base_notes": [
+      "Misk",
+      "Vanilya",
+      "Odunsu notalar"
+    ],
+    "muadil": "Bouquet"
+  },
+  {
+    "woo_id": 23333,
+    "code": "WEB-23333",
+    "name": "Lost Eau De Parfum For Unisex",
+    "series": "creasyon",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/14.png",
+    "web_url": "https://elegancevipperfume.com/urun/lost-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Lost"
+  },
+  {
+    "woo_id": 23337,
+    "code": "WEB-23337",
+    "name": "Infinity Eau De Parfum For Unisex",
+    "series": "creasyon",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/17.png",
+    "web_url": "https://elegancevipperfume.com/urun/infinity-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Infinity"
+  },
+  {
+    "woo_id": 23338,
+    "code": "WEB-23338",
+    "name": "Sanctum Eau De Parfum For Unisex",
+    "series": "creasyon",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/11.png",
+    "web_url": "https://elegancevipperfume.com/urun/sanctum-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Sanctum"
+  },
+  {
+    "woo_id": 23339,
+    "code": "WEB-23339",
+    "name": "Freya Eau De Parfum For Unisex",
+    "series": "creasyon",
+    "gender": "unisex",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/01/5.png",
+    "web_url": "https://elegancevipperfume.com/urun/freya-eau-de-parfume/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Freya"
+  },
+  {
+    "woo_id": 23877,
+    "code": "WEB-23877",
+    "name": "Lost Cherry Edp 50 ml – Tatlı ve Meyvemsi Kadın Parfümü",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/10/lcherry.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/lost-cherry-eau-de-parfum-for-women-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-copy-cop/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Siyah kiraz",
+      "Badem",
+      "Likör"
+    ],
+    "heart_notes": [
+      "Gül",
+      "Yasemin",
+      "Mür"
+    ],
+    "base_notes": [
+      "Tonka fasulyesi",
+      "Vanilya",
+      "Sandal ağacı",
+      "Sedir"
+    ],
+    "muadil": "Lost Cherry"
+  },
+  {
+    "woo_id": 25453,
+    "code": "WEB-25453",
+    "name": "Elegance Gold - Sport Fever Edp Gold 50 ml",
+    "series": "gold",
+    "gender": "erkek",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2026/02/sport2.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/elegance-gold-sport-fever-edp-gold-50-ml/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Limon",
+      "Bergamot",
+      "Taze narenciye notaları"
+    ],
+    "heart_notes": [
+      "Aromatik otlar",
+      "Lavanta",
+      "Hafif baharatlar"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir ağacı",
+      "Yumuşak odunsu notalar"
+    ],
+    "muadil": "Elegance Gold"
+  },
+  {
+    "woo_id": 25460,
+    "code": "WEB-25460",
+    "name": "Elegance Gold - Sport Energy Woman",
+    "series": "gold",
+    "gender": "kadin",
+    "image_url": "https://elegancevipperfume.com/wp-content/uploads/2026/03/2.jpg",
+    "web_url": "https://elegancevipperfume.com/urun/elegance-gold-sport-energy-woman/",
+    "in_stock": true,
+    "scent_family": "fresh",
+    "top_notes": [
+      "Bergamot",
+      "Limon",
+      "Yeşil notalar"
+    ],
+    "heart_notes": [
+      "Lavanta",
+      "Aromatik notalar",
+      "Su akorları"
+    ],
+    "base_notes": [
+      "Misk",
+      "Sedir",
+      "Amber"
+    ],
+    "muadil": "Elegance Gold"
   }
 ]

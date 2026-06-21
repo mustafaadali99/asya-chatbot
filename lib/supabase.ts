@@ -23,12 +23,31 @@ export function getSupabaseAdmin() {
 }
 
 export async function saveLead(name: string, email: string, language = 'tr') {
-  const { data, error } = await getSupabaseAdmin()
+  const supabase = getSupabaseAdmin()
+
+  // Check if lead already exists (preserve existing name & profile)
+  const { data: existing } = await supabase
     .from('asya_leads')
-    .upsert(
-      { full_name: name, email, language, last_active_at: new Date().toISOString() },
-      { onConflict: 'email' }
-    )
+    .select('*')
+    .eq('email', email)
+    .maybeSingle()
+
+  if (existing) {
+    // Returning user: only touch last_active_at — never overwrite name/profile
+    const { data, error } = await supabase
+      .from('asya_leads')
+      .update({ last_active_at: new Date().toISOString() })
+      .eq('id', existing.id)
+      .select()
+      .single()
+    if (error) throw error
+    return data
+  }
+
+  // New user: insert fresh record
+  const { data, error } = await supabase
+    .from('asya_leads')
+    .insert({ full_name: name, email, language, last_active_at: new Date().toISOString() })
     .select()
     .single()
   if (error) throw error

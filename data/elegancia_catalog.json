@@ -9,12 +9,23 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-charm-serenity-edp-100-ml/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Tutku meyvesi",
+      "Şeftali",
+      "Narenciye dokunuşları"
+    ],
+    "heart_notes": [
+      "Yasemin",
+      "Amberwood",
+      "Hafif baharatlı akorlar"
+    ],
+    "base_notes": [
+      "Amber",
+      "Misk",
+      "Sandal ağacı",
+      "Odunsu notalar"
+    ],
+    "muadil": "Elegancia"
   },
   {
     "woo_id": 24721,
@@ -25,13 +36,21 @@
     "image_url": "https://elegancevipperfume.com/wp-content/uploads/2025/12/velvet-cardinal7.jpg",
     "web_url": "https://elegancevipperfume.com/urun/velvet-cardinal-extrait-de-parfum/",
     "in_stock": false,
-    "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "scent_family": "gourmand",
+    "top_notes": [
+      "Vanilya Özütü",
+      "Lavanta"
+    ],
+    "heart_notes": [
+      "Vanilya Tanesi",
+      "Yasemin"
+    ],
+    "base_notes": [
+      "Vanilya Absolüsü",
+      "Sandal Ağacı",
+      "Misk"
+    ],
+    "muadil": "Velvet Cardinal"
   },
   {
     "woo_id": 24094,
@@ -43,12 +62,24 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-sapphire-noir-extrait-de-parfum-100-ml/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Bergamot",
+      "Mandalina",
+      "Pembe Biber"
+    ],
+    "heart_notes": [
+      "Paçuli",
+      "Gül",
+      "Yasemin",
+      "Sedir Ağacı"
+    ],
+    "base_notes": [
+      "Amber",
+      "Misk",
+      "Vanilya",
+      "Laden Reçinesi"
+    ],
+    "muadil": "Elegancia Sapphire Noir"
   },
   {
     "woo_id": 24093,
@@ -60,12 +91,21 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-reflection-extrait-de-parfum-100-ml/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Bergamot",
+      "Lemon"
+    ],
+    "heart_notes": [
+      "Kalon",
+      "Yaseminsi Çiçeksi Aroma",
+      "Deniz Yosunu"
+    ],
+    "base_notes": [
+      "Misk",
+      "Ambroxan",
+      "Sedir"
+    ],
+    "muadil": "Elegancia Reflection"
   },
   {
     "woo_id": 24074,
@@ -77,12 +117,22 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-narcotic-extrait-de-parfum-100-ml/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Bergamot",
+      "Ginger",
+      "Pink Pepper"
+    ],
+    "heart_notes": [
+      "SümbüTuberose",
+      "Jasmine",
+      "Portakal ÇiçeğOrange Blossom"
+    ],
+    "base_notes": [
+      "Sandal Ağacı (Sandalwood)",
+      "Kehribar",
+      "PaçPatchouli"
+    ],
+    "muadil": "Elegancia NARCOTIC"
   },
   {
     "woo_id": 24073,
@@ -94,12 +144,20 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-majestic-oud-extrait-de-parfum-100-ml/",
     "in_stock": true,
     "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Çarkıfelek Meyvesi",
+      "Safran"
+    ],
+    "heart_notes": [
+      "Öd Ağacı",
+      "Paçuli",
+      "Lavanta"
+    ],
+    "base_notes": [
+      "Deri",
+      "Kehribar"
+    ],
+    "muadil": "Elegancia Majestic Oud"
   },
   {
     "woo_id": 24064,
@@ -111,12 +169,20 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-majestik-aura-extrait-de-parfum-100-ml/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Mineral",
+      "Sıcak Baharat"
+    ],
+    "heart_notes": [
+      "Deri",
+      "Odunsu"
+    ],
+    "base_notes": [
+      "Öd Ağacı",
+      "Misk",
+      "Çiçeksi"
+    ],
+    "muadil": "Elegancia Majestic Aura"
   },
   {
     "woo_id": 24055,
@@ -128,12 +194,20 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-anatolia-essence-extrait-de-parfum-100-ml/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Sıcak Baharatlar"
+    ],
+    "heart_notes": [
+      "Tarçın",
+      "Tonka Fasulyesi",
+      "Meşe"
+    ],
+    "base_notes": [
+      "Pralin",
+      "Vanilya",
+      "Sandal Ağacı"
+    ],
+    "muadil": "Elegancia Anatolia Essence"
   },
   {
     "woo_id": 24046,
@@ -145,12 +219,22 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-amber-extrait-de-parfum-100-ml/",
     "in_stock": true,
     "scent_family": "oriental",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Raspberry",
+      "Saffron",
+      "Itır ÇiçeğGeranium"
+    ],
+    "heart_notes": [
+      "GüRose",
+      "Oud",
+      "Kehribar"
+    ],
+    "base_notes": [
+      "Tütsü (Incense)",
+      "Benzoin ReçBenzoin",
+      "Huş Ağacı (Birch Wood)"
+    ],
+    "muadil": "Elegancia Amber"
   },
   {
     "woo_id": 24037,
@@ -162,11 +246,21 @@
     "web_url": "https://elegancevipperfume.com/urun/elegancia-silver-ambiance-extrait-de-parfum-100-ml-dubai-esintili-nis-unisex-parfum/",
     "in_stock": true,
     "scent_family": "fresh",
-    "top_notes": [],
-    "heart_notes": [],
-    "base_notes": [],
-    "mood_tags": [],
-    "occasion": [],
-    "season": []
+    "top_notes": [
+      "Portakal çiçeği",
+      "Bergamot",
+      "Tarçın",
+      "Kakule"
+    ],
+    "heart_notes": [
+      "Bourbon vanilyası",
+      "Elemi reçinesi"
+    ],
+    "base_notes": [
+      "Pralin",
+      "Misk",
+      "Ambrox"
+    ],
+    "muadil": "Elegancia Silver Ambiance"
   }
 ]

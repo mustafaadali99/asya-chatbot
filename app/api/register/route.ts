@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { saveLead, saveSession } from '@/lib/supabase'
+import { saveLead, saveSession, getLeadByEmail } from '@/lib/supabase'
 
 export async function POST(req: NextRequest) {
   try {
@@ -22,10 +22,16 @@ export async function POST(req: NextRequest) {
     const lead = await saveLead(safeName, safeEmail, language)
     const session = await saveSession(lead.id, mode)
 
-    return NextResponse.json({ lead_id: lead.id, session_id: session.id })
-
+    return NextResponse.json({
+      lead_id: lead.id,
+      session_id: session.id,
+      returning: lead.scent_profile != null,
+      scent_profile: lead.scent_profile || null,
+      gardrop: lead.gardrop || [],
+      name: lead.full_name,
+    })
   } catch (err) {
-    console.error('Save lead error:', err)
+    console.error('Register error:', err)
     return NextResponse.json({ error: 'Kayıt hatası' }, { status: 500 })
   }
 }
