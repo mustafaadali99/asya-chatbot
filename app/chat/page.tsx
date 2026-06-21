@@ -2188,7 +2188,7 @@ const mTabs = [
   {id:'home',label:'Ana Sayfa',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10l7-6 7 6v6a1 1 0 0 1-1 1h-3v-5h-6v5H4a1 1 0 0 1-1-1z" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
   {id:'chat',label:'Sohbet',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 9.5C3 6 6 4 10 4s7 2 7 5.5S14 15 10 15c-.7 0-1.4-.06-2-.18L5 16l.5-2.4A5 5 0 0 1 3 9.5z" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
   {id:'wardrobe',label:'Gardırop',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 7.2a1.7 1.7 0 1 1 1.7-1.7" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinecap="round"/><path d="M10 7.2v1.5L2 14h16L10 8.7" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinejoin="round"/></svg>},
-  {id:'profile',label:'Profil',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4"/><path d="M3 17c.8-3.4 3.7-5 7-5s6.2 1.6 7 5" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinecap="round"/></svg>},
+  {id:'profile',label:'Koku Profili',g:(a:boolean)=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4"/><path d="M3 17c.8-3.4 3.7-5 7-5s6.2 1.6 7 5" stroke={a?'#FFF':'#5E5878'} strokeWidth="1.4" strokeLinecap="round"/></svg>},
 ] as const
 
 function MobileTabBar({active,onChange}:{active:MainTab;onChange:(t:MainTab)=>void}) {
@@ -2758,7 +2758,7 @@ function ReferralWelcomeBanner({referrerName,onDismiss}:{referrerName:string;onD
 function MobileApp({initialUnboxing}:{initialUnboxing?:boolean}) {
   // Karşılama/"kaydır" ekranı kaldırıldı — direkt uygulama açılır
   const [mobileScreen,setMobileScreen] = useState<'welcome'|'app'>('app')
-  const [activeTab,setActiveTab] = useState<MainTab>(initialUnboxing?'unboxing':'home')
+  const [activeTab,setActiveTab] = useState<MainTab>(initialUnboxing?'unboxing':((typeof window!=='undefined'&&new URLSearchParams(window.location.search).get('chat')==='1')?'chat':'home'))
   const [homeOverlay,setHomeOverlay] = useState<'none'|'ilham'|'vision'|'faq'|'giftwiz'|'muadil'>('none')
   const [chatMode,setChatMode] = useState<ChatMode>('profil')
   const [selectedProduct,setSelectedProduct] = useState<TopProduct|null>(null)
@@ -3177,7 +3177,7 @@ function DesktopProfile({lead,coupon,scentProfile,gardrop,onProductTap,onSaveToG
 }
 
 function DesktopApp({initialUnboxing}:{initialUnboxing?:boolean}) {
-  const [screen,setScreen] = useState<Screen>(initialUnboxing?'unboxing':'home')
+  const [screen,setScreen] = useState<Screen>(initialUnboxing?'unboxing':((typeof window!=='undefined'&&new URLSearchParams(window.location.search).get('chat')==='1')?'chat':'home'))
   const [chatMode,setChatMode] = useState<ChatMode>('profil')
   const [selectedProduct,setSelectedProduct] = useState<TopProduct|null>(null)
   const chatLogic = useChatLogic(chatMode)
