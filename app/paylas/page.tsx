@@ -76,7 +76,7 @@ export default function PaylasPage() {
       }}>
         {/* Logo */}
         <img
-          src="/koku-asistani/elegance logo.png"
+          src="/elegance logo.png"
           alt="Elegance VIP"
           style={{ width: 150, marginBottom: 24, opacity: 0.9 }}
         />
