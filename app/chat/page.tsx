@@ -2749,10 +2749,21 @@ function ReferralWelcomeBanner({referrerName,onDismiss}:{referrerName:string;onD
   )
 }
 
+// URL parametresine göre açılış ekranı: ?chat=1 → sohbet, ?tab=profile → koku profili, yoksa ana sayfa
+function initialScreenFromUrl(): 'chat'|'profile'|'home' {
+  try {
+    if (typeof window === 'undefined') return 'home'
+    const p = new URLSearchParams(window.location.search)
+    if (p.get('chat') === '1') return 'chat'
+    if (p.get('tab') === 'profile') return 'profile'
+    return 'home'
+  } catch { return 'home' }
+}
+
 function MobileApp({initialUnboxing}:{initialUnboxing?:boolean}) {
   // Karşılama/"kaydır" ekranı kaldırıldı — direkt uygulama açılır
   const [mobileScreen,setMobileScreen] = useState<'welcome'|'app'>('app')
-  const [activeTab,setActiveTab] = useState<MainTab>(initialUnboxing?'unboxing':((typeof window!=='undefined'&&new URLSearchParams(window.location.search).get('chat')==='1')?'chat':'home'))
+  const [activeTab,setActiveTab] = useState<MainTab>(initialUnboxing?'unboxing':initialScreenFromUrl())
   const [homeOverlay,setHomeOverlay] = useState<'none'|'ilham'|'vision'|'faq'|'giftwiz'|'muadil'>('none')
   const [chatMode,setChatMode] = useState<ChatMode>('profil')
   const [selectedProduct,setSelectedProduct] = useState<TopProduct|null>(null)
@@ -3165,7 +3176,7 @@ function DesktopProfile({lead,coupon,scentProfile,gardrop,onProductTap,onSaveToG
 }
 
 function DesktopApp({initialUnboxing}:{initialUnboxing?:boolean}) {
-  const [screen,setScreen] = useState<Screen>(initialUnboxing?'unboxing':((typeof window!=='undefined'&&new URLSearchParams(window.location.search).get('chat')==='1')?'chat':'home'))
+  const [screen,setScreen] = useState<Screen>(initialUnboxing?'unboxing':initialScreenFromUrl())
   const [chatMode,setChatMode] = useState<ChatMode>('profil')
   const [selectedProduct,setSelectedProduct] = useState<TopProduct|null>(null)
   const chatLogic = useChatLogic(chatMode)
